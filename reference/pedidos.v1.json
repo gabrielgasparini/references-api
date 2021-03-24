@@ -11,7 +11,7 @@
     }
   ],
   "paths": {
-    "/orders/{id}": {
+    "{slug-landingpage}/orders/{id}": {
       "parameters": [
         {
           "schema": {
@@ -21,6 +21,15 @@
           "in": "path",
           "description": "id do pedido",
           "required": true
+        },
+        {
+          "schema": {
+            "type": "string"
+          },
+          "name": "slug-landingpage",
+          "in": "path",
+          "required": true,
+          "description": "prefixo"
         }
       ],
       "get": {
