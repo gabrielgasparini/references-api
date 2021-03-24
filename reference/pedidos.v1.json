@@ -115,7 +115,8 @@
             },
             "in": "header",
             "name": "Content-Type",
-            "required": true
+            "required": true,
+            "description": "API accepts only JSON type data"
           }
         ]
       },
@@ -209,7 +210,8 @@
             },
             "in": "header",
             "name": "Content-Type",
-            "required": true
+            "required": true,
+            "description": "API accepts only JSON type data"
           }
         ]
       }
@@ -305,7 +307,8 @@
             },
             "in": "header",
             "name": "Content-Type",
-            "required": true
+            "required": true,
+            "description": "API accepts only JSON type data"
           }
         ]
       }
