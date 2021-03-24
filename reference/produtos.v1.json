@@ -551,17 +551,248 @@
         "operationId": "put-slug-landingpage-products-id",
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                },
+                "examples": {
+                  "Success": {
+                    "value": {
+                      "result": [
+                        {
+                          "message": "Product update"
+                        }
+                      ],
+                      "status_code": 200,
+                      "method": "PUT"
+                    }
+                  },
+                  "Error": {
+                    "value": {
+                      "result": [
+                        {
+                          "message": "Product not updated"
+                        }
+                      ],
+                      "status_code": 200,
+                      "method": "PUT"
+                    }
+                  }
+                }
+              }
+            }
           }
         },
-        "description": "Atualiza as informações do produto com o ID do produto correspondente."
+        "description": "Atualiza as informações do produto com o ID do produto correspondente.",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "description": "",
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "has_variant": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "status": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "title": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "description": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "payment_gateway": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "product_type": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "shipping_type": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "fixed_shipping_price": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "fixed_shipping_time": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "seo_title": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "seo_desc": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "seo_url": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "created_at": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "updated_at": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "has_kits": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "ordem_exibicao": {},
+                  "aliexpress_url": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "aliexpress_id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "aliexpress_seller": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "enable_dropshipping": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "ncm_code": {
+                    "type": "string"
+                  },
+                  "gshop_condition": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "gshop_age_group": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "gshop_gender": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "video_url": {},
+                  "video_id": {},
+                  "video_platform": {}
+                },
+                "required": [
+                  "id",
+                  "has_variant",
+                  "status",
+                  "title",
+                  "description",
+                  "payment_gateway",
+                  "product_type",
+                  "shipping_type",
+                  "fixed_shipping_price",
+                  "fixed_shipping_time",
+                  "seo_title",
+                  "seo_desc",
+                  "seo_url",
+                  "created_at",
+                  "updated_at",
+                  "has_kits",
+                  "aliexpress_url",
+                  "aliexpress_id",
+                  "aliexpress_seller",
+                  "enable_dropshipping",
+                  "ncm_code",
+                  "gshop_condition",
+                  "gshop_age_group",
+                  "gshop_gender"
+                ]
+              }
+            }
+          }
+        }
       },
       "delete": {
         "summary": "Deletar um produto",
         "operationId": "delete-slug-landingpage-products-id",
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "",
+                  "type": "object",
+                  "properties": {
+                    "result": {
+                      "type": "array",
+                      "uniqueItems": true,
+                      "minItems": 1,
+                      "items": {
+                        "required": [
+                          "message"
+                        ],
+                        "properties": {
+                          "message": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        }
+                      }
+                    },
+                    "status_code": {
+                      "type": "number"
+                    },
+                    "method": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "result",
+                    "status_code",
+                    "method"
+                  ]
+                },
+                "examples": {
+                  "Success": {
+                    "value": {
+                      "result": [
+                        {
+                          "message": "Product removed"
+                        }
+                      ],
+                      "status_code": 200,
+                      "method": "DELETE"
+                    }
+                  },
+                  "Error": {
+                    "value": {
+                      "result": [
+                        {
+                          "message": "There is no product to delete"
+                        }
+                      ],
+                      "status_code": 200,
+                      "method": "DELETE"
+                    }
+                  }
+                }
+              }
+            }
           }
         },
         "description": "Deleta o produto com o ID do produto correspondente."
@@ -571,7 +802,214 @@
         "operationId": "get-slug-landingpage-products-id",
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "",
+                  "type": "object",
+                  "properties": {
+                    "result": {
+                      "type": "array",
+                      "uniqueItems": true,
+                      "minItems": 1,
+                      "items": {
+                        "required": [
+                          "id",
+                          "has_variant",
+                          "status",
+                          "title",
+                          "description",
+                          "payment_gateway",
+                          "product_type",
+                          "shipping_type",
+                          "fixed_shipping_price",
+                          "fixed_shipping_time",
+                          "seo_title",
+                          "seo_desc",
+                          "seo_url",
+                          "created_at",
+                          "updated_at",
+                          "has_kits",
+                          "aliexpress_url",
+                          "aliexpress_id",
+                          "aliexpress_seller",
+                          "enable_dropshipping",
+                          "ncm_code",
+                          "gshop_condition",
+                          "gshop_age_group",
+                          "gshop_gender"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "has_variant": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "status": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "title": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "description": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "payment_gateway": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "product_type": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "shipping_type": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "fixed_shipping_price": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "fixed_shipping_time": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "seo_title": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "seo_desc": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "seo_url": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "created_at": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "updated_at": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "has_kits": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "ordem_exibicao": {},
+                          "aliexpress_url": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "aliexpress_id": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "aliexpress_seller": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "enable_dropshipping": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "ncm_code": {
+                            "type": "string"
+                          },
+                          "gshop_condition": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "gshop_age_group": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "gshop_gender": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "video_url": {},
+                          "video_id": {},
+                          "video_platform": {}
+                        }
+                      }
+                    },
+                    "status_code": {
+                      "type": "number"
+                    },
+                    "method": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "result",
+                    "status_code",
+                    "method"
+                  ]
+                },
+                "examples": {
+                  "Success": {
+                    "value": {
+                      "result": [
+                        {
+                          "id": "11",
+                          "has_variant": "1",
+                          "status": "1",
+                          "title": "Fones de ouvido com microfone gamer",
+                          "description": "<p>Compatibilidade: Com 3.5mm interface, é adequado para telefone inteligente, tablet pc, laptop, para ps4, para novo xbox one e outros 3.5mm dispositivo de áudio Captador exato microfone: Microfone omnidirecional ajustável, pode pegar sons com grande sensibilidade e reduz o ruído de fundo para melhores chapéus no jogo. Ótimo som: A unidade de movimentação de 40mm pode trazer-te campo de som vívido, claridade de som, sensação de choque de som, capaz de vários jogos. Confortável para usar: Usa almofadas macias sobre ouvido, que é confortável para degastar longo tempo. Tiara ajustável é adequado para tamanhos diferentes da cabeça. Conveniente para usar: 1. quando conectado a XBOX-ONE, é necessário um conversor de áudio (conversor de áudio não incluído) 2. pode conectar diretamente ao ps4 3. quando conectado ao pc, um cabo conversor 2 em 1 é necessário (cabo conversor não incluído) Para alguns projetos do portátil que são projetos do único furo, pode usar diretamente para atingir a função do microfone. Se um cabo conversor 2 em 1 for necessário para você, você pode contate-nos para comprá-lo.</p>\r\n\r\n<p>Especificação:</p>\r\n\r\n<p>Unidade de unidade de diâmetro: 40mm Faixa de frequência: 20-20khz Sensibilidade: 106db Impedância: 32ohm Sensibilidade do microfone:-54db Direcionalidade: omni-direcional Comprimento do cabo: aprox. 1.2m / 3.93ft Entrada plug: 3.5mm plugue Cor: preto Peso: 150g / 6.65oz</p>\r\n\r\n<p>Pacote incluído:</p>\r\n\r\n<p>1 * fone de ouvido para jogos</p>\r\n",
+                          "payment_gateway": "pagarme",
+                          "product_type": "fisico",
+                          "shipping_type": "fixo",
+                          "fixed_shipping_price": "24.52",
+                          "fixed_shipping_time": "30",
+                          "seo_title": "Fones de ouvido com microfone gamer",
+                          "seo_desc": "Compatibilidade: Com 3.5mm interface, é adequado para telefone inteligente, tablet pc, laptop, para ps4, para novo xbox one e outros 3.5mm dispositivo de áudio Captador exato microfone: Microfone omnidirecional ajustável, pode pegar sons com grande s",
+                          "seo_url": "fones-de-ouvido-com-microfone-gamer",
+                          "created_at": "2021-02-24 12:44:00",
+                          "updated_at": "2021-02-24 19:36:19",
+                          "has_kits": "0",
+                          "ordem_exibicao": null,
+                          "aliexpress_url": "https://pt.aliexpress.com/item/4000965583644.html",
+                          "aliexpress_id": "4000965583644",
+                          "aliexpress_seller": "cn1521906482whmt",
+                          "enable_dropshipping": "1",
+                          "ncm_code": "",
+                          "gshop_condition": "new",
+                          "gshop_age_group": "adult",
+                          "gshop_gender": "unisex",
+                          "video_url": null,
+                          "video_id": null,
+                          "video_platform": null
+                        }
+                      ],
+                      "status_code": 200,
+                      "method": "GET"
+                    }
+                  },
+                  "Error": {
+                    "value": {
+                      "result": [
+                        {
+                          "message": "No results"
+                        }
+                      ],
+                      "status_code": 200,
+                      "method": "GET"
+                    }
+                  }
+                }
+              }
+            }
           }
         },
         "description": "Recupera as informações do produto com o ID do produto correspondente."
