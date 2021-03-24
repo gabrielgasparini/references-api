@@ -2,11 +2,12 @@
   "openapi": "3.0.0",
   "info": {
     "title": "Produtos",
-    "version": ""
+    "version": "",
+    "description": "Por meio dessa solicitação você pode consultar, atualizar, deletar ou inserir produtos."
   },
   "servers": [
     {
-      "url": "http://localhost:3000"
+      "url": "https://api.lpquevende.com.br/{slug-landingpage}"
     }
   ],
   "paths": {
