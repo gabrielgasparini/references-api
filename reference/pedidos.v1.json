@@ -85,6 +85,17 @@
                       "status_code": 200,
                       "method": "GET"
                     }
+                  },
+                  "Error": {
+                    "value": {
+                      "result": [
+                        {
+                          "message": "No results"
+                        }
+                      ],
+                      "status_code": 200,
+                      "method": "GET"
+                    }
                   }
                 }
               }
@@ -160,6 +171,17 @@
                       ],
                       "status_code": 0,
                       "method": "string"
+                    }
+                  },
+                  "Error": {
+                    "value": {
+                      "result": [
+                        {
+                          "message": "No results"
+                        }
+                      ],
+                      "status_code": 200,
+                      "method": "GET"
                     }
                   }
                 }
