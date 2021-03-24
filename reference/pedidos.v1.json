@@ -107,7 +107,14 @@
         },
         "operationId": "get-slug-landingpage-orders-id",
         "description": "Recupera as informações do pedido com o ID do pedido correspondente.",
-        "parameters": []
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "header"
+          }
+        ]
       },
       "put": {
         "summary": "Atualizar um pedido",
@@ -286,12 +293,21 @@
         "type": "http",
         "scheme": "bearer",
         "description": "Token fornecido para a sua landingpage"
+      },
+      "Content-Type": {
+        "type": "http",
+        "scheme": "basic",
+        "description": "API accepts only JSON type data"
       }
-    }
+    },
+    "parameters": {}
   },
   "security": [
     {
       "TOKEN": []
+    },
+    {
+      "Content-Type": []
     }
   ]
 }
