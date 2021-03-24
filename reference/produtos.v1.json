@@ -276,10 +276,11 @@
         "parameters": [
           {
             "schema": {
-              "type": "string"
+              "type": "string",
+              "default": "application/json"
             },
             "in": "header",
-            "name": "Content-Type: application/json",
+            "name": "Content-Type:",
             "required": true
           }
         ]
