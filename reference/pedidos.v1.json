@@ -33,7 +33,7 @@
         }
       ],
       "get": {
-        "summary": "Resgatar um pedido pelo ID",
+        "summary": "Resgata um pedido pelo ID",
         "tags": [],
         "responses": {
           "200": {
