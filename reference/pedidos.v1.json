@@ -7,7 +7,7 @@
   },
   "servers": [
     {
-      "url": "https://api.lpquevende.com.br/{slug-landingpage}"
+      "url": "https://api.lpquevende.com.br/{slug-landingpage}/"
     }
   ],
   "paths": {
