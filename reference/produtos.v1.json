@@ -63,7 +63,7 @@
         }
       ],
       "put": {
-        "summary": "Atualizar um produto pelo ID",
+        "summary": "Atualizar um produto",
         "operationId": "put-slug-landingpage-products-id",
         "responses": {
           "200": {
@@ -73,7 +73,7 @@
         "description": "Atualiza as informações do produto com o ID do produto correspondente."
       },
       "delete": {
-        "summary": "Deletar um produto pelo ID",
+        "summary": "Deletar um produto",
         "operationId": "delete-slug-landingpage-products-id",
         "responses": {
           "200": {
@@ -83,7 +83,7 @@
         "description": "Deleta o produto com o ID do produto correspondente."
       },
       "get": {
-        "summary": "Resgatar um produto pelo ID",
+        "summary": "Resgatar um produto",
         "operationId": "get-slug-landingpage-products-id",
         "responses": {
           "200": {

@@ -33,7 +33,7 @@
         }
       ],
       "get": {
-        "summary": "Resgatar um pedido pelo ID",
+        "summary": "Resgatar um pedido",
         "tags": [],
         "responses": {
           "200": {
@@ -107,7 +107,7 @@
         "parameters": []
       },
       "put": {
-        "summary": "Atualizar um pedido pelo ID",
+        "summary": "Atualizar um pedido",
         "operationId": "put-slug-landingpage-orders-id",
         "responses": {
           "200": {
