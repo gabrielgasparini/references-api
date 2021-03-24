@@ -6,4 +6,4 @@ Cada landingpage tem a sua chave de autenticação única. Sua chave de autentic
 
 Todas as requisições para a nossa solução seguem o mesmo prefixo de URL: https://api.lpquevende/{slug-landingpage}
 
-**{slug-landingpage}**: é o nome da loja utilizado para referência na nossa API4554.    
+**{slug-landingpage}**: é o nome da loja utilizado para referência na nossa API.    
