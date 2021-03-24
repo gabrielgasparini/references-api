@@ -16,11 +16,13 @@ Message | Significado
 #### Exemplo de retorno da API
 
 ```json
-'errors' => [
-  [
-    'message' => 'Token Unauthorized',
-    'status_code' => 401,
+{
+  "errors": [
+    {
+      "message": "Token Unauthorized",
+      "status_code": 401
+    }
   ],
-],
-'method' => GET,
+  "method": "GET"
+}
 ```

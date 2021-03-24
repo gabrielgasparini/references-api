@@ -11,20 +11,19 @@
     }
   ],
   "paths": {
-    "/users/{userId}": {
+    "/orders/{id}": {
       "parameters": [
         {
           "schema": {
             "type": "integer"
           },
-          "name": "userId",
+          "name": "id",
           "in": "path",
-          "required": true,
-          "description": "Id of an existing user."
+          "required": true
         }
       ],
       "get": {
-        "summary": "Get User Info by User ID",
+        "summary": "Resgatar um pedido pelo ID",
         "tags": [],
         "responses": {
           "200": {
@@ -54,12 +53,12 @@
             "description": "User Not Found"
           }
         },
-        "operationId": "get-users-userId",
-        "description": "Retrieve the information of the user with the matching user ID."
+        "operationId": "get-orders-id",
+        "description": "Retrieve the information of the order with the matching order ID."
       },
       "patch": {
         "summary": "Update User Information",
-        "operationId": "patch-users-userId",
+        "operationId": "",
         "responses": {
           "200": {
             "description": "User Updated",
@@ -91,7 +90,7 @@
             "description": "Email Already Taken"
           }
         },
-        "description": "Update the information of an existing user.",
+        "description": "",
         "requestBody": {
           "content": {
             "application/json": {
@@ -134,6 +133,52 @@
             }
           },
           "description": "Patch user properties to update."
+        },
+        "parameters": []
+      },
+      "put": {
+        "summary": "",
+        "operationId": "put-orders-id",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "headers": {},
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            }
+          }
+        },
+        "description": "Update the information of an existing order.",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "title": {
+                    "type": "string"
+                  },
+                  "description": {
+                    "type": "string"
+                  }
+                }
+              },
+              "examples": {
+                "Atualizar título e descrição": {
+                  "value": {
+                    "title": "title example",
+                    "description": "description examples"
+                  }
+                }
+              }
+            }
+          },
+          "description": "Patch order properties to update."
         }
       }
     },
