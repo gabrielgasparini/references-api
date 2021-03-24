@@ -31,7 +31,7 @@
         "description": "Recupera as informações de todos os produtos."
       },
       "post": {
-        "summary": "",
+        "summary": "Criar um produto",
         "operationId": "post-slug-landingpage-products",
         "responses": {
           "200": {
@@ -63,7 +63,7 @@
         }
       ],
       "put": {
-        "summary": "",
+        "summary": "Atualizar um produto pelo ID",
         "operationId": "put-slug-landingpage-products-id",
         "responses": {
           "200": {
@@ -73,7 +73,7 @@
         "description": "Atualiza as informações do produto com o ID do produto correspondente."
       },
       "delete": {
-        "summary": "",
+        "summary": "Deletar um produto pelo ID",
         "operationId": "delete-slug-landingpage-products-id",
         "responses": {
           "200": {
@@ -83,7 +83,7 @@
         "description": "Deleta o produto com o ID do produto correspondente."
       },
       "get": {
-        "summary": "",
+        "summary": "Resgatar um produto pelo ID",
         "operationId": "get-slug-landingpage-products-id",
         "responses": {
           "200": {

@@ -107,7 +107,7 @@
         "parameters": []
       },
       "put": {
-        "summary": "Atualiza um pedido pelo ID",
+        "summary": "Atualizar um pedido pelo ID",
         "operationId": "put-slug-landingpage-orders-id",
         "responses": {
           "200": {
