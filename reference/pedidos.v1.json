@@ -110,9 +110,12 @@
         "parameters": [
           {
             "schema": {
-              "type": "string"
+              "type": "string",
+              "default": "application/json"
             },
-            "in": "header"
+            "in": "header",
+            "name": "Content-Type",
+            "required": true
           }
         ]
       },
@@ -197,7 +200,18 @@
             }
           },
           "description": "Corpo da requisição"
-        }
+        },
+        "parameters": [
+          {
+            "schema": {
+              "type": "string",
+              "default": "application/json"
+            },
+            "in": "header",
+            "name": "Content-Type",
+            "required": true
+          }
+        ]
       }
     },
     "{slug-landingpage}/orders": {
@@ -282,7 +296,18 @@
             }
           }
         },
-        "description": "Recupera as informações de todos os pedidos."
+        "description": "Recupera as informações de todos os pedidos.",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string",
+              "default": "application/json"
+            },
+            "in": "header",
+            "name": "Content-Type",
+            "required": true
+          }
+        ]
       }
     }
   },

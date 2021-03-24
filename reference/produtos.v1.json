@@ -280,7 +280,7 @@
               "default": "application/json"
             },
             "in": "header",
-            "name": "Content-Type:",
+            "name": "Content-Type",
             "required": true
           }
         ]
@@ -536,16 +536,18 @@
             }
           },
           "description": ""
-        }
-      },
-      "head": {
-        "summary": "",
-        "operationId": "head-slug-landingpage-products",
-        "responses": {
-          "200": {
-            "description": "OK"
+        },
+        "parameters": [
+          {
+            "schema": {
+              "type": "string",
+              "default": "application/json"
+            },
+            "in": "header",
+            "name": "Content-Type",
+            "required": true
           }
-        }
+        ]
       }
     },
     "{slug-landingpage}/products/{id}": {
@@ -746,7 +748,18 @@
               }
             }
           }
-        }
+        },
+        "parameters": [
+          {
+            "schema": {
+              "type": "string",
+              "default": "application/json"
+            },
+            "in": "header",
+            "name": "Content-Type",
+            "required": true
+          }
+        ]
       },
       "delete": {
         "summary": "Deletar um produto",
@@ -818,7 +831,18 @@
             }
           }
         },
-        "description": "Deleta o produto com o ID do produto correspondente."
+        "description": "Deleta o produto com o ID do produto correspondente.",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string",
+              "default": "application/json"
+            },
+            "in": "header",
+            "name": "Content-Type",
+            "required": true
+          }
+        ]
       },
       "get": {
         "summary": "Resgatar um produto",
@@ -1035,7 +1059,18 @@
             }
           }
         },
-        "description": "Recupera as informações do produto com o ID do produto correspondente."
+        "description": "Recupera as informações do produto com o ID do produto correspondente.",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string",
+              "default": "application/json"
+            },
+            "in": "header",
+            "name": "Content-Type",
+            "required": true
+          }
+        ]
       }
     }
   },
