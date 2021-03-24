@@ -19,7 +19,7 @@
           },
           "name": "id",
           "in": "path",
-          "description": "id do pedido",
+          "description": "ID do pedido",
           "required": true
         },
         {
