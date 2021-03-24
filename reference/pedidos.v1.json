@@ -33,7 +33,7 @@
         }
       ],
       "get": {
-        "summary": "Resgata um pedido pelo ID",
+        "summary": "Resgatar um pedido pelo ID",
         "tags": [],
         "responses": {
           "200": {
@@ -203,7 +203,7 @@
         }
       ],
       "get": {
-        "summary": "Resgata todos os pedidos",
+        "summary": "Resgatar todos os pedidos",
         "operationId": "get-slug-landingpage-orders",
         "responses": {
           "200": {

@@ -10,7 +10,90 @@
       "url": "https://api.lpquevende.com.br/"
     }
   ],
-  "paths": {},
+  "paths": {
+    "{slug-landingpage}/products": {
+      "parameters": [
+        {
+          "schema": {
+            "type": "string"
+          },
+          "name": "slug-landingpage",
+          "in": "path",
+          "required": true,
+          "description": "prefixo utilizado no domínio"
+        }
+      ],
+      "get": {
+        "summary": "Resgatar todos os produtos",
+        "tags": [],
+        "responses": {},
+        "operationId": "get-slug-landingpage-products",
+        "description": "Recupera as informações de todos os produtos."
+      },
+      "post": {
+        "summary": "",
+        "operationId": "post-slug-landingpage-products",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "description": "Gera um novo registro de produto."
+      }
+    },
+    "{slug-landingpage}/products/{id}": {
+      "parameters": [
+        {
+          "schema": {
+            "type": "string"
+          },
+          "name": "slug-landingpage",
+          "in": "path",
+          "required": true,
+          "description": "prefixo utilizado no domínio"
+        },
+        {
+          "schema": {
+            "type": "string"
+          },
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "description": "ID do produto"
+        }
+      ],
+      "put": {
+        "summary": "",
+        "operationId": "put-slug-landingpage-products-id",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "description": "Atualiza as informações do produto com o ID do produto correspondente."
+      },
+      "delete": {
+        "summary": "",
+        "operationId": "delete-slug-landingpage-products-id",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "description": "Deleta o produto com o ID do produto correspondente."
+      },
+      "get": {
+        "summary": "",
+        "operationId": "get-slug-landingpage-products-id",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "description": "Recupera as informações do produto com o ID do produto correspondente."
+      }
+    }
+  },
   "components": {
     "schemas": {},
     "securitySchemes": {
