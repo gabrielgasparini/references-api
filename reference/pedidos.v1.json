@@ -3,7 +3,7 @@
   "info": {
     "title": "Pedidos",
     "version": "",
-    "description": "Por meio dessa solicitação você pode consultar um ou vários pedidos e atualizar um pedido desejado."
+    "description": "Por meio dessa referência você pode consultar um ou vários pedidos e atualizar um pedido desejado."
   },
   "servers": [
     {
