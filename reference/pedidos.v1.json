@@ -29,7 +29,7 @@
           "name": "slug-landingpage",
           "in": "path",
           "required": true,
-          "description": "prefixo"
+          "description": "prefixo utilizado no domínio"
         }
       ],
       "get": {
@@ -96,8 +96,18 @@
         "parameters": []
       }
     },
-    "/orders": {
-      "parameters": [],
+    "{slug-landingpage}/orders": {
+      "parameters": [
+        {
+          "schema": {
+            "type": "string"
+          },
+          "name": "slug-landingpage",
+          "in": "path",
+          "required": true,
+          "description": "prefixo utilizado no domínio"
+        }
+      ],
       "get": {
         "summary": "Resgata todos os pedidos",
         "operationId": "get-orders",
@@ -170,5 +180,10 @@
         "description": "Token fornecido para a sua landingpage"
       }
     }
-  }
+  },
+  "security": [
+    {
+      "TOKEN": []
+    }
+  ]
 }
