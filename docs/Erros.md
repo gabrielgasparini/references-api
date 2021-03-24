@@ -13,7 +13,7 @@ Message | Significado
  Method does not exist | O método enviado não existe
  Error in the past parameters | Erro ou ausência nos parâmetros esperados pela aplicação
 
-### Exemplo de retorno da API
+#### Exemplo de retorno da API
 
 ```json
 'errors' => [
