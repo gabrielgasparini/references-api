@@ -1026,12 +1026,20 @@
         "type": "http",
         "scheme": "bearer",
         "description": "Token fornecido para a sua landingpage"
+      },
+      "Content-Type: application/json": {
+        "type": "http",
+        "scheme": "basic",
+        "description": "requests require json content-type"
       }
     }
   },
   "security": [
     {
       "TOKEN": []
+    },
+    {
+      "Content-Type: application/json": []
     }
   ]
 }
