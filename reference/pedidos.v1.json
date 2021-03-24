@@ -27,12 +27,10 @@
         "tags": [],
         "responses": {
           "200": {
-            "description": "User Found",
+            "description": "OK",
             "content": {
               "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/User"
-                },
+                "schema": {},
                 "examples": {
                   "Get User Alice Smith": {
                     "value": {
@@ -48,9 +46,6 @@
                 }
               }
             }
-          },
-          "404": {
-            "description": "User Not Found"
           }
         },
         "operationId": "get-orders-id",
@@ -66,8 +61,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "description": "",
-                  "$ref": ""
+                  "description": ""
                 },
                 "examples": {
                   "Sucess update": {
