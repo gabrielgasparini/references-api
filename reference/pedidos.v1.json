@@ -1,8 +1,9 @@
 {
   "openapi": "3.0.0",
   "info": {
-    "title": "PEDIDOS",
-    "version": "1.0"
+    "title": "Pedidos",
+    "version": "",
+    "description": "Por meio dessa solicitação você pode consultar um ou vários pedidos ou atualizar um pedido desejado."
   },
   "servers": [
     {
@@ -217,6 +218,13 @@
     }
   },
   "components": {
-    "schemas": {}
+    "schemas": {},
+    "securitySchemes": {
+      "API Key - 1": {
+        "name": "API Key",
+        "type": "apiKey",
+        "in": "query"
+      }
+    }
   }
 }
