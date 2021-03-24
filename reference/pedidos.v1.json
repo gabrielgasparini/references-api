@@ -102,7 +102,7 @@
             }
           }
         },
-        "operationId": "get-orders-id",
+        "operationId": "get-slug-landingpage-orders-id",
         "description": "Recupera as informações do pedido com o ID do pedido correspondente.",
         "parameters": []
       },
@@ -204,7 +204,7 @@
       ],
       "get": {
         "summary": "Resgata todos os pedidos",
-        "operationId": "get-orders",
+        "operationId": "get-slug-landingpage-orders",
         "responses": {
           "200": {
             "description": "OK",
