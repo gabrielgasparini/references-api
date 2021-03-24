@@ -3,7 +3,10 @@
   "info": {
     "title": "Produtos",
     "version": "",
-    "description": "Por meio dessa referência você pode consultar, atualizar, deletar ou inserir produtos."
+    "description": "Por meio dessa referência você pode consultar, atualizar, deletar ou inserir produtos.",
+    "contact": {
+      "email": "developers@lpquevende.com.br"
+    }
   },
   "servers": [
     {

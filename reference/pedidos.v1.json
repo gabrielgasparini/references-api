@@ -3,7 +3,10 @@
   "info": {
     "title": "Pedidos",
     "version": "",
-    "description": "Por meio dessa referência você pode consultar e atualizar pedidos."
+    "description": "Por meio dessa referência você pode consultar e atualizar pedidos.",
+    "contact": {
+      "email": "developers@lpquevende.com.br"
+    }
   },
   "servers": [
     {
