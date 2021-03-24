@@ -20,9 +20,9 @@ Message | Significado
   "errors": [
     {
       "message": "Token Unauthorized",
-      "status_code": 401
     }
   ],
+  "status_code": 401
   "method": "GET"
 }
 ```
