@@ -1,6 +1,6 @@
 # Autenticação
 
-As soluções dessa aplicação utilizando **Bearer Token**, em todas as requisições é necessário que o token (chave de autenticação) seja informado. 
+As soluções dessa aplicação utilizam **Bearer Token**, em todas as requisições é necessário que o token (chave de autenticação) seja informado. 
 
 Cada landingpage tem a sua chave de autenticação única. Sua chave de autenticação é disponibilizada na barra superior do painel administrativo da sua landingpage.
 
