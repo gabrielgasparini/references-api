@@ -272,7 +272,17 @@
           }
         },
         "operationId": "get-slug-landingpage-products",
-        "description": "Recupera as informações de todos os produtos."
+        "description": "Recupera as informações de todos os produtos.",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "header",
+            "name": "Content-Type: application/json",
+            "required": true
+          }
+        ]
       },
       "post": {
         "summary": "Criar um produto",
@@ -525,6 +535,15 @@
             }
           },
           "description": ""
+        }
+      },
+      "head": {
+        "summary": "",
+        "operationId": "head-slug-landingpage-products",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
         }
       }
     },
@@ -1028,16 +1047,7 @@
         "description": "Token fornecido para a sua landingpage"
       }
     },
-    "parameters": {
-      "Content-Type-applicationjson": {
-        "name": "Content-Type: application/json",
-        "in": "header",
-        "required": true,
-        "schema": {
-          "type": "string"
-        }
-      }
-    }
+    "parameters": {}
   },
   "security": [
     {
