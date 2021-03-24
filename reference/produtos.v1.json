@@ -26,7 +26,11 @@
       "get": {
         "summary": "Resgatar todos os produtos",
         "tags": [],
-        "responses": {},
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
         "operationId": "get-slug-landingpage-products",
         "description": "Recupera as informações de todos os produtos."
       },
@@ -54,7 +58,7 @@
         },
         {
           "schema": {
-            "type": "string"
+            "type": "integer"
           },
           "name": "id",
           "in": "path",
