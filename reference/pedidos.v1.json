@@ -32,15 +32,15 @@
               "application/json": {
                 "schema": {},
                 "examples": {
-                  "Get User Alice Smith": {
+                  "Success": {
                     "value": {
-                      "id": 142,
-                      "firstName": "Alice",
-                      "lastName": "Smith",
-                      "email": "alice.smith@gmail.com",
-                      "dateOfBirth": "1997-10-31",
-                      "emailVerified": true,
-                      "signUpDate": "2019-08-24"
+                      "result": [
+                        {
+                          "message": "No results",
+                          "status_code": 200
+                        }
+                      ],
+                      "method": "GET"
                     }
                   }
                 }
@@ -56,7 +56,7 @@
         "operationId": "put-orders-id",
         "responses": {
           "200": {
-            "description": "Order update",
+            "description": "OK",
             "headers": {},
             "content": {
               "application/json": {
@@ -64,7 +64,7 @@
                   "description": ""
                 },
                 "examples": {
-                  "Sucess update": {
+                  "Success": {
                     "value": {
                       "result": [
                         {
