@@ -30,16 +30,49 @@
             "description": "OK",
             "content": {
               "application/json": {
-                "schema": {},
+                "schema": {
+                  "description": "",
+                  "type": "object",
+                  "properties": {
+                    "result": {
+                      "type": "array",
+                      "uniqueItems": true,
+                      "minItems": 1,
+                      "items": {
+                        "required": [
+                          "message"
+                        ],
+                        "properties": {
+                          "message": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        }
+                      }
+                    },
+                    "status_code": {
+                      "type": "number"
+                    },
+                    "method": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "result",
+                    "status_code",
+                    "method"
+                  ]
+                },
                 "examples": {
                   "Success": {
                     "value": {
                       "result": [
                         {
-                          "message": "No results",
-                          "status_code": 200
+                          "array_data": null
                         }
                       ],
+                      "status_code": 200,
                       "method": "GET"
                     }
                   }
@@ -49,30 +82,64 @@
           }
         },
         "operationId": "get-orders-id",
-        "description": "Retrieve the information of the order with the matching order ID."
-      },
-      "put": {
-        "summary": "",
-        "operationId": "put-orders-id",
+        "description": "Recupera as informações do pedido com o ID do pedido correspondente.",
+        "parameters": []
+      }
+    },
+    "/orders": {
+      "parameters": [],
+      "get": {
+        "summary": "Resgata todos os pedidos",
+        "operationId": "get-orders",
         "responses": {
           "200": {
             "description": "OK",
-            "headers": {},
             "content": {
               "application/json": {
                 "schema": {
-                  "description": ""
+                  "description": "",
+                  "type": "object",
+                  "properties": {
+                    "result": {
+                      "type": "array",
+                      "uniqueItems": true,
+                      "minItems": 1,
+                      "items": {
+                        "required": [
+                          "message"
+                        ],
+                        "properties": {
+                          "message": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        }
+                      }
+                    },
+                    "status_code": {
+                      "type": "number"
+                    },
+                    "method": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "result",
+                    "status_code",
+                    "method"
+                  ]
                 },
                 "examples": {
                   "Success": {
                     "value": {
                       "result": [
                         {
-                          "message": "Order updated",
-                          "status_code": 200
+                          "array_data": null
                         }
                       ],
-                      "method": "PUT"
+                      "status_code": 0,
+                      "method": "string"
                     }
                   }
                 }
@@ -80,117 +147,17 @@
             }
           }
         },
-        "description": "Update the information of an existing order.",
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "title": {
-                    "type": "string"
-                  },
-                  "description": {
-                    "type": "string"
-                  }
-                }
-              },
-              "examples": {
-                "Atualizar título e descrição": {
-                  "value": {
-                    "title": "title example",
-                    "description": "description examples"
-                  }
-                }
-              }
-            }
-          },
-          "description": "Patch order properties to update."
-        }
-      }
-    },
-    "/user": {
-      "post": {
-        "summary": "Create New User",
-        "operationId": "post-user",
-        "responses": {
-          "200": {
-            "description": "User Created",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/User"
-                },
-                "examples": {
-                  "New User Bob Fellow": {
-                    "value": {
-                      "id": 12,
-                      "firstName": "Bob",
-                      "lastName": "Fellow",
-                      "email": "bob.fellow@gmail.com",
-                      "dateOfBirth": "1996-08-24",
-                      "emailVerified": false,
-                      "createDate": "2020-11-18"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "Missing Required Information"
-          },
-          "409": {
-            "description": "Email Already Taken"
-          }
-        },
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "firstName": {
-                    "type": "string"
-                  },
-                  "lastName": {
-                    "type": "string"
-                  },
-                  "email": {
-                    "type": "string"
-                  },
-                  "dateOfBirth": {
-                    "type": "string",
-                    "format": "date"
-                  }
-                },
-                "required": [
-                  "firstName",
-                  "lastName",
-                  "email",
-                  "dateOfBirth"
-                ]
-              },
-              "examples": {
-                "Create User Bob Fellow": {
-                  "value": {
-                    "firstName": "Bob",
-                    "lastName": "Fellow",
-                    "email": "bob.fellow@gmail.com",
-                    "dateOfBirth": "1996-08-24"
-                  }
-                }
-              }
-            }
-          },
-          "description": "Post the necessary fields for the API to create a new user."
-        },
-        "description": "Create a new user."
+        "description": "Recupera as informações de todos os pedidos."
       }
     }
   },
   "components": {
     "schemas": {},
-    "securitySchemes": {}
+    "securitySchemes": {
+      "TOKEN": {
+        "type": "http",
+        "scheme": "bearer"
+      }
+    }
   }
 }
