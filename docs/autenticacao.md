@@ -9,3 +9,5 @@ Todas as requisições para a nossa solução seguem o mesmo prefixo de URL: htt
 **{slug-landingpage}**: é o nome da loja utilizado para referência na nossa API.    
 
 [Obtenha aqui o seu token!](url)
+
+2
