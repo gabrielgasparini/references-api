@@ -8,6 +8,10 @@ Todas as requisições para a nossa solução seguem o mesmo prefixo de URL: htt
 
 **{slug-landingpage}**: é o nome da loja utilizado para referência na nossa API, é o mesmo prefixo utilizado para a domínio da landingpage.
 
-`example.lpquevende.com.br` seu slug é: `example`.    
+`example.lpquevende.com.br` seu slug é: `example`.   
+
+`Content-type` tipo do conteúdo padrão: `application/json`.
+
+Para mais informações sobre [Bearer Token](https://swagger.io/docs/specification/authentication/bearer-authentication/) 
 
 [Obtenha aqui o seu token!](url)
