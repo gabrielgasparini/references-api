@@ -789,7 +789,8 @@
                     "minLength": 1
                   },
                   "ncm_code": {
-                    "type": "string"
+                    "type": "string",
+                    "minLength": 1
                   },
                   "gshop_condition": {
                     "type": "string",
@@ -806,6 +807,58 @@
                   "video_url": {},
                   "video_id": {},
                   "video_platform": {},
+                  "product_id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "sku": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "automatic_stock": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "quantity": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "weight": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "width": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "height": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "length": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "cost_price": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "sale_price": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "old_price": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "slug": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "aliexpress_sku": {
+                    "type": "string"
+                  },
+                  "image_id": {},
                   "images": {
                     "type": "array",
                     "uniqueItems": true,
@@ -845,6 +898,8 @@
                   },
                   "kits": {
                     "type": "array",
+                    "uniqueItems": true,
+                    "minItems": 1,
                     "items": {
                       "required": [],
                       "properties": {}
@@ -887,7 +942,8 @@
                           "minLength": 1
                         },
                         "bar_code": {
-                          "type": "string"
+                          "type": "string",
+                          "minLength": 1
                         },
                         "automatic_stock": {
                           "type": "string",
@@ -998,11 +1054,174 @@
                   "gshop_condition",
                   "gshop_age_group",
                   "gshop_gender",
+                  "product_id",
+                  "sku",
+                  "automatic_stock",
+                  "quantity",
+                  "weight",
+                  "width",
+                  "height",
+                  "length",
+                  "cost_price",
+                  "sale_price",
+                  "old_price",
+                  "slug",
+                  "aliexpress_sku",
                   "images",
                   "kits",
                   "variants",
                   "variants_items"
                 ]
+              },
+              "examples": {
+                "Com variação": {
+                  "value": {
+                    "id": "string",
+                    "has_variant": "string",
+                    "status": "string",
+                    "title": "string",
+                    "description": "string",
+                    "payment_gateway": "string",
+                    "product_type": "string",
+                    "shipping_type": "string",
+                    "fixed_shipping_price": "string",
+                    "fixed_shipping_time": "string",
+                    "seo_title": "string",
+                    "seo_desc": "string",
+                    "seo_url": "string",
+                    "created_at": "string",
+                    "updated_at": "string",
+                    "has_kits": "string",
+                    "ordem_exibicao": null,
+                    "aliexpress_url": "string",
+                    "aliexpress_id": "string",
+                    "aliexpress_seller": "string",
+                    "enable_dropshipping": "string",
+                    "ncm_code": "string",
+                    "gshop_condition": "string",
+                    "gshop_age_group": "string",
+                    "gshop_gender": "string",
+                    "video_url": null,
+                    "video_id": null,
+                    "video_platform": null,
+                    "images": [
+                      {
+                        "id": "string",
+                        "product_id": "string",
+                        "ordem": "string",
+                        "foto": "string",
+                        "token_cad": null,
+                        "created_at": "string"
+                      }
+                    ],
+                    "kits": [
+                      {}
+                    ],
+                    "variants": [
+                      {
+                        "id": "string",
+                        "product_id": "string",
+                        "sku": "string",
+                        "bar_code": "string",
+                        "automatic_stock": "string",
+                        "quantity": "string",
+                        "weight": "string",
+                        "width": "string",
+                        "height": "string",
+                        "length": "string",
+                        "title": "string",
+                        "cost_price": "string",
+                        "sale_price": "string",
+                        "old_price": "string",
+                        "slug": "string",
+                        "aliexpress_sku": "string",
+                        "image_id": null
+                      }
+                    ],
+                    "variants_items": [
+                      {
+                        "id": "string",
+                        "product_id": "string",
+                        "titulo": "string",
+                        "valores": "string"
+                      }
+                    ]
+                  }
+                },
+                "Sem variação": {
+                  "value": {
+                    "id": "string",
+                    "has_variant": "string",
+                    "status": "string",
+                    "title": "string",
+                    "description": "string",
+                    "payment_gateway": "string",
+                    "product_type": "string",
+                    "shipping_type": "string",
+                    "fixed_shipping_price": "string",
+                    "fixed_shipping_time": "string",
+                    "seo_title": "string",
+                    "seo_desc": "string",
+                    "seo_url": "string",
+                    "created_at": "string",
+                    "updated_at": "string",
+                    "has_kits": "string",
+                    "ordem_exibicao": null,
+                    "aliexpress_url": "string",
+                    "aliexpress_id": "string",
+                    "aliexpress_seller": "string",
+                    "enable_dropshipping": "string",
+                    "ncm_code": "string",
+                    "gshop_condition": "string",
+                    "gshop_age_group": "string",
+                    "gshop_gender": "string",
+                    "video_url": null,
+                    "video_id": null,
+                    "video_platform": null,
+                    "images": [
+                      {
+                        "id": "string",
+                        "product_id": "string",
+                        "ordem": "string",
+                        "foto": "string",
+                        "token_cad": null,
+                        "created_at": "string"
+                      }
+                    ],
+                    "kits": [
+                      {}
+                    ],
+                    "variants": [
+                      {
+                        "id": "string",
+                        "product_id": "string",
+                        "sku": "string",
+                        "bar_code": "string",
+                        "automatic_stock": "string",
+                        "quantity": "string",
+                        "weight": "string",
+                        "width": "string",
+                        "height": "string",
+                        "length": "string",
+                        "title": "string",
+                        "cost_price": "string",
+                        "sale_price": "string",
+                        "old_price": "string",
+                        "slug": "string",
+                        "aliexpress_sku": "string",
+                        "image_id": null
+                      }
+                    ],
+                    "variants_items": [
+                      {
+                        "id": "string",
+                        "product_id": "string",
+                        "titulo": "string",
+                        "valores": "string"
+                      }
+                    ]
+                  }
+                }
               }
             }
           },
@@ -1052,8 +1271,38 @@
             "content": {
               "application/json": {
                 "schema": {
+                  "description": "",
                   "type": "object",
-                  "properties": {}
+                  "properties": {
+                    "result": {
+                      "type": "array",
+                      "uniqueItems": true,
+                      "minItems": 1,
+                      "items": {
+                        "required": [
+                          "message"
+                        ],
+                        "properties": {
+                          "message": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        }
+                      }
+                    },
+                    "status_code": {
+                      "type": "number"
+                    },
+                    "method": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "result",
+                    "status_code",
+                    "method"
+                  ]
                 },
                 "examples": {
                   "Success": {
@@ -1173,7 +1422,8 @@
                     "minLength": 1
                   },
                   "ncm_code": {
-                    "type": "string"
+                    "type": "string",
+                    "minLength": 1
                   },
                   "gshop_condition": {
                     "type": "string",
@@ -1190,6 +1440,58 @@
                   "video_url": {},
                   "video_id": {},
                   "video_platform": {},
+                  "product_id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "sku": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "automatic_stock": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "quantity": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "weight": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "width": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "height": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "length": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "cost_price": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "sale_price": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "old_price": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "slug": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "aliexpress_sku": {
+                    "type": "string"
+                  },
+                  "image_id": {},
                   "images": {
                     "type": "array",
                     "uniqueItems": true,
@@ -1229,6 +1531,8 @@
                   },
                   "kits": {
                     "type": "array",
+                    "uniqueItems": true,
+                    "minItems": 1,
                     "items": {
                       "required": [],
                       "properties": {}
@@ -1271,7 +1575,8 @@
                           "minLength": 1
                         },
                         "bar_code": {
-                          "type": "string"
+                          "type": "string",
+                          "minLength": 1
                         },
                         "automatic_stock": {
                           "type": "string",
@@ -1382,14 +1687,178 @@
                   "gshop_condition",
                   "gshop_age_group",
                   "gshop_gender",
+                  "product_id",
+                  "sku",
+                  "automatic_stock",
+                  "quantity",
+                  "weight",
+                  "width",
+                  "height",
+                  "length",
+                  "cost_price",
+                  "sale_price",
+                  "old_price",
+                  "slug",
+                  "aliexpress_sku",
                   "images",
                   "kits",
                   "variants",
                   "variants_items"
                 ]
+              },
+              "examples": {
+                "Com variação": {
+                  "value": {
+                    "id": "string",
+                    "has_variant": "string",
+                    "status": "string",
+                    "title": "string",
+                    "description": "string",
+                    "payment_gateway": "string",
+                    "product_type": "string",
+                    "shipping_type": "string",
+                    "fixed_shipping_price": "string",
+                    "fixed_shipping_time": "string",
+                    "seo_title": "string",
+                    "seo_desc": "string",
+                    "seo_url": "string",
+                    "created_at": "string",
+                    "updated_at": "string",
+                    "has_kits": "string",
+                    "ordem_exibicao": null,
+                    "aliexpress_url": "string",
+                    "aliexpress_id": "string",
+                    "aliexpress_seller": "string",
+                    "enable_dropshipping": "string",
+                    "ncm_code": "string",
+                    "gshop_condition": "string",
+                    "gshop_age_group": "string",
+                    "gshop_gender": "string",
+                    "video_url": null,
+                    "video_id": null,
+                    "video_platform": null,
+                    "images": [
+                      {
+                        "id": "string",
+                        "product_id": "string",
+                        "ordem": "string",
+                        "foto": "string",
+                        "token_cad": null,
+                        "created_at": "string"
+                      }
+                    ],
+                    "kits": [
+                      {}
+                    ],
+                    "variants": [
+                      {
+                        "id": "string",
+                        "product_id": "string",
+                        "sku": "string",
+                        "bar_code": "string",
+                        "automatic_stock": "string",
+                        "quantity": "string",
+                        "weight": "string",
+                        "width": "string",
+                        "height": "string",
+                        "length": "string",
+                        "title": "string",
+                        "cost_price": "string",
+                        "sale_price": "string",
+                        "old_price": "string",
+                        "slug": "string",
+                        "aliexpress_sku": "string",
+                        "image_id": null
+                      }
+                    ],
+                    "variants_items": [
+                      {
+                        "id": "string",
+                        "product_id": "string",
+                        "titulo": "string",
+                        "valores": "string"
+                      }
+                    ]
+                  }
+                },
+                "Sem variação": {
+                  "value": {
+                    "id": "string",
+                    "has_variant": "string",
+                    "status": "string",
+                    "title": "string",
+                    "description": "string",
+                    "payment_gateway": "string",
+                    "product_type": "string",
+                    "shipping_type": "string",
+                    "fixed_shipping_price": "string",
+                    "fixed_shipping_time": "string",
+                    "seo_title": "string",
+                    "seo_desc": "string",
+                    "seo_url": "string",
+                    "created_at": "string",
+                    "updated_at": "string",
+                    "has_kits": "string",
+                    "ordem_exibicao": null,
+                    "aliexpress_url": "string",
+                    "aliexpress_id": "string",
+                    "aliexpress_seller": "string",
+                    "enable_dropshipping": "string",
+                    "ncm_code": "string",
+                    "gshop_condition": "string",
+                    "gshop_age_group": "string",
+                    "gshop_gender": "string",
+                    "video_url": null,
+                    "video_id": null,
+                    "video_platform": null,
+                    "images": [
+                      {
+                        "id": "string",
+                        "product_id": "string",
+                        "ordem": "string",
+                        "foto": "string",
+                        "token_cad": null,
+                        "created_at": "string"
+                      }
+                    ],
+                    "kits": [
+                      {}
+                    ],
+                    "variants": [
+                      {
+                        "id": "string",
+                        "product_id": "string",
+                        "sku": "string",
+                        "bar_code": "string",
+                        "automatic_stock": "string",
+                        "quantity": "string",
+                        "weight": "string",
+                        "width": "string",
+                        "height": "string",
+                        "length": "string",
+                        "title": "string",
+                        "cost_price": "string",
+                        "sale_price": "string",
+                        "old_price": "string",
+                        "slug": "string",
+                        "aliexpress_sku": "string",
+                        "image_id": null
+                      }
+                    ],
+                    "variants_items": [
+                      {
+                        "id": "string",
+                        "product_id": "string",
+                        "titulo": "string",
+                        "valores": "string"
+                      }
+                    ]
+                  }
+                }
               }
             }
-          }
+          },
+          "description": ""
         },
         "parameters": [
           {
