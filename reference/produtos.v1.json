@@ -1190,42 +1190,13 @@
                     ],
                     "kits": [
                       {}
-                    ],
-                    "variants": [
-                      {
-                        "id": "string",
-                        "product_id": "string",
-                        "sku": "string",
-                        "bar_code": "string",
-                        "automatic_stock": "string",
-                        "quantity": "string",
-                        "weight": "string",
-                        "width": "string",
-                        "height": "string",
-                        "length": "string",
-                        "title": "string",
-                        "cost_price": "string",
-                        "sale_price": "string",
-                        "old_price": "string",
-                        "slug": "string",
-                        "aliexpress_sku": "string",
-                        "image_id": null
-                      }
-                    ],
-                    "variants_items": [
-                      {
-                        "id": "string",
-                        "product_id": "string",
-                        "titulo": "string",
-                        "valores": "string"
-                      }
                     ]
                   }
                 }
               }
             }
           },
-          "description": ""
+          "description": "Verificar o corpo da requisição (produto com ou sem variação **{has_variant}**)"
         },
         "parameters": [
           {
@@ -1858,7 +1829,7 @@
               }
             }
           },
-          "description": ""
+          "description": "Verificar o corpo da requisição (produto com ou sem variação **{has_variant}**)"
         },
         "parameters": [
           {
