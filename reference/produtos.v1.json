@@ -43,44 +43,7 @@
                       "uniqueItems": true,
                       "minItems": 1,
                       "items": {
-                        "required": [
-                          "id",
-                          "has_variant",
-                          "status",
-                          "title",
-                          "description",
-                          "product_type",
-                          "shipping_type",
-                          "fixed_shipping_price",
-                          "fixed_shipping_time",
-                          "seo_title",
-                          "seo_desc",
-                          "seo_url",
-                          "created_at",
-                          "updated_at",
-                          "has_kits",
-                          "aliexpress_url",
-                          "aliexpress_id",
-                          "aliexpress_seller",
-                          "enable_dropshipping",
-                          "ncm_code",
-                          "gshop_condition",
-                          "gshop_age_group",
-                          "gshop_gender",
-                          "product_id",
-                          "sku",
-                          "automatic_stock",
-                          "quantity",
-                          "weight",
-                          "width",
-                          "height",
-                          "length",
-                          "cost_price",
-                          "sale_price",
-                          "old_price",
-                          "slug",
-                          "aliexpress_sku"
-                        ],
+                        "type": "object",
                         "properties": {
                           "id": {
                             "type": "string",
@@ -103,18 +66,6 @@
                             "minLength": 1
                           },
                           "product_type": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "shipping_type": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "fixed_shipping_price": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "fixed_shipping_time": {
                             "type": "string",
                             "minLength": 1
                           },
@@ -173,95 +124,28 @@
                             "type": "string",
                             "minLength": 1
                           },
-                          "video_url": {},
-                          "video_id": {},
-                          "video_platform": {},
-                          "product_id": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "sku": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "automatic_stock": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "quantity": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "weight": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "width": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "height": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "length": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "cost_price": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "sale_price": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "old_price": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "slug": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "aliexpress_sku": {
+                          "video_url": {
                             "type": "string"
                           },
-                          "image_id": {},
+                          "video_id": {
+                            "type": "string"
+                          },
+                          "video_platform": {
+                            "type": "string"
+                          },
                           "variants_items": {
                             "type": "array",
                             "uniqueItems": true,
                             "minItems": 1,
                             "items": {
-                              "required": [
-                                "id",
-                                "product_id",
-                                "sku",
-                                "automatic_stock",
-                                "quantity",
-                                "weight",
-                                "width",
-                                "height",
-                                "length",
-                                "title",
-                                "cost_price",
-                                "sale_price",
-                                "old_price",
-                                "slug",
-                                "aliexpress_sku"
-                              ],
+                              "type": "object",
                               "properties": {
-                                "id": {
-                                  "type": "string",
-                                  "minLength": 1
-                                },
-                                "product_id": {
-                                  "type": "string",
-                                  "minLength": 1
-                                },
                                 "sku": {
                                   "type": "string",
                                   "minLength": 1
+                                },
+                                "bar_code": {
+                                  "type": "string"
                                 },
                                 "automatic_stock": {
                                   "type": "string",
@@ -311,8 +195,28 @@
                                   "type": "string",
                                   "minLength": 1
                                 },
-                                "image_id": {}
-                              }
+                                "image_id": {
+                                  "type": "string",
+                                  "minLength": 1
+                                }
+                              },
+                              "required": [
+                                "sku",
+                                "bar_code",
+                                "automatic_stock",
+                                "quantity",
+                                "weight",
+                                "width",
+                                "height",
+                                "length",
+                                "title",
+                                "cost_price",
+                                "sale_price",
+                                "old_price",
+                                "slug",
+                                "aliexpress_sku",
+                                "image_id"
+                              ]
                             }
                           },
                           "images": {
@@ -320,22 +224,8 @@
                             "uniqueItems": true,
                             "minItems": 1,
                             "items": {
-                              "required": [
-                                "id",
-                                "product_id",
-                                "ordem",
-                                "foto",
-                                "created_at"
-                              ],
+                              "type": "object",
                               "properties": {
-                                "id": {
-                                  "type": "string",
-                                  "minLength": 1
-                                },
-                                "product_id": {
-                                  "type": "string",
-                                  "minLength": 1
-                                },
                                 "ordem": {
                                   "type": "string",
                                   "minLength": 1
@@ -348,17 +238,46 @@
                                   "type": "string",
                                   "minLength": 1
                                 }
-                              }
+                              },
+                              "required": [
+                                "ordem",
+                                "foto",
+                                "created_at"
+                              ]
                             }
                           },
                           "kits": {
                             "type": "array",
                             "items": {
-                              "required": [],
-                              "properties": {}
+                              "type": "object"
                             }
                           }
-                        }
+                        },
+                        "required": [
+                          "id",
+                          "has_variant",
+                          "status",
+                          "title",
+                          "description",
+                          "product_type",
+                          "seo_title",
+                          "seo_desc",
+                          "seo_url",
+                          "created_at",
+                          "updated_at",
+                          "has_kits",
+                          "aliexpress_url",
+                          "aliexpress_id",
+                          "aliexpress_seller",
+                          "enable_dropshipping",
+                          "ncm_code",
+                          "gshop_condition",
+                          "gshop_age_group",
+                          "gshop_gender",
+                          "video_url",
+                          "video_id",
+                          "video_platform"
+                        ]
                       }
                     },
                     "status_code": {
@@ -386,9 +305,6 @@
                           "title": "Fones de ouvido com microfone gamer",
                           "description": "<p>Compatibilidade: Com 3.5mm interface, é adequado para telefone inteligente, tablet pc, laptop, para ps4, para novo xbox one e outros 3.5mm dispositivo de áudio Captador exato microfone: Microfone omnidirecional ajustável, pode pegar sons com grande sensibilidade e reduz o ruído de fundo para melhores chapéus no jogo. Ótimo som: A unidade de movimentação de 40mm pode trazer-te campo de som vívido, claridade de som, sensação de choque de som, capaz de vários jogos. Confortável para usar: Usa almofadas macias sobre ouvido, que é confortável para degastar longo tempo. Tiara ajustável é adequado para tamanhos diferentes da cabeça. Conveniente para usar: 1. quando conectado a XBOX-ONE, é necessário um conversor de áudio (conversor de áudio não incluído) 2. pode conectar diretamente ao ps4 3. quando conectado ao pc, um cabo conversor 2 em 1 é necessário (cabo conversor não incluído) Para alguns projetos do portátil que são projetos do único furo, pode usar diretamente para atingir a função do microfone. Se um cabo conversor 2 em 1 for necessário para você, você pode contate-nos para comprá-lo.</p>\r\n\r\n<p>Especificação:</p>\r\n\r\n<p>Unidade de unidade de diâmetro: 40mm Faixa de frequência: 20-20khz Sensibilidade: 106db Impedância: 32ohm Sensibilidade do microfone:-54db Direcionalidade: omni-direcional Comprimento do cabo: aprox. 1.2m / 3.93ft Entrada plug: 3.5mm plugue Cor: preto Peso: 150g / 6.65oz</p>\r\n\r\n<p>Pacote incluído:</p>\r\n\r\n<p>1 * fone de ouvido para jogos</p>\r\n",
                           "product_type": "fisico",
-                          "shipping_type": "fixo",
-                          "fixed_shipping_price": "24.52",
-                          "fixed_shipping_time": "30",
                           "seo_title": "Fones de ouvido com microfone gamer",
                           "seo_desc": "Compatibilidade: Com 3.5mm interface, é adequado para telefone inteligente, tablet pc, laptop, para ps4, para novo xbox one e outros 3.5mm dispositivo de áudio Captador exato microfone: Microfone omnidirecional ajustável, pode pegar sons com grande s",
                           "seo_url": "fones-de-ouvido-com-microfone-gamer",
@@ -408,8 +324,6 @@
                           "video_platform": null,
                           "variants_items": [
                             {
-                              "id": "72",
-                              "product_id": "11",
                               "sku": "SDKO18V57",
                               "automatic_stock": "1",
                               "quantity": "1000",
@@ -426,8 +340,6 @@
                               "image_id": null
                             },
                             {
-                              "id": "73",
-                              "product_id": "11",
                               "sku": "IO2UMJTEX",
                               "automatic_stock": "1",
                               "quantity": "1000",
@@ -446,29 +358,21 @@
                           ],
                           "images": [
                             {
-                              "id": "124",
-                              "product_id": "11",
                               "ordem": "99",
                               "foto": "f8ed1a14674d12fc8bf475866b4b70fe.jpg",
                               "created_at": "2021-03-08 18:18:53"
                             },
                             {
-                              "id": "125",
-                              "product_id": "11",
                               "ordem": "99",
                               "foto": "0ba0799757099f4733abafe3e3a31916.jpg",
                               "created_at": "2021-03-08 18:18:53"
                             },
                             {
-                              "id": "126",
-                              "product_id": "11",
                               "ordem": "99",
                               "foto": "d24e3b23ce64e4c2bc4df58978af95ef.png",
                               "created_at": "2021-03-08 19:40:01"
                             },
                             {
-                              "id": "123",
-                              "product_id": "11",
                               "ordem": "99",
                               "foto": "0dbdfc2cdfbf34b901b1a23da4a060e7.jpg",
                               "created_at": "2021-03-08 14:39:54"
@@ -485,15 +389,12 @@
                     "value": {
                       "result": [
                         {
-                          "id": "112",
+                          "id": "13",
                           "has_variant": "0",
                           "status": "1",
                           "title": "Brinco geométrico coração de cristal",
                           "description": "<ul>\r\n\t<li>Marca: MENGJIQIAO</li>\r\n\t<li>Tipo de Metal: Liga de zinco</li>\r\n\t<li>Estilo: TRENDY</li>\r\n\t<li>Estilo Fino ou Fashion: Moda</li>\r\n\t<li>Tipo de Item: brincos</li>\r\n\t<li>Tipo de Brinco: Gota</li>\r\n\t<li>Formato / Estampa: coração</li>\r\n\t<li>Material: Zirconia Cúbica</li>\r\n\t<li>Gênero: Mulheres</li>\r\n</ul>\r\n",
                           "product_type": "fisico",
-                          "shipping_type": "fixo",
-                          "fixed_shipping_price": "5.90",
-                          "fixed_shipping_time": "30",
                           "seo_title": "Brinco geométrico coração de cristal",
                           "seo_desc": " Marca: MENGJIQIAO Tipo de Metal: Liga de zinco Estilo: TRENDY Estilo Fino ou Fashion: Moda Tipo de Item: brincos Tipo de Brinco: Gota Formato / Estampa: coração Material: Zirconia Cúbica Gênero: Mulheres ",
                           "seo_url": "brinco-geometrico-coracao-de-cristal",
@@ -511,8 +412,8 @@
                           "video_url": "https://www.youtube.com/watch?v=ZbsOutWBisY",
                           "video_id": "ZbsOutWBisY",
                           "video_platform": "youtube",
-                          "product_id": "13",
                           "sku": "0WHAALRON",
+                          "bar_code": "",
                           "automatic_stock": "1",
                           "quantity": "1000",
                           "weight": "1",
@@ -524,27 +425,20 @@
                           "old_price": "0.00",
                           "slug": "u",
                           "aliexpress_sku": "",
-                          "image_id": null,
                           "images": [
                             {
-                              "id": "115",
-                              "product_id": "13",
                               "ordem": "1",
-                              "foto": "a29d7f274e3e4422d11404746bfb7709.jpg",
+                              "foto": "http://192.168.0.45/landingpagesistema/uploads/img/bikecenter-bikes/products/13/a29d7f274e3e4422d11404746bfb7709.jpg",
                               "created_at": "2021-03-02 13:50:15"
                             },
                             {
-                              "id": "114",
-                              "product_id": "13",
                               "ordem": "2",
-                              "foto": "cffb71e4f5569e2a68449a3663a11b79.jpg",
+                              "foto": "http://192.168.0.45/landingpagesistema/uploads/img/bikecenter-bikes/products/13/cffb71e4f5569e2a68449a3663a11b79.jpg",
                               "created_at": "2021-03-02 13:50:15"
                             },
                             {
-                              "id": "113",
-                              "product_id": "13",
                               "ordem": "3",
-                              "foto": "28ab2126bc49449f89603e57014b3931.jpg",
+                              "foto": "http://192.168.0.45/landingpagesistema/uploads/img/bikecenter-bikes/products/13/28ab2126bc49449f89603e57014b3931.jpg",
                               "created_at": "2021-03-02 13:50:15"
                             }
                           ],
