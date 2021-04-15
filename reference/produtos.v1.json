@@ -970,23 +970,16 @@
               "examples": {
                 "Com variação": {
                   "value": {
-                    "id": "string",
-                    "has_variant": "string",
+                    "has_variant": "1",
                     "status": "string",
                     "title": "string",
                     "description": "string",
                     "payment_gateway": "string",
                     "product_type": "string",
-                    "shipping_type": "string",
-                    "fixed_shipping_price": "string",
-                    "fixed_shipping_time": "string",
                     "seo_title": "string",
                     "seo_desc": "string",
                     "seo_url": "string",
-                    "created_at": "string",
-                    "updated_at": "string",
                     "has_kits": "string",
-                    "ordem_exibicao": null,
                     "aliexpress_url": "string",
                     "aliexpress_id": "string",
                     "aliexpress_seller": "string",
@@ -1001,20 +994,21 @@
                     "images": [
                       {
                         "id": "string",
-                        "product_id": "string",
-                        "ordem": "string",
-                        "foto": "string",
-                        "token_cad": null,
-                        "created_at": "string"
+                        "position": "string",
+                        "image": "string"
                       }
                     ],
                     "kits": [
-                      {}
+                      {
+                        "quantity": "string",
+                        "title": "string",
+                        "cost_price": "string",
+                        "sale_price": "string",
+                        "old_price": "string"
+                      }
                     ],
                     "variants": [
                       {
-                        "id": "string",
-                        "product_id": "string",
                         "sku": "string",
                         "bar_code": "string",
                         "automatic_stock": "string",
@@ -1029,15 +1023,7 @@
                         "old_price": "string",
                         "slug": "string",
                         "aliexpress_sku": "string",
-                        "image_id": null
-                      }
-                    ],
-                    "variants_items": [
-                      {
-                        "id": "string",
-                        "product_id": "string",
-                        "titulo": "string",
-                        "valores": "string"
+                        "image_id": "string"
                       }
                     ]
                   }
