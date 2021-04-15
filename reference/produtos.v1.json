@@ -973,12 +973,10 @@
                     "has_variant": "1",
                     "status": "string",
                     "title": "string",
-                    "description": "string",
                     "payment_gateway": "string",
                     "product_type": "string",
                     "seo_title": "string",
                     "seo_desc": "string",
-                    "seo_url": "string",
                     "has_kits": "string",
                     "aliexpress_url": "string",
                     "aliexpress_id": "string",
@@ -1024,6 +1022,12 @@
                         "slug": "string",
                         "aliexpress_sku": "string",
                         "image_id": "string"
+                      }
+                    ],
+                    "variants_items": [
+                      {
+                        "title": "string",
+                        "variant_values": "string,string"
                       }
                     ]
                   }
