@@ -1048,6 +1048,19 @@
                     "video_url": "string",
                     "video_id": "string",
                     "video_platform": "string",
+                    "sku": "string",
+                    "automatic_stock": "string",
+                    "quantity": "string",
+                    "weight": "string",
+                    "width": "string",
+                    "height": "string",
+                    "length": "string",
+                    "cost_price": "string",
+                    "sale_price": "string",
+                    "old_price": "string",
+                    "slug": "string",
+                    "aliexpress_sku": "string",
+                    "image_id": "string",
                     "images": [
                       {
                         "id": "string",
@@ -1059,7 +1072,13 @@
                       }
                     ],
                     "kits": [
-                      {}
+                      {
+                        "quantity": "string",
+                        "title": "string",
+                        "cost_price": "string",
+                        "sale_price": "string",
+                        "old_price": "string"
+                      }
                     ]
                   }
                 }
