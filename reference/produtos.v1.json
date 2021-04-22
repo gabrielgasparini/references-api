@@ -580,7 +580,10 @@
                     "value": {
                       "result": [
                         {
-                          "message": "Created product"
+                          "message": "Created product",
+                          "product": [
+                            "array_product"
+                          ]
                         }
                       ],
                       "status_code": 201,
@@ -1169,7 +1172,10 @@
                     "value": {
                       "result": [
                         {
-                          "message": "Product update"
+                          "message": "Product update",
+                          "product": [
+                            "array_product"
+                          ]
                         }
                       ],
                       "status_code": 200,
