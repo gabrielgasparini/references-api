@@ -1521,7 +1521,6 @@
                     "created_at": "string",
                     "updated_at": "string",
                     "has_kits": "string",
-                    "ordem_exibicao": null,
                     "aliexpress_url": "string",
                     "aliexpress_id": "string",
                     "aliexpress_seller": "string",
@@ -1535,21 +1534,22 @@
                     "video_platform": null,
                     "images": [
                       {
-                        "id": "string",
-                        "product_id": "string",
                         "ordem": "string",
                         "foto": "string",
-                        "token_cad": null,
                         "created_at": "string"
                       }
                     ],
                     "kits": [
-                      {}
+                      {
+                        "quantity": "string",
+                        "title": "string",
+                        "cost_price": "string",
+                        "sale_price": "string",
+                        "old_price": "string"
+                      }
                     ],
                     "variants": [
                       {
-                        "id": "string",
-                        "product_id": "string",
                         "sku": "string",
                         "bar_code": "string",
                         "automatic_stock": "string",
@@ -1564,15 +1564,13 @@
                         "old_price": "string",
                         "slug": "string",
                         "aliexpress_sku": "string",
-                        "image_id": null
+                        "image_id": "string"
                       }
                     ],
                     "variants_items": [
                       {
-                        "id": "string",
-                        "product_id": "string",
-                        "titulo": "string",
-                        "valores": "string"
+                        "title": "string",
+                        "variant_values": "string"
                       }
                     ]
                   }
@@ -1595,7 +1593,6 @@
                     "created_at": "string",
                     "updated_at": "string",
                     "has_kits": "string",
-                    "ordem_exibicao": null,
                     "aliexpress_url": "string",
                     "aliexpress_id": "string",
                     "aliexpress_seller": "string",
@@ -1607,46 +1604,34 @@
                     "video_url": null,
                     "video_id": null,
                     "video_platform": null,
+                    "sku": "string",
+                    "bar_code": "string",
+                    "automatic_stock": "string",
+                    "quantity": "string",
+                    "weight": "string",
+                    "width": "string",
+                    "height": "string",
+                    "length": "string",
+                    "cost_price": "string",
+                    "sale_price": "string",
+                    "old_price": "string",
+                    "slug": "string",
+                    "aliexpress_sku": "string",
+                    "image_id": "string",
                     "images": [
                       {
-                        "id": "string",
-                        "product_id": "string",
                         "ordem": "string",
                         "foto": "string",
-                        "token_cad": null,
                         "created_at": "string"
                       }
                     ],
                     "kits": [
-                      {}
-                    ],
-                    "variants": [
                       {
-                        "id": "string",
-                        "product_id": "string",
-                        "sku": "string",
-                        "bar_code": "string",
-                        "automatic_stock": "string",
                         "quantity": "string",
-                        "weight": "string",
-                        "width": "string",
-                        "height": "string",
-                        "length": "string",
                         "title": "string",
                         "cost_price": "string",
                         "sale_price": "string",
-                        "old_price": "string",
-                        "slug": "string",
-                        "aliexpress_sku": "string",
-                        "image_id": null
-                      }
-                    ],
-                    "variants_items": [
-                      {
-                        "id": "string",
-                        "product_id": "string",
-                        "titulo": "string",
-                        "valores": "string"
+                        "old_price": "string"
                       }
                     ]
                   }
