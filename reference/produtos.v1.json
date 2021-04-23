@@ -2223,44 +2223,29 @@
                           "has_variant": "1",
                           "status": "1",
                           "title": "Fones de ouvido com microfone gamer",
-                          "description": "<p>Compatibilidade: Com 3.5mm interface, é adequado para telefone inteligente, tablet pc, laptop, para ps4, para novo xbox one e outros 3.5mm dispositivo de áudio Captador exato microfone: Microfone omnidirecional ajustável, pode pegar sons com grande sensibilidade e reduz o ruído de fundo para melhores chapéus no jogo. Ótimo som: A unidade de movimentação de 40mm pode trazer-te campo de som vívido, claridade de som, sensação de choque de som, capaz de vários jogos. Confortável para usar: Usa almofadas macias sobre ouvido, que é confortável para degastar longo tempo. Tiara ajustável é adequado para tamanhos diferentes da cabeça. Conveniente para usar: 1. quando conectado a XBOX-ONE, é necessário um conversor de áudio (conversor de áudio não incluído) 2. pode conectar diretamente ao ps4 3. quando conectado ao pc, um cabo conversor 2 em 1 é necessário (cabo conversor não incluído) Para alguns projetos do portátil que são projetos do único furo, pode usar diretamente para atingir a função do microfone. Se um cabo conversor 2 em 1 for necessário para você, você pode contate-nos para comprá-lo.</p>\r\n\r\n<p>Especificação:</p>\r\n\r\n<p>Unidade de unidade de diâmetro: 40mm Faixa de frequência: 20-20khz Sensibilidade: 106db Impedância: 32ohm Sensibilidade do microfone:-54db Direcionalidade: omni-direcional Comprimento do cabo: aprox. 1.2m / 3.93ft Entrada plug: 3.5mm plugue Cor: preto Peso: 150g / 6.65oz</p>\r\n\r\n<p>Pacote incluído:</p>\r\n\r\n<p>1 * fone de ouvido para jogos</p>\r\n",
                           "product_type": "fisico",
                           "seo_title": "Fones de ouvido com microfone gamer",
                           "seo_desc": "Compatibilidade: Com 3.5mm interface, é adequado para telefone inteligente, tablet pc, laptop, para ps4, para novo xbox one e outros 3.5mm dispositivo de áudio Captador exato microfone: Microfone omnidirecional ajustável, pode pegar sons com grande s",
                           "seo_url": "fones-de-ouvido-com-microfone-gamer",
                           "created_at": "2021-02-24 12:44:00",
-                          "updated_at": "2021-02-24 19:36:19",
+                          "updated_at": "2021-04-10 13:24:55",
                           "has_kits": "0",
-                          "aliexpress_url": "https://pt.aliexpress.com/item/4000965583644.html",
-                          "aliexpress_id": "4000965583644",
-                          "aliexpress_seller": "cn1521906482whmt",
-                          "enable_dropshipping": "1",
+                          "aliexpress_url": "",
+                          "aliexpress_id": "",
+                          "aliexpress_seller": "",
+                          "enable_dropshipping": "0",
                           "ncm_code": "",
                           "gshop_condition": "new",
                           "gshop_age_group": "adult",
                           "gshop_gender": "unisex",
-                          "video_url": null,
-                          "video_id": null,
-                          "video_platform": null,
-                          "variants_items": [
+                          "video_url": "",
+                          "video_id": "",
+                          "video_platform": "",
+                          "variants": [
                             {
-                              "sku": "SDKO18V57",
-                              "automatic_stock": "1",
-                              "quantity": "1000",
-                              "weight": "100",
-                              "width": "11",
-                              "height": "2",
-                              "length": "16",
-                              "title": "Preto/Vermelho",
-                              "cost_price": "61.49",
-                              "sale_price": "149.90",
-                              "old_price": "0.00",
-                              "slug": "cor:pretovermelho",
-                              "aliexpress_sku": "14:10#Blackred",
-                              "image_id": null
-                            },
-                            {
+                              "id": "185",
                               "sku": "IO2UMJTEX",
+                              "bar_code": "",
                               "automatic_stock": "1",
                               "quantity": "1000",
                               "weight": "100",
@@ -2273,32 +2258,85 @@
                               "old_price": "279.90",
                               "slug": "cor:pretoazul",
                               "aliexpress_sku": "14:173#Blackblue",
-                              "image_id": null
+                              "image_id": "0",
+                              "variant_token": null
+                            },
+                            {
+                              "id": "184",
+                              "sku": "SDKO18V57",
+                              "bar_code": "",
+                              "automatic_stock": "1",
+                              "quantity": "1000",
+                              "weight": "100",
+                              "width": "11",
+                              "height": "2",
+                              "length": "16",
+                              "title": "Preto/Vermelho",
+                              "cost_price": "61.49",
+                              "sale_price": "149.90",
+                              "old_price": "0.00",
+                              "slug": "cor:pretovermelho",
+                              "aliexpress_sku": "14:10#Blackred",
+                              "image_id": "164",
+                              "variant_token": null
                             }
                           ],
+                          "variants_items": [],
                           "images": [
                             {
-                              "ordem": "99",
-                              "foto": "f8ed1a14674d12fc8bf475866b4b70fe.jpg",
-                              "created_at": "2021-03-08 18:18:53"
+                              "id": "124",
+                              "position": "2",
+                              "image": "http://192.168.0.45/landingpagesistema/uploads/img/store-pet/products/11/images/f8ed1a14674d12fc8bf475866b4b70fe.jpg",
+                              "created_at": "2021-03-08 18:18:53",
+                              "reference": null
                             },
                             {
-                              "ordem": "99",
-                              "foto": "0ba0799757099f4733abafe3e3a31916.jpg",
-                              "created_at": "2021-03-08 18:18:53"
+                              "id": "125",
+                              "position": "3",
+                              "image": "http://192.168.0.45/landingpagesistema/uploads/img/store-pet/products/11/images/0ba0799757099f4733abafe3e3a31916.jpg",
+                              "created_at": "2021-03-08 18:18:53",
+                              "reference": null
                             },
                             {
-                              "ordem": "99",
-                              "foto": "d24e3b23ce64e4c2bc4df58978af95ef.png",
-                              "created_at": "2021-03-08 19:40:01"
+                              "id": "126",
+                              "position": "4",
+                              "image": "http://192.168.0.45/landingpagesistema/uploads/img/store-pet/products/11/images/d24e3b23ce64e4c2bc4df58978af95ef.png",
+                              "created_at": "2021-03-08 19:40:01",
+                              "reference": null
                             },
                             {
-                              "ordem": "99",
-                              "foto": "0dbdfc2cdfbf34b901b1a23da4a060e7.jpg",
-                              "created_at": "2021-03-08 14:39:54"
+                              "id": "123",
+                              "position": "1",
+                              "image": "http://192.168.0.45/landingpagesistema/uploads/img/store-pet/products/11/images/0dbdfc2cdfbf34b901b1a23da4a060e7.jpg",
+                              "created_at": "2021-03-08 14:39:54",
+                              "reference": null
+                            },
+                            {
+                              "id": "164",
+                              "position": "5",
+                              "image": "http://192.168.0.45/landingpagesistema/uploads/img/store-pet/products/11/images/cfdac8fe640c1035bdb566302eaff11b.jpg",
+                              "created_at": "2021-04-10 13:24:43",
+                              "reference": null
                             }
                           ],
-                          "kits": []
+                          "kits": [
+                            {
+                              "quantity": "5",
+                              "title": "5 pares",
+                              "cost_price": "0.00",
+                              "sale_price": "49.90",
+                              "old_price": "0.00",
+                              "token": ""
+                            },
+                            {
+                              "quantity": "2",
+                              "title": "2 pares",
+                              "cost_price": "0.00",
+                              "sale_price": "28.90",
+                              "old_price": "0.00",
+                              "token": ""
+                            }
+                          ]
                         }
                       ],
                       "status_code": 200,
