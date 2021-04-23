@@ -689,6 +689,13 @@
                           "message": {
                             "type": "string",
                             "minLength": 1
+                          },
+                          "product": {
+                            "type": "array",
+                            "items": {
+                              "required": [],
+                              "properties": {}
+                            }
                           }
                         }
                       }
@@ -1312,6 +1319,13 @@
                           "message": {
                             "type": "string",
                             "minLength": 1
+                          },
+                          "product": {
+                            "type": "array",
+                            "items": {
+                              "required": [],
+                              "properties": {}
+                            }
                           }
                         }
                       }
