@@ -1698,133 +1698,186 @@
               "examples": {
                 "Com variação": {
                   "value": {
-                    "id": "string",
-                    "has_variant": "string",
-                    "status": "string",
-                    "title": "string",
-                    "description": "string",
-                    "payment_gateway": "string",
-                    "product_type": "string",
-                    "shipping_type": "string",
-                    "fixed_shipping_price": "string",
-                    "fixed_shipping_time": "string",
-                    "seo_title": "string",
-                    "seo_desc": "string",
-                    "seo_url": "string",
-                    "created_at": "string",
-                    "updated_at": "string",
-                    "has_kits": "string",
-                    "aliexpress_url": "string",
-                    "aliexpress_id": "string",
-                    "aliexpress_seller": "string",
-                    "enable_dropshipping": "string",
-                    "ncm_code": "string",
-                    "gshop_condition": "string",
-                    "gshop_age_group": "string",
-                    "gshop_gender": "string",
-                    "video_url": null,
-                    "video_id": null,
-                    "video_platform": null,
+                    "has_variant": "1",
+                    "status": "1",
+                    "title": "Teste Com Variação",
+                    "product_type": "fisico",
+                    "has_kits": "1",
+                    "aliexpress_url": "1",
+                    "aliexpress_id": "2",
+                    "aliexpress_seller": "3",
+                    "enable_dropshipping": "0",
+                    "ncm_code": "4",
+                    "gshop_condition": "1",
+                    "gshop_age_group": "2",
+                    "gshop_gender": "3",
+                    "video_url": "https://www.youtube.com/watch?v=1RnyZRpDSEc",
+                    "video_id": "1RnyZRpDSEc",
+                    "video_platform": "YouTube",
+                    "variants": [
+                      {
+                        "sku": "123",
+                        "bar_code": "1234",
+                        "automatic_stock": "1",
+                        "quantity": "2",
+                        "weight": "0",
+                        "width": "0",
+                        "height": "0",
+                        "length": "0",
+                        "title": "M|Azul",
+                        "cost_price": "0.00",
+                        "sale_price": "60.00",
+                        "old_price": "0.00",
+                        "slug": "tamanho:m|cor:azul",
+                        "aliexpress_sku": "12345",
+                        "image_id": "1"
+                      },
+                      {
+                        "sku": "",
+                        "bar_code": "",
+                        "automatic_stock": "1",
+                        "quantity": "2",
+                        "weight": "0",
+                        "width": "0",
+                        "height": "0",
+                        "length": "0",
+                        "title": "M|Preto",
+                        "cost_price": "0.00",
+                        "sale_price": "60.00",
+                        "old_price": "0.00",
+                        "slug": "tamanho:m|cor:preto",
+                        "aliexpress_sku": "",
+                        "image_id": "2"
+                      },
+                      {
+                        "sku": "",
+                        "bar_code": "",
+                        "automatic_stock": "1",
+                        "quantity": "2",
+                        "weight": "0",
+                        "width": "0",
+                        "height": "0",
+                        "length": "0",
+                        "title": "p|Azul",
+                        "cost_price": "0.00",
+                        "sale_price": "60.00",
+                        "old_price": "0.00",
+                        "slug": "tamanho:p|cor:azul",
+                        "aliexpress_sku": "",
+                        "image_id": "3"
+                      },
+                      {
+                        "sku": "60123OITO",
+                        "bar_code": "",
+                        "automatic_stock": "1",
+                        "quantity": "2",
+                        "weight": "0",
+                        "width": "0",
+                        "height": "0",
+                        "length": "0",
+                        "title": "p|Preto",
+                        "cost_price": "0.00",
+                        "sale_price": "60.00",
+                        "old_price": "0.00",
+                        "slug": "tamanho:p|cor:preto",
+                        "aliexpress_sku": "",
+                        "image_id": "3"
+                      }
+                    ],
                     "images": [
                       {
-                        "ordem": "string",
-                        "foto": "string",
-                        "created_at": "string"
+                        "id": "1",
+                        "position": "2",
+                        "image": "https://www.aplicaplacaspersonalizadas.com.br/uploads/img/550/placa-sinalizacao-cuidado-area-de-teste-9e8ab87cf00f1eba23f4f4103251680a.jpg"
+                      },
+                      {
+                        "id": "2",
+                        "position": "1",
+                        "image": "https://www.aplicaplacaspersonalizadas.com.br/uploads/img/550/placa-sinalizacao-cuidado-area-de-teste-9e8ab87cf00f1eba23f4f4103251680a.jpg"
+                      },
+                      {
+                        "id": "3",
+                        "position": "3",
+                        "image": "https://www.aplicaplacaspersonalizadas.com.br/uploads/img/550/placa-sinalizacao-cuidado-area-de-teste-9e8ab87cf00f1eba23f4f4103251680a.jpg"
                       }
                     ],
                     "kits": [
                       {
-                        "quantity": "string",
-                        "title": "string",
-                        "cost_price": "string",
-                        "sale_price": "string",
-                        "old_price": "string"
-                      }
-                    ],
-                    "variants": [
-                      {
-                        "sku": "string",
-                        "bar_code": "string",
-                        "automatic_stock": "string",
-                        "quantity": "string",
-                        "weight": "string",
-                        "width": "string",
-                        "height": "string",
-                        "length": "string",
-                        "title": "string",
-                        "cost_price": "string",
-                        "sale_price": "string",
-                        "old_price": "string",
-                        "slug": "string",
-                        "aliexpress_sku": "string",
-                        "image_id": "string"
+                        "quantity": "2",
+                        "title": "2",
+                        "cost_price": "20.00",
+                        "sale_price": "30.00",
+                        "old_price": "25.00"
                       }
                     ],
                     "variants_items": [
                       {
-                        "title": "string",
-                        "variant_values": "string"
+                        "title": "Cor",
+                        "variant_values": "Azul,Preto"
+                      },
+                      {
+                        "title": "Tamanho",
+                        "variant_values": "p,m"
                       }
                     ]
                   }
                 },
                 "Sem variação": {
                   "value": {
-                    "id": "string",
-                    "has_variant": "string",
-                    "status": "string",
-                    "title": "string",
-                    "description": "string",
-                    "payment_gateway": "string",
-                    "product_type": "string",
-                    "shipping_type": "string",
-                    "fixed_shipping_price": "string",
-                    "fixed_shipping_time": "string",
-                    "seo_title": "string",
-                    "seo_desc": "string",
-                    "seo_url": "string",
-                    "created_at": "string",
-                    "updated_at": "string",
-                    "has_kits": "string",
-                    "aliexpress_url": "string",
-                    "aliexpress_id": "string",
-                    "aliexpress_seller": "string",
-                    "enable_dropshipping": "string",
-                    "ncm_code": "string",
-                    "gshop_condition": "string",
-                    "gshop_age_group": "string",
-                    "gshop_gender": "string",
-                    "video_url": null,
-                    "video_id": null,
-                    "video_platform": null,
-                    "sku": "string",
-                    "bar_code": "string",
-                    "automatic_stock": "string",
-                    "quantity": "string",
-                    "weight": "string",
-                    "width": "string",
-                    "height": "string",
-                    "length": "string",
-                    "cost_price": "string",
-                    "sale_price": "string",
-                    "old_price": "string",
-                    "slug": "string",
-                    "aliexpress_sku": "string",
-                    "image_id": "string",
+                    "has_variant": "0",
+                    "status": "1",
+                    "title": "Teste Sem Variação",
+                    "product_type": "fisico",
+                    "has_kits": "1",
+                    "aliexpress_url": "1",
+                    "aliexpress_id": "2",
+                    "aliexpress_seller": "3",
+                    "enable_dropshipping": "0",
+                    "ncm_code": "4",
+                    "gshop_condition": "1",
+                    "gshop_age_group": "2",
+                    "gshop_gender": "3",
+                    "video_url": "https://www.youtube.com/watch?v=1RnyZRpDSEc",
+                    "video_id": "1RnyZRpDSEc",
+                    "video_platform": "YouTube",
+                    "sku": "123",
+                    "bar_code": "",
+                    "automatic_stock": "1",
+                    "quantity": "2",
+                    "weight": "0",
+                    "width": "0",
+                    "height": "0",
+                    "length": "0",
+                    "cost_price": "0.00",
+                    "sale_price": "60.00",
+                    "old_price": "0.00",
+                    "slug": "tamanho:m|cor:azul",
+                    "aliexpress_sku": "12345",
+                    "image_id": "1",
                     "images": [
                       {
-                        "ordem": "string",
-                        "foto": "string",
-                        "created_at": "string"
+                        "id": "1",
+                        "position": "2",
+                        "image": "https://www.aplicaplacaspersonalizadas.com.br/uploads/img/550/placa-sinalizacao-cuidado-area-de-teste-9e8ab87cf00f1eba23f4f4103251680a.jpg"
+                      },
+                      {
+                        "id": "2",
+                        "position": "1",
+                        "image": "https://www.aplicaplacaspersonalizadas.com.br/uploads/img/550/placa-sinalizacao-cuidado-area-de-teste-9e8ab87cf00f1eba23f4f4103251680a.jpg"
+                      },
+                      {
+                        "id": "3",
+                        "position": "3",
+                        "image": "https://www.aplicaplacaspersonalizadas.com.br/uploads/img/550/placa-sinalizacao-cuidado-area-de-teste-9e8ab87cf00f1eba23f4f4103251680a.jpg"
                       }
                     ],
                     "kits": [
                       {
-                        "quantity": "string",
-                        "title": "string",
-                        "cost_price": "string",
-                        "sale_price": "string",
-                        "old_price": "string"
+                        "quantity": "2",
+                        "title": "2",
+                        "cost_price": "20.00",
+                        "sale_price": "30.00",
+                        "old_price": "25.00"
                       }
                     ]
                   }
