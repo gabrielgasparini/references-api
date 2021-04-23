@@ -501,25 +501,24 @@
                           "has_variant": "0",
                           "status": "1",
                           "title": "Brinco geométrico coração de cristal",
-                          "description": "<ul>\r\n\t<li>Marca: MENGJIQIAO</li>\r\n\t<li>Tipo de Metal: Liga de zinco</li>\r\n\t<li>Estilo: TRENDY</li>\r\n\t<li>Estilo Fino ou Fashion: Moda</li>\r\n\t<li>Tipo de Item: brincos</li>\r\n\t<li>Tipo de Brinco: Gota</li>\r\n\t<li>Formato / Estampa: coração</li>\r\n\t<li>Material: Zirconia Cúbica</li>\r\n\t<li>Gênero: Mulheres</li>\r\n</ul>\r\n",
                           "product_type": "fisico",
                           "seo_title": "Brinco geométrico coração de cristal",
                           "seo_desc": " Marca: MENGJIQIAO Tipo de Metal: Liga de zinco Estilo: TRENDY Estilo Fino ou Fashion: Moda Tipo de Item: brincos Tipo de Brinco: Gota Formato / Estampa: coração Material: Zirconia Cúbica Gênero: Mulheres ",
                           "seo_url": "brinco-geometrico-coracao-de-cristal",
                           "created_at": "2021-02-24 20:11:12",
-                          "updated_at": "2021-03-02 14:47:48",
+                          "updated_at": "2021-04-22 17:56:20",
                           "has_kits": "1",
-                          "aliexpress_url": "https://pt.aliexpress.com/item/4000484073609.html",
-                          "aliexpress_id": "4000484073609",
-                          "aliexpress_seller": "cn1004066985",
-                          "enable_dropshipping": "1",
+                          "aliexpress_url": "",
+                          "aliexpress_id": "",
+                          "aliexpress_seller": "",
+                          "enable_dropshipping": "0",
                           "ncm_code": "1235489",
                           "gshop_condition": "new",
                           "gshop_age_group": "adult",
                           "gshop_gender": "female",
                           "video_url": "https://www.youtube.com/watch?v=ZbsOutWBisY",
                           "video_id": "ZbsOutWBisY",
-                          "video_platform": "youtube",
+                          "video_platform": "",
                           "sku": "0WHAALRON",
                           "bar_code": "",
                           "automatic_stock": "1",
@@ -533,24 +532,48 @@
                           "old_price": "0.00",
                           "slug": "u",
                           "aliexpress_sku": "",
+                          "variant_token": "2a23610d335a22b5df7b72daa0e2289a97439641f7ab337e51777333d615a11c",
+                          "variants_items": [],
                           "images": [
                             {
-                              "ordem": "1",
-                              "foto": "http://192.168.0.45/landingpagesistema/uploads/img/bikecenter-bikes/products/13/a29d7f274e3e4422d11404746bfb7709.jpg",
-                              "created_at": "2021-03-02 13:50:15"
+                              "position": "2",
+                              "image": "http://192.168.0.45/landingpagesistema/uploads/img/store-pet/products/13/images/d0f28835541c7e7b541f99192b7a069c.jpg",
+                              "created_at": "2021-04-22 17:56:15",
+                              "reference": null
                             },
                             {
-                              "ordem": "2",
-                              "foto": "http://192.168.0.45/landingpagesistema/uploads/img/bikecenter-bikes/products/13/cffb71e4f5569e2a68449a3663a11b79.jpg",
-                              "created_at": "2021-03-02 13:50:15"
-                            },
-                            {
-                              "ordem": "3",
-                              "foto": "http://192.168.0.45/landingpagesistema/uploads/img/bikecenter-bikes/products/13/28ab2126bc49449f89603e57014b3931.jpg",
-                              "created_at": "2021-03-02 13:50:15"
+                              "position": "1",
+                              "image": "http://192.168.0.45/landingpagesistema/uploads/img/store-pet/products/13/images/506ae336f0ffee000b59a97947f15260.jpg",
+                              "created_at": "2021-04-22 17:56:15",
+                              "reference": null
                             }
                           ],
-                          "kits": []
+                          "kits": [
+                            {
+                              "quantity": "5",
+                              "title": "5 pares",
+                              "cost_price": "0.00",
+                              "sale_price": "49.90",
+                              "old_price": "0.00",
+                              "token": ""
+                            },
+                            {
+                              "quantity": "2",
+                              "title": "2 pares",
+                              "cost_price": "0.00",
+                              "sale_price": "28.90",
+                              "old_price": "0.00",
+                              "token": ""
+                            },
+                            {
+                              "quantity": "1",
+                              "title": "1 Par",
+                              "cost_price": "0.00",
+                              "sale_price": "16.54",
+                              "old_price": "0.00",
+                              "token": ""
+                            }
+                          ]
                         }
                       ],
                       "status_code": 200,
