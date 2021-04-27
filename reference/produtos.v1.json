@@ -164,7 +164,8 @@
                       "minLength": 1
                     },
                     "image_id": {
-                      "type": "number"
+                      "type": "number",
+                      "description": "Regarding the image id of the image array"
                     },
                     "variants": {
                       "type": "array",
@@ -718,7 +719,8 @@
                   },
                   "video_platform": {
                     "type": "string",
-                    "minLength": 1
+                    "minLength": 1,
+                    "description": "youtube ou vimeo"
                   },
                   "sku": {
                     "type": "string",
@@ -879,38 +881,6 @@
                           "type": "string",
                           "minLength": 1,
                           "description": "photo url"
-                        }
-                      }
-                    }
-                  },
-                  "kits": {
-                    "type": "array",
-                    "uniqueItems": true,
-                    "minItems": 1,
-                    "items": {
-                      "type": "object",
-                      "properties": {
-                        "quantity": {
-                          "type": "number"
-                        },
-                        "title": {
-                          "type": "string",
-                          "minLength": 1
-                        },
-                        "cost_price": {
-                          "type": "string",
-                          "minLength": 1,
-                          "description": "double (0.00)"
-                        },
-                        "sale_price": {
-                          "type": "string",
-                          "minLength": 1,
-                          "description": "double (0.00)"
-                        },
-                        "old_price": {
-                          "type": "string",
-                          "minLength": 1,
-                          "description": "double (0.00)"
                         }
                       }
                     }
@@ -1300,7 +1270,8 @@
                   },
                   "video_platform": {
                     "type": "string",
-                    "minLength": 1
+                    "minLength": 1,
+                    "description": "youtube or vimeo"
                   },
                   "sku": {
                     "type": "string",
@@ -2008,38 +1979,6 @@
                           "image": {
                             "type": "string",
                             "minLength": 1
-                          }
-                        }
-                      }
-                    },
-                    "kits": {
-                      "type": "array",
-                      "uniqueItems": true,
-                      "minItems": 1,
-                      "items": {
-                        "type": "object",
-                        "properties": {
-                          "quantity": {
-                            "type": "number"
-                          },
-                          "title": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "cost_price": {
-                            "type": "string",
-                            "minLength": 1,
-                            "description": "double (0.00)"
-                          },
-                          "sale_price": {
-                            "type": "string",
-                            "minLength": 1,
-                            "description": "double (0.00)"
-                          },
-                          "old_price": {
-                            "type": "string",
-                            "minLength": 1,
-                            "description": "double (0.00)"
                           }
                         }
                       }
