@@ -4,7 +4,7 @@ As soluções dessa aplicação utilizam **Bearer Token**, em todas as requisiç
 
 Cada landingpage tem a sua chave de autenticação única. Sua chave de autenticação é disponibilizada na barra superior do painel administrativo da sua landingpage.
 
-Todas as requisições para a nossa solução seguem o mesmo prefixo de URL: [https://api.lpquevende.com.br/{slug-landingpage}]
+Todas as requisições para a nossa solução seguem o mesmo prefixo de URL: `https://api.lpquevende.com.br/{slug-landingpage}`
 
 **{slug-landingpage}**: é o nome da loja utilizado para referência na nossa API, é o mesmo prefixo utilizado para a domínio da landingpage.
 
