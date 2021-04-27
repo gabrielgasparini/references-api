@@ -1397,7 +1397,8 @@
                   },
                   "has_kits": {
                     "type": "string",
-                    "minLength": 1
+                    "minLength": 1,
+                    "description": "produto com kit: 1 | sem kit: 0"
                   },
                   "aliexpress_url": {
                     "type": "string",
@@ -1565,24 +1566,7 @@
                           "type": "string",
                           "minLength": 1
                         }
-                      },
-                      "required": [
-                        "sku",
-                        "bar_code",
-                        "automatic_stock",
-                        "quantity",
-                        "weight",
-                        "width",
-                        "height",
-                        "length",
-                        "title",
-                        "cost_price",
-                        "sale_price",
-                        "old_price",
-                        "slug",
-                        "aliexpress_sku",
-                        "image_id"
-                      ]
+                      }
                     }
                   },
                   "images": {
@@ -1604,12 +1588,7 @@
                           "type": "string",
                           "minLength": 1
                         }
-                      },
-                      "required": [
-                        "id",
-                        "position",
-                        "image"
-                      ]
+                      }
                     }
                   },
                   "kits": {
@@ -1639,14 +1618,7 @@
                           "type": "string",
                           "minLength": 1
                         }
-                      },
-                      "required": [
-                        "quantity",
-                        "title",
-                        "cost_price",
-                        "sale_price",
-                        "old_price"
-                      ]
+                      }
                     }
                   },
                   "variants_items": {
@@ -1664,48 +1636,12 @@
                           "type": "string",
                           "minLength": 1
                         }
-                      },
-                      "required": [
-                        "title",
-                        "variant_values"
-                      ]
+                      }
                     }
                   }
                 },
                 "required": [
-                  "status",
-                  "title",
-                  "product_type",
-                  "has_kits",
-                  "aliexpress_url",
-                  "aliexpress_id",
-                  "aliexpress_seller",
-                  "enable_dropshipping",
-                  "ncm_code",
-                  "gshop_condition",
-                  "gshop_age_group",
-                  "gshop_gender",
-                  "video_url",
-                  "video_id",
-                  "video_platform",
-                  "sku",
-                  "bar_code",
-                  "automatic_stock",
-                  "quantity",
-                  "weight",
-                  "width",
-                  "height",
-                  "length",
-                  "cost_price",
-                  "sale_price",
-                  "old_price",
-                  "slug",
-                  "aliexpress_sku",
-                  "image_id",
-                  "variants",
-                  "images",
-                  "kits",
-                  "variants_items"
+                  "has_variant"
                 ]
               },
               "examples": {
