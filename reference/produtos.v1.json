@@ -45,7 +45,8 @@
                     },
                     "status": {
                       "type": "string",
-                      "minLength": 1
+                      "minLength": 1,
+                      "description": "1 is active, 0 is inactive"
                     },
                     "title": {
                       "type": "string",
@@ -53,7 +54,8 @@
                     },
                     "product_type": {
                       "type": "string",
-                      "minLength": 1
+                      "minLength": 1,
+                      "description": "physical or digital"
                     },
                     "has_kits": {
                       "type": "string",
@@ -703,7 +705,8 @@
                   },
                   "status": {
                     "type": "string",
-                    "minLength": 1
+                    "minLength": 1,
+                    "description": "1 is active, 0 is inactive"
                   },
                   "title": {
                     "type": "string",
@@ -711,7 +714,8 @@
                   },
                   "product_type": {
                     "type": "string",
-                    "minLength": 1
+                    "minLength": 1,
+                    "description": "physical or digital"
                   },
                   "has_kits": {
                     "type": "string",
@@ -1294,7 +1298,8 @@
                   },
                   "status": {
                     "type": "string",
-                    "minLength": 1
+                    "minLength": 1,
+                    "description": "1 is active, 0 is inactive"
                   },
                   "title": {
                     "type": "string",
@@ -1302,7 +1307,8 @@
                   },
                   "product_type": {
                     "type": "string",
-                    "minLength": 1
+                    "minLength": 1,
+                    "description": "physical or digital"
                   },
                   "has_kits": {
                     "type": "string",
@@ -1864,7 +1870,8 @@
                     },
                     "status": {
                       "type": "string",
-                      "minLength": 1
+                      "minLength": 1,
+                      "description": "1 is active, 0 is inactive"
                     },
                     "title": {
                       "type": "string",
@@ -1872,7 +1879,8 @@
                     },
                     "product_type": {
                       "type": "string",
-                      "minLength": 1
+                      "minLength": 1,
+                      "description": "physical or digital"
                     },
                     "has_kits": {
                       "type": "string",
