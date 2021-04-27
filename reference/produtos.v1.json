@@ -1148,7 +1148,7 @@
               }
             }
           },
-          "description": "Verificar o corpo da requisição (produto com (1) ou sem variação (0) **{has_variant}**)"
+          "description": "Verificar o corpo da requisição (produto com variação (1) ou sem variação (0) **{has_variant}**)"
         },
         "parameters": [
           {
@@ -1729,7 +1729,7 @@
               }
             }
           },
-          "description": "Verificar o corpo da requisição (produto com (1) ou sem variação (0) **{has_variant}**)"
+          "description": "Verificar o corpo da requisição (produto com variação (1) ou sem variação (0) **{has_variant}**)"
         },
         "parameters": [
           {
