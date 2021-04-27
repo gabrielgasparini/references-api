@@ -39,13 +39,11 @@
                   "type": "object",
                   "properties": {
                     "has_variant": {
-                      "type": "string",
-                      "minLength": 1,
+                      "type": "number",
                       "description": "produto com variação: 1 | sem variação: 0"
                     },
                     "status": {
-                      "type": "string",
-                      "minLength": 1,
+                      "type": "number",
                       "description": "1 is active, 0 is inactive"
                     },
                     "title": {
@@ -58,9 +56,8 @@
                       "description": "physical or digital"
                     },
                     "has_kits": {
-                      "type": "string",
-                      "minLength": 1,
-                      "description": "produto com kit: 1 | sem kit: 0"
+                      "description": "produto com kit: 1 | sem kit: 0",
+                      "type": "number"
                     },
                     "aliexpress_url": {
                       "type": "string",
@@ -107,7 +104,8 @@
                     },
                     "video_platform": {
                       "type": "string",
-                      "minLength": 1
+                      "minLength": 1,
+                      "description": "youtube or vimeo"
                     },
                     "sku": {
                       "type": "string",
@@ -117,12 +115,10 @@
                       "type": "string"
                     },
                     "automatic_stock": {
-                      "type": "string",
-                      "minLength": 1
+                      "type": "number"
                     },
                     "quantity": {
-                      "type": "string",
-                      "minLength": 1
+                      "type": "number"
                     },
                     "weight": {
                       "type": "string",
@@ -168,8 +164,7 @@
                       "minLength": 1
                     },
                     "image_id": {
-                      "type": "string",
-                      "minLength": 1
+                      "type": "number"
                     },
                     "variants": {
                       "type": "array",
@@ -191,8 +186,7 @@
                             "minLength": 1
                           },
                           "quantity": {
-                            "type": "string",
-                            "minLength": 1
+                            "type": "number"
                           },
                           "weight": {
                             "type": "string",
@@ -239,8 +233,7 @@
                             "minLength": 1
                           },
                           "image_id": {
-                            "type": "string",
-                            "minLength": 1
+                            "type": "number"
                           }
                         }
                       }
@@ -252,49 +245,12 @@
                       "items": {
                         "type": "object",
                         "properties": {
-                          "id": {
-                            "type": "string",
-                            "minLength": 1
-                          },
                           "position": {
-                            "type": "string",
-                            "minLength": 1
+                            "type": "number"
                           },
                           "image": {
                             "type": "string",
                             "minLength": 1
-                          }
-                        }
-                      }
-                    },
-                    "kits": {
-                      "type": "array",
-                      "uniqueItems": true,
-                      "minItems": 1,
-                      "items": {
-                        "type": "object",
-                        "properties": {
-                          "quantity": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "title": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "cost_price": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "sale_price": {
-                            "type": "string",
-                            "minLength": 1,
-                            "description": "double (0.00)"
-                          },
-                          "old_price": {
-                            "type": "string",
-                            "minLength": 1,
-                            "description": "double (0.00)"
                           }
                         }
                       }
@@ -330,90 +286,33 @@
                     "value": {
                       "result": [
                         {
-                          "id": "35",
+                          "id": "40",
                           "has_variant": "1",
                           "status": "1",
-                          "title": "Teste Com Variação",
-                          "product_type": "fisico",
-                          "seo_title": "Ellos design - Criação de Sites",
-                          "seo_desc": "Criação de Sites e Marketing Digital",
-                          "seo_url": "teste-com-variacao",
-                          "created_at": "2021-04-15 17:38:47",
+                          "title": "Teste Com Variação - v2",
+                          "product_type": "physical",
+                          "seo_title": "Teste Com Variação - v2",
+                          "seo_desc": "Teste Com Variação - v2",
+                          "seo_url": "teste-com-variacao-v2",
+                          "created_at": "2021-04-27 14:34:15",
                           "updated_at": null,
                           "has_kits": "1",
-                          "aliexpress_url": "",
-                          "aliexpress_id": "",
-                          "aliexpress_seller": "",
-                          "enable_dropshipping": "0",
-                          "ncm_code": "",
-                          "gshop_condition": "",
-                          "gshop_age_group": "",
-                          "gshop_gender": "",
+                          "aliexpress_url": "https://pt.aliexpress.com/item/1005001966343675.html?spm=a2g0o.productlist.0.0.50987d6bVePs3F&algo_pvid=b561f8de-5011-46de-9f21-4401fbcf2f67&algo_expid=b561f8de-5011-46de-9f21-4401fbcf2f67-0&btsid=0bb0624316195439930215026e95b5&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_",
+                          "aliexpress_id": "1255477",
+                          "aliexpress_seller": "888888",
+                          "enable_dropshipping": "1",
+                          "ncm_code": "4",
+                          "gshop_condition": "1",
+                          "gshop_age_group": "2",
+                          "gshop_gender": "3",
                           "video_url": "https://www.youtube.com/watch?v=1RnyZRpDSEc",
                           "video_id": "1RnyZRpDSEc",
-                          "video_platform": "",
+                          "video_platform": "YouTube",
                           "variants": [
                             {
-                              "id": "220",
-                              "sku": "",
-                              "bar_code": "",
-                              "automatic_stock": "1",
-                              "quantity": "2",
-                              "weight": "0",
-                              "width": "0",
-                              "height": "0",
-                              "length": "0",
-                              "title": "M|Azul",
-                              "cost_price": "0.00",
-                              "sale_price": "60.00",
-                              "old_price": "0.00",
-                              "slug": "tamanho:m|cor:azul",
-                              "aliexpress_sku": "",
-                              "image_id": "222",
-                              "variant_token": null
-                            },
-                            {
-                              "id": "221",
-                              "sku": "",
-                              "bar_code": "",
-                              "automatic_stock": "1",
-                              "quantity": "2",
-                              "weight": "0",
-                              "width": "0",
-                              "height": "0",
-                              "length": "0",
-                              "title": "M|Preto",
-                              "cost_price": "0.00",
-                              "sale_price": "60.00",
-                              "old_price": "0.00",
-                              "slug": "tamanho:m|cor:preto",
-                              "aliexpress_sku": "",
-                              "image_id": "223",
-                              "variant_token": null
-                            },
-                            {
-                              "id": "222",
-                              "sku": "",
-                              "bar_code": "",
-                              "automatic_stock": "1",
-                              "quantity": "2",
-                              "weight": "0",
-                              "width": "0",
-                              "height": "0",
-                              "length": "0",
-                              "title": "p|Azul",
-                              "cost_price": "0.00",
-                              "sale_price": "60.00",
-                              "old_price": "0.00",
-                              "slug": "tamanho:p|cor:azul",
-                              "aliexpress_sku": "",
-                              "image_id": "224",
-                              "variant_token": null
-                            },
-                            {
-                              "id": "223",
+                              "id": "250",
                               "sku": "60123OITO",
-                              "bar_code": "",
+                              "bar_code": "60123OITOBARCODE",
                               "automatic_stock": "1",
                               "quantity": "2",
                               "weight": "0",
@@ -426,42 +325,99 @@
                               "old_price": "0.00",
                               "slug": "tamanho:p|cor:preto",
                               "aliexpress_sku": "",
-                              "image_id": "224",
+                              "image_id": "242",
+                              "variant_token": null
+                            },
+                            {
+                              "id": "249",
+                              "sku": "789",
+                              "bar_code": "7890",
+                              "automatic_stock": "1",
+                              "quantity": "2",
+                              "weight": "0",
+                              "width": "0",
+                              "height": "0",
+                              "length": "0",
+                              "title": "p|Azul",
+                              "cost_price": "0.00",
+                              "sale_price": "60.00",
+                              "old_price": "0.00",
+                              "slug": "tamanho:p|cor:azul",
+                              "aliexpress_sku": "",
+                              "image_id": "242",
+                              "variant_token": null
+                            },
+                            {
+                              "id": "248",
+                              "sku": "456",
+                              "bar_code": "4567",
+                              "automatic_stock": "1",
+                              "quantity": "2",
+                              "weight": "0",
+                              "width": "0",
+                              "height": "0",
+                              "length": "0",
+                              "title": "M|Preto",
+                              "cost_price": "0.00",
+                              "sale_price": "60.00",
+                              "old_price": "0.00",
+                              "slug": "tamanho:m|cor:preto",
+                              "aliexpress_sku": "",
+                              "image_id": "241",
+                              "variant_token": null
+                            },
+                            {
+                              "id": "247",
+                              "sku": "123",
+                              "bar_code": "1234",
+                              "automatic_stock": "1",
+                              "quantity": "2",
+                              "weight": "10",
+                              "width": "20",
+                              "height": "30",
+                              "length": "40",
+                              "title": "M|Azul",
+                              "cost_price": "0.00",
+                              "sale_price": "60.00",
+                              "old_price": "0.00",
+                              "slug": "tamanho:m|cor:azul",
+                              "aliexpress_sku": "12345",
+                              "image_id": "240",
                               "variant_token": null
                             }
                           ],
                           "variants_items": [
                             {
-                              "id": "50",
-                              "title": "Cor",
-                              "variant_values": "Azul,Preto"
-                            },
-                            {
-                              "id": "51",
+                              "id": "59",
                               "title": "Tamanho",
                               "variant_values": "p,m"
+                            },
+                            {
+                              "id": "58",
+                              "title": "Cor",
+                              "variant_values": "Azul,Preto"
                             }
                           ],
                           "images": [
                             {
-                              "id": "223",
-                              "position": "1",
-                              "image": "http://192.168.0.45/landingpagesistema/uploads/img/store-pet/products/35/images/5df272b363bf992823c35a17c81a1b64.jpg",
-                              "created_at": "2021-04-15 17:38:49",
-                              "reference": "2"
-                            },
-                            {
-                              "id": "222",
+                              "id": "240",
                               "position": "2",
-                              "image": "http://192.168.0.45/landingpagesistema/uploads/img/store-pet/products/35/images/a1bc77d046ab1b99479e1a826e62fb22.jpg",
-                              "created_at": "2021-04-15 17:38:49",
+                              "image": "http://192.168.0.45/landingpagesistema/uploads/store-pet/products/40/images/840d1536189cff76898d95a53af5fa12.jpg",
+                              "created_at": "2021-04-27 14:34:17",
                               "reference": "1"
                             },
                             {
-                              "id": "224",
+                              "id": "241",
+                              "position": "1",
+                              "image": "http://192.168.0.45/landingpagesistema/uploads/store-pet/products/40/images/7e4164f85d87b1044b8aabae74d88a35.jpg",
+                              "created_at": "2021-04-27 14:34:17",
+                              "reference": "2"
+                            },
+                            {
+                              "id": "242",
                               "position": "3",
-                              "image": "http://192.168.0.45/landingpagesistema/uploads/img/store-pet/products/35/images/97b93073c2c8e471a99f8120d480a0cd.jpg",
-                              "created_at": "2021-04-15 17:38:49",
+                              "image": "http://192.168.0.45/landingpagesistema/uploads/store-pet/products/40/images/c8ff43da2338a05c585f6f015b7ddcce.jpg",
+                              "created_at": "2021-04-27 14:34:17",
                               "reference": "3"
                             }
                           ]
