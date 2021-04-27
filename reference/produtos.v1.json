@@ -112,7 +112,8 @@
                       "type": "string"
                     },
                     "automatic_stock": {
-                      "type": "number"
+                      "type": "number",
+                      "description": "1 is active, 0 is inactive"
                     },
                     "quantity": {
                       "type": "number"
@@ -727,7 +728,8 @@
                   },
                   "automatic_stock": {
                     "type": "string",
-                    "minLength": 1
+                    "minLength": 1,
+                    "description": "1 is active, 0 is inactive"
                   },
                   "quantity": {
                     "description": "",
