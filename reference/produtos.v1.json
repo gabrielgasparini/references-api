@@ -744,7 +744,8 @@
                 "properties": {
                   "has_variant": {
                     "type": "string",
-                    "minLength": 1
+                    "minLength": 1,
+                    "description": "produto com variação: 1 | sem variação: 0"
                   },
                   "status": {
                     "type": "string",
@@ -866,23 +867,7 @@
                     "uniqueItems": true,
                     "minItems": 1,
                     "items": {
-                      "required": [
-                        "sku",
-                        "bar_code",
-                        "automatic_stock",
-                        "quantity",
-                        "weight",
-                        "width",
-                        "height",
-                        "length",
-                        "title",
-                        "cost_price",
-                        "sale_price",
-                        "old_price",
-                        "slug",
-                        "aliexpress_sku",
-                        "image_id"
-                      ],
+                      "type": "object",
                       "properties": {
                         "sku": {
                           "type": "string",
@@ -944,7 +929,24 @@
                           "type": "string",
                           "minLength": 1
                         }
-                      }
+                      },
+                      "required": [
+                        "sku",
+                        "bar_code",
+                        "automatic_stock",
+                        "quantity",
+                        "weight",
+                        "width",
+                        "height",
+                        "length",
+                        "title",
+                        "cost_price",
+                        "sale_price",
+                        "old_price",
+                        "slug",
+                        "aliexpress_sku",
+                        "image_id"
+                      ]
                     }
                   },
                   "images": {
@@ -952,11 +954,7 @@
                     "uniqueItems": true,
                     "minItems": 1,
                     "items": {
-                      "required": [
-                        "id",
-                        "position",
-                        "image"
-                      ],
+                      "type": "object",
                       "properties": {
                         "id": {
                           "type": "string",
@@ -970,7 +968,12 @@
                           "type": "string",
                           "minLength": 1
                         }
-                      }
+                      },
+                      "required": [
+                        "id",
+                        "position",
+                        "image"
+                      ]
                     }
                   },
                   "kits": {
@@ -978,13 +981,7 @@
                     "uniqueItems": true,
                     "minItems": 1,
                     "items": {
-                      "required": [
-                        "quantity",
-                        "title",
-                        "cost_price",
-                        "sale_price",
-                        "old_price"
-                      ],
+                      "type": "object",
                       "properties": {
                         "quantity": {
                           "type": "string",
@@ -1006,7 +1003,14 @@
                           "type": "string",
                           "minLength": 1
                         }
-                      }
+                      },
+                      "required": [
+                        "quantity",
+                        "title",
+                        "cost_price",
+                        "sale_price",
+                        "old_price"
+                      ]
                     }
                   },
                   "variants_items": {
@@ -1014,10 +1018,7 @@
                     "uniqueItems": true,
                     "minItems": 1,
                     "items": {
-                      "required": [
-                        "title",
-                        "variant_values"
-                      ],
+                      "type": "object",
                       "properties": {
                         "title": {
                           "type": "string",
@@ -1027,12 +1028,15 @@
                           "type": "string",
                           "minLength": 1
                         }
-                      }
+                      },
+                      "required": [
+                        "title",
+                        "variant_values"
+                      ]
                     }
                   }
                 },
                 "required": [
-                  "has_variant",
                   "status",
                   "title",
                   "product_type",
@@ -1376,7 +1380,8 @@
                 "properties": {
                   "has_variant": {
                     "type": "string",
-                    "minLength": 1
+                    "minLength": 1,
+                    "description": "produto com variação: 1 | sem variação: 0"
                   },
                   "status": {
                     "type": "string",
@@ -1498,23 +1503,7 @@
                     "uniqueItems": true,
                     "minItems": 1,
                     "items": {
-                      "required": [
-                        "sku",
-                        "bar_code",
-                        "automatic_stock",
-                        "quantity",
-                        "weight",
-                        "width",
-                        "height",
-                        "length",
-                        "title",
-                        "cost_price",
-                        "sale_price",
-                        "old_price",
-                        "slug",
-                        "aliexpress_sku",
-                        "image_id"
-                      ],
+                      "type": "object",
                       "properties": {
                         "sku": {
                           "type": "string",
@@ -1576,7 +1565,24 @@
                           "type": "string",
                           "minLength": 1
                         }
-                      }
+                      },
+                      "required": [
+                        "sku",
+                        "bar_code",
+                        "automatic_stock",
+                        "quantity",
+                        "weight",
+                        "width",
+                        "height",
+                        "length",
+                        "title",
+                        "cost_price",
+                        "sale_price",
+                        "old_price",
+                        "slug",
+                        "aliexpress_sku",
+                        "image_id"
+                      ]
                     }
                   },
                   "images": {
@@ -1584,11 +1590,7 @@
                     "uniqueItems": true,
                     "minItems": 1,
                     "items": {
-                      "required": [
-                        "id",
-                        "position",
-                        "image"
-                      ],
+                      "type": "object",
                       "properties": {
                         "id": {
                           "type": "string",
@@ -1602,7 +1604,12 @@
                           "type": "string",
                           "minLength": 1
                         }
-                      }
+                      },
+                      "required": [
+                        "id",
+                        "position",
+                        "image"
+                      ]
                     }
                   },
                   "kits": {
@@ -1610,13 +1617,7 @@
                     "uniqueItems": true,
                     "minItems": 1,
                     "items": {
-                      "required": [
-                        "quantity",
-                        "title",
-                        "cost_price",
-                        "sale_price",
-                        "old_price"
-                      ],
+                      "type": "object",
                       "properties": {
                         "quantity": {
                           "type": "string",
@@ -1638,7 +1639,14 @@
                           "type": "string",
                           "minLength": 1
                         }
-                      }
+                      },
+                      "required": [
+                        "quantity",
+                        "title",
+                        "cost_price",
+                        "sale_price",
+                        "old_price"
+                      ]
                     }
                   },
                   "variants_items": {
@@ -1646,10 +1654,7 @@
                     "uniqueItems": true,
                     "minItems": 1,
                     "items": {
-                      "required": [
-                        "title",
-                        "variant_values"
-                      ],
+                      "type": "object",
                       "properties": {
                         "title": {
                           "type": "string",
@@ -1659,12 +1664,15 @@
                           "type": "string",
                           "minLength": 1
                         }
-                      }
+                      },
+                      "required": [
+                        "title",
+                        "variant_values"
+                      ]
                     }
                   }
                 },
                 "required": [
-                  "has_variant",
                   "status",
                   "title",
                   "product_type",
