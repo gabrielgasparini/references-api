@@ -27,7 +27,7 @@
         }
       ],
       "get": {
-        "summary": "Resgatar todos os produtos",
+        "summary": "Redeem all products",
         "tags": [],
         "responses": {
           "200": {
@@ -40,7 +40,7 @@
                   "properties": {
                     "has_variant": {
                       "type": "number",
-                      "description": "produto com variação: 1 | sem variação: 0"
+                      "description": "product with variation: 1 | without variation: 0"
                     },
                     "status": {
                       "type": "number",
@@ -256,7 +256,7 @@
                   ]
                 },
                 "examples": {
-                  "Success - Com variação": {
+                  "Success - With variation": {
                     "value": {
                       "result": [
                         {
@@ -400,7 +400,7 @@
                       "method": "GET"
                     }
                   },
-                  "Sucesso - Sem variação": {
+                  "Success - No variation": {
                     "value": {
                       "result": [
                         {
@@ -476,7 +476,7 @@
           }
         },
         "operationId": "get-slug-landingpage-products",
-        "description": "Recupera as informações de todos os produtos e suas dependências.",
+        "description": "Retrieves information for all products and their dependencies.",
         "parameters": [
           {
             "schema": {
@@ -491,7 +491,7 @@
         ]
       },
       "post": {
-        "summary": "Criar um produto",
+        "summary": "Create a product",
         "operationId": "post-slug-landingpage-products",
         "responses": {
           "200": {
@@ -609,7 +609,7 @@
             }
           }
         },
-        "description": "Gera um novo registro de produto e de suas dependências.",
+        "description": "Generates a new product registration and its dependencies.",
         "requestBody": {
           "content": {
             "application/json": {
@@ -619,7 +619,7 @@
                 "properties": {
                   "has_variant": {
                     "type": "number",
-                    "description": "produto com variação: 1 | sem variação: 0"
+                    "description": "product with variation: 1 | without variation: 0"
                   },
                   "status": {
                     "description": "1 is active, 0 is inactive",
@@ -837,7 +837,7 @@
                 ]
               },
               "examples": {
-                "Com variação": {
+                "With variation": {
                   "value": {
                     "has_variant": "1",
                     "status": "1",
@@ -953,7 +953,7 @@
                     ]
                   }
                 },
-                "Sem variação": {
+                "No variation": {
                   "value": {
                     "has_variant": "0",
                     "status": "1",
@@ -1007,7 +1007,7 @@
               }
             }
           },
-          "description": "Verificar o corpo da requisição (produto com variação (1) ou sem variação (0) **{has_variant}**)"
+          "description": "Check the request body (product with variation (1) or without variation (0) ** {has_variant} **)"
         },
         "parameters": [
           {
@@ -1045,7 +1045,7 @@
         }
       ],
       "put": {
-        "summary": "Atualizar um produto",
+        "summary": "Update a product",
         "operationId": "put-slug-landingpage-products-id",
         "responses": {
           "200": {
@@ -1122,7 +1122,7 @@
             }
           }
         },
-        "description": "Atualiza as informações do produto e suas dependências com o ID do produto correspondente.",
+        "description": "Updates the product information and its dependencies with the corresponding product ID.",
         "requestBody": {
           "content": {
             "application/json": {
@@ -1132,7 +1132,7 @@
                 "properties": {
                   "has_variant": {
                     "type": "number",
-                    "description": "produto com variação: 1 | sem variação: 0"
+                    "description": "product with variation: 1 | without variation: 0"
                   },
                   "status": {
                     "type": "number",
@@ -1345,7 +1345,7 @@
                 ]
               },
               "examples": {
-                "Com variação": {
+                "With variation": {
                   "value": {
                     "has_variant": "1",
                     "status": "1",
@@ -1461,7 +1461,7 @@
                     ]
                   }
                 },
-                "Sem variação": {
+                "No variation": {
                   "value": {
                     "has_variant": "0",
                     "status": "1",
@@ -1509,7 +1509,7 @@
               }
             }
           },
-          "description": "Verificar o corpo da requisição (produto com variação (1) ou sem variação (0) **{has_variant}**)"
+          "description": "Check the request body (product with variation (1) or without variation (0) ** {has_variant} **)"
         },
         "parameters": [
           {
@@ -1525,7 +1525,7 @@
         ]
       },
       "delete": {
-        "summary": "Deletar um produto",
+        "summary": "Delete a product",
         "operationId": "delete-slug-landingpage-products-id",
         "responses": {
           "200": {
@@ -1592,7 +1592,7 @@
             }
           }
         },
-        "description": "Deleta o produto e suas dependências com o ID do produto correspondente.",
+        "description": "Delete the product and its dependencies with the corresponding product ID.",
         "parameters": [
           {
             "schema": {
@@ -1607,7 +1607,7 @@
         ]
       },
       "get": {
-        "summary": "Resgatar um produto",
+        "summary": "Redeem a product",
         "operationId": "get-slug-landingpage-products-id",
         "responses": {
           "200": {
@@ -1619,7 +1619,7 @@
                   "type": "object",
                   "properties": {
                     "has_variant": {
-                      "description": "produto com variação: 1 | sem variação: 0",
+                      "description": "product with variation: 1 | without variation: 0",
                       "type": "number"
                     },
                     "status": {
@@ -1834,7 +1834,7 @@
                   ]
                 },
                 "examples": {
-                  "Success - Com variação": {
+                  "Success - With variation": {
                     "value": {
                       "result": [
                         {
@@ -1978,7 +1978,7 @@
                       "method": "GET"
                     }
                   },
-                  "Sucesso - Sem variação": {
+                  "Success - No variation": {
                     "value": {
                       "result": [
                         {
@@ -2053,7 +2053,7 @@
             }
           }
         },
-        "description": "Recupera as informações do produto e suas dependências com o ID do produto correspondente.",
+        "description": "Retrieves the product information and its dependencies with the corresponding product ID.",
         "parameters": [
           {
             "schema": {
