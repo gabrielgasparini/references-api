@@ -47,65 +47,51 @@
                       "description": "1 is active, 0 is inactive"
                     },
                     "title": {
-                      "type": "string",
-                      "minLength": 1
+                      "type": "string"
                     },
                     "product_type": {
                       "type": "string",
-                      "minLength": 1,
                       "description": "physical or digital"
                     },
                     "aliexpress_url": {
-                      "type": "string",
-                      "minLength": 1
+                      "type": "string"
                     },
                     "aliexpress_id": {
-                      "type": "string",
-                      "minLength": 1
+                      "type": "string"
                     },
                     "aliexpress_seller": {
-                      "type": "string",
-                      "minLength": 1
+                      "type": "string"
                     },
                     "enable_dropshipping": {
-                      "type": "string",
-                      "minLength": 1
+                      "type": "string"
                     },
                     "ncm_code": {
-                      "type": "string",
-                      "minLength": 1
+                      "type": "string"
                     },
                     "gshop_condition": {
                       "type": "string",
-                      "minLength": 1,
                       "description": "new, used or refurbished\n"
                     },
                     "gshop_age_group": {
                       "type": "string",
-                      "minLength": 1,
                       "description": "newborn, infant, toddler, kids or adult\n"
                     },
                     "gshop_gender": {
                       "type": "string",
-                      "minLength": 1,
                       "description": "female, male or "
                     },
                     "video_url": {
-                      "type": "string",
-                      "minLength": 1
+                      "type": "string"
                     },
                     "video_id": {
-                      "type": "string",
-                      "minLength": 1
+                      "type": "string"
                     },
                     "video_platform": {
                       "type": "string",
-                      "minLength": 1,
                       "description": "youtube or vimeo"
                     },
                     "sku": {
                       "type": "string",
-                      "minLength": 1,
                       "description": "product identification, tracking and inventory"
                     },
                     "bar_code": {
@@ -120,22 +106,18 @@
                     },
                     "weight": {
                       "type": "string",
-                      "minLength": 1,
                       "description": "kilo"
                     },
                     "width": {
                       "type": "string",
-                      "minLength": 1,
                       "description": "centimeters"
                     },
                     "height": {
                       "type": "string",
-                      "minLength": 1,
                       "description": "centimeters"
                     },
                     "length": {
                       "type": "string",
-                      "minLength": 1,
                       "description": "centimeters"
                     },
                     "cost_price": {
@@ -144,22 +126,18 @@
                     },
                     "sale_price": {
                       "type": "string",
-                      "minLength": 1,
                       "description": "double (0.00)"
                     },
                     "old_price": {
                       "type": "string",
-                      "minLength": 1,
                       "description": "double (0.00)"
                     },
                     "slug": {
                       "type": "string",
-                      "minLength": 1,
                       "description": "combination enters the variation and value divided by | size:p|color:blue or size:p "
                     },
                     "aliexpress_sku": {
-                      "type": "string",
-                      "minLength": 1
+                      "type": "string"
                     },
                     "image_id": {
                       "type": "number",
