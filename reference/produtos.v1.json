@@ -82,15 +82,18 @@
                     },
                     "gshop_condition": {
                       "type": "string",
-                      "minLength": 1
+                      "minLength": 1,
+                      "description": "new, used or refurbished\n"
                     },
                     "gshop_age_group": {
                       "type": "string",
-                      "minLength": 1
+                      "minLength": 1,
+                      "description": "newborn, infant, toddler, kids or adult\n"
                     },
                     "gshop_gender": {
                       "type": "string",
-                      "minLength": 1
+                      "minLength": 1,
+                      "description": "female, male or "
                     },
                     "video_url": {
                       "type": "string",
@@ -737,15 +740,18 @@
                   },
                   "gshop_condition": {
                     "type": "string",
-                    "minLength": 1
+                    "minLength": 1,
+                    "description": "new, used or refurbished\n"
                   },
                   "gshop_age_group": {
                     "type": "string",
-                    "minLength": 1
+                    "minLength": 1,
+                    "description": "newborn, infant, toddler, kids or adult\n"
                   },
                   "gshop_gender": {
                     "type": "string",
-                    "minLength": 1
+                    "minLength": 1,
+                    "description": "female, male or unisex"
                   },
                   "video_url": {
                     "type": "string",
@@ -1148,6 +1154,12 @@
                   }
                 }
               }
+            },
+            "application/xml": {
+              "schema": {
+                "type": "object",
+                "properties": {}
+              }
             }
           },
           "description": "Verificar o corpo da requisição (produto com variação (1) ou sem variação (0) **{has_variant}**)"
@@ -1319,15 +1331,18 @@
                   },
                   "gshop_condition": {
                     "type": "string",
-                    "minLength": 1
+                    "minLength": 1,
+                    "description": "new, used or refurbished"
                   },
                   "gshop_age_group": {
                     "type": "string",
-                    "minLength": 1
+                    "minLength": 1,
+                    "description": "newborn, infant, toddler, kids or adult\n"
                   },
                   "gshop_gender": {
                     "type": "string",
-                    "minLength": 1
+                    "minLength": 1,
+                    "description": "female, male or unisex"
                   },
                   "video_url": {
                     "type": "string",
@@ -1886,15 +1901,18 @@
                     },
                     "gshop_condition": {
                       "type": "string",
-                      "minLength": 1
+                      "minLength": 1,
+                      "description": "new, used or refurbished\n"
                     },
                     "gshop_age_group": {
                       "type": "string",
-                      "minLength": 1
+                      "minLength": 1,
+                      "description": "newborn, infant, toddler, kids or adult\n"
                     },
                     "gshop_gender": {
                       "type": "string",
-                      "minLength": 1
+                      "minLength": 1,
+                      "description": "female, male or unisex"
                     },
                     "video_url": {
                       "type": "string",
