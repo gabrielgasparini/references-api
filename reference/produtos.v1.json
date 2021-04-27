@@ -597,7 +597,7 @@
           }
         },
         "operationId": "get-slug-landingpage-products",
-        "description": "Recupera as informações de todos os produtos.",
+        "description": "Recupera as informações de todos os produtos e suas dependências.",
         "parameters": [
           {
             "schema": {
@@ -734,7 +734,7 @@
             }
           }
         },
-        "description": "Gera um novo registro de produto.",
+        "description": "Gera um novo registro de produto e de suas dependências.",
         "requestBody": {
           "content": {
             "application/json": {
@@ -1366,7 +1366,7 @@
             }
           }
         },
-        "description": "Atualiza as informações do produto com o ID do produto correspondente.",
+        "description": "Atualiza as informações do produto e suas dependências com o ID do produto correspondente.",
         "requestBody": {
           "content": {
             "application/json": {
@@ -1966,7 +1966,7 @@
             }
           }
         },
-        "description": "Deleta o produto com o ID do produto correspondente.",
+        "description": "Deleta o produto e suas dependências com o ID do produto correspondente.",
         "parameters": [
           {
             "schema": {
@@ -2550,7 +2550,7 @@
             }
           }
         },
-        "description": "Recupera as informações do produto com o ID do produto correspondente.",
+        "description": "Recupera as informações do produto e suas dependências com o ID do produto correspondente.",
         "parameters": [
           {
             "schema": {
