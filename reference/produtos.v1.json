@@ -126,19 +126,23 @@
                     },
                     "weight": {
                       "type": "string",
-                      "minLength": 1
+                      "minLength": 1,
+                      "description": "kilo"
                     },
                     "width": {
                       "type": "string",
-                      "minLength": 1
+                      "minLength": 1,
+                      "description": "centimeters"
                     },
                     "height": {
                       "type": "string",
-                      "minLength": 1
+                      "minLength": 1,
+                      "description": "centimeters"
                     },
                     "length": {
                       "type": "string",
-                      "minLength": 1
+                      "minLength": 1,
+                      "description": "centimeters"
                     },
                     "cost_price": {
                       "description": "double (0.00)",
@@ -782,23 +786,28 @@
                   },
                   "quantity": {
                     "type": "string",
-                    "minLength": 1
+                    "minLength": 1,
+                    "description": ""
                   },
                   "weight": {
                     "type": "string",
-                    "minLength": 1
+                    "minLength": 1,
+                    "description": "kilo"
                   },
                   "width": {
                     "type": "string",
-                    "minLength": 1
+                    "minLength": 1,
+                    "description": "centimeters"
                   },
                   "height": {
                     "type": "string",
-                    "minLength": 1
+                    "minLength": 1,
+                    "description": "centimeters"
                   },
                   "length": {
                     "type": "string",
-                    "minLength": 1
+                    "minLength": 1,
+                    "description": "centimeters"
                   },
                   "cost_price": {
                     "type": "string",
@@ -1379,19 +1388,23 @@
                   },
                   "weight": {
                     "type": "string",
-                    "minLength": 1
+                    "minLength": 1,
+                    "description": "kigo"
                   },
                   "width": {
                     "type": "string",
-                    "minLength": 1
+                    "minLength": 1,
+                    "description": "centimeters"
                   },
                   "height": {
                     "type": "string",
-                    "minLength": 1
+                    "minLength": 1,
+                    "description": "centimeters"
                   },
                   "length": {
                     "type": "string",
-                    "minLength": 1
+                    "minLength": 1,
+                    "description": "centimeters"
                   },
                   "cost_price": {
                     "type": "string",
@@ -1951,19 +1964,23 @@
                     },
                     "weight": {
                       "type": "string",
-                      "minLength": 1
+                      "minLength": 1,
+                      "description": "kilo"
                     },
                     "width": {
                       "type": "string",
-                      "minLength": 1
+                      "minLength": 1,
+                      "description": "centimeters"
                     },
                     "height": {
                       "type": "string",
-                      "minLength": 1
+                      "minLength": 1,
+                      "description": "centimeters"
                     },
                     "length": {
                       "type": "string",
-                      "minLength": 1
+                      "minLength": 1,
+                      "description": "centimeters"
                     },
                     "cost_price": {
                       "type": "string",
