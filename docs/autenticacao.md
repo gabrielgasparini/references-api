@@ -14,4 +14,4 @@ Todas as requisições para a nossa solução seguem o mesmo prefixo de URL: htt
 
 Para mais informações sobre [Bearer Token](https://swagger.io/docs/specification/authentication/bearer-authentication/) 
 
-[Obtenha aqui o seu token!](url)
+[Obtenha aqui o seu token!](https://panel.lpquevende.com.br/acesso/entrar)
