@@ -105,7 +105,8 @@
                     },
                     "sku": {
                       "type": "string",
-                      "minLength": 1
+                      "minLength": 1,
+                      "description": "product identification, tracking and inventory"
                     },
                     "bar_code": {
                       "type": "string"
@@ -172,7 +173,8 @@
                         "properties": {
                           "sku": {
                             "type": "string",
-                            "minLength": 1
+                            "minLength": 1,
+                            "description": "product identification, tracking and inventory"
                           },
                           "bar_code": {
                             "type": "string",
@@ -233,7 +235,10 @@
                             "type": "number",
                             "description": "Regarding the image id of the image array"
                           }
-                        }
+                        },
+                        "required": [
+                          "sku"
+                        ]
                       }
                     },
                     "images": {
@@ -277,7 +282,8 @@
                     }
                   },
                   "required": [
-                    "has_variant"
+                    "has_variant",
+                    "sku"
                   ]
                 },
                 "examples": {
@@ -713,7 +719,8 @@
                   },
                   "sku": {
                     "type": "string",
-                    "minLength": 1
+                    "minLength": 1,
+                    "description": "product identification, tracking and inventory"
                   },
                   "bar_code": {
                     "type": "string"
@@ -783,7 +790,8 @@
                       "properties": {
                         "sku": {
                           "type": "string",
-                          "minLength": 1
+                          "minLength": 1,
+                          "description": "product identification, tracking and inventory"
                         },
                         "bar_code": {
                           "type": "string",
@@ -849,7 +857,10 @@
                           "type": "number",
                           "description": "Regarding the image id of the image array"
                         }
-                      }
+                      },
+                      "required": [
+                        "sku"
+                      ]
                     }
                   },
                   "images": {
@@ -895,7 +906,8 @@
                   }
                 },
                 "required": [
-                  "has_variant"
+                  "has_variant",
+                  "sku"
                 ]
               },
               "examples": {
@@ -1257,7 +1269,8 @@
                   },
                   "sku": {
                     "type": "string",
-                    "minLength": 1
+                    "minLength": 1,
+                    "description": "product identification, tracking and inventory"
                   },
                   "bar_code": {
                     "type": "string"
@@ -1326,7 +1339,8 @@
                       "properties": {
                         "sku": {
                           "type": "string",
-                          "minLength": 1
+                          "minLength": 1,
+                          "description": "product identification, tracking and inventory"
                         },
                         "bar_code": {
                           "type": "string",
@@ -1386,7 +1400,10 @@
                           "type": "number",
                           "description": "Regarding the image id of the image array"
                         }
-                      }
+                      },
+                      "required": [
+                        "sku"
+                      ]
                     }
                   },
                   "images": {
@@ -1431,7 +1448,8 @@
                   }
                 },
                 "required": [
-                  "has_variant"
+                  "has_variant",
+                  "sku"
                 ]
               },
               "examples": {
@@ -1773,7 +1791,8 @@
                     },
                     "sku": {
                       "type": "string",
-                      "minLength": 1
+                      "minLength": 1,
+                      "description": "product identification, tracking and inventory"
                     },
                     "bar_code": {
                       "type": "string"
@@ -1842,7 +1861,8 @@
                         "properties": {
                           "sku": {
                             "type": "string",
-                            "minLength": 1
+                            "minLength": 1,
+                            "description": "product identification, tracking and inventory"
                           },
                           "bar_code": {
                             "type": "string",
@@ -1903,7 +1923,10 @@
                             "type": "number",
                             "description": "Regarding the image id of the image array"
                           }
-                        }
+                        },
+                        "required": [
+                          "sku"
+                        ]
                       }
                     },
                     "images": {
@@ -1948,7 +1971,8 @@
                     }
                   },
                   "required": [
-                    "has_variant"
+                    "has_variant",
+                    "sku"
                   ]
                 },
                 "examples": {
