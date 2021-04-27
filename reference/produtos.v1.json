@@ -182,8 +182,8 @@
                             "minLength": 1
                           },
                           "automatic_stock": {
-                            "type": "string",
-                            "minLength": 1
+                            "type": "number",
+                            "description": "1 is active, 0 is inactive"
                           },
                           "quantity": {
                             "type": "number"
@@ -727,8 +727,7 @@
                     "type": "string"
                   },
                   "automatic_stock": {
-                    "type": "string",
-                    "minLength": 1,
+                    "type": "number",
                     "description": "1 is active, 0 is inactive"
                   },
                   "quantity": {
@@ -800,8 +799,8 @@
                           "minLength": 1
                         },
                         "automatic_stock": {
-                          "type": "string",
-                          "minLength": 1
+                          "type": "number",
+                          "description": "1 is active, 0 is inactive"
                         },
                         "quantity": {
                           "type": "string",
@@ -1349,8 +1348,8 @@
                           "minLength": 1
                         },
                         "automatic_stock": {
-                          "type": "string",
-                          "minLength": 1
+                          "type": "number",
+                          "description": "1 is active, 0 is inactive"
                         },
                         "quantity": {
                           "type": "number"
