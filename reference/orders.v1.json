@@ -1,9 +1,9 @@
 {
   "openapi": "3.0.0",
   "info": {
-    "title": "Pedidos",
+    "title": "Orders",
     "version": "",
-    "description": "Por meio dessa referência você pode consultar e atualizar pedidos.",
+    "description": "Through this reference you can consult and update orders.",
     "contact": {
       "email": "developers@lpquevende.com.br"
     }
@@ -36,7 +36,7 @@
         }
       ],
       "get": {
-        "summary": "Resgatar um pedido",
+        "summary": "Redeem an order",
         "tags": [],
         "responses": {
           "200": {
@@ -106,7 +106,7 @@
           }
         },
         "operationId": "get-slug-landingpage-orders-id",
-        "description": "Recupera as informações do pedido com o ID do pedido correspondente.",
+        "description": "Retrieves the order information with the corresponding order ID.",
         "parameters": [
           {
             "schema": {
@@ -121,7 +121,7 @@
         ]
       },
       "put": {
-        "summary": "Atualizar um pedido",
+        "summary": "Update an order",
         "operationId": "put-slug-landingpage-orders-id",
         "responses": {
           "200": {
@@ -163,7 +163,7 @@
                   ]
                 },
                 "examples": {
-                  "Sucesso": {
+                  "Success": {
                     "value": {
                       "result": [
                         {
@@ -190,7 +190,7 @@
             }
           }
         },
-        "description": "Atualiza as informações do pedido com o ID do pedido correspondente.",
+        "description": "Updates the order information with the corresponding order ID.",
         "requestBody": {
           "content": {
             "application/json": {
@@ -200,7 +200,7 @@
               }
             }
           },
-          "description": "Corpo da requisição"
+          "description": "Request body"
         },
         "parameters": [
           {
