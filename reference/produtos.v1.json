@@ -1883,19 +1883,23 @@
                           },
                           "weight": {
                             "type": "string",
-                            "minLength": 1
+                            "minLength": 1,
+                            "description": "kilo"
                           },
                           "width": {
                             "type": "string",
-                            "minLength": 1
+                            "minLength": 1,
+                            "description": "centimeters"
                           },
                           "height": {
                             "type": "string",
-                            "minLength": 1
+                            "minLength": 1,
+                            "description": "centimeters"
                           },
                           "length": {
                             "type": "string",
-                            "minLength": 1
+                            "minLength": 1,
+                            "description": "centimeters"
                           },
                           "title": {
                             "type": "string",
