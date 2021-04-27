@@ -1428,38 +1428,6 @@
                       }
                     }
                   },
-                  "kits": {
-                    "type": "array",
-                    "uniqueItems": true,
-                    "minItems": 1,
-                    "items": {
-                      "type": "object",
-                      "properties": {
-                        "quantity": {
-                          "type": "number"
-                        },
-                        "title": {
-                          "type": "string",
-                          "minLength": 1
-                        },
-                        "cost_price": {
-                          "type": "string",
-                          "minLength": 1,
-                          "description": "double (0.00)"
-                        },
-                        "sale_price": {
-                          "type": "string",
-                          "minLength": 1,
-                          "description": "double (0.00)"
-                        },
-                        "old_price": {
-                          "type": "string",
-                          "minLength": 1,
-                          "description": "double (0.00)"
-                        }
-                      }
-                    }
-                  },
                   "variants_items": {
                     "type": "array",
                     "uniqueItems": true,
