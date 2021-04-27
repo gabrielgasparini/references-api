@@ -1,4 +1,4 @@
-# Códigos de Resposta 
+# Response Codes
 
 Toda requisição retorna um código de resposta, esses códigos são padrão HTTP para facilitar o entendimento do tipo de resposta retornada.
 

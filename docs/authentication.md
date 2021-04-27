@@ -1,4 +1,4 @@
-# Autenticação
+# Authentication
 
 As soluções dessa aplicação utilizam **Bearer Token**, em todas as requisições é necessário que o token (chave de autenticação) seja informado. 
 

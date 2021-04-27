@@ -1,4 +1,4 @@
-# Erros
+# Errors
 
 Message | Significado
 ---------|----------
