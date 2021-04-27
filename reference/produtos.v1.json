@@ -663,10 +663,6 @@
                     "minLength": 1,
                     "description": "physical or digital"
                   },
-                  "has_kits": {
-                    "description": "produto com kit: 1 | sem kit: 0",
-                    "type": "number"
-                  },
                   "aliexpress_url": {
                     "type": "string",
                     "minLength": 1
@@ -899,8 +895,7 @@
                   }
                 },
                 "required": [
-                  "has_variant",
-                  "has_kits"
+                  "has_variant"
                 ]
               },
               "examples": {
@@ -909,8 +904,7 @@
                     "has_variant": "1",
                     "status": "1",
                     "title": "Teste Com Variação - v2",
-                    "product_type": "fisico",
-                    "has_kits": "1",
+                    "product_type": "physical",
                     "aliexpress_url": "https://pt.aliexpress.com/item/1005001966343675.html?spm=a2g0o.productlist.0.0.50987d6bVePs3F&algo_pvid=b561f8de-5011-46de-9f21-4401fbcf2f67&algo_expid=b561f8de-5011-46de-9f21-4401fbcf2f67-0&btsid=0bb0624316195439930215026e95b5&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_",
                     "aliexpress_id": "1255477",
                     "aliexpress_seller": "888888",
@@ -1026,8 +1020,7 @@
                     "has_variant": "0",
                     "status": "1",
                     "title": "Teste Sem Variação - V2",
-                    "product_type": "fisico",
-                    "has_kits": "0",
+                    "product_type": "physical",
                     "aliexpress_url": "1",
                     "aliexpress_id": "2",
                     "aliexpress_seller": "3",
