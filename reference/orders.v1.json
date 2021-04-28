@@ -229,7 +229,7 @@
         }
       ],
       "get": {
-        "summary": "Resgatar todos os pedidos",
+        "summary": "Redeem all orders",
         "operationId": "get-slug-landingpage-orders",
         "responses": {
           "200": {
@@ -298,7 +298,7 @@
             }
           }
         },
-        "description": "Recupera as informações de todos os pedidos.",
+        "description": "Retrieves information for all orders.",
         "parameters": [
           {
             "schema": {
