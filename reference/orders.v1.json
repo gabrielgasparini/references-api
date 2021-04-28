@@ -32,7 +32,7 @@
           "name": "slug-landingpage",
           "in": "path",
           "required": true,
-          "description": "prefixo utilizado no domínio"
+          "description": "prefix used in the domain"
         }
       ],
       "get": {
@@ -225,7 +225,7 @@
           "name": "slug-landingpage",
           "in": "path",
           "required": true,
-          "description": "prefixo utilizado no domínio"
+          "description": "prefix used in the domain"
         }
       ],
       "get": {
