@@ -1,17 +1,17 @@
 # Authentication
 
-As soluções dessa aplicação utilizam **Bearer Token**, em todas as requisições é necessário que o token (chave de autenticação) seja informado. 
+The solutions of this application use ** Bearer Token **, in all requests it is necessary that the token (authentication key) is informed.
 
-Cada landingpage tem a sua chave de autenticação única. Sua chave de autenticação é disponibilizada na barra superior do painel administrativo da sua landingpage.
+Each landing page has its unique authentication key. Your authentication key is available in the top bar of your landing page's administrative panel.
 
-Todas as requisições para a nossa solução seguem o mesmo prefixo de URL: `https://api.lpquevende.com.br/{slug-landingpage}`
+All requests for our solution follow the same URL prefix: `https://api.lpquevende.com.br/ {slug-landingpage}`
 
-**{slug-landingpage}**: é o nome da loja utilizado para referência na nossa API, é o mesmo prefixo utilizado para a domínio da landingpage.
+** {slug-landingpage} **: is the name of the store used for reference in our API, it is the same prefix used for the landingpage domain.
 
-`example.lpquevende.com.br` seu slug é: `example`.   
+`example.lpquevende.com.br` your slug is: `example`.   
 
-`Content-type` tipo do conteúdo padrão: `application/json`.
+`Content-type` default content type: `application/json`.
 
-Para mais informações sobre [Bearer Token](https://swagger.io/docs/specification/authentication/bearer-authentication/) 
+For more information on: [Bearer Token](https://swagger.io/docs/specification/authentication/bearer-authentication/)
 
-[Obtenha aqui o seu token!](https://panel.lpquevende.com.br/acesso/entrar)
+[Get your token here!](https://panel.lpquevende.com.br/acesso/entrar)
