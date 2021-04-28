@@ -1,4 +1,4 @@
-# Authentication 1
+# Authentication
 
 The solutions of this application use ** Bearer Token **, in all requests it is necessary that the token (authentication key) is informed.
 
