@@ -27,7 +27,7 @@
         }
       ],
       "get": {
-        "summary": "Redeem all products",
+        "summary": "Get all products",
         "tags": [],
         "responses": {
           "200": {
@@ -1607,7 +1607,7 @@
         ]
       },
       "get": {
-        "summary": "Redeem a product",
+        "summary": "Get a product",
         "operationId": "get-slug-landingpage-products-id",
         "responses": {
           "200": {

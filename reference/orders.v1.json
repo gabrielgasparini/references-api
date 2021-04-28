@@ -36,7 +36,7 @@
         }
       ],
       "get": {
-        "summary": "Redeem an order",
+        "summary": "Get an order",
         "tags": [],
         "responses": {
           "200": {
@@ -229,7 +229,7 @@
         }
       ],
       "get": {
-        "summary": "Redeem all orders",
+        "summary": "Get all orders",
         "operationId": "get-slug-landingpage-orders",
         "responses": {
           "200": {
