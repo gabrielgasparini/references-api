@@ -4,7 +4,7 @@ The solutions of this application use ** Bearer Token **, in all requests it is 
 
 Each landing page has its unique authentication key. Your authentication key is available in the top bar of your landing page's administrative panel.
 
-All requests for our solution follow the same URL prefix: `https://api.lpquevende.com.br/ {slug-landingpage}`
+All requests for our solution follow the same URL prefix: `https://api.lpquevende.com.br/{slug-landingpage}`
 
 ** {slug-landingpage} **: is the name of the store used for reference in our API, it is the same prefix used for the landingpage domain.
 
