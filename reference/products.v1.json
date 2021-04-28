@@ -2075,7 +2075,7 @@
       "TOKEN": {
         "type": "http",
         "scheme": "bearer",
-        "description": "Token fornecido para a sua landingpage"
+        "description": "Token provided for your landing page"
       }
     },
     "parameters": {}
