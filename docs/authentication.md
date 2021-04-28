@@ -12,6 +12,7 @@ All requests for our solution follow the same URL prefix: `https://api.lpquevend
 
 `Content-type` default content type: `application/json`.
 
+
 For more information on: [Bearer Token](https://swagger.io/docs/specification/authentication/bearer-authentication/)
 
 [Get your token here!](https://panel.lpquevende.com.br/acesso/entrar)
