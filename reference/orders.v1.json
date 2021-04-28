@@ -22,7 +22,7 @@
           },
           "name": "id",
           "in": "path",
-          "description": "ID do pedido",
+          "description": "Order ID",
           "required": true
         },
         {
