@@ -31,7 +31,7 @@
         "tags": [],
         "responses": {
           "200": {
-            "description": "OK",
+            "description": "OK - Request responses",
             "content": {
               "application/json": {
                 "schema": {
@@ -495,7 +495,7 @@
         "operationId": "post-slug-landingpage-products",
         "responses": {
           "200": {
-            "description": "OK",
+            "description": "OK - Request responses",
             "content": {
               "application/json": {
                 "schema": {
@@ -547,7 +547,7 @@
             }
           },
           "201": {
-            "description": "Created",
+            "description": "Created - Request responses",
             "content": {
               "application/json": {
                 "schema": {
@@ -1246,7 +1246,7 @@
         "operationId": "put-slug-landingpage-products-id",
         "responses": {
           "200": {
-            "description": "OK",
+            "description": "OK - Request responses",
             "content": {
               "application/json": {
                 "schema": {
@@ -1437,6 +1437,94 @@
                       "method": "PUT"
                     }
                   },
+                  "Success - No variation": {
+                    "value": {
+                      "result": {
+                        "message": "Product update",
+                        "product": [
+                          {
+                            "id": "1",
+                            "has_variant": "0",
+                            "status": "1",
+                            "title": "Teste Sem Variação Update",
+                            "description": null,
+                            "product_type": "fisico",
+                            "seo_title": "Teste Sem Variação Update",
+                            "seo_desc": "Teste Sem Variação Update",
+                            "seo_url": "teste-sem-variacao-update",
+                            "created_at": "2021-04-22 14:43:31",
+                            "updated_at": "2021-04-22 14:54:05",
+                            "has_kits": "1",
+                            "aliexpress_url": "1",
+                            "aliexpress_id": "2",
+                            "aliexpress_seller": "3",
+                            "enable_dropshipping": "0",
+                            "ncm_code": "4",
+                            "gshop_condition": "1",
+                            "gshop_age_group": "2",
+                            "gshop_gender": "3",
+                            "video_url": "https://www.youtube.com/watch?v=1RnyZRpDSEc",
+                            "video_id": "1RnyZRpDSEc",
+                            "video_platform": "YouTube",
+                            "sku": "123",
+                            "bar_code": null,
+                            "automatic_stock": "1",
+                            "quantity": "2",
+                            "weight": "0",
+                            "width": "0",
+                            "height": "0",
+                            "length": "0",
+                            "cost_price": "0.00",
+                            "sale_price": "60.00",
+                            "old_price": "0.00",
+                            "slug": "tamanho:m|cor:azul",
+                            "aliexpress_sku": "12345",
+                            "variants_items": [
+                              {
+                                "title": "Tamanho",
+                                "variant_values": "p,m"
+                              },
+                              {
+                                "title": "Cor",
+                                "variant_values": "Azul,Preto"
+                              }
+                            ],
+                            "images": [
+                              {
+                                "position": "1",
+                                "image": "http://192.168.0.45/landingpagesistema/uploads/img/store-pet/products/1/images/7e418d61128040b3cff15f16a91485af.jpg",
+                                "created_at": "2021-04-22 14:53:10",
+                                "reference": "2"
+                              },
+                              {
+                                "position": "2",
+                                "image": "http://192.168.0.45/landingpagesistema/uploads/img/store-pet/products/1/images/dcf0f8e10edbd7d893d73b301efec195.jpg",
+                                "created_at": "2021-04-22 14:53:10",
+                                "reference": "1"
+                              },
+                              {
+                                "position": "3",
+                                "image": "http://192.168.0.45/landingpagesistema/uploads/img/store-pet/products/1/images/774615713fce35c87e4e3228c27ffac5.jpg",
+                                "created_at": "2021-04-22 14:53:10",
+                                "reference": "3"
+                              }
+                            ],
+                            "kits": [
+                              {
+                                "quantity": "2",
+                                "title": "2",
+                                "cost_price": "20.00",
+                                "sale_price": "30.00",
+                                "old_price": "25.00"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "status_code": 200,
+                      "method": "PUT"
+                    }
+                  },
                   "Error": {
                     "value": {
                       "result": [
@@ -1446,20 +1534,6 @@
                       ],
                       "status_code": 200,
                       "method": "PUT"
-                    }
-                  },
-                  "Success - 2": {
-                    "value": {
-                      "result": [
-                        {
-                          "message": "string",
-                          "product": [
-                            {}
-                          ]
-                        }
-                      ],
-                      "status_code": 0,
-                      "method": "string"
                     }
                   }
                 }
@@ -1874,7 +1948,7 @@
         "operationId": "delete-slug-landingpage-products-id",
         "responses": {
           "200": {
-            "description": "OK",
+            "description": "OK - Request responses",
             "content": {
               "application/json": {
                 "schema": {
@@ -1956,7 +2030,7 @@
         "operationId": "get-slug-landingpage-products-id",
         "responses": {
           "200": {
-            "description": "OK",
+            "description": "OK - Request responses",
             "content": {
               "application/json": {
                 "schema": {
