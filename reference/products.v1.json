@@ -2295,8 +2295,7 @@
                               "old_price": "0.00",
                               "slug": "tamanho:p|cor:preto",
                               "aliexpress_sku": "",
-                              "image_id": "242",
-                              "variant_token": null
+                              "image_id": "242"
                             },
                             {
                               "id": "249",
@@ -2314,8 +2313,7 @@
                               "old_price": "0.00",
                               "slug": "tamanho:p|cor:azul",
                               "aliexpress_sku": "",
-                              "image_id": "242",
-                              "variant_token": null
+                              "image_id": "242"
                             },
                             {
                               "id": "248",
@@ -2333,8 +2331,7 @@
                               "old_price": "0.00",
                               "slug": "tamanho:m|cor:preto",
                               "aliexpress_sku": "",
-                              "image_id": "241",
-                              "variant_token": null
+                              "image_id": "241"
                             },
                             {
                               "id": "247",
@@ -2352,8 +2349,7 @@
                               "old_price": "0.00",
                               "slug": "tamanho:m|cor:azul",
                               "aliexpress_sku": "12345",
-                              "image_id": "240",
-                              "variant_token": null
+                              "image_id": "240"
                             }
                           ],
                           "variants_items": [
