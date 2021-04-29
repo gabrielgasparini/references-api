@@ -595,7 +595,7 @@
                             "has_variant": "1",
                             "status": "1",
                             "title": "Teste Com Variação - v2",
-                            "product_type": "fisico",
+                            "product_type": "physical",
                             "seo_title": "Teste Com Variação - v2",
                             "seo_desc": "Teste Com Variação - v2",
                             "seo_url": "teste-com-variacao-v2",
@@ -630,8 +630,7 @@
                                 "old_price": "0.00",
                                 "slug": "tamanho:p|cor:preto",
                                 "aliexpress_sku": "",
-                                "image_id": "242",
-                                "variant_token": null
+                                "image_id": "242"
                               },
                               {
                                 "id": "249",
@@ -649,8 +648,7 @@
                                 "old_price": "0.00",
                                 "slug": "tamanho:p|cor:azul",
                                 "aliexpress_sku": "",
-                                "image_id": "242",
-                                "variant_token": null
+                                "image_id": "242"
                               },
                               {
                                 "id": "248",
@@ -668,8 +666,7 @@
                                 "old_price": "0.00",
                                 "slug": "tamanho:m|cor:preto",
                                 "aliexpress_sku": "",
-                                "image_id": "241",
-                                "variant_token": null
+                                "image_id": "241"
                               },
                               {
                                 "id": "247",
@@ -687,8 +684,7 @@
                                 "old_price": "0.00",
                                 "slug": "tamanho:m|cor:azul",
                                 "aliexpress_sku": "12345",
-                                "image_id": "240",
-                                "variant_token": null
+                                "image_id": "240"
                               }
                             ],
                             "variants_items": [
@@ -743,7 +739,7 @@
                             "has_variant": "0",
                             "status": "1",
                             "title": "Teste Sem Variação - V2",
-                            "product_type": "fisico",
+                            "product_type": "physical",
                             "seo_title": "Teste Sem Variação - V2",
                             "seo_desc": "Teste Sem Variação - V2",
                             "seo_url": "teste-sem-variacao-v2",
