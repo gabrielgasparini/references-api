@@ -248,6 +248,12 @@
                           }
                         }
                       }
+                    },
+                    "status_code": {
+                      "type": "number"
+                    },
+                    "method": {
+                      "type": "string"
                     }
                   },
                   "required": [
@@ -2220,6 +2226,12 @@
                           }
                         }
                       }
+                    },
+                    "status_code": {
+                      "type": "number"
+                    },
+                    "method": {
+                      "type": "string"
                     }
                   },
                   "required": [
