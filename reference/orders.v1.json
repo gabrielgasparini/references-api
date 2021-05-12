@@ -527,7 +527,8 @@
                               },
                               "creat_at": {
                                 "type": "string",
-                                "minLength": 1
+                                "minLength": 1,
+                                "description": "date time (0000-00-00 00:00:00)"
                               },
                               "customer_name": {
                                 "type": "string",
@@ -539,25 +540,36 @@
                               },
                               "payment_subtotal": {
                                 "type": "string",
-                                "minLength": 1
+                                "minLength": 1,
+                                "description": "double (00.0)"
                               },
                               "payment_shipping": {
                                 "type": "string",
-                                "minLength": 1
+                                "minLength": 1,
+                                "description": "double (00.0)"
                               },
                               "payment_increase": {
                                 "type": "string",
-                                "minLength": 1
+                                "minLength": 1,
+                                "description": "double (00.0)"
                               },
-                              "payment_total": {},
-                              "payment_in_cash": {},
+                              "payment_total": {
+                                "description": "double (00.0)",
+                                "type": "string"
+                              },
+                              "payment_in_cash": {
+                                "description": "double (00.0)",
+                                "type": "string"
+                              },
                               "payment_coupon_discount": {
                                 "type": "string",
-                                "minLength": 1
+                                "minLength": 1,
+                                "description": "double (00.0)"
                               },
                               "updated_at": {
                                 "type": "string",
-                                "minLength": 1
+                                "minLength": 1,
+                                "description": "date (0000-00-00)"
                               },
                               "coupon": {
                                 "type": "string",
@@ -569,7 +581,8 @@
                               },
                               "status": {
                                 "type": "string",
-                                "minLength": 1
+                                "minLength": 1,
+                                "description": "list Status"
                               },
                               "orders_shipments": {
                                 "type": "array",
@@ -584,43 +597,52 @@
                                     },
                                     "shipping_real_price": {
                                       "type": "string",
-                                      "minLength": 1
+                                      "minLength": 1,
+                                      "description": "double (0.00)"
                                     },
                                     "shipping_quote_price": {
                                       "type": "string",
-                                      "minLength": 1
+                                      "minLength": 1,
+                                      "description": "double (0.00)"
                                     },
                                     "package_total_weight": {
                                       "type": "string",
-                                      "minLength": 1
-                                    },
-                                    "package_length": {
-                                      "type": "string",
-                                      "minLength": 1
+                                      "minLength": 1,
+                                      "description": "kg\n"
                                     },
                                     "package_width": {
                                       "type": "string",
-                                      "minLength": 1
+                                      "minLength": 1,
+                                      "description": "centimeters"
                                     },
                                     "package_height": {
                                       "type": "string",
-                                      "minLength": 1
+                                      "minLength": 1,
+                                      "description": "centimeters"
                                     },
                                     "estimated_delivery_date": {
                                       "type": "string",
-                                      "minLength": 1
+                                      "minLength": 1,
+                                      "description": "days"
                                     },
                                     "shipping_delivery_time": {
                                       "type": "string",
-                                      "minLength": 1
+                                      "minLength": 1,
+                                      "description": "date (0000-00-00)"
                                     },
                                     "tracking_code": {
                                       "type": "string",
-                                      "minLength": 1
+                                      "minLength": 1,
+                                      "description": "hash"
                                     },
                                     "tracking_url": {
                                       "type": "string",
-                                      "minLength": 1
+                                      "minLength": 1,
+                                      "description": "link URL"
+                                    },
+                                    "package_length": {
+                                      "type": "string",
+                                      "description": "centimeters"
                                     }
                                   }
                                 }
@@ -641,7 +663,8 @@
                                     },
                                     "product_price": {
                                       "type": "string",
-                                      "minLength": 1
+                                      "minLength": 1,
+                                      "description": "double (00.0)"
                                     },
                                     "product_qtdy": {
                                       "type": "string",
