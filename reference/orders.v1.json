@@ -509,10 +509,6 @@
                   "properties": {
                     "result": {
                       "type": "object",
-                      "required": [
-                        "message",
-                        "order"
-                      ],
                       "properties": {
                         "message": {
                           "type": "string",
@@ -626,20 +622,7 @@
                                       "type": "string",
                                       "minLength": 1
                                     }
-                                  },
-                                  "required": [
-                                    "shipping_type",
-                                    "shipping_real_price",
-                                    "shipping_quote_price",
-                                    "package_total_weight",
-                                    "package_length",
-                                    "package_width",
-                                    "package_height",
-                                    "estimated_delivery_date",
-                                    "shipping_delivery_time",
-                                    "tracking_code",
-                                    "tracking_url"
-                                  ]
+                                  }
                                 }
                               },
                               "orders_products": {
@@ -672,15 +655,7 @@
                                       "type": "string",
                                       "minLength": 1
                                     }
-                                  },
-                                  "required": [
-                                    "product_id",
-                                    "product_sku",
-                                    "product_price",
-                                    "product_qtdy",
-                                    "product_variant_sku",
-                                    "product_variant_options"
-                                  ]
+                                  }
                                 }
                               },
                               "orders_delivery_address": {
@@ -725,18 +700,7 @@
                                       "type": "string",
                                       "minLength": 1
                                     }
-                                  },
-                                  "required": [
-                                    "recipient",
-                                    "zip_code",
-                                    "address",
-                                    "number",
-                                    "complement",
-                                    "district",
-                                    "city",
-                                    "state",
-                                    "country"
-                                  ]
+                                  }
                                 }
                               },
                               "orders_transactions": {
@@ -745,29 +709,12 @@
                                   "type": "object"
                                 }
                               }
-                            },
-                            "required": [
-                              "id",
-                              "creat_at",
-                              "customer_name",
-                              "customer_email",
-                              "payment_subtotal",
-                              "payment_shipping",
-                              "payment_increase",
-                              "payment_coupon_discount",
-                              "updated_at",
-                              "coupon",
-                              "processed",
-                              "status"
-                            ]
+                            }
                           }
                         }
                       }
                     }
-                  },
-                  "required": [
-                    "result"
-                  ]
+                  }
                 },
                 "examples": {
                   "Success": {
@@ -859,57 +806,6 @@
               "schema": {
                 "description": "",
                 "type": "object",
-                "properties": {
-                  "status": {
-                    "type": "string",
-                    "minLength": 1
-                  },
-                  "orders_shipments": {
-                    "type": "array",
-                    "uniqueItems": true,
-                    "minItems": 1,
-                    "items": {
-                      "required": [
-                        "shipping_type",
-                        "shipping_real_price",
-                        "estimated_delivery_date",
-                        "shipping_delivery_time",
-                        "tracking_code",
-                        "tracking_url"
-                      ],
-                      "properties": {
-                        "shipping_type": {
-                          "type": "string",
-                          "minLength": 1
-                        },
-                        "shipping_real_price": {
-                          "type": "string",
-                          "minLength": 1
-                        },
-                        "estimated_delivery_date": {
-                          "type": "string",
-                          "minLength": 1
-                        },
-                        "shipping_delivery_time": {
-                          "type": "string",
-                          "minLength": 1
-                        },
-                        "tracking_code": {
-                          "type": "string",
-                          "minLength": 1
-                        },
-                        "tracking_url": {
-                          "type": "string",
-                          "minLength": 1
-                        }
-                      }
-                    }
-                  }
-                },
-                "required": [
-                  "status",
-                  "orders_shipments"
-                ],
                 "x-examples": {
                   "example-1": {
                     "status": "order_created",
@@ -924,7 +820,65 @@
                       }
                     ]
                   }
-                }
+                },
+                "properties": {
+                  "status": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "list Status"
+                  },
+                  "orders_shipments": {
+                    "type": "array",
+                    "uniqueItems": true,
+                    "minItems": 1,
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "shipping_type": {
+                          "type": "string",
+                          "minLength": 1,
+                          "description": "method"
+                        },
+                        "shipping_real_price": {
+                          "type": "string",
+                          "minLength": 1,
+                          "description": "double (00.0)"
+                        },
+                        "estimated_delivery_date": {
+                          "type": "string",
+                          "minLength": 1,
+                          "description": "date (0000-00-00)"
+                        },
+                        "shipping_delivery_time": {
+                          "type": "string",
+                          "minLength": 1,
+                          "description": "days"
+                        },
+                        "tracking_code": {
+                          "type": "string",
+                          "minLength": 1,
+                          "description": "hash"
+                        },
+                        "tracking_url": {
+                          "type": "string",
+                          "minLength": 1,
+                          "description": "link URL"
+                        }
+                      },
+                      "required": [
+                        "shipping_type",
+                        "shipping_real_price",
+                        "estimated_delivery_date",
+                        "shipping_delivery_time",
+                        "tracking_code",
+                        "tracking_url"
+                      ]
+                    }
+                  }
+                },
+                "required": [
+                  "status"
+                ]
               },
               "examples": {
                 "Example": {
