@@ -331,6 +331,12 @@
                           }
                         }
                       }
+                    },
+                    "status_code": {
+                      "type": "string"
+                    },
+                    "method": {
+                      "type": "string"
                     }
                   }
                 },
@@ -736,6 +742,12 @@
                           }
                         }
                       }
+                    },
+                    "status_code": {
+                      "type": "string"
+                    },
+                    "method": {
+                      "type": "string"
                     }
                   }
                 },
@@ -1232,6 +1244,12 @@
                           }
                         }
                       }
+                    },
+                    "status_code": {
+                      "type": "string"
+                    },
+                    "method": {
+                      "type": "string"
                     }
                   }
                 },
