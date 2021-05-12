@@ -10,7 +10,7 @@
   },
   "servers": [
     {
-      "url": "https://api.lpquevende.com.br/"
+      "url": "https://api.lpquevende.com/"
     }
   ],
   "paths": {
