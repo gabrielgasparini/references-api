@@ -1244,39 +1244,48 @@
                   "type": "object",
                   "properties": {
                     "result": {
-                      "type": "array",
-                      "uniqueItems": true,
-                      "minItems": 1,
-                      "items": {
-                        "required": [
-                          "message"
-                        ],
-                        "properties": {
-                          "message": {
-                            "type": "string"
-                          },
-                          "product": {
-                            "type": "array",
-                            "items": {
-                              "required": [],
-                              "properties": {}
-                            }
+                      "type": "object",
+                      "properties": {
+                        "message": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "product": {
+                          "type": "array",
+                          "items": {
+                            "required": [],
+                            "properties": {}
                           }
                         }
-                      }
+                      },
+                      "required": [
+                        "message",
+                        "product"
+                      ]
                     },
                     "status_code": {
                       "type": "number"
                     },
                     "method": {
-                      "type": "string"
+                      "type": "string",
+                      "minLength": 1
                     }
                   },
                   "required": [
                     "result",
                     "status_code",
                     "method"
-                  ]
+                  ],
+                  "x-examples": {
+                    "example-1": {
+                      "result": {
+                        "message": "Product update",
+                        "product": []
+                      },
+                      "status_code": 200,
+                      "method": "PUT"
+                    }
+                  }
                 },
                 "examples": {
                   "Success - With variation": {
