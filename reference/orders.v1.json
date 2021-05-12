@@ -1061,7 +1061,8 @@
                           },
                           "creat_at": {
                             "type": "string",
-                            "minLength": 1
+                            "minLength": 1,
+                            "description": "date time (0000-00-00 00:00:00)"
                           },
                           "customer_name": {
                             "type": "string",
@@ -1073,25 +1074,36 @@
                           },
                           "payment_subtotal": {
                             "type": "string",
-                            "minLength": 1
+                            "minLength": 1,
+                            "description": "double (0.00)"
                           },
                           "payment_shipping": {
                             "type": "string",
-                            "minLength": 1
+                            "minLength": 1,
+                            "description": "double (0.00)"
                           },
                           "payment_increase": {
                             "type": "string",
-                            "minLength": 1
+                            "minLength": 1,
+                            "description": "double (0.00)"
                           },
-                          "payment_total": {},
-                          "payment_in_cash": {},
+                          "payment_total": {
+                            "type": "string",
+                            "description": "double (0.00)"
+                          },
+                          "payment_in_cash": {
+                            "type": "string",
+                            "description": "double (0.00)"
+                          },
                           "payment_coupon_discount": {
                             "type": "string",
-                            "minLength": 1
+                            "minLength": 1,
+                            "description": "double (0.00)"
                           },
                           "updated_at": {
                             "type": "string",
-                            "minLength": 1
+                            "minLength": 1,
+                            "description": "date time (0000-00-00 00:00:00)"
                           },
                           "coupon": {
                             "type": "string",
@@ -1118,31 +1130,38 @@
                                 },
                                 "shipping_real_price": {
                                   "type": "string",
-                                  "minLength": 1
+                                  "minLength": 1,
+                                  "description": "double (0.00)"
                                 },
                                 "shipping_quote_price": {
                                   "type": "string",
-                                  "minLength": 1
+                                  "minLength": 1,
+                                  "description": "double (0.00)"
                                 },
                                 "package_total_weight": {
                                   "type": "string",
-                                  "minLength": 1
+                                  "minLength": 1,
+                                  "description": "kg"
                                 },
                                 "package_length": {
                                   "type": "string",
-                                  "minLength": 1
+                                  "minLength": 1,
+                                  "description": "centimeters"
                                 },
                                 "package_width": {
                                   "type": "string",
-                                  "minLength": 1
+                                  "minLength": 1,
+                                  "description": "centimeters"
                                 },
                                 "package_height": {
                                   "type": "string",
-                                  "minLength": 1
+                                  "minLength": 1,
+                                  "description": "centimeters"
                                 },
                                 "estimated_delivery_date": {
                                   "type": "string",
-                                  "minLength": 1
+                                  "minLength": 1,
+                                  "description": "date (0000-00-00)"
                                 },
                                 "shipping_delivery_time": {
                                   "type": "string",
@@ -1154,22 +1173,10 @@
                                 },
                                 "tracking_url": {
                                   "type": "string",
-                                  "minLength": 1
+                                  "minLength": 1,
+                                  "description": "link URL"
                                 }
-                              },
-                              "required": [
-                                "shipping_type",
-                                "shipping_real_price",
-                                "shipping_quote_price",
-                                "package_total_weight",
-                                "package_length",
-                                "package_width",
-                                "package_height",
-                                "estimated_delivery_date",
-                                "shipping_delivery_time",
-                                "tracking_code",
-                                "tracking_url"
-                              ]
+                              }
                             }
                           },
                           "orders_products": {
@@ -1188,7 +1195,8 @@
                                 },
                                 "product_price": {
                                   "type": "string",
-                                  "minLength": 1
+                                  "minLength": 1,
+                                  "description": "double (0.00)"
                                 },
                                 "product_qtdy": {
                                   "type": "string",
@@ -1202,15 +1210,7 @@
                                   "type": "string",
                                   "minLength": 1
                                 }
-                              },
-                              "required": [
-                                "product_id",
-                                "product_sku",
-                                "product_price",
-                                "product_qtdy",
-                                "product_variant_sku",
-                                "product_variant_options"
-                              ]
+                              }
                             }
                           },
                           "orders_delivery_address": {
@@ -1255,18 +1255,7 @@
                                   "type": "string",
                                   "minLength": 1
                                 }
-                              },
-                              "required": [
-                                "recipient",
-                                "zip_code",
-                                "address",
-                                "number",
-                                "complement",
-                                "district",
-                                "city",
-                                "state",
-                                "country"
-                              ]
+                              }
                             }
                           },
                           "orders_transactions": {
@@ -1275,14 +1264,7 @@
                               "type": "object"
                             }
                           }
-                        },
-                        "required": [
-                          "payment_coupon_discount",
-                          "updated_at",
-                          "coupon",
-                          "processed",
-                          "status"
-                        ]
+                        }
                       }
                     }
                   }
