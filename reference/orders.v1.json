@@ -367,7 +367,7 @@
                                     },
                                     "installment_value": {
                                       "type": "string",
-                                      "description": "double (00.00)"
+                                      "description": "double (0.00)"
                                     }
                                   }
                                 }
@@ -834,7 +834,7 @@
                                     },
                                     "installment_value": {
                                       "type": "string",
-                                      "description": "double (00.00)"
+                                      "description": "double (0.00)"
                                     }
                                   }
                                 }
@@ -990,7 +990,7 @@
                         "shipping_real_price": {
                           "type": "string",
                           "minLength": 1,
-                          "description": "double (00.0)"
+                          "description": "double (0.00)"
                         },
                         "estimated_delivery_date": {
                           "type": "string",
@@ -1396,7 +1396,7 @@
                                     },
                                     "installment_value": {
                                       "type": "string",
-                                      "description": "double (00.00)"
+                                      "description": "double (0.00)"
                                     }
                                   }
                                 }
