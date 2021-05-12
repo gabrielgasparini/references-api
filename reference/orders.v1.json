@@ -481,9 +481,243 @@
                         },
                         "order": {
                           "type": "array",
+                          "uniqueItems": true,
+                          "minItems": 1,
                           "items": {
-                            "required": [],
-                            "properties": {}
+                            "required": [
+                              "id",
+                              "creat_at",
+                              "customer_name",
+                              "customer_email",
+                              "payment_subtotal",
+                              "payment_shipping",
+                              "payment_increase",
+                              "payment_coupon_discount",
+                              "updated_at",
+                              "coupon",
+                              "processed",
+                              "status"
+                            ],
+                            "properties": {
+                              "id": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "creat_at": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "customer_name": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "customer_email": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "payment_subtotal": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "payment_shipping": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "payment_increase": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "payment_total": {},
+                              "payment_in_cash": {},
+                              "payment_coupon_discount": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "updated_at": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "coupon": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "processed": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "status": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "orders_shipments": {
+                                "type": "array",
+                                "uniqueItems": true,
+                                "minItems": 1,
+                                "items": {
+                                  "required": [
+                                    "shipping_type",
+                                    "shipping_real_price",
+                                    "shipping_quote_price",
+                                    "package_total_weight",
+                                    "package_length",
+                                    "package_width",
+                                    "package_height",
+                                    "estimated_delivery_date",
+                                    "shipping_delivery_time",
+                                    "tracking_code",
+                                    "tracking_url"
+                                  ],
+                                  "properties": {
+                                    "shipping_type": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    },
+                                    "shipping_real_price": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    },
+                                    "shipping_quote_price": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    },
+                                    "package_total_weight": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    },
+                                    "package_length": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    },
+                                    "package_width": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    },
+                                    "package_height": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    },
+                                    "estimated_delivery_date": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    },
+                                    "shipping_delivery_time": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    },
+                                    "tracking_code": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    },
+                                    "tracking_url": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    }
+                                  }
+                                }
+                              },
+                              "orders_products": {
+                                "type": "array",
+                                "uniqueItems": true,
+                                "minItems": 1,
+                                "items": {
+                                  "required": [
+                                    "product_id",
+                                    "product_sku",
+                                    "product_price",
+                                    "product_qtdy",
+                                    "product_variant_sku",
+                                    "product_variant_options"
+                                  ],
+                                  "properties": {
+                                    "product_id": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    },
+                                    "product_sku": {
+                                      "type": "string"
+                                    },
+                                    "product_price": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    },
+                                    "product_qtdy": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    },
+                                    "product_variant_sku": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    },
+                                    "product_variant_options": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    }
+                                  }
+                                }
+                              },
+                              "orders_delivery_address": {
+                                "type": "array",
+                                "uniqueItems": true,
+                                "minItems": 1,
+                                "items": {
+                                  "required": [
+                                    "recipient",
+                                    "zip_code",
+                                    "address",
+                                    "number",
+                                    "complement",
+                                    "district",
+                                    "city",
+                                    "state",
+                                    "country"
+                                  ],
+                                  "properties": {
+                                    "recipient": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    },
+                                    "zip_code": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    },
+                                    "address": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    },
+                                    "number": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    },
+                                    "complement": {
+                                      "type": "string"
+                                    },
+                                    "district": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    },
+                                    "city": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    },
+                                    "state": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    },
+                                    "country": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    }
+                                  }
+                                }
+                              },
+                              "orders_transactions": {
+                                "type": "array",
+                                "items": {
+                                  "required": [],
+                                  "properties": {}
+                                }
+                              }
+                            }
                           }
                         }
                       },
@@ -509,7 +743,63 @@
                     "example-1": {
                       "result": {
                         "message": "Order update",
-                        "order": []
+                        "order": [
+                          {
+                            "id": "5",
+                            "creat_at": "2021-05-10 20:17:07",
+                            "customer_name": "Adriano Marques Vieira",
+                            "customer_email": "adrianno_marx@hotmail.com",
+                            "payment_subtotal": "159.90",
+                            "payment_shipping": "0.00",
+                            "payment_increase": "0.00",
+                            "payment_total": null,
+                            "payment_in_cash": null,
+                            "payment_coupon_discount": "15.99",
+                            "updated_at": "2021-05-12 14:34:45",
+                            "coupon": "10off",
+                            "processed": "0",
+                            "status": "order_created",
+                            "orders_shipments": [
+                              {
+                                "shipping_type": "sedex",
+                                "shipping_real_price": "10.00",
+                                "shipping_quote_price": "0.00",
+                                "package_total_weight": "0.1",
+                                "package_length": "16",
+                                "package_width": "11",
+                                "package_height": "2",
+                                "estimated_delivery_date": "2021-06-10",
+                                "shipping_delivery_time": "5",
+                                "tracking_code": "9981575674",
+                                "tracking_url": "https://www.google.com/"
+                              }
+                            ],
+                            "orders_products": [
+                              {
+                                "product_id": "16",
+                                "product_sku": "",
+                                "product_price": "159.90",
+                                "product_qtdy": "1",
+                                "product_variant_sku": "28TNBJSHH",
+                                "product_variant_options": "p|Azul"
+                              }
+                            ],
+                            "orders_delivery_address": [
+                              {
+                                "recipient": "Adriano Marques Vieira",
+                                "zip_code": "07094-120",
+                                "address": "Rua Adelino Teixeira",
+                                "number": "200",
+                                "complement": "",
+                                "district": "Vila Trabalhista",
+                                "city": "Guarulhos",
+                                "state": "SP",
+                                "country": "BR"
+                              }
+                            ],
+                            "orders_transactions": []
+                          }
+                        ]
                       },
                       "status_code": 200,
                       "method": "PUT"
@@ -607,51 +897,69 @@
                 "description": "",
                 "type": "object",
                 "properties": {
-                  "result": {
-                    "type": "object",
-                    "properties": {
-                      "message": {
-                        "type": "string",
-                        "minLength": 1
-                      },
-                      "order": {
-                        "type": "array",
-                        "uniqueItems": true,
-                        "minItems": 1,
-                        "items": {
-                          "required": [],
-                          "properties": {}
-                        }
-                      }
-                    },
-                    "required": [
-                      "message",
-                      "order"
-                    ]
-                  },
-                  "status_code": {
-                    "type": "number"
-                  },
-                  "method": {
+                  "status": {
                     "type": "string",
                     "minLength": 1
+                  },
+                  "orders_shipments": {
+                    "type": "array",
+                    "uniqueItems": true,
+                    "minItems": 1,
+                    "items": {
+                      "required": [
+                        "shipping_type",
+                        "shipping_real_price",
+                        "estimated_delivery_date",
+                        "shipping_delivery_time",
+                        "tracking_code",
+                        "tracking_url"
+                      ],
+                      "properties": {
+                        "shipping_type": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "shipping_real_price": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "estimated_delivery_date": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "shipping_delivery_time": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "tracking_code": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "tracking_url": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      }
+                    }
                   }
                 },
                 "required": [
-                  "result",
-                  "status_code",
-                  "method"
+                  "status",
+                  "orders_shipments"
                 ],
                 "x-examples": {
                   "example-1": {
-                    "result": {
-                      "message": "Order update",
-                      "order": [
-                        {}
-                      ]
-                    },
-                    "status_code": 200,
-                    "method": "PUT"
+                    "status": "order_created",
+                    "orders_shipments": [
+                      {
+                        "shipping_type": "sedex",
+                        "shipping_real_price": "10.00",
+                        "estimated_delivery_date": "2021-06-10",
+                        "shipping_delivery_time": "5",
+                        "tracking_code": "9981575674",
+                        "tracking_url": "https://www.google.com/"
+                      }
+                    ]
                   }
                 }
               },
