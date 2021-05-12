@@ -8,7 +8,7 @@ All requests for our solution follow the same URL prefix: `https://api.lpquevend
 
 ** {slug-landingpage} **: is the name of the store used for reference in our API, it is the same prefix used for the landingpage domain.
 
-`example.lpquevende.com.br` your slug is: `example`.   
+`example.lpqv.io` your slug is: `example`.   
 
 `Content-type` default content type: `application/json`.
 
