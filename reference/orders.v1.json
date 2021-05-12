@@ -46,261 +46,6 @@
                 "schema": {
                   "description": "",
                   "type": "object",
-                  "properties": {
-                    "result": {
-                      "type": "array",
-                      "uniqueItems": true,
-                      "minItems": 1,
-                      "items": {
-                        "required": [
-                          "id",
-                          "creat_at",
-                          "customer_name",
-                          "customer_email",
-                          "payment_subtotal",
-                          "payment_shipping",
-                          "payment_increase",
-                          "payment_coupon_discount",
-                          "updated_at",
-                          "coupon",
-                          "processed",
-                          "status"
-                        ],
-                        "properties": {
-                          "id": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "creat_at": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "customer_name": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "customer_email": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "payment_subtotal": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "payment_shipping": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "payment_increase": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "payment_total": {},
-                          "payment_in_cash": {},
-                          "payment_coupon_discount": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "updated_at": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "coupon": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "processed": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "status": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "orders_shipments": {
-                            "type": "array",
-                            "uniqueItems": true,
-                            "minItems": 1,
-                            "items": {
-                              "required": [
-                                "shipping_type",
-                                "shipping_real_price",
-                                "shipping_quote_price",
-                                "package_total_weight",
-                                "package_length",
-                                "package_width",
-                                "package_height",
-                                "estimated_delivery_date",
-                                "shipping_delivery_time",
-                                "tracking_code",
-                                "tracking_url"
-                              ],
-                              "properties": {
-                                "shipping_type": {
-                                  "type": "string",
-                                  "minLength": 1
-                                },
-                                "shipping_real_price": {
-                                  "type": "string",
-                                  "minLength": 1
-                                },
-                                "shipping_quote_price": {
-                                  "type": "string",
-                                  "minLength": 1
-                                },
-                                "package_total_weight": {
-                                  "type": "string",
-                                  "minLength": 1
-                                },
-                                "package_length": {
-                                  "type": "string",
-                                  "minLength": 1
-                                },
-                                "package_width": {
-                                  "type": "string",
-                                  "minLength": 1
-                                },
-                                "package_height": {
-                                  "type": "string",
-                                  "minLength": 1
-                                },
-                                "estimated_delivery_date": {
-                                  "type": "string",
-                                  "minLength": 1
-                                },
-                                "shipping_delivery_time": {
-                                  "type": "string",
-                                  "minLength": 1
-                                },
-                                "tracking_code": {
-                                  "type": "string",
-                                  "minLength": 1
-                                },
-                                "tracking_url": {
-                                  "type": "string",
-                                  "minLength": 1
-                                }
-                              }
-                            }
-                          },
-                          "orders_products": {
-                            "type": "array",
-                            "uniqueItems": true,
-                            "minItems": 1,
-                            "items": {
-                              "required": [
-                                "product_id",
-                                "product_sku",
-                                "product_price",
-                                "product_qtdy",
-                                "product_variant_sku",
-                                "product_variant_options"
-                              ],
-                              "properties": {
-                                "product_id": {
-                                  "type": "string",
-                                  "minLength": 1
-                                },
-                                "product_sku": {
-                                  "type": "string"
-                                },
-                                "product_price": {
-                                  "type": "string",
-                                  "minLength": 1
-                                },
-                                "product_qtdy": {
-                                  "type": "string",
-                                  "minLength": 1
-                                },
-                                "product_variant_sku": {
-                                  "type": "string",
-                                  "minLength": 1
-                                },
-                                "product_variant_options": {
-                                  "type": "string",
-                                  "minLength": 1
-                                }
-                              }
-                            }
-                          },
-                          "orders_delivery_address": {
-                            "type": "array",
-                            "uniqueItems": true,
-                            "minItems": 1,
-                            "items": {
-                              "required": [
-                                "recipient",
-                                "zip_code",
-                                "address",
-                                "number",
-                                "complement",
-                                "district",
-                                "city",
-                                "state",
-                                "country"
-                              ],
-                              "properties": {
-                                "recipient": {
-                                  "type": "string",
-                                  "minLength": 1
-                                },
-                                "zip_code": {
-                                  "type": "string",
-                                  "minLength": 1
-                                },
-                                "address": {
-                                  "type": "string",
-                                  "minLength": 1
-                                },
-                                "number": {
-                                  "type": "string",
-                                  "minLength": 1
-                                },
-                                "complement": {
-                                  "type": "string"
-                                },
-                                "district": {
-                                  "type": "string",
-                                  "minLength": 1
-                                },
-                                "city": {
-                                  "type": "string",
-                                  "minLength": 1
-                                },
-                                "state": {
-                                  "type": "string",
-                                  "minLength": 1
-                                },
-                                "country": {
-                                  "type": "string",
-                                  "minLength": 1
-                                }
-                              }
-                            }
-                          },
-                          "orders_transactions": {
-                            "type": "array",
-                            "items": {
-                              "required": [],
-                              "properties": {}
-                            }
-                          }
-                        }
-                      }
-                    },
-                    "status_code": {
-                      "type": "number"
-                    },
-                    "method": {
-                      "type": "string",
-                      "minLength": 1
-                    }
-                  },
-                  "required": [
-                    "result",
-                    "status_code",
-                    "method"
-                  ],
                   "x-examples": {
                     "example-1": {
                       "result": [
@@ -363,7 +108,239 @@
                       "status_code": 200,
                       "method": "GET"
                     }
-                  }
+                  },
+                  "properties": {
+                    "result": {
+                      "type": "array",
+                      "uniqueItems": true,
+                      "minItems": 1,
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "creat_at": {
+                            "type": "string",
+                            "minLength": 1,
+                            "description": "date time (0000-00-00 00:00:00)"
+                          },
+                          "customer_name": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "customer_email": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "payment_subtotal": {
+                            "type": "string",
+                            "minLength": 1,
+                            "description": "double (0.00)"
+                          },
+                          "payment_shipping": {
+                            "type": "string",
+                            "minLength": 1,
+                            "description": "double (0.00)"
+                          },
+                          "payment_increase": {
+                            "type": "string",
+                            "minLength": 1,
+                            "description": "double (0.00)"
+                          },
+                          "payment_total": {
+                            "type": "string",
+                            "description": "double (0.00)"
+                          },
+                          "payment_in_cash": {
+                            "type": "string",
+                            "description": "double (0.00)"
+                          },
+                          "payment_coupon_discount": {
+                            "type": "string",
+                            "minLength": 1,
+                            "description": "double (0.00)"
+                          },
+                          "updated_at": {
+                            "type": "string",
+                            "minLength": 1,
+                            "description": "date time (0000-00-00 00:00:00)"
+                          },
+                          "coupon": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "processed": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "status": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "orders_shipments": {
+                            "type": "array",
+                            "uniqueItems": true,
+                            "minItems": 1,
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "shipping_type": {
+                                  "type": "string",
+                                  "minLength": 1
+                                },
+                                "shipping_real_price": {
+                                  "type": "string",
+                                  "minLength": 1,
+                                  "description": "double (0.00)"
+                                },
+                                "shipping_quote_price": {
+                                  "type": "string",
+                                  "minLength": 1,
+                                  "description": "double (0.00)"
+                                },
+                                "package_total_weight": {
+                                  "type": "string",
+                                  "minLength": 1,
+                                  "description": "kg"
+                                },
+                                "package_length": {
+                                  "type": "string",
+                                  "minLength": 1,
+                                  "description": "centimeters"
+                                },
+                                "package_width": {
+                                  "type": "string",
+                                  "minLength": 1,
+                                  "description": "centimeters"
+                                },
+                                "package_height": {
+                                  "type": "string",
+                                  "minLength": 1,
+                                  "description": "centimeters"
+                                },
+                                "estimated_delivery_date": {
+                                  "type": "string",
+                                  "minLength": 1,
+                                  "description": "date (0000-00-00)"
+                                },
+                                "shipping_delivery_time": {
+                                  "type": "string",
+                                  "minLength": 1
+                                },
+                                "tracking_code": {
+                                  "type": "string",
+                                  "minLength": 1
+                                },
+                                "tracking_url": {
+                                  "type": "string",
+                                  "minLength": 1,
+                                  "description": "link URL"
+                                }
+                              }
+                            }
+                          },
+                          "orders_products": {
+                            "type": "array",
+                            "uniqueItems": true,
+                            "minItems": 1,
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "product_id": {
+                                  "type": "string",
+                                  "minLength": 1
+                                },
+                                "product_sku": {
+                                  "type": "string"
+                                },
+                                "product_price": {
+                                  "type": "string",
+                                  "minLength": 1,
+                                  "description": "double (0.00)"
+                                },
+                                "product_qtdy": {
+                                  "type": "string",
+                                  "minLength": 1
+                                },
+                                "product_variant_sku": {
+                                  "type": "string",
+                                  "minLength": 1
+                                },
+                                "product_variant_options": {
+                                  "type": "string",
+                                  "minLength": 1
+                                }
+                              }
+                            }
+                          },
+                          "orders_delivery_address": {
+                            "type": "array",
+                            "uniqueItems": true,
+                            "minItems": 1,
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "recipient": {
+                                  "type": "string",
+                                  "minLength": 1
+                                },
+                                "zip_code": {
+                                  "type": "string",
+                                  "minLength": 1
+                                },
+                                "address": {
+                                  "type": "string",
+                                  "minLength": 1
+                                },
+                                "number": {
+                                  "type": "string",
+                                  "minLength": 1
+                                },
+                                "complement": {
+                                  "type": "string"
+                                },
+                                "district": {
+                                  "type": "string",
+                                  "minLength": 1
+                                },
+                                "city": {
+                                  "type": "string",
+                                  "minLength": 1
+                                },
+                                "state": {
+                                  "type": "string",
+                                  "minLength": 1
+                                },
+                                "country": {
+                                  "type": "string",
+                                  "minLength": 1
+                                }
+                              }
+                            }
+                          },
+                          "orders_transactions": {
+                            "type": "array",
+                            "items": {
+                              "type": "object"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "status_code": {
+                      "type": "number"
+                    },
+                    "method": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "status_code",
+                    "method"
+                  ]
                 },
                 "examples": {
                   "Success": {
@@ -1021,261 +998,6 @@
                 "schema": {
                   "description": "",
                   "type": "object",
-                  "properties": {
-                    "result": {
-                      "type": "array",
-                      "uniqueItems": true,
-                      "minItems": 1,
-                      "items": {
-                        "required": [
-                          "id",
-                          "creat_at",
-                          "customer_name",
-                          "customer_email",
-                          "payment_subtotal",
-                          "payment_shipping",
-                          "payment_increase",
-                          "payment_coupon_discount",
-                          "updated_at",
-                          "coupon",
-                          "processed",
-                          "status"
-                        ],
-                        "properties": {
-                          "id": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "creat_at": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "customer_name": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "customer_email": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "payment_subtotal": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "payment_shipping": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "payment_increase": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "payment_total": {},
-                          "payment_in_cash": {},
-                          "payment_coupon_discount": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "updated_at": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "coupon": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "processed": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "status": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "orders_shipments": {
-                            "type": "array",
-                            "uniqueItems": true,
-                            "minItems": 1,
-                            "items": {
-                              "required": [
-                                "shipping_type",
-                                "shipping_real_price",
-                                "shipping_quote_price",
-                                "package_total_weight",
-                                "package_length",
-                                "package_width",
-                                "package_height",
-                                "estimated_delivery_date",
-                                "shipping_delivery_time",
-                                "tracking_code",
-                                "tracking_url"
-                              ],
-                              "properties": {
-                                "shipping_type": {
-                                  "type": "string",
-                                  "minLength": 1
-                                },
-                                "shipping_real_price": {
-                                  "type": "string",
-                                  "minLength": 1
-                                },
-                                "shipping_quote_price": {
-                                  "type": "string",
-                                  "minLength": 1
-                                },
-                                "package_total_weight": {
-                                  "type": "string",
-                                  "minLength": 1
-                                },
-                                "package_length": {
-                                  "type": "string",
-                                  "minLength": 1
-                                },
-                                "package_width": {
-                                  "type": "string",
-                                  "minLength": 1
-                                },
-                                "package_height": {
-                                  "type": "string",
-                                  "minLength": 1
-                                },
-                                "estimated_delivery_date": {
-                                  "type": "string",
-                                  "minLength": 1
-                                },
-                                "shipping_delivery_time": {
-                                  "type": "string",
-                                  "minLength": 1
-                                },
-                                "tracking_code": {
-                                  "type": "string",
-                                  "minLength": 1
-                                },
-                                "tracking_url": {
-                                  "type": "string",
-                                  "minLength": 1
-                                }
-                              }
-                            }
-                          },
-                          "orders_products": {
-                            "type": "array",
-                            "uniqueItems": true,
-                            "minItems": 1,
-                            "items": {
-                              "required": [
-                                "product_id",
-                                "product_sku",
-                                "product_price",
-                                "product_qtdy",
-                                "product_variant_sku",
-                                "product_variant_options"
-                              ],
-                              "properties": {
-                                "product_id": {
-                                  "type": "string",
-                                  "minLength": 1
-                                },
-                                "product_sku": {
-                                  "type": "string"
-                                },
-                                "product_price": {
-                                  "type": "string",
-                                  "minLength": 1
-                                },
-                                "product_qtdy": {
-                                  "type": "string",
-                                  "minLength": 1
-                                },
-                                "product_variant_sku": {
-                                  "type": "string",
-                                  "minLength": 1
-                                },
-                                "product_variant_options": {
-                                  "type": "string",
-                                  "minLength": 1
-                                }
-                              }
-                            }
-                          },
-                          "orders_delivery_address": {
-                            "type": "array",
-                            "uniqueItems": true,
-                            "minItems": 1,
-                            "items": {
-                              "required": [
-                                "recipient",
-                                "zip_code",
-                                "address",
-                                "number",
-                                "complement",
-                                "district",
-                                "city",
-                                "state",
-                                "country"
-                              ],
-                              "properties": {
-                                "recipient": {
-                                  "type": "string",
-                                  "minLength": 1
-                                },
-                                "zip_code": {
-                                  "type": "string",
-                                  "minLength": 1
-                                },
-                                "address": {
-                                  "type": "string",
-                                  "minLength": 1
-                                },
-                                "number": {
-                                  "type": "string",
-                                  "minLength": 1
-                                },
-                                "complement": {
-                                  "type": "string"
-                                },
-                                "district": {
-                                  "type": "string",
-                                  "minLength": 1
-                                },
-                                "city": {
-                                  "type": "string",
-                                  "minLength": 1
-                                },
-                                "state": {
-                                  "type": "string",
-                                  "minLength": 1
-                                },
-                                "country": {
-                                  "type": "string",
-                                  "minLength": 1
-                                }
-                              }
-                            }
-                          },
-                          "orders_transactions": {
-                            "type": "array",
-                            "items": {
-                              "required": [],
-                              "properties": {}
-                            }
-                          }
-                        }
-                      }
-                    },
-                    "status_code": {
-                      "type": "number"
-                    },
-                    "method": {
-                      "type": "string",
-                      "minLength": 1
-                    }
-                  },
-                  "required": [
-                    "result",
-                    "status_code",
-                    "method"
-                  ],
                   "x-examples": {
                     "example-1": {
                       "result": [
@@ -1338,7 +1060,257 @@
                       "status_code": 200,
                       "method": "GET"
                     }
-                  }
+                  },
+                  "properties": {
+                    "result": {
+                      "type": "array",
+                      "uniqueItems": true,
+                      "minItems": 1,
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "creat_at": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "customer_name": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "customer_email": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "payment_subtotal": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "payment_shipping": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "payment_increase": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "payment_total": {},
+                          "payment_in_cash": {},
+                          "payment_coupon_discount": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "updated_at": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "coupon": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "processed": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "status": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "orders_shipments": {
+                            "type": "array",
+                            "uniqueItems": true,
+                            "minItems": 1,
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "shipping_type": {
+                                  "type": "string",
+                                  "minLength": 1
+                                },
+                                "shipping_real_price": {
+                                  "type": "string",
+                                  "minLength": 1
+                                },
+                                "shipping_quote_price": {
+                                  "type": "string",
+                                  "minLength": 1
+                                },
+                                "package_total_weight": {
+                                  "type": "string",
+                                  "minLength": 1
+                                },
+                                "package_length": {
+                                  "type": "string",
+                                  "minLength": 1
+                                },
+                                "package_width": {
+                                  "type": "string",
+                                  "minLength": 1
+                                },
+                                "package_height": {
+                                  "type": "string",
+                                  "minLength": 1
+                                },
+                                "estimated_delivery_date": {
+                                  "type": "string",
+                                  "minLength": 1
+                                },
+                                "shipping_delivery_time": {
+                                  "type": "string",
+                                  "minLength": 1
+                                },
+                                "tracking_code": {
+                                  "type": "string",
+                                  "minLength": 1
+                                },
+                                "tracking_url": {
+                                  "type": "string",
+                                  "minLength": 1
+                                }
+                              },
+                              "required": [
+                                "shipping_type",
+                                "shipping_real_price",
+                                "shipping_quote_price",
+                                "package_total_weight",
+                                "package_length",
+                                "package_width",
+                                "package_height",
+                                "estimated_delivery_date",
+                                "shipping_delivery_time",
+                                "tracking_code",
+                                "tracking_url"
+                              ]
+                            }
+                          },
+                          "orders_products": {
+                            "type": "array",
+                            "uniqueItems": true,
+                            "minItems": 1,
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "product_id": {
+                                  "type": "string",
+                                  "minLength": 1
+                                },
+                                "product_sku": {
+                                  "type": "string"
+                                },
+                                "product_price": {
+                                  "type": "string",
+                                  "minLength": 1
+                                },
+                                "product_qtdy": {
+                                  "type": "string",
+                                  "minLength": 1
+                                },
+                                "product_variant_sku": {
+                                  "type": "string",
+                                  "minLength": 1
+                                },
+                                "product_variant_options": {
+                                  "type": "string",
+                                  "minLength": 1
+                                }
+                              },
+                              "required": [
+                                "product_id",
+                                "product_sku",
+                                "product_price",
+                                "product_qtdy",
+                                "product_variant_sku",
+                                "product_variant_options"
+                              ]
+                            }
+                          },
+                          "orders_delivery_address": {
+                            "type": "array",
+                            "uniqueItems": true,
+                            "minItems": 1,
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "recipient": {
+                                  "type": "string",
+                                  "minLength": 1
+                                },
+                                "zip_code": {
+                                  "type": "string",
+                                  "minLength": 1
+                                },
+                                "address": {
+                                  "type": "string",
+                                  "minLength": 1
+                                },
+                                "number": {
+                                  "type": "string",
+                                  "minLength": 1
+                                },
+                                "complement": {
+                                  "type": "string"
+                                },
+                                "district": {
+                                  "type": "string",
+                                  "minLength": 1
+                                },
+                                "city": {
+                                  "type": "string",
+                                  "minLength": 1
+                                },
+                                "state": {
+                                  "type": "string",
+                                  "minLength": 1
+                                },
+                                "country": {
+                                  "type": "string",
+                                  "minLength": 1
+                                }
+                              },
+                              "required": [
+                                "recipient",
+                                "zip_code",
+                                "address",
+                                "number",
+                                "complement",
+                                "district",
+                                "city",
+                                "state",
+                                "country"
+                              ]
+                            }
+                          },
+                          "orders_transactions": {
+                            "type": "array",
+                            "items": {
+                              "type": "object"
+                            }
+                          }
+                        },
+                        "required": [
+                          "payment_coupon_discount",
+                          "updated_at",
+                          "coupon",
+                          "processed",
+                          "status"
+                        ]
+                      }
+                    },
+                    "status_code": {
+                      "type": "number"
+                    },
+                    "method": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "status_code",
+                    "method"
+                  ]
                 },
                 "examples": {
                   "Success": {
