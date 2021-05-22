@@ -140,7 +140,7 @@
           }
         },
         "operationId": "get-slug-landingpage-webhooks",
-        "description": "Retrieves information from all webhooks and their dependencies.",
+        "description": "Retrieves information from all webhooks and their dependencies.\n\n**Accept Events**\n\nEvent | Meaning\n--------- | ----------\nproduct.created | Product created\nproduct.updated | Product updated\nproduct.deleted | Product deleted\norder.created | Order created\norder.updated | Order updated\norder.paid | Order paid\norder.canceled | Order canceled",
         "parameters": [
           {
             "schema": {
