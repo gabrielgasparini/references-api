@@ -1,0 +1,426 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Webhooks",
+    "version": "",
+    "description": "Through this reference you can consult or insert webhooks.",
+    "contact": {
+      "email": "developers@lpquevende.com.br"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://api.lpquevende.com/"
+    }
+  ],
+  "paths": {
+    "{slug-landingpage}/webhooks": {
+      "parameters": [
+        {
+          "schema": {
+            "type": "string"
+          },
+          "name": "slug-landingpage",
+          "in": "path",
+          "description": "prefix used in the domain",
+          "required": true
+        }
+      ],
+      "get": {
+        "summary": "Get all webhooks",
+        "tags": [],
+        "responses": {
+          "200": {
+            "description": "OK - Request responses",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "",
+                  "type": "object",
+                  "properties": {
+                    "result": {
+                      "type": "array",
+                      "uniqueItems": true,
+                      "minItems": 1,
+                      "items": {
+                        "required": [
+                          "endpoint",
+                          "token"
+                        ],
+                        "properties": {
+                          "endpoint": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "token": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "events": {
+                            "type": "array",
+                            "items": {
+                              "required": [],
+                              "properties": {}
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "status_code": {
+                      "type": "number"
+                    },
+                    "method": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "result",
+                    "status_code",
+                    "method"
+                  ],
+                  "x-examples": {
+                    "example-1": {
+                      "result": [
+                        {
+                          "endpoint": "https://webhook/request",
+                          "token": "406a33a841817ede139ae08a5423736a",
+                          "events": [
+                            "product.created",
+                            "product.updated",
+                            "product.deleted",
+                            "order.created",
+                            "order.paid",
+                            "order.updated",
+                            "order.canceled"
+                          ]
+                        }
+                      ],
+                      "status_code": 200,
+                      "method": "GET"
+                    }
+                  }
+                },
+                "examples": {
+                  "Success": {
+                    "value": {
+                      "result": [
+                        {
+                          "endpoint": "https://webhook/request",
+                          "token": "406a33a841817ede139ae08a5423736a",
+                          "events": [
+                            "product.created",
+                            "product.updated",
+                            "product.deleted",
+                            "order.created",
+                            "order.paid",
+                            "order.updated",
+                            "order.canceled"
+                          ]
+                        }
+                      ],
+                      "status_code": 200,
+                      "method": "GET"
+                    }
+                  },
+                  "Error": {
+                    "value": {
+                      "result": [
+                        {
+                          "message": "No results"
+                        }
+                      ],
+                      "status_code": 200,
+                      "method": "GET"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-slug-landingpage-webhooks",
+        "description": "Retrieves information from all webhooks and their dependencies.",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string",
+              "default": "application/json"
+            },
+            "in": "header",
+            "name": "Content-Type",
+            "required": true,
+            "description": "API accepts only JSON type data"
+          }
+        ]
+      },
+      "post": {
+        "summary": "Create a webhook",
+        "operationId": "post-slug-landingpage-webhooks",
+        "responses": {
+          "200": {
+            "description": "OK - Request responses",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "",
+                  "type": "object",
+                  "properties": {
+                    "result": {
+                      "type": "array",
+                      "uniqueItems": true,
+                      "minItems": 1,
+                      "items": {
+                        "required": [
+                          "message"
+                        ],
+                        "properties": {
+                          "message": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "status_code": {
+                      "type": "number"
+                    },
+                    "method": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "result",
+                    "status_code",
+                    "method"
+                  ]
+                },
+                "examples": {
+                  "Error": {
+                    "value": {
+                      "result": [
+                        {
+                          "message": "Error in the past parameters"
+                        }
+                      ],
+                      "status_code": 200,
+                      "method": "POST"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "201": {
+            "description": "Created - Request responses",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "",
+                  "type": "object",
+                  "properties": {
+                    "result": {
+                      "type": "object",
+                      "properties": {
+                        "message": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "webhook": {
+                          "type": "array",
+                          "uniqueItems": true,
+                          "minItems": 1,
+                          "items": {
+                            "required": [
+                              "endpoint",
+                              "token"
+                            ],
+                            "properties": {
+                              "endpoint": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "token": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "events": {
+                                "type": "array",
+                                "items": {
+                                  "required": [],
+                                  "properties": {}
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "required": [
+                        "message",
+                        "webhook"
+                      ]
+                    },
+                    "status_code": {
+                      "type": "number"
+                    },
+                    "method": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "result",
+                    "status_code",
+                    "method"
+                  ],
+                  "x-examples": {
+                    "example-1": {
+                      "result": {
+                        "message": "Created webhook",
+                        "webhook": [
+                          {
+                            "endpoint": "https://webhook/request",
+                            "token": "8344af3ef73f25a4ce3b3066aad06420",
+                            "events": [
+                              "product.created",
+                              "product.updated",
+                              "product.deleted",
+                              "order.created",
+                              "order.paid",
+                              "order.updated",
+                              "order.canceled"
+                            ]
+                          }
+                        ]
+                      },
+                      "status_code": 201,
+                      "method": "POST"
+                    }
+                  }
+                },
+                "examples": {
+                  "Success": {
+                    "value": {
+                      "result": {
+                        "message": "Created webhook",
+                        "webhook": [
+                          {
+                            "endpoint": "https://webhook/request",
+                            "token": "8344af3ef73f25a4ce3b3066aad06420",
+                            "events": [
+                              "product.created",
+                              "product.updated",
+                              "product.deleted",
+                              "order.created",
+                              "order.paid",
+                              "order.updated",
+                              "order.canceled"
+                            ]
+                          }
+                        ]
+                      },
+                      "status_code": 201,
+                      "method": "POST"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "description": "Generates a new webhook record and its dependencies.",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "description": "",
+                "type": "object",
+                "properties": {
+                  "endpoint": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "events": {
+                    "type": "array",
+                    "items": {
+                      "required": [],
+                      "properties": {}
+                    }
+                  }
+                },
+                "required": [
+                  "endpoint",
+                  "events"
+                ],
+                "x-examples": {
+                  "example-1": {
+                    "endpoint": "https://webhook/request",
+                    "events": [
+                      "product.created",
+                      "product.updated",
+                      "product.deleted",
+                      "order.created",
+                      "order.paid",
+                      "order.updated",
+                      "order.canceled"
+                    ]
+                  }
+                }
+              },
+              "examples": {
+                "With variation": {
+                  "value": {
+                    "endpoint": "https://webhook/request",
+                    "events": [
+                      "product.created",
+                      "product.updated",
+                      "product.deleted",
+                      "order.created",
+                      "order.paid",
+                      "order.updated",
+                      "order.canceled"
+                    ]
+                  }
+                }
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "type": "object",
+                "properties": {}
+              }
+            }
+          },
+          "description": "Check the request body"
+        },
+        "parameters": [
+          {
+            "schema": {
+              "type": "string",
+              "default": "application/json"
+            },
+            "in": "header",
+            "name": "Content-Type",
+            "required": true,
+            "description": "API accepts only JSON type data"
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {},
+    "securitySchemes": {
+      "TOKEN": {
+        "type": "http",
+        "scheme": "bearer",
+        "description": "Token provided for your landing page"
+      }
+    },
+    "parameters": {}
+  },
+  "security": [
+    {
+      "TOKEN": []
+    }
+  ]
+}
