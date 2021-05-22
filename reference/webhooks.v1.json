@@ -334,23 +334,6 @@
               "schema": {
                 "description": "",
                 "type": "object",
-                "properties": {
-                  "endpoint": {
-                    "type": "string",
-                    "minLength": 1
-                  },
-                  "events": {
-                    "type": "array",
-                    "items": {
-                      "required": [],
-                      "properties": {}
-                    }
-                  }
-                },
-                "required": [
-                  "endpoint",
-                  "events"
-                ],
                 "x-examples": {
                   "example-1": {
                     "endpoint": "https://webhook/request",
@@ -364,7 +347,24 @@
                       "order.canceled"
                     ]
                   }
-                }
+                },
+                "properties": {
+                  "endpoint": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "events": {
+                    "type": "array",
+                    "description": "Accept: ['product.created', 'product.updated', 'product.deleted', 'order.created', 'order.paid', 'order.updated', 'order.canceled']",
+                    "items": {
+                      "type": "object"
+                    }
+                  }
+                },
+                "required": [
+                  "endpoint",
+                  "events"
+                ]
               },
               "examples": {
                 "With variation": {
