@@ -352,7 +352,8 @@
                 "properties": {
                   "endpoint": {
                     "type": "string",
-                    "minLength": 1
+                    "minLength": 1,
+                    "description": "Where we send the updates (URL)"
                   },
                   "events": {
                     "type": "array",
