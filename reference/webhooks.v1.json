@@ -217,61 +217,6 @@
                 "schema": {
                   "description": "",
                   "type": "object",
-                  "properties": {
-                    "result": {
-                      "type": "object",
-                      "properties": {
-                        "message": {
-                          "type": "string",
-                          "minLength": 1
-                        },
-                        "webhook": {
-                          "type": "array",
-                          "uniqueItems": true,
-                          "minItems": 1,
-                          "items": {
-                            "required": [
-                              "endpoint",
-                              "token"
-                            ],
-                            "properties": {
-                              "endpoint": {
-                                "type": "string",
-                                "minLength": 1
-                              },
-                              "token": {
-                                "type": "string",
-                                "minLength": 1
-                              },
-                              "events": {
-                                "type": "array",
-                                "items": {
-                                  "required": [],
-                                  "properties": {}
-                                }
-                              }
-                            }
-                          }
-                        }
-                      },
-                      "required": [
-                        "message",
-                        "webhook"
-                      ]
-                    },
-                    "status_code": {
-                      "type": "number"
-                    },
-                    "method": {
-                      "type": "string",
-                      "minLength": 1
-                    }
-                  },
-                  "required": [
-                    "result",
-                    "status_code",
-                    "method"
-                  ],
                   "x-examples": {
                     "example-1": {
                       "result": {
@@ -295,7 +240,63 @@
                       "status_code": 201,
                       "method": "POST"
                     }
-                  }
+                  },
+                  "properties": {
+                    "result": {
+                      "type": "object",
+                      "required": [
+                        "message",
+                        "webhook"
+                      ],
+                      "properties": {
+                        "message": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "webhook": {
+                          "type": "array",
+                          "uniqueItems": true,
+                          "minItems": 1,
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "endpoint": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "token": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "events": {
+                                "type": "array",
+                                "description": "['product.created', 'product.updated', 'product.deleted', 'order.created', 'order.paid', 'order.updated', 'order.canceled']",
+                                "items": {
+                                  "type": "object"
+                                }
+                              }
+                            },
+                            "required": [
+                              "endpoint",
+                              "token"
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    "status_code": {
+                      "type": "number"
+                    },
+                    "method": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "result",
+                    "status_code",
+                    "method"
+                  ]
                 },
                 "examples": {
                   "Success": {
