@@ -3,7 +3,7 @@
   "info": {
     "title": "Webhooks",
     "version": "",
-    "description": "Through this reference you can consult or insert webhooks.",
+    "description": "Through this reference you can consult or insert webhooks.\n\n**Example** - PHP signature validation code\n\n```php\n<?php\n\nfunction make_signature($response, $webhook_token){\n  $hash = hash_hmac('sha1', $response, $webhook_token);\n  return $hash;\n}\n\n$input = json_decode(file_get_contents('php://input'), true);\n$response = $input['response'];\n$signature = $input['signature'];\n$webhook_token = '56daafff17f53f2cb5848744fbe02eee';\n$response = json_encode($response); \n\n$validate_signature = make_signature($response, $webhook_token);\n\nif($signature == $validate_signature){\n  echo 'valid';\n}else{\n  echo 'invalid';\n}\n\n?>",
     "contact": {
       "email": "developers@lpquevende.com.br"
     }
