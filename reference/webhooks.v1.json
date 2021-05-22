@@ -369,7 +369,7 @@
                 ]
               },
               "examples": {
-                "With variation": {
+                "Example": {
                   "value": {
                     "endpoint": "https://webhook/request",
                     "events": [
