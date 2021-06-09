@@ -530,7 +530,7 @@
           "name": "id",
           "in": "path",
           "required": true,
-          "description": "Product ID"
+          "description": "Review ID"
         }
       ],
       "put": {
