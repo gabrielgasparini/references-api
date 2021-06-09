@@ -482,9 +482,6 @@
                     "type": "string",
                     "minLength": 1,
                     "description": "image url\n"
-                  },
-                  "": {
-                    "type": "string"
                   }
                 },
                 "required": [
