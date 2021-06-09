@@ -42,7 +42,7 @@
                       "result": [
                         {
                           "id": "1",
-                          "image": "http://192.168.0.120/landingpagesistema/uploads/store-pet/social_proofs/1/images/http://192.168.0.45/lpqv-checkout/app/checkout/assets/dist/img/depo1.jpg",
+                          "image": "https://app.lpqv.com.br/uploads/store-pet/social_proofs/1/images/http://192.168.0.45/lpqv-checkout/app/checkout/assets/dist/img/depo1.jpg",
                           "title": "Larissa Monteiro",
                           "stars": "5",
                           "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque placeat rerum aliquam!",
@@ -54,7 +54,7 @@
                         },
                         {
                           "id": "2",
-                          "image": "http://192.168.0.120/landingpagesistema/uploads/store-pet/social_proofs/2/images/http://192.168.0.45/lpqv-checkout/app/checkout/assets/dist/img/depo2.jpg",
+                          "image": "https://app.lpqv.com.br/uploads/store-pet/social_proofs/2/images/http://192.168.0.45/lpqv-checkout/app/checkout/assets/dist/img/depo2.jpg",
                           "title": "Paulo Vieira",
                           "stars": "5",
                           "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque placeat rerum aliquam!",
@@ -155,7 +155,7 @@
                       "result": [
                         {
                           "id": "1",
-                          "image": "http://192.168.0.120/landingpagesistema/uploads/store-pet/social_proofs/1/images/http://192.168.0.45/lpqv-checkout/app/checkout/assets/dist/img/depo1.jpg",
+                          "image": "https://app.lpqv.com.br/uploads/store-pet/social_proofs/1/images/http://192.168.0.45/lpqv-checkout/app/checkout/assets/dist/img/depo1.jpg",
                           "title": "Larissa Monteiro",
                           "stars": "5",
                           "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque placeat rerum aliquam!",
@@ -167,7 +167,7 @@
                         },
                         {
                           "id": "2",
-                          "image": "http://192.168.0.120/landingpagesistema/uploads/store-pet/social_proofs/2/images/http://192.168.0.45/lpqv-checkout/app/checkout/assets/dist/img/depo2.jpg",
+                          "image": "https://app.lpqv.com.br/uploads/store-pet/social_proofs/2/images/http://192.168.0.45/lpqv-checkout/app/checkout/assets/dist/img/depo2.jpg",
                           "title": "Paulo Vieira",
                           "stars": "5",
                           "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque placeat rerum aliquam!",
@@ -283,7 +283,7 @@
                         "review": [
                           {
                             "id": "7",
-                            "image": "http://192.168.0.120/landingpagesistema/uploads/store-pet/social_proofs/7/images/31525882dddb1a08596ad80faf3f902e.jpg",
+                            "image": "https://app.lpqv.com.br/uploads/store-pet/social_proofs/7/images/31525882dddb1a08596ad80faf3f902e.jpg",
                             "title": "teste do bié",
                             "stars": "3",
                             "text": "texto do bié",
@@ -400,7 +400,7 @@
                         "review": [
                           {
                             "id": "8",
-                            "image": "http://192.168.0.120/landingpagesistema/uploads/store-pet/social_proofs/8/images/e8fc6a8ef99dcdcb86bdff866d5e4924.jpg",
+                            "image": "https://app.lpqv.com.br/uploads/store-pet/social_proofs/8/images/e8fc6a8ef99dcdcb86bdff866d5e4924.jpg",
                             "title": "Example title",
                             "stars": "3",
                             "text": "Example text",
@@ -551,7 +551,7 @@
                         "review": [
                           {
                             "id": "2",
-                            "image": "http://192.168.0.120/landingpagesistema/uploads/store-pet/social_proofs/2/images/91b0571180b4ba4e1b5afee035e4cbac.jpg",
+                            "image": "https://app.lpqv.com.br/uploads/store-pet/social_proofs/2/images/91b0571180b4ba4e1b5afee035e4cbac.jpg",
                             "title": "Example title",
                             "stars": "3",
                             "text": "Example text",
@@ -668,7 +668,7 @@
                         "review": [
                           {
                             "id": "2",
-                            "image": "http://192.168.0.120/landingpagesistema/uploads/store-pet/social_proofs/2/images/91b0571180b4ba4e1b5afee035e4cbac.jpg",
+                            "image": "https://app.lpqv.com.br/uploads/store-pet/social_proofs/2/images/91b0571180b4ba4e1b5afee035e4cbac.jpg",
                             "title": "Example title",
                             "stars": "3",
                             "text": "Example text",
@@ -906,7 +906,7 @@
                       "result": [
                         {
                           "id": "1",
-                          "image": "http://192.168.0.120/landingpagesistema/uploads/store-pet/social_proofs/1/images/http://192.168.0.45/lpqv-checkout/app/checkout/assets/dist/img/depo1.jpg",
+                          "image": "https://app.lpqv.com.br/uploads/store-pet/social_proofs/1/images/http://192.168.0.45/lpqv-checkout/app/checkout/assets/dist/img/depo1.jpg",
                           "title": "Larissa Monteiro",
                           "stars": "5",
                           "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque placeat rerum aliquam!",
@@ -1007,7 +1007,7 @@
                       "result": [
                         {
                           "id": "1",
-                          "image": "http://192.168.0.120/landingpagesistema/uploads/store-pet/social_proofs/1/images/http://192.168.0.45/lpqv-checkout/app/checkout/assets/dist/img/depo1.jpg",
+                          "image": "https://app.lpqv.com.br/uploads/store-pet/social_proofs/1/images/http://192.168.0.45/lpqv-checkout/app/checkout/assets/dist/img/depo1.jpg",
                           "title": "Larissa Monteiro",
                           "stars": "5",
                           "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque placeat rerum aliquam!",
