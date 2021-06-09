@@ -109,7 +109,8 @@
                             "minLength": 1
                           },
                           "updated_at": {
-                            "type": "string"
+                            "type": "string",
+                            "minLength": 1
                           },
                           "product_id": {
                             "type": "string",
@@ -349,7 +350,8 @@
                                 "minLength": 1
                               },
                               "updated_at": {
-                                "type": "string"
+                                "type": "string",
+                                "minLength": 1
                               },
                               "product_id": {
                                 "type": "string",
@@ -368,6 +370,7 @@
                               "text",
                               "status",
                               "created_at",
+                              "updated_at",
                               "product_id",
                               "position"
                             ]
@@ -958,7 +961,8 @@
                             "minLength": 1
                           },
                           "updated_at": {
-                            "type": "string"
+                            "type": "string",
+                            "minLength": 1
                           },
                           "product_id": {
                             "type": "string",
