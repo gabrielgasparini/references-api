@@ -37,77 +37,6 @@
                 "schema": {
                   "description": "",
                   "type": "object",
-                  "properties": {
-                    "result": {
-                      "type": "array",
-                      "uniqueItems": true,
-                      "minItems": 1,
-                      "items": {
-                        "required": [
-                          "id",
-                          "image",
-                          "title",
-                          "stars",
-                          "text",
-                          "status",
-                          "created_at",
-                          "product_id",
-                          "position"
-                        ],
-                        "properties": {
-                          "id": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "image": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "title": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "stars": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "text": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "status": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "created_at": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "updated_at": {},
-                          "product_id": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "position": {
-                            "type": "string",
-                            "minLength": 1
-                          }
-                        }
-                      }
-                    },
-                    "status_code": {
-                      "type": "number"
-                    },
-                    "method": {
-                      "type": "string",
-                      "minLength": 1
-                    }
-                  },
-                  "required": [
-                    "result",
-                    "status_code",
-                    "method"
-                  ],
                   "x-examples": {
                     "example-1": {
                       "result": [
@@ -139,7 +68,82 @@
                       "status_code": 200,
                       "method": "GET"
                     }
-                  }
+                  },
+                  "properties": {
+                    "result": {
+                      "type": "array",
+                      "uniqueItems": true,
+                      "minItems": 1,
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "image": {
+                            "type": "string",
+                            "minLength": 1,
+                            "description": "image url"
+                          },
+                          "title": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "stars": {
+                            "type": "string",
+                            "minLength": 1,
+                            "description": "from 0 to 5\n"
+                          },
+                          "text": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "status": {
+                            "type": "string",
+                            "minLength": 1,
+                            "description": "1 to display 0 to not display\n"
+                          },
+                          "created_at": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "updated_at": {},
+                          "product_id": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "position": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "image",
+                          "title",
+                          "stars",
+                          "text",
+                          "status",
+                          "created_at",
+                          "product_id",
+                          "position"
+                        ]
+                      }
+                    },
+                    "status_code": {
+                      "type": "number"
+                    },
+                    "method": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "result",
+                    "status_code",
+                    "method"
+                  ]
                 },
                 "examples": {
                   "Success": {
@@ -268,90 +272,6 @@
                 "schema": {
                   "description": "",
                   "type": "object",
-                  "properties": {
-                    "result": {
-                      "type": "object",
-                      "properties": {
-                        "message": {
-                          "type": "string",
-                          "minLength": 1
-                        },
-                        "review": {
-                          "type": "array",
-                          "uniqueItems": true,
-                          "minItems": 1,
-                          "items": {
-                            "required": [
-                              "id",
-                              "image",
-                              "title",
-                              "stars",
-                              "text",
-                              "status",
-                              "created_at",
-                              "product_id",
-                              "position"
-                            ],
-                            "properties": {
-                              "id": {
-                                "type": "string",
-                                "minLength": 1
-                              },
-                              "image": {
-                                "type": "string",
-                                "minLength": 1
-                              },
-                              "title": {
-                                "type": "string",
-                                "minLength": 1
-                              },
-                              "stars": {
-                                "type": "string",
-                                "minLength": 1
-                              },
-                              "text": {
-                                "type": "string",
-                                "minLength": 1
-                              },
-                              "status": {
-                                "type": "string",
-                                "minLength": 1
-                              },
-                              "created_at": {
-                                "type": "string",
-                                "minLength": 1
-                              },
-                              "updated_at": {},
-                              "product_id": {
-                                "type": "string",
-                                "minLength": 1
-                              },
-                              "position": {
-                                "type": "string",
-                                "minLength": 1
-                              }
-                            }
-                          }
-                        }
-                      },
-                      "required": [
-                        "message",
-                        "review"
-                      ]
-                    },
-                    "status_code": {
-                      "type": "number"
-                    },
-                    "method": {
-                      "type": "string",
-                      "minLength": 1
-                    }
-                  },
-                  "required": [
-                    "result",
-                    "status_code",
-                    "method"
-                  ],
                   "x-examples": {
                     "example-1": {
                       "result": {
@@ -374,7 +294,97 @@
                       "status_code": 201,
                       "method": "POST"
                     }
-                  }
+                  },
+                  "properties": {
+                    "result": {
+                      "type": "object",
+                      "required": [
+                        "message",
+                        "review"
+                      ],
+                      "properties": {
+                        "message": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "review": {
+                          "type": "array",
+                          "uniqueItems": true,
+                          "minItems": 1,
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "image": {
+                                "type": "string",
+                                "minLength": 1,
+                                "description": "image url\n"
+                              },
+                              "title": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "stars": {
+                                "type": "string",
+                                "minLength": 1,
+                                "description": "from 0 to 5\n"
+                              },
+                              "text": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "status": {
+                                "type": "string",
+                                "minLength": 1,
+                                "description": "1 to display 0 to not display\n"
+                              },
+                              "created_at": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "updated_at": {
+                                "type": "string"
+                              },
+                              "product_id": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "position": {
+                                "type": "string",
+                                "minLength": 1
+                              }
+                            },
+                            "required": [
+                              "id",
+                              "image",
+                              "title",
+                              "stars",
+                              "text",
+                              "status",
+                              "created_at",
+                              "product_id",
+                              "position"
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    "status_code": {
+                      "type": "number"
+                    },
+                    "method": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "result",
+                    "status_code",
+                    "method"
+                  ]
                 },
                 "examples": {
                   "Success": {
@@ -412,6 +422,16 @@
               "schema": {
                 "description": "",
                 "type": "object",
+                "x-examples": {
+                  "example-1": {
+                    "title": "Example title",
+                    "text": "Example text",
+                    "stars": "3",
+                    "product_id": "77",
+                    "status": "1",
+                    "image": "https://www.aplicaplacaspersonalizadas.com.br/uploads/img/550/placa-sinalizacao-cuidado-ao-subir-e-descer-escada-64c7b4bf689d55c0b74661000c0c3595.jpg"
+                  }
+                },
                 "properties": {
                   "title": {
                     "type": "string",
@@ -423,7 +443,8 @@
                   },
                   "stars": {
                     "type": "string",
-                    "minLength": 1
+                    "minLength": 1,
+                    "description": "from 0 to 5\n"
                   },
                   "product_id": {
                     "type": "string",
@@ -431,11 +452,13 @@
                   },
                   "status": {
                     "type": "string",
-                    "minLength": 1
+                    "minLength": 1,
+                    "description": "1 to display 0 to not display\n"
                   },
                   "image": {
                     "type": "string",
-                    "minLength": 1
+                    "minLength": 1,
+                    "description": "image url\n"
                   }
                 },
                 "required": [
@@ -445,17 +468,7 @@
                   "product_id",
                   "status",
                   "image"
-                ],
-                "x-examples": {
-                  "example-1": {
-                    "title": "Example title",
-                    "text": "Example text",
-                    "stars": "3",
-                    "product_id": "77",
-                    "status": "1",
-                    "image": "https://www.aplicaplacaspersonalizadas.com.br/uploads/img/550/placa-sinalizacao-cuidado-ao-subir-e-descer-escada-64c7b4bf689d55c0b74661000c0c3595.jpg"
-                  }
-                }
+                ]
               },
               "examples": {
                 "Example": {
@@ -525,94 +538,6 @@
                 "schema": {
                   "description": "",
                   "type": "object",
-                  "properties": {
-                    "result": {
-                      "type": "object",
-                      "properties": {
-                        "message": {
-                          "type": "string",
-                          "minLength": 1
-                        },
-                        "review": {
-                          "type": "array",
-                          "uniqueItems": true,
-                          "minItems": 1,
-                          "items": {
-                            "required": [
-                              "id",
-                              "image",
-                              "title",
-                              "stars",
-                              "text",
-                              "status",
-                              "created_at",
-                              "updated_at",
-                              "product_id",
-                              "position"
-                            ],
-                            "properties": {
-                              "id": {
-                                "type": "string",
-                                "minLength": 1
-                              },
-                              "image": {
-                                "type": "string",
-                                "minLength": 1
-                              },
-                              "title": {
-                                "type": "string",
-                                "minLength": 1
-                              },
-                              "stars": {
-                                "type": "string",
-                                "minLength": 1
-                              },
-                              "text": {
-                                "type": "string",
-                                "minLength": 1
-                              },
-                              "status": {
-                                "type": "string",
-                                "minLength": 1
-                              },
-                              "created_at": {
-                                "type": "string",
-                                "minLength": 1
-                              },
-                              "updated_at": {
-                                "type": "string",
-                                "minLength": 1
-                              },
-                              "product_id": {
-                                "type": "string",
-                                "minLength": 1
-                              },
-                              "position": {
-                                "type": "string",
-                                "minLength": 1
-                              }
-                            }
-                          }
-                        }
-                      },
-                      "required": [
-                        "message",
-                        "review"
-                      ]
-                    },
-                    "status_code": {
-                      "type": "number"
-                    },
-                    "method": {
-                      "type": "string",
-                      "minLength": 1
-                    }
-                  },
-                  "required": [
-                    "result",
-                    "status_code",
-                    "method"
-                  ],
                   "x-examples": {
                     "example-1": {
                       "result": {
@@ -635,7 +560,99 @@
                       "status_code": 200,
                       "method": "PUT"
                     }
-                  }
+                  },
+                  "properties": {
+                    "result": {
+                      "type": "object",
+                      "required": [
+                        "message",
+                        "review"
+                      ],
+                      "properties": {
+                        "message": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "review": {
+                          "type": "array",
+                          "uniqueItems": true,
+                          "minItems": 1,
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "image": {
+                                "type": "string",
+                                "minLength": 1,
+                                "description": "image url"
+                              },
+                              "title": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "stars": {
+                                "type": "string",
+                                "minLength": 1,
+                                "description": "from 0 to 5\n"
+                              },
+                              "text": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "status": {
+                                "type": "string",
+                                "minLength": 1,
+                                "description": "1 to display 0 to not display\n"
+                              },
+                              "created_at": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "updated_at": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "product_id": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "position": {
+                                "type": "string",
+                                "minLength": 1
+                              }
+                            },
+                            "required": [
+                              "id",
+                              "image",
+                              "title",
+                              "stars",
+                              "text",
+                              "status",
+                              "created_at",
+                              "updated_at",
+                              "product_id",
+                              "position"
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    "status_code": {
+                      "type": "number"
+                    },
+                    "method": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "result",
+                    "status_code",
+                    "method"
+                  ]
                 },
                 "examples": {
                   "Success": {
@@ -684,6 +701,16 @@
               "schema": {
                 "description": "",
                 "type": "object",
+                "x-examples": {
+                  "example-1": {
+                    "title": "Example title",
+                    "text": "Example text",
+                    "stars": "3",
+                    "product_id": "77",
+                    "status": "1",
+                    "image": "https://www.aplicaplacaspersonalizadas.com.br/uploads/img/550/placa-sinalizacao-cuidado-ao-subir-e-descer-escada-64c7b4bf689d55c0b74661000c0c3595.jpg"
+                  }
+                },
                 "properties": {
                   "title": {
                     "type": "string",
@@ -695,7 +722,8 @@
                   },
                   "stars": {
                     "type": "string",
-                    "minLength": 1
+                    "minLength": 1,
+                    "description": "from 0 to 5\n"
                   },
                   "product_id": {
                     "type": "string",
@@ -703,11 +731,13 @@
                   },
                   "status": {
                     "type": "string",
-                    "minLength": 1
+                    "minLength": 1,
+                    "description": "1 to display 0 to not display\n"
                   },
                   "image": {
                     "type": "string",
-                    "minLength": 1
+                    "minLength": 1,
+                    "description": "image url"
                   }
                 },
                 "required": [
@@ -717,17 +747,7 @@
                   "product_id",
                   "status",
                   "image"
-                ],
-                "x-examples": {
-                  "example-1": {
-                    "title": "Example title",
-                    "text": "Example text",
-                    "stars": "3",
-                    "product_id": "77",
-                    "status": "1",
-                    "image": "https://www.aplicaplacaspersonalizadas.com.br/uploads/img/550/placa-sinalizacao-cuidado-ao-subir-e-descer-escada-64c7b4bf689d55c0b74661000c0c3595.jpg"
-                  }
-                }
+                ]
               },
               "examples": {
                 "Example": {
@@ -875,77 +895,6 @@
                 "schema": {
                   "description": "",
                   "type": "object",
-                  "properties": {
-                    "result": {
-                      "type": "array",
-                      "uniqueItems": true,
-                      "minItems": 1,
-                      "items": {
-                        "required": [
-                          "id",
-                          "image",
-                          "title",
-                          "stars",
-                          "text",
-                          "status",
-                          "created_at",
-                          "product_id",
-                          "position"
-                        ],
-                        "properties": {
-                          "id": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "image": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "title": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "stars": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "text": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "status": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "created_at": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "updated_at": {},
-                          "product_id": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "position": {
-                            "type": "string",
-                            "minLength": 1
-                          }
-                        }
-                      }
-                    },
-                    "status_code": {
-                      "type": "number"
-                    },
-                    "method": {
-                      "type": "string",
-                      "minLength": 1
-                    }
-                  },
-                  "required": [
-                    "result",
-                    "status_code",
-                    "method"
-                  ],
                   "x-examples": {
                     "example-1": {
                       "result": [
@@ -965,7 +914,82 @@
                       "status_code": 200,
                       "method": "GET"
                     }
-                  }
+                  },
+                  "properties": {
+                    "result": {
+                      "type": "array",
+                      "uniqueItems": true,
+                      "minItems": 1,
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "image": {
+                            "type": "string",
+                            "minLength": 1,
+                            "description": "image url\n"
+                          },
+                          "title": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "stars": {
+                            "type": "string",
+                            "minLength": 1,
+                            "description": "from 0 to 5\n"
+                          },
+                          "text": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "status": {
+                            "type": "string",
+                            "minLength": 1,
+                            "description": "1 to display 0 to not display\n"
+                          },
+                          "created_at": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "updated_at": {},
+                          "product_id": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "position": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "image",
+                          "title",
+                          "stars",
+                          "text",
+                          "status",
+                          "created_at",
+                          "product_id",
+                          "position"
+                        ]
+                      }
+                    },
+                    "status_code": {
+                      "type": "number"
+                    },
+                    "method": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "result",
+                    "status_code",
+                    "method"
+                  ]
                 },
                 "examples": {
                   "Success": {
