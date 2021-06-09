@@ -108,7 +108,9 @@
                             "type": "string",
                             "minLength": 1
                           },
-                          "updated_at": {},
+                          "updated_at": {
+                            "type": "string"
+                          },
                           "product_id": {
                             "type": "string",
                             "minLength": 1
@@ -954,7 +956,9 @@
                             "type": "string",
                             "minLength": 1
                           },
-                          "updated_at": {},
+                          "updated_at": {
+                            "type": "string"
+                          },
                           "product_id": {
                             "type": "string",
                             "minLength": 1
