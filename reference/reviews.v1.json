@@ -128,6 +128,7 @@
                           "text",
                           "status",
                           "created_at",
+                          "updated_at",
                           "product_id",
                           "position"
                         ]
@@ -976,6 +977,7 @@
                           "text",
                           "status",
                           "created_at",
+                          "updated_at",
                           "product_id",
                           "position"
                         ]
