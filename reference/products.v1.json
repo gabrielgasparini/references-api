@@ -62,9 +62,6 @@
                     "aliexpress_seller": {
                       "type": "string"
                     },
-                    "enable_dropshipping": {
-                      "type": "string"
-                    },
                     "ncm_code": {
                       "type": "string"
                     },
@@ -277,7 +274,6 @@
                           "aliexpress_url": "https://pt.aliexpress.com/item/1005001966343675.html?spm=a2g0o.productlist.0.0.50987d6bVePs3F&algo_pvid=b561f8de-5011-46de-9f21-4401fbcf2f67&algo_expid=b561f8de-5011-46de-9f21-4401fbcf2f67-0&btsid=0bb0624316195439930215026e95b5&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_",
                           "aliexpress_id": "1255477",
                           "aliexpress_seller": "888888",
-                          "enable_dropshipping": "1",
                           "ncm_code": "4",
                           "gshop_condition": "new",
                           "gshop_age_group": "adult",
@@ -415,7 +411,6 @@
                           "aliexpress_url": "1",
                           "aliexpress_id": "2",
                           "aliexpress_seller": "3",
-                          "enable_dropshipping": "0",
                           "ncm_code": "4",
                           "gshop_condition": "new",
                           "gshop_age_group": "adult",
@@ -604,7 +599,6 @@
                             "aliexpress_url": "https://pt.aliexpress.com/item/1005001966343675.html?spm=a2g0o.productlist.0.0.50987d6bVePs3F&algo_pvid=b561f8de-5011-46de-9f21-4401fbcf2f67&algo_expid=b561f8de-5011-46de-9f21-4401fbcf2f67-0&btsid=0bb0624316195439930215026e95b5&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_",
                             "aliexpress_id": "1255477",
                             "aliexpress_seller": "888888",
-                            "enable_dropshipping": "1",
                             "ncm_code": "4",
                             "gshop_condition": "1",
                             "gshop_age_group": "2",
@@ -745,7 +739,6 @@
                             "aliexpress_url": "1",
                             "aliexpress_id": "2",
                             "aliexpress_seller": "3",
-                            "enable_dropshipping": "0",
                             "ncm_code": "4",
                             "gshop_condition": "1",
                             "gshop_age_group": "2",
@@ -822,9 +815,6 @@
                     "type": "string"
                   },
                   "aliexpress_seller": {
-                    "type": "string"
-                  },
-                  "enable_dropshipping": {
                     "type": "string"
                   },
                   "ncm_code": {
@@ -1029,7 +1019,6 @@
                     "aliexpress_url": "https://pt.aliexpress.com/item/1005001966343675.html?spm=a2g0o.productlist.0.0.50987d6bVePs3F&algo_pvid=b561f8de-5011-46de-9f21-4401fbcf2f67&algo_expid=b561f8de-5011-46de-9f21-4401fbcf2f67-0&btsid=0bb0624316195439930215026e95b5&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_",
                     "aliexpress_id": "1255477",
                     "aliexpress_seller": "888888",
-                    "enable_dropshipping": "1",
                     "ncm_code": "4",
                     "gshop_condition": "new",
                     "gshop_age_group": "adult",
@@ -1145,7 +1134,6 @@
                     "aliexpress_url": "1",
                     "aliexpress_id": "2",
                     "aliexpress_seller": "3",
-                    "enable_dropshipping": "0",
                     "ncm_code": "4",
                     "gshop_condition": "new",
                     "gshop_age_group": "adult",
@@ -1301,7 +1289,6 @@
                             "aliexpress_url": "https://pt.aliexpress.com/item/1005001966343675.html?spm=a2g0o.productlist.0.0.50987d6bVePs3F&algo_pvid=b561f8de-5011-46de-9f21-4401fbcf2f67&algo_expid=b561f8de-5011-46de-9f21-4401fbcf2f67-0&btsid=0bb0624316195439930215026e95b5&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_",
                             "aliexpress_id": "1255477",
                             "aliexpress_seller": "888888",
-                            "enable_dropshipping": "1",
                             "ncm_code": "4",
                             "gshop_condition": "1",
                             "gshop_age_group": "2",
@@ -1442,7 +1429,6 @@
                             "aliexpress_url": "1",
                             "aliexpress_id": "2",
                             "aliexpress_seller": "3",
-                            "enable_dropshipping": "0",
                             "ncm_code": "4",
                             "gshop_condition": "1",
                             "gshop_age_group": "2",
@@ -1738,7 +1724,6 @@
                     "aliexpress_url": "https://pt.aliexpress.com/item/1005001966343675.html?spm=a2g0o.productlist.0.0.50987d6bVePs3F&algo_pvid=b561f8de-5011-46de-9f21-4401fbcf2f67&algo_expid=b561f8de-5011-46de-9f21-4401fbcf2f67-0&btsid=0bb0624316195439930215026e95b5&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_",
                     "aliexpress_id": "1255477",
                     "aliexpress_seller": "888888",
-                    "enable_dropshipping": "1",
                     "ncm_code": "4",
                     "gshop_condition": "new",
                     "gshop_age_group": "adult",
@@ -1854,7 +1839,6 @@
                     "aliexpress_url": "1",
                     "aliexpress_id": "2",
                     "aliexpress_seller": "3",
-                    "enable_dropshipping": "0",
                     "ncm_code": "4",
                     "gshop_condition": "new",
                     "gshop_age_group": "adult",
@@ -2263,7 +2247,6 @@
                           "aliexpress_url": "https://pt.aliexpress.com/item/1005001966343675.html?spm=a2g0o.productlist.0.0.50987d6bVePs3F&algo_pvid=b561f8de-5011-46de-9f21-4401fbcf2f67&algo_expid=b561f8de-5011-46de-9f21-4401fbcf2f67-0&btsid=0bb0624316195439930215026e95b5&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_",
                           "aliexpress_id": "1255477",
                           "aliexpress_seller": "888888",
-                          "enable_dropshipping": "1",
                           "ncm_code": "4",
                           "gshop_condition": "new",
                           "gshop_age_group": "adult",
