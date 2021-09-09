@@ -37,48 +37,6 @@
                 "schema": {
                   "description": "",
                   "type": "object",
-                  "properties": {
-                    "result": {
-                      "type": "array",
-                      "uniqueItems": true,
-                      "minItems": 1,
-                      "items": {
-                        "required": [
-                          "endpoint",
-                          "token"
-                        ],
-                        "properties": {
-                          "endpoint": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "token": {
-                            "type": "string",
-                            "minLength": 1
-                          },
-                          "events": {
-                            "type": "array",
-                            "items": {
-                              "required": [],
-                              "properties": {}
-                            }
-                          }
-                        }
-                      }
-                    },
-                    "status_code": {
-                      "type": "number"
-                    },
-                    "method": {
-                      "type": "string",
-                      "minLength": 1
-                    }
-                  },
-                  "required": [
-                    "result",
-                    "status_code",
-                    "method"
-                  ],
                   "x-examples": {
                     "example-1": {
                       "result": [
@@ -99,13 +57,60 @@
                       "status_code": 200,
                       "method": "GET"
                     }
-                  }
+                  },
+                  "properties": {
+                    "result": {
+                      "type": "array",
+                      "uniqueItems": true,
+                      "minItems": 1,
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "endpoint": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "token": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "events": {
+                            "type": "array",
+                            "items": {
+                              "type": "object"
+                            }
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "endpoint",
+                          "token"
+                        ]
+                      }
+                    },
+                    "status_code": {
+                      "type": "number"
+                    },
+                    "method": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "result",
+                    "status_code",
+                    "method"
+                  ]
                 },
                 "examples": {
                   "Success": {
                     "value": {
                       "result": [
                         {
+                          "id": "1",
                           "endpoint": "https://webhook/request",
                           "token": "406a33a841817ede139ae08a5423736a",
                           "events": [
@@ -260,6 +265,9 @@
                           "items": {
                             "type": "object",
                             "properties": {
+                              "id": {
+                                "type": "string"
+                              },
                               "endpoint": {
                                 "type": "string",
                                 "minLength": 1
@@ -277,6 +285,7 @@
                               }
                             },
                             "required": [
+                              "id",
                               "endpoint",
                               "token"
                             ]
@@ -305,6 +314,7 @@
                         "message": "Created webhook",
                         "webhook": [
                           {
+                            "id": "1",
                             "endpoint": "https://webhook/request",
                             "token": "8344af3ef73f25a4ce3b3066aad06420",
                             "events": [

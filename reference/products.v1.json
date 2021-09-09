@@ -38,6 +38,10 @@
                   "description": "",
                   "type": "object",
                   "properties": {
+                    "id": {
+                      "type": "number",
+                      "description": "product id"
+                    },
                     "has_variant": {
                       "type": "number",
                       "description": "product with variation: 1 | without variation: 0"
@@ -2010,6 +2014,10 @@
                   "description": "",
                   "type": "object",
                   "properties": {
+                    "id": {
+                      "type": "number",
+                      "description": "product id"
+                    },
                     "has_variant": {
                       "description": "product with variation: 1 | without variation: 0",
                       "type": "number"
