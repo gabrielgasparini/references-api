@@ -417,6 +417,469 @@
           }
         ]
       }
+    },
+    "{slug-landingpage}/webhooks/{id}": {
+      "parameters": [
+        {
+          "schema": {
+            "type": "string"
+          },
+          "name": "slug-landingpage",
+          "in": "path",
+          "required": true
+        },
+        {
+          "schema": {
+            "type": "string"
+          },
+          "name": "id",
+          "in": "path",
+          "required": true
+        }
+      ],
+      "get": {
+        "summary": "Get a webhook",
+        "tags": [],
+        "responses": {
+          "200": {
+            "description": "OK - Request responses",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "",
+                  "type": "object",
+                  "properties": {
+                    "result": {
+                      "type": "array",
+                      "uniqueItems": true,
+                      "minItems": 1,
+                      "items": {
+                        "required": [
+                          "id",
+                          "endpoint",
+                          "token"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "endpoint": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "token": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "events": {
+                            "type": "array",
+                            "items": {
+                              "required": [],
+                              "properties": {}
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "status_code": {
+                      "type": "number"
+                    },
+                    "method": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "result",
+                    "status_code",
+                    "method"
+                  ],
+                  "x-examples": {
+                    "example-1": {
+                      "result": [
+                        {
+                          "id": "1",
+                          "endpoint": "https://webhook/request",
+                          "token": "406a33a841817ede139ae08a5423736a",
+                          "events": [
+                            "product.created",
+                            "product.updated",
+                            "product.deleted",
+                            "order.created",
+                            "order.paid",
+                            "order.updated",
+                            "order.canceled"
+                          ]
+                        }
+                      ],
+                      "status_code": 200,
+                      "method": "GET"
+                    }
+                  }
+                },
+                "examples": {
+                  "Success": {
+                    "value": {
+                      "result": [
+                        {
+                          "id": "1",
+                          "endpoint": "https://webhook/request",
+                          "token": "406a33a841817ede139ae08a5423736a",
+                          "events": [
+                            "product.created",
+                            "product.updated",
+                            "product.deleted",
+                            "order.created",
+                            "order.paid",
+                            "order.updated",
+                            "order.canceled"
+                          ]
+                        }
+                      ],
+                      "status_code": 200,
+                      "method": "GET"
+                    }
+                  },
+                  "Error": {
+                    "value": {
+                      "result": [
+                        {
+                          "message": "No results"
+                        }
+                      ],
+                      "status_code": 200,
+                      "method": "GET"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-slug-landingpage-webhooks-id",
+        "description": "Retrieves the webhook information and its dependencies with the corresponding webhook ID.\n\n**Accept Events**\n\nEvent | Meaning\n--------- | ----------\nproduct.created | Product created\nproduct.updated | Product updated\nproduct.deleted | Product deleted\norder.created | Order created\norder.updated | Order updated\norder.paid | Order paid\norder.canceled | Order canceled",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "header",
+            "name": "Content-Type",
+            "description": "API accepts only JSON type data",
+            "required": true
+          }
+        ]
+      },
+      "put": {
+        "summary": "Update a webhook",
+        "operationId": "put-slug-landingpage-webhooks-id",
+        "responses": {
+          "200": {
+            "description": "OK - Request responses",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "",
+                  "type": "object",
+                  "properties": {
+                    "result": {
+                      "type": "object",
+                      "properties": {
+                        "message": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "webhook": {
+                          "type": "array",
+                          "uniqueItems": true,
+                          "minItems": 1,
+                          "items": {
+                            "required": [
+                              "id",
+                              "endpoint",
+                              "token"
+                            ],
+                            "properties": {
+                              "id": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "endpoint": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "token": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "events": {
+                                "type": "array",
+                                "items": {
+                                  "required": [],
+                                  "properties": {}
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "required": [
+                        "message",
+                        "webhook"
+                      ]
+                    },
+                    "status_code": {
+                      "type": "number"
+                    },
+                    "method": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "result",
+                    "status_code",
+                    "method"
+                  ],
+                  "x-examples": {
+                    "example-1": {
+                      "result": {
+                        "message": "Created update",
+                        "webhook": [
+                          {
+                            "id": "7",
+                            "endpoint": "https://webhook.site/89a6cf28-e1b7-4be8-ac33-b185f940b774",
+                            "token": "509597888d4c872fb42b1b7245fc0993",
+                            "events": [
+                              "order.created",
+                              "order.paid",
+                              "order.updated",
+                              "order.canceled"
+                            ]
+                          }
+                        ]
+                      },
+                      "status_code": 200,
+                      "method": "PUT"
+                    }
+                  }
+                },
+                "examples": {
+                  "Success": {
+                    "value": {
+                      "result": {
+                        "message": "Webhook update",
+                        "webhook": [
+                          {
+                            "id": "7",
+                            "endpoint": "https://webhook/request",
+                            "token": "509597888d4c872fb42b1b7245fc0993",
+                            "events": [
+                              "order.created",
+                              "order.paid",
+                              "order.updated",
+                              "order.canceled"
+                            ]
+                          }
+                        ]
+                      },
+                      "status_code": 200,
+                      "method": "PUT"
+                    }
+                  },
+                  "Error": {
+                    "value": {
+                      "result": [
+                        {
+                          "message": "Webhook not updated"
+                        }
+                      ],
+                      "status_code": 200,
+                      "method": "PUT"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "description": "Updates the webhook information with the corresponding webhook ID.\n\n**Accept Events**\n\nEvent | Meaning\n--------- | ----------\nproduct.created | Product created\nproduct.updated | Product updated\nproduct.deleted | Product deleted\norder.created | Order created\norder.updated | Order updated\norder.paid | Order paid\norder.canceled | Order canceled",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "header",
+            "name": "Content-Type",
+            "description": "API accepts only JSON type data",
+            "required": true
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "description": "",
+                "type": "object",
+                "properties": {
+                  "endpoint": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "events": {
+                    "type": "array",
+                    "items": {
+                      "required": [],
+                      "properties": {}
+                    }
+                  }
+                },
+                "required": [
+                  "endpoint",
+                  "events"
+                ],
+                "x-examples": {
+                  "example-1": {
+                    "endpoint": "https://webhook/request",
+                    "events": [
+                      "product.created",
+                      "product.updated",
+                      "product.deleted",
+                      "order.created",
+                      "order.paid",
+                      "order.updated",
+                      "order.canceled"
+                    ]
+                  }
+                }
+              },
+              "examples": {
+                "Example": {
+                  "value": {
+                    "endpoint": "https://webhook/request",
+                    "events": [
+                      "product.created",
+                      "product.updated",
+                      "product.deleted",
+                      "order.created",
+                      "order.paid",
+                      "order.updated",
+                      "order.canceled"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "description": "Check the request body"
+        }
+      },
+      "delete": {
+        "summary": "Delete a webhook",
+        "operationId": "delete-slug-landingpage-webhooks-id",
+        "responses": {
+          "200": {
+            "description": "OK - Request responses",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "",
+                  "type": "object",
+                  "properties": {
+                    "result": {
+                      "type": "object",
+                      "properties": {
+                        "message": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "webhook": {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "string",
+                              "minLength": 1
+                            }
+                          },
+                          "required": [
+                            "id"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "message",
+                        "webhook"
+                      ]
+                    },
+                    "status_code": {
+                      "type": "number"
+                    },
+                    "method": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "result",
+                    "status_code",
+                    "method"
+                  ],
+                  "x-examples": {
+                    "example-1": {
+                      "result": {
+                        "message": "Webhook removed",
+                        "webhook": {
+                          "id": "6"
+                        }
+                      },
+                      "status_code": 200,
+                      "method": "DELETE"
+                    }
+                  }
+                },
+                "examples": {
+                  "Success": {
+                    "value": {
+                      "result": {
+                        "message": "Webhook removed",
+                        "webhook": {
+                          "id": "6"
+                        }
+                      },
+                      "status_code": 200,
+                      "method": "DELETE"
+                    }
+                  },
+                  "Error": {
+                    "value": {
+                      "result": [
+                        {
+                          "message": "There is no webhook to delete"
+                        }
+                      ],
+                      "status_code": 200,
+                      "method": "DELETE"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "description": "Delete the webhook and its dependencies with the corresponding webhook ID.",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "header",
+            "name": "Content-Type",
+            "description": "API accepts only JSON type data",
+            "required": true
+          }
+        ]
+      }
     }
   },
   "components": {
