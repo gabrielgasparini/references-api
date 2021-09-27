@@ -87,6 +87,7 @@
                               "product_sku": "",
                               "product_price": "159.90",
                               "product_qtdy": "1",
+                              "product_variant_id": "1",
                               "product_variant_sku": "28TNBJSHH",
                               "product_variant_options": "p|Azul"
                             }
@@ -286,6 +287,10 @@
                                   "type": "string",
                                   "minLength": 1
                                 },
+                                "product_variant_id": {
+                                  "type": "string",
+                                  "minLength": 1
+                                },
                                 "product_variant_sku": {
                                   "type": "string",
                                   "minLength": 1
@@ -435,6 +440,7 @@
                               "product_sku": "",
                               "product_price": "159.90",
                               "product_qtdy": "1",
+                              "product_variant_id": "1",
                               "product_variant_sku": "28TNBJSHH",
                               "product_variant_options": "p|Azul"
                             }
@@ -556,6 +562,7 @@
                                 "product_sku": "",
                                 "product_price": "159.90",
                                 "product_qtdy": "1",
+                                "product_variant_id": "1",
                                 "product_variant_sku": "28TNBJSHH",
                                 "product_variant_options": "p|Azul"
                               }
@@ -765,6 +772,10 @@
                                       "type": "string",
                                       "minLength": 1
                                     },
+                                    "product_variant_id": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    },
                                     "product_variant_sku": {
                                       "type": "string",
                                       "minLength": 1
@@ -918,6 +929,7 @@
                                 "product_sku": "",
                                 "product_price": "159.90",
                                 "product_qtdy": "1",
+                                "product_variant_id": "1",
                                 "product_variant_sku": "28TNBJSHH",
                                 "product_variant_options": "p|Azul"
                               }
@@ -1117,7 +1129,7 @@
                           "coupon": "10off",
                           "processed": "0",
                           "status": "order_created",
-                          "phone_number": "11941548598",
+                          "phone_number": "11956284788",
                           "customer_cpf": "73294512074",
                           "orders_shipments": [
                             {
@@ -1140,6 +1152,7 @@
                               "product_sku": "",
                               "product_price": "159.90",
                               "product_qtdy": "1",
+                              "product_variant_id": "1",
                               "product_variant_sku": "28TNBJSHH",
                               "product_variant_options": "p|Azul"
                             }
@@ -1339,6 +1352,10 @@
                                   "type": "string",
                                   "minLength": 1
                                 },
+                                "product_variant_id": {
+                                  "type": "string",
+                                  "minLength": 1
+                                },
                                 "product_variant_sku": {
                                   "type": "string",
                                   "minLength": 1
@@ -1488,6 +1505,7 @@
                               "product_sku": "",
                               "product_price": "159.90",
                               "product_qtdy": "1",
+                              "product_variant_id": "1",
                               "product_variant_sku": "28TNBJSHH",
                               "product_variant_options": "p|Azul"
                             }
