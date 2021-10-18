@@ -246,6 +246,10 @@
                           "variant_values": {
                             "type": "string",
                             "description": "\nfor more values sort by ',' Ex: Blue,Black"
+                          },
+                          "input_type": {
+                            "type": "string",
+                            "description": "radio ou image"
                           }
                         }
                       }
@@ -363,12 +367,14 @@
                             {
                               "id": "59",
                               "title": "Tamanho",
-                              "variant_values": "p,m"
+                              "variant_values": "p,m",
+                              "input_type": "radio"
                             },
                             {
                               "id": "58",
                               "title": "Cor",
-                              "variant_values": "Azul,Preto"
+                              "variant_values": "Azul,Preto",
+                              "input_type": "radio"
                             }
                           ],
                           "images": [
@@ -688,12 +694,14 @@
                               {
                                 "id": "59",
                                 "title": "Tamanho",
-                                "variant_values": "p,m"
+                                "variant_values": "p,m",
+                                "input_type": "radio"
                               },
                               {
                                 "id": "58",
                                 "title": "Cor",
-                                "variant_values": "Azul,Preto"
+                                "variant_values": "Azul,Preto",
+                                "input_type": "radio"
                               }
                             ],
                             "images": [
@@ -1003,6 +1011,10 @@
                         "variant_values": {
                           "type": "string",
                           "description": "\nfor more values sort by ',' Ex: Blue,Black"
+                        },
+                        "input_type": {
+                          "type": "string",
+                          "description": "radio ou image"
                         }
                       }
                     }
@@ -1124,11 +1136,13 @@
                     "variants_items": [
                       {
                         "title": "Cor",
-                        "variant_values": "Azul,Preto"
+                        "variant_values": "Azul,Preto",
+                        "input_type": "radio"
                       },
                       {
                         "title": "Tamanho",
-                        "variant_values": "p,m"
+                        "variant_values": "p,m",
+                        "input_type": "radio"
                       }
                     ]
                   }
@@ -1382,12 +1396,14 @@
                               {
                                 "id": "59",
                                 "title": "Tamanho",
-                                "variant_values": "p,m"
+                                "variant_values": "p,m",
+                                "input_type": "radio"
                               },
                               {
                                 "id": "58",
                                 "title": "Cor",
-                                "variant_values": "Azul,Preto"
+                                "variant_values": "Azul,Preto",
+                                "input_type": "radio"
                               }
                             ],
                             "images": [
@@ -1712,6 +1728,10 @@
                         "variant_values": {
                           "type": "string",
                           "description": "\nfor more values sort by ',' Ex: Blue,Black"
+                        },
+                        "input_type": {
+                          "type": "string",
+                          "description": "radio ou image"
                         }
                       }
                     }
@@ -1833,11 +1853,13 @@
                     "variants_items": [
                       {
                         "title": "Cor",
-                        "variant_values": "Azul,Preto"
+                        "variant_values": "Azul,Preto",
+                        "input_type": "radio"
                       },
                       {
                         "title": "Tamanho",
-                        "variant_values": "p,m"
+                        "variant_values": "p,m",
+                        "input_type": "radio"
                       }
                     ]
                   }
@@ -2234,6 +2256,10 @@
                           "variant_values": {
                             "type": "string",
                             "description": "\nfor more values sort by ',' Ex: Blue,Black"
+                          },
+                          "input_type": {
+                            "type": "string",
+                            "description": "radio ou image"
                           }
                         }
                       }
@@ -2351,12 +2377,14 @@
                             {
                               "id": "59",
                               "title": "Tamanho",
-                              "variant_values": "p,m"
+                              "variant_values": "p,m",
+                              "input_type": "radio"
                             },
                             {
                               "id": "58",
                               "title": "Cor",
-                              "variant_values": "Azul,Preto"
+                              "variant_values": "Azul,Preto",
+                              "input_type": "radio"
                             }
                           ],
                           "images": [
