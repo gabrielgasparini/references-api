@@ -249,7 +249,7 @@
                           },
                           "input_type": {
                             "type": "string",
-                            "description": "radio ou image"
+                            "description": "radio or image"
                           }
                         }
                       }
@@ -1014,7 +1014,7 @@
                         },
                         "input_type": {
                           "type": "string",
-                          "description": "radio ou image"
+                          "description": "radio or image"
                         }
                       }
                     }
@@ -1731,7 +1731,7 @@
                         },
                         "input_type": {
                           "type": "string",
-                          "description": "radio ou image"
+                          "description": "radio or image"
                         }
                       }
                     }
@@ -2259,7 +2259,7 @@
                           },
                           "input_type": {
                             "type": "string",
-                            "description": "radio ou image"
+                            "description": "radio or image"
                           }
                         }
                       }
