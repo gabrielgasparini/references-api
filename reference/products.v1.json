@@ -151,6 +151,10 @@
                       "items": {
                         "type": "object",
                         "properties": {
+                          "id": {
+                            "type": "number",
+                            "description": "variant id"
+                          },
                           "sku": {
                             "type": "string",
                             "description": "product identification, tracking and inventory"
@@ -240,6 +244,10 @@
                       "items": {
                         "type": "object",
                         "properties": {
+                          "id": {
+                            "type": "number",
+                            "description": "variant item id"
+                          },
                           "title": {
                             "type": "string"
                           },
@@ -915,6 +923,10 @@
                     "items": {
                       "type": "object",
                       "properties": {
+                        "id": {
+                          "type": "number",
+                          "description": "variant id"
+                        },
                         "sku": {
                           "type": "string",
                           "description": "product identification, tracking and inventory"
@@ -1005,6 +1017,10 @@
                     "items": {
                       "type": "object",
                       "properties": {
+                        "id": {
+                          "type": "number",
+                          "description": "variant item id"
+                        },
                         "title": {
                           "type": "string"
                         },
@@ -1135,11 +1151,13 @@
                     ],
                     "variants_items": [
                       {
+                        "id": "59",
                         "title": "Cor",
                         "variant_values": "Azul,Preto",
                         "input_type": "radio"
                       },
                       {
+                        "id": "58",
                         "title": "Tamanho",
                         "variant_values": "p,m",
                         "input_type": "radio"
@@ -1633,6 +1651,10 @@
                     "items": {
                       "type": "object",
                       "properties": {
+                        "id": {
+                          "type": "number",
+                          "description": "variant id"
+                        },
                         "sku": {
                           "type": "string",
                           "description": "product identification, tracking and inventory"
@@ -1722,6 +1744,10 @@
                     "items": {
                       "type": "object",
                       "properties": {
+                        "id": {
+                          "type": "number",
+                          "description": "variant item id"
+                        },
                         "title": {
                           "type": "string"
                         },
@@ -1852,11 +1878,13 @@
                     ],
                     "variants_items": [
                       {
+                        "id": "59",
                         "title": "Cor",
                         "variant_values": "Azul,Preto",
                         "input_type": "radio"
                       },
                       {
+                        "id": "58",
                         "title": "Tamanho",
                         "variant_values": "p,m",
                         "input_type": "radio"
@@ -2158,7 +2186,8 @@
                         "type": "object",
                         "properties": {
                           "id": {
-                            "type": "number"
+                            "type": "number",
+                            "description": "variant id"
                           },
                           "sku": {
                             "type": "string",
@@ -2250,6 +2279,10 @@
                       "items": {
                         "type": "object",
                         "properties": {
+                          "id": {
+                            "type": "number",
+                            "description": "variant item id"
+                          },
                           "title": {
                             "type": "string"
                           },
