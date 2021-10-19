@@ -1085,7 +1085,7 @@
                         "image_id": "1"
                       },
                       {
-                        "id": "250",
+                        "id": "249",
                         "sku": "456",
                         "bar_code": "4567",
                         "automatic_stock": "1",
@@ -1103,7 +1103,7 @@
                         "image_id": "2"
                       },
                       {
-                        "id": "250",
+                        "id": "248",
                         "sku": "789",
                         "bar_code": "7890",
                         "automatic_stock": "1",
@@ -1121,7 +1121,7 @@
                         "image_id": "3"
                       },
                       {
-                        "id": "250",
+                        "id": "247",
                         "sku": "60123OITO",
                         "bar_code": "60123OITOBARCODE",
                         "automatic_stock": "1",
@@ -1815,7 +1815,7 @@
                         "image_id": "1"
                       },
                       {
-                        "id": "250",
+                        "id": "249",
                         "sku": "456",
                         "bar_code": "4567",
                         "automatic_stock": "1",
@@ -1833,7 +1833,7 @@
                         "image_id": "2"
                       },
                       {
-                        "id": "250",
+                        "id": "248",
                         "sku": "789",
                         "bar_code": "7890",
                         "automatic_stock": "1",
@@ -1851,7 +1851,7 @@
                         "image_id": "3"
                       },
                       {
-                        "id": "250",
+                        "id": "247",
                         "sku": "60123OITO",
                         "bar_code": "60123OITOBARCODE",
                         "automatic_stock": "1",
