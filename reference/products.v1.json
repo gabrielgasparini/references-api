@@ -225,6 +225,9 @@
                       "items": {
                         "type": "object",
                         "properties": {
+                          "id": {
+                            "type": "number"
+                          },
                           "position": {
                             "type": "number",
                             "description": "order of display of the photos"
@@ -451,12 +454,14 @@
                           "aliexpress_sku": "12345",
                           "images": [
                             {
+                              "id": "240",
                               "position": "2",
                               "image": "https://app.lpqv.com.br/uploads/store-pet/products/42/images/03d8d1421f93bf947103f7319b0322ab.jpg",
                               "created_at": "2021-04-27 14:43:07",
                               "reference": "1"
                             },
                             {
+                              "id": "239",
                               "position": "1",
                               "image": "https://app.lpqv.com.br/uploads/store-pet/products/42/images/608f8cb03c504fbf4fcdec12180777a5.jpg",
                               "created_at": "2021-04-27 14:43:08",
@@ -781,12 +786,14 @@
                             "aliexpress_sku": "12345",
                             "images": [
                               {
+                                "id": "240",
                                 "position": "2",
                                 "image": "https://app.lpqv.com.br/uploads/store-pet/products/42/images/03d8d1421f93bf947103f7319b0322ab.jpg",
                                 "created_at": "2021-04-27 14:43:07",
                                 "reference": "1"
                               },
                               {
+                                "id": "239",
                                 "position": "1",
                                 "image": "https://app.lpqv.com.br/uploads/store-pet/products/42/images/608f8cb03c504fbf4fcdec12180777a5.jpg",
                                 "created_at": "2021-04-27 14:43:08",
@@ -1493,18 +1500,21 @@
                             "aliexpress_sku": "12345",
                             "images": [
                               {
+                                "id": "240",
                                 "position": "1",
                                 "image": "https://app.lpqv.com.br/uploads/img/store-pet/products/1/images/7e418d61128040b3cff15f16a91485af.jpg",
                                 "created_at": "2021-04-22 14:53:10",
                                 "reference": "2"
                               },
                               {
+                                "id": "239",
                                 "position": "2",
                                 "image": "https://app.lpqv.com.br/uploads/img/store-pet/products/1/images/dcf0f8e10edbd7d893d73b301efec195.jpg",
                                 "created_at": "2021-04-22 14:53:10",
                                 "reference": "1"
                               },
                               {
+                                "id": "238",
                                 "position": "3",
                                 "image": "https://app.lpqv.com.br/uploads/img/store-pet/products/1/images/774615713fce35c87e4e3228c27ffac5.jpg",
                                 "created_at": "2021-04-22 14:53:10",
@@ -2486,12 +2496,14 @@
                           "aliexpress_sku": "12345",
                           "images": [
                             {
+                              "id": "240",
                               "position": "2",
                               "image": "https://app.lpqv.com.br/uploads/store-pet/products/42/images/03d8d1421f93bf947103f7319b0322ab.jpg",
                               "created_at": "2021-04-27 14:43:07",
                               "reference": "1"
                             },
                             {
+                              "id": "239",
                               "position": "1",
                               "image": "https://app.lpqv.com.br/uploads/store-pet/products/42/images/608f8cb03c504fbf4fcdec12180777a5.jpg",
                               "created_at": "2021-04-27 14:43:08",
