@@ -40,7 +40,7 @@
                   "properties": {
                     "id": {
                       "type": "number",
-                      "description": "product id"
+                      "description": "product id | unique"
                     },
                     "has_variant": {
                       "type": "number",
@@ -153,7 +153,7 @@
                         "properties": {
                           "id": {
                             "type": "number",
-                            "description": "variant id"
+                            "description": "variant id | unique"
                           },
                           "sku": {
                             "type": "string",
@@ -933,7 +933,7 @@
                       "properties": {
                         "id": {
                           "type": "number",
-                          "description": "variant id"
+                          "description": "variant id | unique"
                         },
                         "sku": {
                           "type": "string",
@@ -1664,7 +1664,7 @@
                       "properties": {
                         "id": {
                           "type": "number",
-                          "description": "variant id"
+                          "description": "variant id | unique"
                         },
                         "sku": {
                           "type": "string",
@@ -2085,7 +2085,7 @@
                   "properties": {
                     "id": {
                       "type": "number",
-                      "description": "product id"
+                      "description": "product id | unique"
                     },
                     "has_variant": {
                       "description": "product with variation: 1 | without variation: 0",
@@ -2198,7 +2198,7 @@
                         "properties": {
                           "id": {
                             "type": "number",
-                            "description": "variant id"
+                            "description": "variant id | unique"
                           },
                           "sku": {
                             "type": "string",
