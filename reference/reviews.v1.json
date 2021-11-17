@@ -1,0 +1,1110 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Reviews",
+    "version": "",
+    "description": "Through this reference you can consult, update, delete or insert product reviews.",
+    "contact": {
+      "email": "developers@lpquevende.com.br"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://api.lpquevende.com/"
+    }
+  ],
+  "paths": {
+    "{slug-landingpage}/reviews": {
+      "parameters": [
+        {
+          "schema": {
+            "type": "string"
+          },
+          "name": "slug-landingpage",
+          "in": "path",
+          "description": "prefix used in the domain",
+          "required": true
+        }
+      ],
+      "get": {
+        "summary": "Get all reviews",
+        "tags": [],
+        "responses": {
+          "200": {
+            "description": "OK - Request responses",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "",
+                  "type": "object",
+                  "x-examples": {
+                    "example-1": {
+                      "result": [
+                        {
+                          "id": "1",
+                          "image": "https://app.lpqv.com.br/uploads/store-pet/social_proofs/1/images/http://192.168.0.45/lpqv-checkout/app/checkout/assets/dist/img/depo1.jpg",
+                          "title": "Larissa Monteiro",
+                          "stars": "5",
+                          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque placeat rerum aliquam!",
+                          "status": "1",
+                          "created_at": "2021-04-23 18:01:54",
+                          "updated_at": null,
+                          "product_id": "36",
+                          "position": "2"
+                        },
+                        {
+                          "id": "2",
+                          "image": "https://app.lpqv.com.br/uploads/store-pet/social_proofs/2/images/http://192.168.0.45/lpqv-checkout/app/checkout/assets/dist/img/depo2.jpg",
+                          "title": "Paulo Vieira",
+                          "stars": "5",
+                          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque placeat rerum aliquam!",
+                          "status": "1",
+                          "created_at": "2021-04-23 18:01:54",
+                          "updated_at": null,
+                          "product_id": "36",
+                          "position": "1"
+                        }
+                      ],
+                      "status_code": 200,
+                      "method": "GET"
+                    }
+                  },
+                  "properties": {
+                    "result": {
+                      "type": "array",
+                      "uniqueItems": true,
+                      "minItems": 1,
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "image": {
+                            "type": "string",
+                            "minLength": 1,
+                            "description": "image url"
+                          },
+                          "title": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "stars": {
+                            "type": "string",
+                            "minLength": 1,
+                            "description": "from 0 to 5\n"
+                          },
+                          "text": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "date": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "status": {
+                            "type": "string",
+                            "minLength": 1,
+                            "description": "1 to display 0 to not display\n"
+                          },
+                          "created_at": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "updated_at": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "product_id": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "position": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "image",
+                          "title",
+                          "stars",
+                          "text",
+                          "date",
+                          "status",
+                          "created_at",
+                          "updated_at",
+                          "product_id",
+                          "position"
+                        ]
+                      }
+                    },
+                    "status_code": {
+                      "type": "number"
+                    },
+                    "method": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "result",
+                    "status_code",
+                    "method"
+                  ]
+                },
+                "examples": {
+                  "Success": {
+                    "value": {
+                      "result": [
+                        {
+                          "id": "1",
+                          "image": "https://app.lpqv.com.br/uploads/store-pet/social_proofs/1/images/http://192.168.0.45/lpqv-checkout/app/checkout/assets/dist/img/depo1.jpg",
+                          "title": "Larissa Monteiro",
+                          "stars": "5",
+                          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque placeat rerum aliquam!",
+                          "date": "09/06/2021",
+                          "status": "1",
+                          "created_at": "2021-04-23 18:01:54",
+                          "updated_at": null,
+                          "product_id": "36",
+                          "position": "2"
+                        },
+                        {
+                          "id": "2",
+                          "image": "https://app.lpqv.com.br/uploads/store-pet/social_proofs/2/images/http://192.168.0.45/lpqv-checkout/app/checkout/assets/dist/img/depo2.jpg",
+                          "title": "Paulo Vieira",
+                          "stars": "5",
+                          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque placeat rerum aliquam!",
+                          "date": "09/06/2021",
+                          "status": "1",
+                          "created_at": "2021-04-23 18:01:54",
+                          "updated_at": null,
+                          "product_id": "36",
+                          "position": "1"
+                        }
+                      ],
+                      "status_code": 200,
+                      "method": "GET"
+                    }
+                  },
+                  "Error": {
+                    "value": {
+                      "result": [
+                        {
+                          "message": "No results"
+                        }
+                      ],
+                      "status_code": 200,
+                      "method": "GET"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-slug-landingpage-reviews",
+        "description": "Retrieves information for all reviews.",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string",
+              "default": "application/json"
+            },
+            "in": "header",
+            "name": "Content-Type",
+            "required": true,
+            "description": "API accepts only JSON type data"
+          }
+        ]
+      },
+      "post": {
+        "summary": "Create a review",
+        "operationId": "post-slug-landingpage-reviews",
+        "responses": {
+          "200": {
+            "description": "OK - Request responses",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "",
+                  "type": "object",
+                  "properties": {
+                    "result": {
+                      "type": "array",
+                      "uniqueItems": true,
+                      "minItems": 1,
+                      "items": {
+                        "required": [
+                          "message"
+                        ],
+                        "properties": {
+                          "message": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "status_code": {
+                      "type": "number"
+                    },
+                    "method": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "result",
+                    "status_code",
+                    "method"
+                  ]
+                },
+                "examples": {
+                  "Error": {
+                    "value": {
+                      "result": [
+                        {
+                          "message": "Error in the past parameters"
+                        }
+                      ],
+                      "status_code": 200,
+                      "method": "POST"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "201": {
+            "description": "Created - Request responses",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "",
+                  "type": "object",
+                  "x-examples": {
+                    "example-1": {
+                      "result": {
+                        "message": "Created review",
+                        "review": [
+                          {
+                            "id": "7",
+                            "image": "https://app.lpqv.com.br/uploads/store-pet/social_proofs/7/images/31525882dddb1a08596ad80faf3f902e.jpg",
+                            "title": "teste do bié",
+                            "stars": "3",
+                            "text": "texto do bié",
+                            "status": "1",
+                            "created_at": "2021-06-09 15:07:02",
+                            "updated_at": null,
+                            "product_id": "77",
+                            "position": "2"
+                          }
+                        ]
+                      },
+                      "status_code": 201,
+                      "method": "POST"
+                    }
+                  },
+                  "properties": {
+                    "result": {
+                      "type": "object",
+                      "required": [
+                        "message",
+                        "review"
+                      ],
+                      "properties": {
+                        "message": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "review": {
+                          "type": "array",
+                          "uniqueItems": true,
+                          "minItems": 1,
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "image": {
+                                "type": "string",
+                                "minLength": 1,
+                                "description": "image url\n"
+                              },
+                              "title": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "stars": {
+                                "type": "string",
+                                "minLength": 1,
+                                "description": "from 0 to 5\n"
+                              },
+                              "text": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "date": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "status": {
+                                "type": "string",
+                                "minLength": 1,
+                                "description": "1 to display 0 to not display\n"
+                              },
+                              "created_at": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "updated_at": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "product_id": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "position": {
+                                "type": "string",
+                                "minLength": 1
+                              }
+                            },
+                            "required": [
+                              "id",
+                              "image",
+                              "title",
+                              "stars",
+                              "text",
+                              "date",
+                              "status",
+                              "created_at",
+                              "updated_at",
+                              "product_id",
+                              "position"
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    "status_code": {
+                      "type": "number"
+                    },
+                    "method": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "result",
+                    "status_code",
+                    "method"
+                  ]
+                },
+                "examples": {
+                  "Success": {
+                    "value": {
+                      "result": {
+                        "message": "Created review",
+                        "review": [
+                          {
+                            "id": "8",
+                            "image": "https://app.lpqv.com.br/uploads/store-pet/social_proofs/8/images/e8fc6a8ef99dcdcb86bdff866d5e4924.jpg",
+                            "title": "Example title",
+                            "stars": "3",
+                            "text": "Example text",
+                            "date": "09/06/2021",
+                            "status": "1",
+                            "created_at": "2021-06-09 15:52:30",
+                            "updated_at": null,
+                            "product_id": "77",
+                            "position": "2"
+                          }
+                        ]
+                      },
+                      "status_code": 201,
+                      "method": "POST"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "description": "Generates a new review registration.",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "description": "",
+                "type": "object",
+                "x-examples": {
+                  "example-1": {
+                    "title": "Example title",
+                    "text": "Example text",
+                    "stars": "3",
+                    "product_id": "77",
+                    "status": "1",
+                    "image": "http://i2.wp.com/app.lpqv.com.br/app/assets/dist/img/logo.png"
+                  }
+                },
+                "properties": {
+                  "title": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "text": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "date": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "stars": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "from 0 to 5\n"
+                  },
+                  "product_id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "status": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "1 to display 0 to not display\n"
+                  },
+                  "image": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "image url\n"
+                  }
+                },
+                "required": [
+                  "title",
+                  "text",
+                  "date",
+                  "stars",
+                  "product_id",
+                  "status",
+                  "image"
+                ]
+              },
+              "examples": {
+                "Example": {
+                  "value": {
+                    "title": "Example title",
+                    "text": "Example text",
+                    "date": "09/06/2021",
+                    "stars": "3",
+                    "product_id": "77",
+                    "status": "1",
+                    "image": "http://i2.wp.com/app.lpqv.com.br/app/assets/dist/img/logo.png"
+                  }
+                }
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "type": "object",
+                "properties": {}
+              }
+            }
+          },
+          "description": "Check the request body"
+        },
+        "parameters": [
+          {
+            "schema": {
+              "type": "string",
+              "default": "application/json"
+            },
+            "in": "header",
+            "name": "Content-Type",
+            "required": true,
+            "description": "API accepts only JSON type data"
+          }
+        ]
+      }
+    },
+    "{slug-landingpage}/reviews/{id}": {
+      "parameters": [
+        {
+          "schema": {
+            "type": "string"
+          },
+          "name": "slug-landingpage",
+          "in": "path",
+          "required": true,
+          "description": "prefix used in the domain"
+        },
+        {
+          "schema": {
+            "type": "integer"
+          },
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "description": "Review ID"
+        }
+      ],
+      "put": {
+        "summary": "Update a review",
+        "operationId": "put-slug-landingpage-reviews-id",
+        "responses": {
+          "200": {
+            "description": "OK - Request responses",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "",
+                  "type": "object",
+                  "x-examples": {
+                    "example-1": {
+                      "result": {
+                        "message": "Review update",
+                        "review": [
+                          {
+                            "id": "2",
+                            "image": "https://app.lpqv.com.br/uploads/store-pet/social_proofs/2/images/91b0571180b4ba4e1b5afee035e4cbac.jpg",
+                            "title": "Example title",
+                            "stars": "3",
+                            "text": "Example text",
+                            "status": "1",
+                            "created_at": "2021-04-23 18:01:54",
+                            "updated_at": "2021-06-09 15:27:58",
+                            "product_id": "77",
+                            "position": "1"
+                          }
+                        ]
+                      },
+                      "status_code": 200,
+                      "method": "PUT"
+                    }
+                  },
+                  "properties": {
+                    "result": {
+                      "type": "object",
+                      "required": [
+                        "message",
+                        "review"
+                      ],
+                      "properties": {
+                        "message": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "review": {
+                          "type": "array",
+                          "uniqueItems": true,
+                          "minItems": 1,
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "image": {
+                                "type": "string",
+                                "minLength": 1,
+                                "description": "image url"
+                              },
+                              "title": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "stars": {
+                                "type": "string",
+                                "minLength": 1,
+                                "description": "from 0 to 5\n"
+                              },
+                              "text": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "date": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "status": {
+                                "type": "string",
+                                "minLength": 1,
+                                "description": "1 to display 0 to not display\n"
+                              },
+                              "created_at": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "updated_at": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "product_id": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "position": {
+                                "type": "string",
+                                "minLength": 1
+                              }
+                            },
+                            "required": [
+                              "id",
+                              "image",
+                              "title",
+                              "stars",
+                              "text",
+                              "date",
+                              "status",
+                              "created_at",
+                              "updated_at",
+                              "product_id",
+                              "position"
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    "status_code": {
+                      "type": "number"
+                    },
+                    "method": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "result",
+                    "status_code",
+                    "method"
+                  ]
+                },
+                "examples": {
+                  "Success": {
+                    "value": {
+                      "result": {
+                        "message": "Review update",
+                        "review": [
+                          {
+                            "id": "2",
+                            "image": "https://app.lpqv.com.br/uploads/store-pet/social_proofs/2/images/91b0571180b4ba4e1b5afee035e4cbac.jpg",
+                            "title": "Example title",
+                            "stars": "3",
+                            "text": "Example text",
+                            "date": "09/06/2021",
+                            "status": "1",
+                            "created_at": "2021-04-23 18:01:54",
+                            "updated_at": "2021-06-09 15:27:58",
+                            "product_id": "77",
+                            "position": "1"
+                          }
+                        ]
+                      },
+                      "status_code": 200,
+                      "method": "PUT"
+                    }
+                  },
+                  "Error": {
+                    "value": {
+                      "result": [
+                        {
+                          "message": "Review not updated"
+                        }
+                      ],
+                      "status_code": 200,
+                      "method": "PUT"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "description": "Updates the review information with the corresponding review ID.",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "description": "",
+                "type": "object",
+                "x-examples": {
+                  "example-1": {
+                    "title": "Example title",
+                    "text": "Example text",
+                    "stars": "3",
+                    "product_id": "77",
+                    "status": "1",
+                    "image": "http://i2.wp.com/app.lpqv.com.br/app/assets/dist/img/logo.png"
+                  }
+                },
+                "properties": {
+                  "title": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "text": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "date": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "stars": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "from 0 to 5\n"
+                  },
+                  "product_id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "status": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "1 to display 0 to not display\n"
+                  },
+                  "image": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "image url"
+                  }
+                },
+                "required": [
+                  "title",
+                  "text",
+                  "date",
+                  "stars",
+                  "product_id",
+                  "status",
+                  "image"
+                ]
+              },
+              "examples": {
+                "Example": {
+                  "value": {
+                    "title": "Example title",
+                    "text": "Example text",
+                    "date": "09/06/2021",
+                    "stars": "3",
+                    "product_id": "77",
+                    "status": "1",
+                    "image": "http://i2.wp.com/app.lpqv.com.br/app/assets/dist/img/logo.png"
+                  }
+                }
+              }
+            }
+          },
+          "description": "Check the request body"
+        },
+        "parameters": [
+          {
+            "schema": {
+              "type": "string",
+              "default": "application/json"
+            },
+            "in": "header",
+            "name": "Content-Type",
+            "required": true,
+            "description": "API accepts only JSON type data"
+          }
+        ]
+      },
+      "delete": {
+        "summary": "Delete a review",
+        "operationId": "delete-slug-landingpage-reviews-id",
+        "responses": {
+          "200": {
+            "description": "OK - Request responses",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "",
+                  "type": "object",
+                  "properties": {
+                    "result": {
+                      "type": "object",
+                      "properties": {
+                        "message": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "review": {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "string",
+                              "minLength": 1
+                            }
+                          },
+                          "required": [
+                            "id"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "message",
+                        "review"
+                      ]
+                    },
+                    "status_code": {
+                      "type": "number"
+                    },
+                    "method": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "result",
+                    "status_code",
+                    "method"
+                  ],
+                  "x-examples": {
+                    "example-1": {
+                      "result": {
+                        "message": "Review removed",
+                        "review": {
+                          "id": "7"
+                        }
+                      },
+                      "status_code": 200,
+                      "method": "DELETE"
+                    }
+                  }
+                },
+                "examples": {
+                  "Success": {
+                    "value": {
+                      "result": {
+                        "message": "Review removed",
+                        "review": {
+                          "id": "7"
+                        }
+                      },
+                      "status_code": 200,
+                      "method": "DELETE"
+                    }
+                  },
+                  "Error": {
+                    "value": {
+                      "result": [
+                        {
+                          "message": "There is no review to delete"
+                        }
+                      ],
+                      "status_code": 200,
+                      "method": "DELETE"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "description": "Delete the review with the corresponding review ID.",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string",
+              "default": "application/json"
+            },
+            "in": "header",
+            "name": "Content-Type",
+            "required": true,
+            "description": "API accepts only JSON type data"
+          }
+        ]
+      },
+      "get": {
+        "summary": "Get a review",
+        "operationId": "get-slug-landingpage-reviews-id",
+        "responses": {
+          "200": {
+            "description": "OK - Request responses",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "",
+                  "type": "object",
+                  "x-examples": {
+                    "example-1": {
+                      "result": [
+                        {
+                          "id": "1",
+                          "image": "https://app.lpqv.com.br/uploads/store-pet/social_proofs/1/images/http://192.168.0.45/lpqv-checkout/app/checkout/assets/dist/img/depo1.jpg",
+                          "title": "Larissa Monteiro",
+                          "stars": "5",
+                          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque placeat rerum aliquam!",
+                          "status": "1",
+                          "created_at": "2021-04-23 18:01:54",
+                          "updated_at": null,
+                          "product_id": "36",
+                          "position": "2"
+                        }
+                      ],
+                      "status_code": 200,
+                      "method": "GET"
+                    }
+                  },
+                  "properties": {
+                    "result": {
+                      "type": "array",
+                      "uniqueItems": true,
+                      "minItems": 1,
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "image": {
+                            "type": "string",
+                            "minLength": 1,
+                            "description": "image url\n"
+                          },
+                          "title": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "stars": {
+                            "type": "string",
+                            "minLength": 1,
+                            "description": "from 0 to 5\n"
+                          },
+                          "text": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "date": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "status": {
+                            "type": "string",
+                            "minLength": 1,
+                            "description": "1 to display 0 to not display\n"
+                          },
+                          "created_at": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "updated_at": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "product_id": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "position": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "image",
+                          "title",
+                          "stars",
+                          "text",
+                          "date",
+                          "status",
+                          "created_at",
+                          "updated_at",
+                          "product_id",
+                          "position"
+                        ]
+                      }
+                    },
+                    "status_code": {
+                      "type": "number"
+                    },
+                    "method": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "result",
+                    "status_code",
+                    "method"
+                  ]
+                },
+                "examples": {
+                  "Success": {
+                    "value": {
+                      "result": [
+                        {
+                          "id": "1",
+                          "image": "https://app.lpqv.com.br/uploads/store-pet/social_proofs/1/images/http://192.168.0.45/lpqv-checkout/app/checkout/assets/dist/img/depo1.jpg",
+                          "title": "Larissa Monteiro",
+                          "stars": "5",
+                          "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque placeat rerum aliquam!",
+                          "date": "09/06/2021",
+                          "status": "1",
+                          "created_at": "2021-04-23 18:01:54",
+                          "updated_at": null,
+                          "product_id": "36",
+                          "position": "2"
+                        }
+                      ],
+                      "status_code": 200,
+                      "method": "GET"
+                    }
+                  },
+                  "Error": {
+                    "value": {
+                      "result": [
+                        {
+                          "message": "No results"
+                        }
+                      ],
+                      "status_code": 200,
+                      "method": "GET"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "description": "Retrieves the review information with the corresponding review ID.",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string",
+              "default": "application/json"
+            },
+            "in": "header",
+            "name": "Content-Type",
+            "required": true,
+            "description": "API accepts only JSON type data"
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {},
+    "securitySchemes": {
+      "TOKEN": {
+        "type": "http",
+        "scheme": "bearer",
+        "description": "Token provided for your landing page"
+      }
+    },
+    "parameters": {}
+  },
+  "security": [
+    {
+      "TOKEN": []
+    }
+  ]
+}

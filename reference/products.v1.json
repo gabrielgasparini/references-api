@@ -38,6 +38,10 @@
                   "description": "",
                   "type": "object",
                   "properties": {
+                    "id": {
+                      "type": "number",
+                      "description": "product id"
+                    },
                     "has_variant": {
                       "type": "number",
                       "description": "product with variation: 1 | without variation: 0"
@@ -60,9 +64,6 @@
                       "type": "string"
                     },
                     "aliexpress_seller": {
-                      "type": "string"
-                    },
-                    "enable_dropshipping": {
                       "type": "string"
                     },
                     "ncm_code": {
@@ -150,6 +151,10 @@
                       "items": {
                         "type": "object",
                         "properties": {
+                          "id": {
+                            "type": "number",
+                            "description": "variant id"
+                          },
                           "sku": {
                             "type": "string",
                             "description": "product identification, tracking and inventory"
@@ -220,6 +225,9 @@
                       "items": {
                         "type": "object",
                         "properties": {
+                          "id": {
+                            "type": "number"
+                          },
                           "position": {
                             "type": "number",
                             "description": "order of display of the photos"
@@ -239,12 +247,20 @@
                       "items": {
                         "type": "object",
                         "properties": {
+                          "id": {
+                            "type": "number",
+                            "description": "variant item id"
+                          },
                           "title": {
                             "type": "string"
                           },
                           "variant_values": {
                             "type": "string",
                             "description": "\nfor more values sort by ',' Ex: Blue,Black"
+                          },
+                          "input_type": {
+                            "type": "string",
+                            "description": "radio or image"
                           }
                         }
                       }
@@ -271,15 +287,12 @@
                           "status": "1",
                           "title": "Teste Com Variação - v2",
                           "product_type": "physical",
-                          "seo_title": "Teste Com Variação - v2",
-                          "seo_desc": "Teste Com Variação - v2",
                           "seo_url": "teste-com-variacao-v2",
                           "created_at": "2021-04-27 14:34:15",
                           "updated_at": null,
                           "aliexpress_url": "https://pt.aliexpress.com/item/1005001966343675.html?spm=a2g0o.productlist.0.0.50987d6bVePs3F&algo_pvid=b561f8de-5011-46de-9f21-4401fbcf2f67&algo_expid=b561f8de-5011-46de-9f21-4401fbcf2f67-0&btsid=0bb0624316195439930215026e95b5&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_",
                           "aliexpress_id": "1255477",
                           "aliexpress_seller": "888888",
-                          "enable_dropshipping": "1",
                           "ncm_code": "4",
                           "gshop_condition": "new",
                           "gshop_age_group": "adult",
@@ -365,33 +378,35 @@
                             {
                               "id": "59",
                               "title": "Tamanho",
-                              "variant_values": "p,m"
+                              "variant_values": "p,m",
+                              "input_type": "radio"
                             },
                             {
                               "id": "58",
                               "title": "Cor",
-                              "variant_values": "Azul,Preto"
+                              "variant_values": "Azul,Preto",
+                              "input_type": "radio"
                             }
                           ],
                           "images": [
                             {
                               "id": "240",
                               "position": "2",
-                              "image": "http://192.168.0.45/landingpagesistema/uploads/store-pet/products/40/images/840d1536189cff76898d95a53af5fa12.jpg",
+                              "image": "https://app.lpqv.com.br/uploads/store-pet/products/40/images/840d1536189cff76898d95a53af5fa12.jpg",
                               "created_at": "2021-04-27 14:34:17",
                               "reference": "1"
                             },
                             {
                               "id": "241",
                               "position": "1",
-                              "image": "http://192.168.0.45/landingpagesistema/uploads/store-pet/products/40/images/7e4164f85d87b1044b8aabae74d88a35.jpg",
+                              "image": "https://app.lpqv.com.br/uploads/store-pet/products/40/images/7e4164f85d87b1044b8aabae74d88a35.jpg",
                               "created_at": "2021-04-27 14:34:17",
                               "reference": "2"
                             },
                             {
                               "id": "242",
                               "position": "3",
-                              "image": "http://192.168.0.45/landingpagesistema/uploads/store-pet/products/40/images/c8ff43da2338a05c585f6f015b7ddcce.jpg",
+                              "image": "https://app.lpqv.com.br/uploads/store-pet/products/40/images/c8ff43da2338a05c585f6f015b7ddcce.jpg",
                               "created_at": "2021-04-27 14:34:17",
                               "reference": "3"
                             }
@@ -411,15 +426,12 @@
                           "status": "1",
                           "title": "Teste Sem Variação - V2",
                           "product_type": "physical",
-                          "seo_title": "Teste Sem Variação - V2",
-                          "seo_desc": "Teste Sem Variação - V2",
                           "seo_url": "teste-sem-variacao-v2",
                           "created_at": "2021-04-27 14:43:07",
                           "updated_at": null,
                           "aliexpress_url": "1",
                           "aliexpress_id": "2",
                           "aliexpress_seller": "3",
-                          "enable_dropshipping": "0",
                           "ncm_code": "4",
                           "gshop_condition": "new",
                           "gshop_age_group": "adult",
@@ -442,14 +454,16 @@
                           "aliexpress_sku": "12345",
                           "images": [
                             {
+                              "id": "240",
                               "position": "2",
-                              "image": "http://192.168.0.45/landingpagesistema/uploads/store-pet/products/42/images/03d8d1421f93bf947103f7319b0322ab.jpg",
+                              "image": "https://app.lpqv.com.br/uploads/store-pet/products/42/images/03d8d1421f93bf947103f7319b0322ab.jpg",
                               "created_at": "2021-04-27 14:43:07",
                               "reference": "1"
                             },
                             {
+                              "id": "239",
                               "position": "1",
-                              "image": "http://192.168.0.45/landingpagesistema/uploads/store-pet/products/42/images/608f8cb03c504fbf4fcdec12180777a5.jpg",
+                              "image": "https://app.lpqv.com.br/uploads/store-pet/products/42/images/608f8cb03c504fbf4fcdec12180777a5.jpg",
                               "created_at": "2021-04-27 14:43:08",
                               "reference": "2"
                             }
@@ -603,16 +617,12 @@
                             "status": "1",
                             "title": "Teste Com Variação - v2",
                             "product_type": "physical",
-                            "seo_title": "Teste Com Variação - v2",
-                            "seo_desc": "Teste Com Variação - v2",
                             "seo_url": "teste-com-variacao-v2",
                             "created_at": "2021-04-27 14:34:15",
                             "updated_at": null,
-                            "has_kits": "1",
                             "aliexpress_url": "https://pt.aliexpress.com/item/1005001966343675.html?spm=a2g0o.productlist.0.0.50987d6bVePs3F&algo_pvid=b561f8de-5011-46de-9f21-4401fbcf2f67&algo_expid=b561f8de-5011-46de-9f21-4401fbcf2f67-0&btsid=0bb0624316195439930215026e95b5&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_",
                             "aliexpress_id": "1255477",
                             "aliexpress_seller": "888888",
-                            "enable_dropshipping": "1",
                             "ncm_code": "4",
                             "gshop_condition": "1",
                             "gshop_age_group": "2",
@@ -698,33 +708,35 @@
                               {
                                 "id": "59",
                                 "title": "Tamanho",
-                                "variant_values": "p,m"
+                                "variant_values": "p,m",
+                                "input_type": "radio"
                               },
                               {
                                 "id": "58",
                                 "title": "Cor",
-                                "variant_values": "Azul,Preto"
+                                "variant_values": "Azul,Preto",
+                                "input_type": "radio"
                               }
                             ],
                             "images": [
                               {
                                 "id": "240",
                                 "position": "2",
-                                "image": "http://192.168.0.45/landingpagesistema/uploads/store-pet/products/40/images/840d1536189cff76898d95a53af5fa12.jpg",
+                                "image": "https://app.lpqv.com.br/uploads/store-pet/products/40/images/840d1536189cff76898d95a53af5fa12.jpg",
                                 "created_at": "2021-04-27 14:34:17",
                                 "reference": "1"
                               },
                               {
                                 "id": "241",
                                 "position": "1",
-                                "image": "http://192.168.0.45/landingpagesistema/uploads/store-pet/products/40/images/7e4164f85d87b1044b8aabae74d88a35.jpg",
+                                "image": "https://app.lpqv.com.br/uploads/store-pet/products/40/images/7e4164f85d87b1044b8aabae74d88a35.jpg",
                                 "created_at": "2021-04-27 14:34:17",
                                 "reference": "2"
                               },
                               {
                                 "id": "242",
                                 "position": "3",
-                                "image": "http://192.168.0.45/landingpagesistema/uploads/store-pet/products/40/images/c8ff43da2338a05c585f6f015b7ddcce.jpg",
+                                "image": "https://app.lpqv.com.br/uploads/store-pet/products/40/images/c8ff43da2338a05c585f6f015b7ddcce.jpg",
                                 "created_at": "2021-04-27 14:34:17",
                                 "reference": "3"
                               }
@@ -747,16 +759,12 @@
                             "status": "1",
                             "title": "Teste Sem Variação - V2",
                             "product_type": "physical",
-                            "seo_title": "Teste Sem Variação - V2",
-                            "seo_desc": "Teste Sem Variação - V2",
                             "seo_url": "teste-sem-variacao-v2",
                             "created_at": "2021-04-27 14:43:07",
                             "updated_at": null,
-                            "has_kits": "0",
                             "aliexpress_url": "1",
                             "aliexpress_id": "2",
                             "aliexpress_seller": "3",
-                            "enable_dropshipping": "0",
                             "ncm_code": "4",
                             "gshop_condition": "1",
                             "gshop_age_group": "2",
@@ -779,14 +787,16 @@
                             "aliexpress_sku": "12345",
                             "images": [
                               {
+                                "id": "240",
                                 "position": "2",
-                                "image": "http://192.168.0.45/landingpagesistema/uploads/store-pet/products/42/images/03d8d1421f93bf947103f7319b0322ab.jpg",
+                                "image": "https://app.lpqv.com.br/uploads/store-pet/products/42/images/03d8d1421f93bf947103f7319b0322ab.jpg",
                                 "created_at": "2021-04-27 14:43:07",
                                 "reference": "1"
                               },
                               {
+                                "id": "239",
                                 "position": "1",
-                                "image": "http://192.168.0.45/landingpagesistema/uploads/store-pet/products/42/images/608f8cb03c504fbf4fcdec12180777a5.jpg",
+                                "image": "https://app.lpqv.com.br/uploads/store-pet/products/42/images/608f8cb03c504fbf4fcdec12180777a5.jpg",
                                 "created_at": "2021-04-27 14:43:08",
                                 "reference": "2"
                               }
@@ -833,9 +843,6 @@
                     "type": "string"
                   },
                   "aliexpress_seller": {
-                    "type": "string"
-                  },
-                  "enable_dropshipping": {
                     "type": "string"
                   },
                   "ncm_code": {
@@ -924,6 +931,10 @@
                     "items": {
                       "type": "object",
                       "properties": {
+                        "id": {
+                          "type": "number",
+                          "description": "variant id"
+                        },
                         "sku": {
                           "type": "string",
                           "description": "product identification, tracking and inventory"
@@ -1014,12 +1025,20 @@
                     "items": {
                       "type": "object",
                       "properties": {
+                        "id": {
+                          "type": "number",
+                          "description": "variant item id"
+                        },
                         "title": {
                           "type": "string"
                         },
                         "variant_values": {
                           "type": "string",
                           "description": "\nfor more values sort by ',' Ex: Blue,Black"
+                        },
+                        "input_type": {
+                          "type": "string",
+                          "description": "radio or image"
                         }
                       }
                     }
@@ -1040,7 +1059,6 @@
                     "aliexpress_url": "https://pt.aliexpress.com/item/1005001966343675.html?spm=a2g0o.productlist.0.0.50987d6bVePs3F&algo_pvid=b561f8de-5011-46de-9f21-4401fbcf2f67&algo_expid=b561f8de-5011-46de-9f21-4401fbcf2f67-0&btsid=0bb0624316195439930215026e95b5&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_",
                     "aliexpress_id": "1255477",
                     "aliexpress_seller": "888888",
-                    "enable_dropshipping": "1",
                     "ncm_code": "4",
                     "gshop_condition": "new",
                     "gshop_age_group": "adult",
@@ -1050,6 +1068,7 @@
                     "video_platform": "YouTube",
                     "variants": [
                       {
+                        "id": "250",
                         "sku": "123",
                         "bar_code": "1234",
                         "automatic_stock": "1",
@@ -1067,6 +1086,7 @@
                         "image_id": "1"
                       },
                       {
+                        "id": "249",
                         "sku": "456",
                         "bar_code": "4567",
                         "automatic_stock": "1",
@@ -1084,6 +1104,7 @@
                         "image_id": "2"
                       },
                       {
+                        "id": "248",
                         "sku": "789",
                         "bar_code": "7890",
                         "automatic_stock": "1",
@@ -1101,6 +1122,7 @@
                         "image_id": "3"
                       },
                       {
+                        "id": "247",
                         "sku": "60123OITO",
                         "bar_code": "60123OITOBARCODE",
                         "automatic_stock": "1",
@@ -1122,27 +1144,31 @@
                       {
                         "id": "1",
                         "position": "2",
-                        "image": "https://www.aplicaplacaspersonalizadas.com.br/uploads/img/550/placa-sinalizacao-cuidado-ao-subir-e-descer-escada-64c7b4bf689d55c0b74661000c0c3595.jpg"
+                        "image": "http://i2.wp.com/app.lpqv.com.br/app/assets/dist/img/logo.png"
                       },
                       {
                         "id": "2",
                         "position": "1",
-                        "image": "https://www.aplicaplacaspersonalizadas.com.br/uploads/img/550/placa-sinalizacao-cuidado-risco-de-choque-eletrico-1af34118cea74ed43060f297871ee40e.jpg"
+                        "image": "http://i2.wp.com/app.lpqv.com.br/app/assets/dist/img/logo.png"
                       },
                       {
                         "id": "3",
                         "position": "3",
-                        "image": "https://www.aplicaplacaspersonalizadas.com.br/uploads/img/550/placa-sinalizacao-cuidado-area-de-teste-9e8ab87cf00f1eba23f4f4103251680a.jpg"
+                        "image": "http://i2.wp.com/app.lpqv.com.br/app/assets/dist/img/logo.png"
                       }
                     ],
                     "variants_items": [
                       {
+                        "id": "59",
                         "title": "Cor",
-                        "variant_values": "Azul,Preto"
+                        "variant_values": "Azul,Preto",
+                        "input_type": "radio"
                       },
                       {
+                        "id": "58",
                         "title": "Tamanho",
-                        "variant_values": "p,m"
+                        "variant_values": "p,m",
+                        "input_type": "radio"
                       }
                     ]
                   }
@@ -1156,7 +1182,6 @@
                     "aliexpress_url": "1",
                     "aliexpress_id": "2",
                     "aliexpress_seller": "3",
-                    "enable_dropshipping": "0",
                     "ncm_code": "4",
                     "gshop_condition": "new",
                     "gshop_age_group": "adult",
@@ -1182,12 +1207,12 @@
                       {
                         "id": "1",
                         "position": "2",
-                        "image": "https://www.aplicaplacaspersonalizadas.com.br/uploads/img/550/placa-sinalizacao-cuidado-ao-subir-e-descer-escada-64c7b4bf689d55c0b74661000c0c3595.jpg"
+                        "image": "http://i2.wp.com/app.lpqv.com.br/app/assets/dist/img/logo.png"
                       },
                       {
                         "id": "2",
                         "position": "1",
-                        "image": "https://www.aplicaplacaspersonalizadas.com.br/uploads/img/550/placa-sinalizacao-cuidado-risco-de-choque-eletrico-1af34118cea74ed43060f297871ee40e.jpg"
+                        "image": "http://i2.wp.com/app.lpqv.com.br/app/assets/dist/img/logo.png"
                       }
                     ]
                   }
@@ -1306,16 +1331,12 @@
                             "status": "1",
                             "title": "Teste Com Variação - v2",
                             "product_type": "physical",
-                            "seo_title": "Teste Com Variação - v2",
-                            "seo_desc": "Teste Com Variação - v2",
                             "seo_url": "teste-com-variacao-v2",
                             "created_at": "2021-04-27 14:34:15",
                             "updated_at": null,
-                            "has_kits": "1",
                             "aliexpress_url": "https://pt.aliexpress.com/item/1005001966343675.html?spm=a2g0o.productlist.0.0.50987d6bVePs3F&algo_pvid=b561f8de-5011-46de-9f21-4401fbcf2f67&algo_expid=b561f8de-5011-46de-9f21-4401fbcf2f67-0&btsid=0bb0624316195439930215026e95b5&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_",
                             "aliexpress_id": "1255477",
                             "aliexpress_seller": "888888",
-                            "enable_dropshipping": "1",
                             "ncm_code": "4",
                             "gshop_condition": "1",
                             "gshop_age_group": "2",
@@ -1401,33 +1422,35 @@
                               {
                                 "id": "59",
                                 "title": "Tamanho",
-                                "variant_values": "p,m"
+                                "variant_values": "p,m",
+                                "input_type": "radio"
                               },
                               {
                                 "id": "58",
                                 "title": "Cor",
-                                "variant_values": "Azul,Preto"
+                                "variant_values": "Azul,Preto",
+                                "input_type": "radio"
                               }
                             ],
                             "images": [
                               {
                                 "id": "240",
                                 "position": "2",
-                                "image": "http://192.168.0.45/landingpagesistema/uploads/store-pet/products/40/images/840d1536189cff76898d95a53af5fa12.jpg",
+                                "image": "https://app.lpqv.com.br/uploads/store-pet/products/40/images/840d1536189cff76898d95a53af5fa12.jpg",
                                 "created_at": "2021-04-27 14:34:17",
                                 "reference": "1"
                               },
                               {
                                 "id": "241",
                                 "position": "1",
-                                "image": "http://192.168.0.45/landingpagesistema/uploads/store-pet/products/40/images/7e4164f85d87b1044b8aabae74d88a35.jpg",
+                                "image": "https://app.lpqv.com.br/uploads/store-pet/products/40/images/7e4164f85d87b1044b8aabae74d88a35.jpg",
                                 "created_at": "2021-04-27 14:34:17",
                                 "reference": "2"
                               },
                               {
                                 "id": "242",
                                 "position": "3",
-                                "image": "http://192.168.0.45/landingpagesistema/uploads/store-pet/products/40/images/c8ff43da2338a05c585f6f015b7ddcce.jpg",
+                                "image": "https://app.lpqv.com.br/uploads/store-pet/products/40/images/c8ff43da2338a05c585f6f015b7ddcce.jpg",
                                 "created_at": "2021-04-27 14:34:17",
                                 "reference": "3"
                               }
@@ -1450,16 +1473,12 @@
                             "status": "1",
                             "title": "Teste Sem Variação Update",
                             "product_type": "physical",
-                            "seo_title": "Teste Sem Variação Update",
-                            "seo_desc": "Teste Sem Variação Update",
                             "seo_url": "teste-sem-variacao-update",
                             "created_at": "2021-04-22 14:43:31",
                             "updated_at": "2021-04-22 14:54:05",
-                            "has_kits": "1",
                             "aliexpress_url": "1",
                             "aliexpress_id": "2",
                             "aliexpress_seller": "3",
-                            "enable_dropshipping": "0",
                             "ncm_code": "4",
                             "gshop_condition": "1",
                             "gshop_age_group": "2",
@@ -1482,20 +1501,23 @@
                             "aliexpress_sku": "12345",
                             "images": [
                               {
+                                "id": "240",
                                 "position": "1",
-                                "image": "http://192.168.0.45/landingpagesistema/uploads/img/store-pet/products/1/images/7e418d61128040b3cff15f16a91485af.jpg",
+                                "image": "https://app.lpqv.com.br/uploads/img/store-pet/products/1/images/7e418d61128040b3cff15f16a91485af.jpg",
                                 "created_at": "2021-04-22 14:53:10",
                                 "reference": "2"
                               },
                               {
+                                "id": "239",
                                 "position": "2",
-                                "image": "http://192.168.0.45/landingpagesistema/uploads/img/store-pet/products/1/images/dcf0f8e10edbd7d893d73b301efec195.jpg",
+                                "image": "https://app.lpqv.com.br/uploads/img/store-pet/products/1/images/dcf0f8e10edbd7d893d73b301efec195.jpg",
                                 "created_at": "2021-04-22 14:53:10",
                                 "reference": "1"
                               },
                               {
+                                "id": "238",
                                 "position": "3",
-                                "image": "http://192.168.0.45/landingpagesistema/uploads/img/store-pet/products/1/images/774615713fce35c87e4e3228c27ffac5.jpg",
+                                "image": "https://app.lpqv.com.br/uploads/img/store-pet/products/1/images/774615713fce35c87e4e3228c27ffac5.jpg",
                                 "created_at": "2021-04-22 14:53:10",
                                 "reference": "3"
                               }
@@ -1640,6 +1662,10 @@
                     "items": {
                       "type": "object",
                       "properties": {
+                        "id": {
+                          "type": "number",
+                          "description": "variant id"
+                        },
                         "sku": {
                           "type": "string",
                           "description": "product identification, tracking and inventory"
@@ -1729,12 +1755,20 @@
                     "items": {
                       "type": "object",
                       "properties": {
+                        "id": {
+                          "type": "number",
+                          "description": "variant item id"
+                        },
                         "title": {
                           "type": "string"
                         },
                         "variant_values": {
                           "type": "string",
                           "description": "\nfor more values sort by ',' Ex: Blue,Black"
+                        },
+                        "input_type": {
+                          "type": "string",
+                          "description": "radio or image"
                         }
                       }
                     }
@@ -1755,7 +1789,6 @@
                     "aliexpress_url": "https://pt.aliexpress.com/item/1005001966343675.html?spm=a2g0o.productlist.0.0.50987d6bVePs3F&algo_pvid=b561f8de-5011-46de-9f21-4401fbcf2f67&algo_expid=b561f8de-5011-46de-9f21-4401fbcf2f67-0&btsid=0bb0624316195439930215026e95b5&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_",
                     "aliexpress_id": "1255477",
                     "aliexpress_seller": "888888",
-                    "enable_dropshipping": "1",
                     "ncm_code": "4",
                     "gshop_condition": "new",
                     "gshop_age_group": "adult",
@@ -1765,6 +1798,7 @@
                     "video_platform": "YouTube",
                     "variants": [
                       {
+                        "id": "250",
                         "sku": "123",
                         "bar_code": "1234",
                         "automatic_stock": "1",
@@ -1782,6 +1816,7 @@
                         "image_id": "1"
                       },
                       {
+                        "id": "249",
                         "sku": "456",
                         "bar_code": "4567",
                         "automatic_stock": "1",
@@ -1799,6 +1834,7 @@
                         "image_id": "2"
                       },
                       {
+                        "id": "248",
                         "sku": "789",
                         "bar_code": "7890",
                         "automatic_stock": "1",
@@ -1816,6 +1852,7 @@
                         "image_id": "3"
                       },
                       {
+                        "id": "247",
                         "sku": "60123OITO",
                         "bar_code": "60123OITOBARCODE",
                         "automatic_stock": "1",
@@ -1837,27 +1874,31 @@
                       {
                         "id": "1",
                         "position": "2",
-                        "image": "https://www.aplicaplacaspersonalizadas.com.br/uploads/img/550/placa-sinalizacao-cuidado-ao-subir-e-descer-escada-64c7b4bf689d55c0b74661000c0c3595.jpg"
+                        "image": "http://i2.wp.com/app.lpqv.com.br/app/assets/dist/img/logo.png"
                       },
                       {
                         "id": "2",
                         "position": "1",
-                        "image": "https://www.aplicaplacaspersonalizadas.com.br/uploads/img/550/placa-sinalizacao-cuidado-risco-de-choque-eletrico-1af34118cea74ed43060f297871ee40e.jpg"
+                        "image": "http://i2.wp.com/app.lpqv.com.br/app/assets/dist/img/logo.png"
                       },
                       {
                         "id": "3",
                         "position": "3",
-                        "image": "https://www.aplicaplacaspersonalizadas.com.br/uploads/img/550/placa-sinalizacao-cuidado-area-de-teste-9e8ab87cf00f1eba23f4f4103251680a.jpg"
+                        "image": "http://i2.wp.com/app.lpqv.com.br/app/assets/dist/img/logo.png"
                       }
                     ],
                     "variants_items": [
                       {
+                        "id": "59",
                         "title": "Cor",
-                        "variant_values": "Azul,Preto"
+                        "variant_values": "Azul,Preto",
+                        "input_type": "radio"
                       },
                       {
+                        "id": "58",
                         "title": "Tamanho",
-                        "variant_values": "p,m"
+                        "variant_values": "p,m",
+                        "input_type": "radio"
                       }
                     ]
                   }
@@ -1871,7 +1912,6 @@
                     "aliexpress_url": "1",
                     "aliexpress_id": "2",
                     "aliexpress_seller": "3",
-                    "enable_dropshipping": "0",
                     "ncm_code": "4",
                     "gshop_condition": "new",
                     "gshop_age_group": "adult",
@@ -1897,12 +1937,12 @@
                       {
                         "id": "1",
                         "position": "2",
-                        "image": "https://www.aplicaplacaspersonalizadas.com.br/uploads/img/550/placa-sinalizacao-cuidado-ao-subir-e-descer-escada-64c7b4bf689d55c0b74661000c0c3595.jpg"
+                        "image": "http://i2.wp.com/app.lpqv.com.br/app/assets/dist/img/logo.png"
                       },
                       {
                         "id": "2",
                         "position": "1",
-                        "image": "https://www.aplicaplacaspersonalizadas.com.br/uploads/img/550/placa-sinalizacao-cuidado-risco-de-choque-eletrico-1af34118cea74ed43060f297871ee40e.jpg"
+                        "image": "http://i2.wp.com/app.lpqv.com.br/app/assets/dist/img/logo.png"
                       }
                     ]
                   }
@@ -1938,41 +1978,65 @@
                   "type": "object",
                   "properties": {
                     "result": {
-                      "type": "array",
-                      "uniqueItems": true,
-                      "minItems": 1,
-                      "items": {
-                        "required": [
-                          "message"
-                        ],
-                        "properties": {
-                          "message": {
-                            "type": "string"
-                          }
+                      "type": "object",
+                      "properties": {
+                        "message": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "product": {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "string",
+                              "minLength": 1
+                            }
+                          },
+                          "required": [
+                            "id"
+                          ]
                         }
-                      }
+                      },
+                      "required": [
+                        "message",
+                        "product"
+                      ]
                     },
                     "status_code": {
                       "type": "number"
                     },
                     "method": {
-                      "type": "string"
+                      "type": "string",
+                      "minLength": 1
                     }
                   },
                   "required": [
                     "result",
                     "status_code",
                     "method"
-                  ]
+                  ],
+                  "x-examples": {
+                    "example-1": {
+                      "result": {
+                        "message": "Product removed",
+                        "product": {
+                          "id": "12"
+                        }
+                      },
+                      "status_code": 200,
+                      "method": "DELETE"
+                    }
+                  }
                 },
                 "examples": {
                   "Success": {
                     "value": {
-                      "result": [
-                        {
-                          "message": "Product removed"
+                      "result": {
+                        "message": "Product removed",
+                        "product": {
+                          "id": "12"
                         }
-                      ],
+                      },
                       "status_code": 200,
                       "method": "DELETE"
                     }
@@ -2019,6 +2083,10 @@
                   "description": "",
                   "type": "object",
                   "properties": {
+                    "id": {
+                      "type": "number",
+                      "description": "product id"
+                    },
                     "has_variant": {
                       "description": "product with variation: 1 | without variation: 0",
                       "type": "number"
@@ -2128,6 +2196,10 @@
                       "items": {
                         "type": "object",
                         "properties": {
+                          "id": {
+                            "type": "number",
+                            "description": "variant id"
+                          },
                           "sku": {
                             "type": "string",
                             "description": "product identification, tracking and inventory"
@@ -2161,6 +2233,10 @@
                           "title": {
                             "type": "string"
                           },
+                          "slug": {
+                            "type": "string",
+                            "description": ""
+                          },
                           "cost_price": {
                             "type": "string",
                             "description": "double (0.00)"
@@ -2172,10 +2248,6 @@
                           "old_price": {
                             "type": "string",
                             "description": "double (0.00)"
-                          },
-                          "slug": {
-                            "type": "string",
-                            "description": ""
                           },
                           "aliexpress_sku": {
                             "type": "string"
@@ -2218,12 +2290,20 @@
                       "items": {
                         "type": "object",
                         "properties": {
+                          "id": {
+                            "type": "number",
+                            "description": "variant item id"
+                          },
                           "title": {
                             "type": "string"
                           },
                           "variant_values": {
                             "type": "string",
                             "description": "\nfor more values sort by ',' Ex: Blue,Black"
+                          },
+                          "input_type": {
+                            "type": "string",
+                            "description": "radio or image"
                           }
                         }
                       }
@@ -2250,15 +2330,12 @@
                           "status": "1",
                           "title": "Teste Com Variação - v2",
                           "product_type": "physical",
-                          "seo_title": "Teste Com Variação - v2",
-                          "seo_desc": "Teste Com Variação - v2",
                           "seo_url": "teste-com-variacao-v2",
                           "created_at": "2021-04-27 14:34:15",
                           "updated_at": null,
                           "aliexpress_url": "https://pt.aliexpress.com/item/1005001966343675.html?spm=a2g0o.productlist.0.0.50987d6bVePs3F&algo_pvid=b561f8de-5011-46de-9f21-4401fbcf2f67&algo_expid=b561f8de-5011-46de-9f21-4401fbcf2f67-0&btsid=0bb0624316195439930215026e95b5&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_",
                           "aliexpress_id": "1255477",
                           "aliexpress_seller": "888888",
-                          "enable_dropshipping": "1",
                           "ncm_code": "4",
                           "gshop_condition": "new",
                           "gshop_age_group": "adult",
@@ -2344,33 +2421,35 @@
                             {
                               "id": "59",
                               "title": "Tamanho",
-                              "variant_values": "p,m"
+                              "variant_values": "p,m",
+                              "input_type": "radio"
                             },
                             {
                               "id": "58",
                               "title": "Cor",
-                              "variant_values": "Azul,Preto"
+                              "variant_values": "Azul,Preto",
+                              "input_type": "radio"
                             }
                           ],
                           "images": [
                             {
                               "id": "240",
                               "position": "2",
-                              "image": "http://192.168.0.45/landingpagesistema/uploads/store-pet/products/40/images/840d1536189cff76898d95a53af5fa12.jpg",
+                              "image": "https://app.lpqv.com.br/uploads/store-pet/products/40/images/840d1536189cff76898d95a53af5fa12.jpg",
                               "created_at": "2021-04-27 14:34:17",
                               "reference": "1"
                             },
                             {
                               "id": "241",
                               "position": "1",
-                              "image": "http://192.168.0.45/landingpagesistema/uploads/store-pet/products/40/images/7e4164f85d87b1044b8aabae74d88a35.jpg",
+                              "image": "https://app.lpqv.com.br/uploads/store-pet/products/40/images/7e4164f85d87b1044b8aabae74d88a35.jpg",
                               "created_at": "2021-04-27 14:34:17",
                               "reference": "2"
                             },
                             {
                               "id": "242",
                               "position": "3",
-                              "image": "http://192.168.0.45/landingpagesistema/uploads/store-pet/products/40/images/c8ff43da2338a05c585f6f015b7ddcce.jpg",
+                              "image": "https://app.lpqv.com.br/uploads/store-pet/products/40/images/c8ff43da2338a05c585f6f015b7ddcce.jpg",
                               "created_at": "2021-04-27 14:34:17",
                               "reference": "3"
                             }
@@ -2390,15 +2469,12 @@
                           "status": "1",
                           "title": "Teste Sem Variação - V2",
                           "product_type": "physical",
-                          "seo_title": "Teste Sem Variação - V2",
-                          "seo_desc": "Teste Sem Variação - V2",
                           "seo_url": "teste-sem-variacao-v2",
                           "created_at": "2021-04-27 14:43:07",
                           "updated_at": null,
                           "aliexpress_url": "1",
                           "aliexpress_id": "2",
                           "aliexpress_seller": "3",
-                          "enable_dropshipping": "0",
                           "ncm_code": "4",
                           "gshop_condition": "new",
                           "gshop_age_group": "adult",
@@ -2421,14 +2497,16 @@
                           "aliexpress_sku": "12345",
                           "images": [
                             {
+                              "id": "240",
                               "position": "2",
-                              "image": "http://192.168.0.45/landingpagesistema/uploads/store-pet/products/42/images/03d8d1421f93bf947103f7319b0322ab.jpg",
+                              "image": "https://app.lpqv.com.br/uploads/store-pet/products/42/images/03d8d1421f93bf947103f7319b0322ab.jpg",
                               "created_at": "2021-04-27 14:43:07",
                               "reference": "1"
                             },
                             {
+                              "id": "239",
                               "position": "1",
-                              "image": "http://192.168.0.45/landingpagesistema/uploads/store-pet/products/42/images/608f8cb03c504fbf4fcdec12180777a5.jpg",
+                              "image": "https://app.lpqv.com.br/uploads/store-pet/products/42/images/608f8cb03c504fbf4fcdec12180777a5.jpg",
                               "created_at": "2021-04-27 14:43:08",
                               "reference": "2"
                             }
