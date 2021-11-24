@@ -450,7 +450,7 @@
                           "cost_price": "10.00",
                           "sale_price": "60.00",
                           "old_price": "20.00",
-                          "slug": "tamanho:m|cor:azul",
+                          "slug": "cor:azul|tamanho:m",
                           "aliexpress_sku": "12345",
                           "images": [
                             {
@@ -783,7 +783,7 @@
                             "cost_price": "10.00",
                             "sale_price": "60.00",
                             "old_price": "20.00",
-                            "slug": "tamanho:m|cor:azul",
+                            "slug": "cor:azul|tamanho:m",
                             "aliexpress_sku": "12345",
                             "images": [
                               {
@@ -1200,7 +1200,7 @@
                     "cost_price": "10.00",
                     "sale_price": "60.00",
                     "old_price": "20.00",
-                    "slug": "tamanho:m|cor:azul",
+                    "slug": "cor:azul|tamanho:m",
                     "aliexpress_sku": "12345",
                     "image_id": "1",
                     "images": [
@@ -1497,7 +1497,7 @@
                             "cost_price": "0.00",
                             "sale_price": "60.00",
                             "old_price": "0.00",
-                            "slug": "tamanho:m|cor:azul",
+                            "slug": "cor:azul|tamanho:m",
                             "aliexpress_sku": "12345",
                             "images": [
                               {
@@ -1930,7 +1930,7 @@
                     "cost_price": "10.00",
                     "sale_price": "60.00",
                     "old_price": "20.00",
-                    "slug": "tamanho:m|cor:azul",
+                    "slug": "cor:azul|tamanho:m",
                     "aliexpress_sku": "12345",
                     "image_id": "1",
                     "images": [
@@ -2493,7 +2493,7 @@
                           "cost_price": "10.00",
                           "sale_price": "60.00",
                           "old_price": "20.00",
-                          "slug": "tamanho:m|cor:azul",
+                          "slug": "cor:azul|tamanho:m",
                           "aliexpress_sku": "12345",
                           "images": [
                             {
