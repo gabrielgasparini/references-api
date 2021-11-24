@@ -40,7 +40,7 @@
                   "properties": {
                     "id": {
                       "type": "number",
-                      "description": "product id"
+                      "description": "product id | unique"
                     },
                     "has_variant": {
                       "type": "number",
@@ -135,7 +135,7 @@
                     },
                     "slug": {
                       "type": "string",
-                      "description": "combination enters the variation and value divided by | size:p|color:blue or size:p "
+                      "description": "combination enters the variation and value divided by | shipping-from:china|color:blue or size:p "
                     },
                     "aliexpress_sku": {
                       "type": "string"
@@ -153,7 +153,7 @@
                         "properties": {
                           "id": {
                             "type": "number",
-                            "description": "variant id"
+                            "description": "variant id | unique"
                           },
                           "sku": {
                             "type": "string",
@@ -202,7 +202,7 @@
                           },
                           "slug": {
                             "type": "string",
-                            "description": "combination enters the variation and value divided by | size:p|color:blue or size:p "
+                            "description": "combination enters the variation and value divided by | shipping-from:china|color:blue or size:p "
                           },
                           "aliexpress_sku": {
                             "type": "string"
@@ -503,7 +503,8 @@
             "required": true,
             "description": "API accepts only JSON type data"
           }
-        ]
+        ],
+        "x-internal": true
       },
       "post": {
         "summary": "Create a product",
@@ -914,7 +915,7 @@
                   },
                   "slug": {
                     "type": "string",
-                    "description": "combination enters the variation and value divided by | size:p|color:blue or size:p "
+                    "description": "combination enters the variation and value divided by | shipping-from:china|color:blue or size:p "
                   },
                   "aliexpress_sku": {
                     "type": "string"
@@ -932,7 +933,7 @@
                       "properties": {
                         "id": {
                           "type": "number",
-                          "description": "variant id"
+                          "description": "variant id | unique"
                         },
                         "sku": {
                           "type": "string",
@@ -981,7 +982,7 @@
                         },
                         "slug": {
                           "type": "string",
-                          "description": "combination enters the variation and value divided by | size:p|color:blue or size:p "
+                          "description": "combination enters the variation and value divided by | shipping-from:china|color:blue or size:p "
                         },
                         "aliexpress_sku": {
                           "type": "string"
@@ -1645,7 +1646,7 @@
                   },
                   "slug": {
                     "type": "string",
-                    "description": "combination enters the variation and value divided by | size:p|color:blue or size:p "
+                    "description": "combination enters the variation and value divided by | shipping-from:china|color:blue or size:p "
                   },
                   "aliexpress_sku": {
                     "type": "string"
@@ -1663,7 +1664,7 @@
                       "properties": {
                         "id": {
                           "type": "number",
-                          "description": "variant id"
+                          "description": "variant id | unique"
                         },
                         "sku": {
                           "type": "string",
@@ -2084,7 +2085,7 @@
                   "properties": {
                     "id": {
                       "type": "number",
-                      "description": "product id"
+                      "description": "product id | unique"
                     },
                     "has_variant": {
                       "description": "product with variation: 1 | without variation: 0",
@@ -2179,7 +2180,7 @@
                     },
                     "slug": {
                       "type": "string",
-                      "description": "combination enters the variation and value divided by | size:p|color:blue or size:p "
+                      "description": "combination enters the variation and value divided by | shipping-from:china|color:blue or size:p "
                     },
                     "aliexpress_sku": {
                       "type": "string"
@@ -2197,7 +2198,7 @@
                         "properties": {
                           "id": {
                             "type": "number",
-                            "description": "variant id"
+                            "description": "variant id | unique"
                           },
                           "sku": {
                             "type": "string",
