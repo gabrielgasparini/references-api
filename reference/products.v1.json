@@ -311,11 +311,11 @@
                               "width": "0",
                               "height": "0",
                               "length": "0",
-                              "title": "p|Preto",
+                              "title": "Cor: Preto / Tamanho: P",
                               "cost_price": "0.00",
                               "sale_price": "60.00",
                               "old_price": "0.00",
-                              "slug": "tamanho:p|cor:preto",
+                              "slug": "cor:preto|tamanho:p",
                               "aliexpress_sku": "",
                               "image_id": "242"
                             },
@@ -329,11 +329,11 @@
                               "width": "0",
                               "height": "0",
                               "length": "0",
-                              "title": "p|Azul",
+                              "title": "Cor: Azul / Tamanho: P",
                               "cost_price": "0.00",
                               "sale_price": "60.00",
                               "old_price": "0.00",
-                              "slug": "tamanho:p|cor:azul",
+                              "slug": "cor:azul|tamanho:p",
                               "aliexpress_sku": "",
                               "image_id": "242"
                             },
@@ -347,11 +347,11 @@
                               "width": "0",
                               "height": "0",
                               "length": "0",
-                              "title": "M|Preto",
+                              "title": "Cor: Preto / Tamanho: M",
                               "cost_price": "0.00",
                               "sale_price": "60.00",
                               "old_price": "0.00",
-                              "slug": "tamanho:m|cor:preto",
+                              "slug": "cor:preto|tamanho:m",
                               "aliexpress_sku": "",
                               "image_id": "241"
                             },
@@ -365,26 +365,26 @@
                               "width": "20",
                               "height": "30",
                               "length": "40",
-                              "title": "M|Azul",
+                              "title": "Cor: Azul / Tamanho: M",
                               "cost_price": "0.00",
                               "sale_price": "60.00",
                               "old_price": "0.00",
-                              "slug": "tamanho:m|cor:azul",
+                              "slug": "cor:azul|tamanho:m",
                               "aliexpress_sku": "12345",
                               "image_id": "240"
                             }
                           ],
                           "variants_items": [
                             {
-                              "id": "59",
-                              "title": "Tamanho",
-                              "variant_values": "p,m",
-                              "input_type": "radio"
-                            },
-                            {
                               "id": "58",
                               "title": "Cor",
                               "variant_values": "Azul,Preto",
+                              "input_type": "radio"
+                            },
+                            {
+                              "id": "59",
+                              "title": "Tamanho",
+                              "variant_values": "P,M",
                               "input_type": "radio"
                             }
                           ],
@@ -640,11 +640,11 @@
                                 "width": "0",
                                 "height": "0",
                                 "length": "0",
-                                "title": "p|Preto",
+                                "title": "Cor: Preto / Tamanho: P",
                                 "cost_price": "0.00",
                                 "sale_price": "60.00",
                                 "old_price": "0.00",
-                                "slug": "tamanho:p|cor:preto",
+                                "slug": "cor:preto|tamanho:p",
                                 "aliexpress_sku": "",
                                 "image_id": "242"
                               },
@@ -658,11 +658,11 @@
                                 "width": "0",
                                 "height": "0",
                                 "length": "0",
-                                "title": "p|Azul",
+                                "title": "Cor: Azul / Tamanho: P",
                                 "cost_price": "0.00",
                                 "sale_price": "60.00",
                                 "old_price": "0.00",
-                                "slug": "tamanho:p|cor:azul",
+                                "slug": "cor:azul|tamanho:p",
                                 "aliexpress_sku": "",
                                 "image_id": "242"
                               },
@@ -676,11 +676,11 @@
                                 "width": "0",
                                 "height": "0",
                                 "length": "0",
-                                "title": "M|Preto",
+                                "title": "Cor: Preto / Tamanho: M",
                                 "cost_price": "0.00",
                                 "sale_price": "60.00",
                                 "old_price": "0.00",
-                                "slug": "tamanho:m|cor:preto",
+                                "slug": "cor:preto|tamanho:m",
                                 "aliexpress_sku": "",
                                 "image_id": "241"
                               },
@@ -694,26 +694,26 @@
                                 "width": "20",
                                 "height": "30",
                                 "length": "40",
-                                "title": "M|Azul",
+                                "title": "Cor: Azul / Tamanho: M",
                                 "cost_price": "0.00",
                                 "sale_price": "60.00",
                                 "old_price": "0.00",
-                                "slug": "tamanho:m|cor:azul",
+                                "slug": "cor:azul|tamanho:m",
                                 "aliexpress_sku": "12345",
                                 "image_id": "240"
                               }
                             ],
                             "variants_items": [
                               {
-                                "id": "59",
-                                "title": "Tamanho",
-                                "variant_values": "p,m",
-                                "input_type": "radio"
-                              },
-                              {
                                 "id": "58",
                                 "title": "Cor",
                                 "variant_values": "Azul,Preto",
+                                "input_type": "radio"
+                              },
+                              {
+                                "id": "59",
+                                "title": "Tamanho",
+                                "variant_values": "P,M",
                                 "input_type": "radio"
                               }
                             ],
@@ -1076,11 +1076,11 @@
                         "width": "20",
                         "height": "30",
                         "length": "40",
-                        "title": "M|Azul",
+                        "title": "Cor: Azul / Tamanho: M",
                         "cost_price": "0.00",
                         "sale_price": "60.00",
                         "old_price": "0.00",
-                        "slug": "tamanho:m|cor:azul",
+                        "slug": "cor:azul|tamanho:m",
                         "aliexpress_sku": "12345",
                         "image_id": "1"
                       },
@@ -1094,11 +1094,11 @@
                         "width": "0",
                         "height": "0",
                         "length": "0",
-                        "title": "M|Preto",
+                        "title": "Cor: Preto / Tamanho: M",
                         "cost_price": "0.00",
                         "sale_price": "60.00",
                         "old_price": "0.00",
-                        "slug": "tamanho:m|cor:preto",
+                        "slug": "cor:preto|tamanho:m",
                         "aliexpress_sku": "",
                         "image_id": "2"
                       },
@@ -1112,11 +1112,11 @@
                         "width": "0",
                         "height": "0",
                         "length": "0",
-                        "title": "p|Azul",
+                        "title": "Cor: Azul / Tamanho: P",
                         "cost_price": "0.00",
                         "sale_price": "60.00",
                         "old_price": "0.00",
-                        "slug": "tamanho:p|cor:azul",
+                        "slug": "cor:azul|tamanho:p",
                         "aliexpress_sku": "",
                         "image_id": "3"
                       },
@@ -1130,11 +1130,11 @@
                         "width": "0",
                         "height": "0",
                         "length": "0",
-                        "title": "p|Preto",
+                        "title": "Cor: Preto / Tamanho: P",
                         "cost_price": "0.00",
                         "sale_price": "60.00",
                         "old_price": "0.00",
-                        "slug": "tamanho:p|cor:preto",
+                        "slug": "cor:preto|tamanho:p",
                         "aliexpress_sku": "",
                         "image_id": "3"
                       }
@@ -1166,7 +1166,7 @@
                       {
                         "id": "58",
                         "title": "Tamanho",
-                        "variant_values": "p,m",
+                        "variant_values": "P,M",
                         "input_type": "radio"
                       }
                     ]
@@ -1354,11 +1354,11 @@
                                 "width": "0",
                                 "height": "0",
                                 "length": "0",
-                                "title": "p|Preto",
+                                "title": "Cor: Preto / Tamanho: P",
                                 "cost_price": "0.00",
                                 "sale_price": "60.00",
                                 "old_price": "0.00",
-                                "slug": "tamanho:p|cor:preto",
+                                "slug": "cor:preto|tamanho:p",
                                 "aliexpress_sku": "",
                                 "image_id": "242"
                               },
@@ -1372,11 +1372,11 @@
                                 "width": "0",
                                 "height": "0",
                                 "length": "0",
-                                "title": "p|Azul",
+                                "title": "Cor: Azul / Tamanho: P",
                                 "cost_price": "0.00",
                                 "sale_price": "60.00",
                                 "old_price": "0.00",
-                                "slug": "tamanho:p|cor:azul",
+                                "slug": "cor:azul|tamanho:p",
                                 "aliexpress_sku": "",
                                 "image_id": "242"
                               },
@@ -1390,11 +1390,11 @@
                                 "width": "0",
                                 "height": "0",
                                 "length": "0",
-                                "title": "M|Preto",
+                                "title": "Cor: Preto / Tamanho: M",
                                 "cost_price": "0.00",
                                 "sale_price": "60.00",
                                 "old_price": "0.00",
-                                "slug": "tamanho:m|cor:preto",
+                                "slug": "cor:preto|tamanho:m",
                                 "aliexpress_sku": "",
                                 "image_id": "241"
                               },
@@ -1408,26 +1408,26 @@
                                 "width": "20",
                                 "height": "30",
                                 "length": "40",
-                                "title": "M|Azul",
+                                "title": "Cor: Azul / Tamanho: M",
                                 "cost_price": "0.00",
                                 "sale_price": "60.00",
                                 "old_price": "0.00",
-                                "slug": "tamanho:m|cor:azul",
+                                "slug": "cor:azul|tamanho:m",
                                 "aliexpress_sku": "12345",
                                 "image_id": "240"
                               }
                             ],
                             "variants_items": [
                               {
-                                "id": "59",
-                                "title": "Tamanho",
-                                "variant_values": "p,m",
-                                "input_type": "radio"
-                              },
-                              {
                                 "id": "58",
                                 "title": "Cor",
                                 "variant_values": "Azul,Preto",
+                                "input_type": "radio"
+                              },
+                              {
+                                "id": "59",
+                                "title": "Tamanho",
+                                "variant_values": "P,M",
                                 "input_type": "radio"
                               }
                             ],
@@ -1806,11 +1806,11 @@
                         "width": "20",
                         "height": "30",
                         "length": "40",
-                        "title": "M|Azul",
+                        "title": "Cor: Azul / Tamanho: M",
                         "cost_price": "0.00",
                         "sale_price": "60.00",
                         "old_price": "0.00",
-                        "slug": "tamanho:m|cor:azul",
+                        "slug": "cor:azul|tamanho:m",
                         "aliexpress_sku": "12345",
                         "image_id": "1"
                       },
@@ -1824,11 +1824,11 @@
                         "width": "0",
                         "height": "0",
                         "length": "0",
-                        "title": "M|Preto",
+                        "title": "Cor: Preto / Tamanho: M",
                         "cost_price": "0.00",
                         "sale_price": "60.00",
                         "old_price": "0.00",
-                        "slug": "tamanho:m|cor:preto",
+                        "slug": "cor:preto|tamanho:m",
                         "aliexpress_sku": "",
                         "image_id": "2"
                       },
@@ -1842,11 +1842,11 @@
                         "width": "0",
                         "height": "0",
                         "length": "0",
-                        "title": "p|Azul",
+                        "title": "Cor: Azul / Tamanho: P",
                         "cost_price": "0.00",
                         "sale_price": "60.00",
                         "old_price": "0.00",
-                        "slug": "tamanho:p|cor:azul",
+                        "slug": "cor:azul|tamanho:p",
                         "aliexpress_sku": "",
                         "image_id": "3"
                       },
@@ -1860,11 +1860,11 @@
                         "width": "0",
                         "height": "0",
                         "length": "0",
-                        "title": "p|Preto",
+                        "title": "Cor: Preto / Tamanho: P",
                         "cost_price": "0.00",
                         "sale_price": "60.00",
                         "old_price": "0.00",
-                        "slug": "tamanho:p|cor:preto",
+                        "slug": "cor:preto|tamanho:p",
                         "aliexpress_sku": "",
                         "image_id": "3"
                       }
@@ -1896,7 +1896,7 @@
                       {
                         "id": "58",
                         "title": "Tamanho",
-                        "variant_values": "p,m",
+                        "variant_values": "P,M",
                         "input_type": "radio"
                       }
                     ]
@@ -2353,11 +2353,11 @@
                               "width": "0",
                               "height": "0",
                               "length": "0",
-                              "title": "p|Preto",
+                              "title": "Cor: Preto / Tamanho: P",
                               "cost_price": "0.00",
                               "sale_price": "60.00",
                               "old_price": "0.00",
-                              "slug": "tamanho:p|cor:preto",
+                              "slug": "cor:preto|tamanho:p",
                               "aliexpress_sku": "",
                               "image_id": "242"
                             },
@@ -2371,11 +2371,11 @@
                               "width": "0",
                               "height": "0",
                               "length": "0",
-                              "title": "p|Azul",
+                              "title": "Cor: Azul / Tamanho: P",
                               "cost_price": "0.00",
                               "sale_price": "60.00",
                               "old_price": "0.00",
-                              "slug": "tamanho:p|cor:azul",
+                              "slug": "cor:azul|tamanho:p",
                               "aliexpress_sku": "",
                               "image_id": "242"
                             },
@@ -2389,11 +2389,11 @@
                               "width": "0",
                               "height": "0",
                               "length": "0",
-                              "title": "M|Preto",
+                              "title": "Cor: Preto / Tamanho: M",
                               "cost_price": "0.00",
                               "sale_price": "60.00",
                               "old_price": "0.00",
-                              "slug": "tamanho:m|cor:preto",
+                              "slug": "cor:preto|tamanho:m",
                               "aliexpress_sku": "",
                               "image_id": "241"
                             },
@@ -2407,26 +2407,26 @@
                               "width": "20",
                               "height": "30",
                               "length": "40",
-                              "title": "M|Azul",
+                              "title": "Cor: Azul / Tamanho: M",
                               "cost_price": "0.00",
                               "sale_price": "60.00",
                               "old_price": "0.00",
-                              "slug": "tamanho:m|cor:azul",
+                              "slug": "cor:azul|tamanho:m",
                               "aliexpress_sku": "12345",
                               "image_id": "240"
                             }
                           ],
                           "variants_items": [
                             {
-                              "id": "59",
-                              "title": "Tamanho",
-                              "variant_values": "p,m",
-                              "input_type": "radio"
-                            },
-                            {
                               "id": "58",
                               "title": "Cor",
                               "variant_values": "Azul,Preto",
+                              "input_type": "radio"
+                            },
+                            {
+                              "id": "59",
+                              "title": "Tamanho",
+                              "variant_values": "P,M",
                               "input_type": "radio"
                             }
                           ],
