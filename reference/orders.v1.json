@@ -91,7 +91,10 @@
                               "product_qtdy": "1",
                               "product_variant_id": "1",
                               "product_variant_sku": "28TNBJSHH",
-                              "product_variant_options": "p|Azul"
+                              "product_variant_options": "p|Azul",
+                              "product_description": "Relógio",
+                              "product_image": "https:\/\/lpqv.com.br/image/",
+                              "product_url": "https:\/\/lpqv.com.br/"
                             }
                           ],
                           "orders_delivery_address": [
@@ -318,6 +321,21 @@
                                 "product_variant_options": {
                                   "type": "string",
                                   "minLength": 1
+                                },
+                                "product_description": {
+                                  "type": "string",
+                                  "minLength": 1,
+                                  "description": "product description"
+                                },
+                                "product_image": {
+                                  "type": "string",
+                                  "minLength": 1,
+                                  "description": "URL to main product photo"
+                                },
+                                "product_url": {
+                                  "type": "string",
+                                  "minLength": 1,
+                                  "description": "URL for product landing page"
                                 }
                               }
                             }
@@ -491,7 +509,10 @@
                               "product_qtdy": "1",
                               "product_variant_id": "1",
                               "product_variant_sku": "28TNBJSHH",
-                              "product_variant_options": "p|Azul"
+                              "product_variant_options": "p|Azul",
+                              "product_description": "Relógio",
+                              "product_image": "https:\/\/lpqv.com.br/image/",
+                              "product_url": "https:\/\/lpqv.com.br/"
                             }
                           ],
                           "orders_delivery_address": [
@@ -622,7 +643,10 @@
                                 "product_qtdy": "1",
                                 "product_variant_id": "1",
                                 "product_variant_sku": "28TNBJSHH",
-                                "product_variant_options": "p|Azul"
+                                "product_variant_options": "p|Azul",
+                                "product_description": "Relógio",
+                                "product_image": "https:\/\/lpqv.com.br/image/",
+                                "product_url": "https:\/\/lpqv.com.br/"
                               }
                             ],
                             "orders_delivery_address": [
@@ -858,6 +882,21 @@
                                     "product_variant_options": {
                                       "type": "string",
                                       "minLength": 1
+                                    },
+                                    "product_description": {
+                                      "type": "string",
+                                      "minLength": 1,
+                                      "description": "product description"
+                                    },
+                                    "product_image": {
+                                      "type": "string",
+                                      "minLength": 1,
+                                      "description": "URL to main product photo"
+                                    },
+                                    "product_url": {
+                                      "type": "string",
+                                      "minLength": 1,
+                                      "description": "URL for product landing page"
                                     }
                                   }
                                 }
@@ -1035,7 +1074,10 @@
                                 "product_qtdy": "1",
                                 "product_variant_id": "1",
                                 "product_variant_sku": "28TNBJSHH",
-                                "product_variant_options": "p|Azul"
+                                "product_variant_options": "p|Azul",
+                                "product_description": "Relógio",
+                                "product_image": "https:\/\/lpqv.com.br/image/",
+                                "product_url": "https:\/\/lpqv.com.br/"
                               }
                             ],
                             "orders_delivery_address": [
@@ -1267,7 +1309,10 @@
                               "product_qtdy": "1",
                               "product_variant_id": "1",
                               "product_variant_sku": "28TNBJSHH",
-                              "product_variant_options": "p|Azul"
+                              "product_variant_options": "p|Azul",
+                              "product_description": "Relógio",
+                              "product_image": "https:\/\/lpqv.com.br/image/",
+                              "product_url": "https:\/\/lpqv.com.br/"
                             }
                           ],
                           "orders_delivery_address": [
@@ -1494,6 +1539,21 @@
                                 "product_variant_options": {
                                   "type": "string",
                                   "minLength": 1
+                                },
+                                "product_description": {
+                                  "type": "string",
+                                  "minLength": 1,
+                                  "description": "product description"
+                                },
+                                "product_image": {
+                                  "type": "string",
+                                  "minLength": 1,
+                                  "description": "URL to main product photo"
+                                },
+                                "product_url": {
+                                  "type": "string",
+                                  "minLength": 1,
+                                  "description": "URL for product landing page"
                                 }
                               }
                             }
@@ -1667,7 +1727,10 @@
                               "product_qtdy": "1",
                               "product_variant_id": "1",
                               "product_variant_sku": "28TNBJSHH",
-                              "product_variant_options": "p|Azul"
+                              "product_variant_options": "p|Azul",
+                              "product_description": "Relógio",
+                              "product_image": "https:\/\/lpqv.com.br/image/",
+                              "product_url": "https:\/\/lpqv.com.br/"
                             }
                           ],
                           "orders_delivery_address": [
