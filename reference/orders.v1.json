@@ -63,11 +63,11 @@
                           "updated_at": "2021-05-12 12:46:47",
                           "coupon": "10off",
                           "processed": "0",
-			                    "token": "M2S5WCXAKD12",
+                          "token": "M2S5WCXAKD12",
                           "status": "order_created",
                           "phone_number": "11941548598",
                           "customer_cpf": "73294512074",
-                          "checkout_url": "https:\/\/www.lpqv.com.br\/checkout\/pedido?order=M2S5WCXAKD12",
+                          "checkout_url": "https://www.lpqv.com.br/checkout/pedido?order=M2S5WCXAKD12",
                           "orders_shipments": [
                             {
                               "shipping_type": "papa",
@@ -93,8 +93,8 @@
                               "product_variant_sku": "28TNBJSHH",
                               "product_variant_options": "p|Azul",
                               "product_description": "Relógio",
-                              "product_image": "https:\/\/lpqv.com.br/image/",
-                              "product_url": "https:\/\/lpqv.com.br/"
+                              "product_image": "https://lpqv.com.br/image/",
+                              "product_url": "https://lpqv.com.br/"
                             }
                           ],
                           "orders_delivery_address": [
@@ -116,13 +116,13 @@
                               "amount": "187.90",
                               "discount": null,
                               "status": "created",
-					                    "transaction_code": "16446531812",
+                              "transaction_code": "16446531812",
                               "payment_method": "ticket",
                               "created_at": "2021-05-12 15:57:58",
                               "updated_at": "2021-05-12 15:57:58",
-                              "payment_url": "https:\/\/www.lpqv.com.br\/",
+                              "payment_url": "https://www.lpqv.com.br/",
                               "ticket_barcode": "1234.1234 1234.1234",
-					                    "ticket_due_date": "2021-08-20",
+                              "ticket_due_date": "2021-08-20",
                               "installments": "0",
                               "installment_value": "0.00",
                               "pix_qrcode": "",
@@ -481,11 +481,11 @@
                           "updated_at": "2021-05-12 12:46:47",
                           "coupon": "10off",
                           "processed": "0",
-			                    "token": "M2S5WCXAKD12",
+                          "token": "M2S5WCXAKD12",
                           "status": "order_created",
                           "phone_number": "11941548598",
                           "customer_cpf": "73294512074",
-                          "checkout_url": "https:\/\/www.lpqv.com.br\/checkout\/pedido?order=M2S5WCXAKD12",
+                          "checkout_url": "https://www.lpqv.com.br/checkout/pedido?order=M2S5WCXAKD12",
                           "orders_shipments": [
                             {
                               "shipping_type": "papa",
@@ -511,8 +511,8 @@
                               "product_variant_sku": "28TNBJSHH",
                               "product_variant_options": "p|Azul",
                               "product_description": "Relógio",
-                              "product_image": "https:\/\/lpqv.com.br/image/",
-                              "product_url": "https:\/\/lpqv.com.br/"
+                              "product_image": "https://lpqv.com.br/image/",
+                              "product_url": "https://lpqv.com.br/"
                             }
                           ],
                           "orders_delivery_address": [
@@ -534,13 +534,13 @@
                               "amount": "187.90",
                               "discount": null,
                               "status": "created",
-					                    "transaction_code": "16446531812",
+                              "transaction_code": "16446531812",
                               "payment_method": "ticket",
                               "created_at": "2021-05-12 15:57:58",
                               "updated_at": "2021-05-12 15:57:58",
-                              "payment_url": "https:\/\/www.lpqv.com.br\/",
+                              "payment_url": "https://www.lpqv.com.br/",
                               "ticket_barcode": "1234.1234 1234.1234",
-					                    "ticket_due_date": "2021-08-20",
+                              "ticket_due_date": "2021-08-20",
                               "installments": "0",
                               "installment_value": "0.00",
                               "pix_qrcode": "",
@@ -615,11 +615,11 @@
                             "updated_at": "2021-05-12 14:34:45",
                             "coupon": "10off",
                             "processed": "0",
-			                      "token": "M2S5WCXAKD12",
+                            "token": "M2S5WCXAKD12",
                             "status": "order_created",
                             "phone_number": "11941548598",
                             "customer_cpf": "73294512074",
-                            "checkout_url": "https:\/\/www.lpqv.com.br\/checkout\/pedido?order=M2S5WCXAKD12",
+                            "checkout_url": "https://www.lpqv.com.br/checkout/pedido?order=M2S5WCXAKD12",
                             "orders_shipments": [
                               {
                                 "shipping_type": "sedex",
@@ -645,8 +645,8 @@
                                 "product_variant_sku": "28TNBJSHH",
                                 "product_variant_options": "p|Azul",
                                 "product_description": "Relógio",
-                                "product_image": "https:\/\/lpqv.com.br/image/",
-                                "product_url": "https:\/\/lpqv.com.br/"
+                                "product_image": "https://lpqv.com.br/image/",
+                                "product_url": "https://lpqv.com.br/"
                               }
                             ],
                             "orders_delivery_address": [
@@ -672,7 +672,7 @@
                                 "payment_method": "ticket",
                                 "created_at": "2021-05-12 15:57:58",
                                 "updated_at": "2021-05-12 15:57:58",
-                                "payment_url": "https:\/\/www.lpqv.com.br\/",
+                                "payment_url": "https://www.lpqv.com.br/",
                                 "ticket_barcode": "1234.1234 1234.1234",
                                 "ticket_due_date": "2021-08-20",
                                 "installments": "0",
@@ -1046,11 +1046,11 @@
                             "updated_at": "2021-05-12 14:34:45",
                             "coupon": "10off",
                             "processed": "0",
-			                      "token": "M2S5WCXAKD12",
+                            "token": "M2S5WCXAKD12",
                             "status": "order_created",
                             "phone_number": "11941548598",
                             "customer_cpf": "73294512074",
-                            "checkout_url": "https:\/\/www.lpqv.com.br\/checkout\/pedido?order=M2S5WCXAKD12",
+                            "checkout_url": "https://www.lpqv.com.br/checkout/pedido?order=M2S5WCXAKD12",
                             "orders_shipments": [
                               {
                                 "shipping_type": "sedex",
@@ -1076,8 +1076,8 @@
                                 "product_variant_sku": "28TNBJSHH",
                                 "product_variant_options": "p|Azul",
                                 "product_description": "Relógio",
-                                "product_image": "https:\/\/lpqv.com.br/image/",
-                                "product_url": "https:\/\/lpqv.com.br/"
+                                "product_image": "https://lpqv.com.br/image/",
+                                "product_url": "https://lpqv.com.br/"
                               }
                             ],
                             "orders_delivery_address": [
@@ -1094,7 +1094,7 @@
                               }
                             ],
                             "orders_transactions": [
-                              { 
+                              {
                                 "processor": "test",
                                 "amount": "187.90",
                                 "discount": null,
@@ -1103,7 +1103,7 @@
                                 "payment_method": "ticket",
                                 "created_at": "2021-05-12 15:57:58",
                                 "updated_at": "2021-05-12 15:57:58",
-                                "payment_url": "https:\/\/www.lpqv.com.br\/",
+                                "payment_url": "https://www.lpqv.com.br/",
                                 "ticket_barcode": "1234.1234 1234.1234",
                                 "ticket_due_date": "2021-08-20",
                                 "installments": "0",
@@ -1281,11 +1281,11 @@
                           "updated_at": "2021-05-12 12:46:47",
                           "coupon": "10off",
                           "processed": "0",
-			                    "token": "M2S5WCXAKD12",
+                          "token": "M2S5WCXAKD12",
                           "status": "order_created",
                           "phone_number": "11956284788",
                           "customer_cpf": "73294512074",
-                          "checkout_url": "https:\/\/www.lpqv.com.br\/checkout\/pedido?order=M2S5WCXAKD12",
+                          "checkout_url": "https://www.lpqv.com.br/checkout/pedido?order=M2S5WCXAKD12",
                           "orders_shipments": [
                             {
                               "shipping_type": "papa",
@@ -1311,8 +1311,8 @@
                               "product_variant_sku": "28TNBJSHH",
                               "product_variant_options": "p|Azul",
                               "product_description": "Relógio",
-                              "product_image": "https:\/\/lpqv.com.br/image/",
-                              "product_url": "https:\/\/lpqv.com.br/"
+                              "product_image": "https://lpqv.com.br/image/",
+                              "product_url": "https://lpqv.com.br/"
                             }
                           ],
                           "orders_delivery_address": [
@@ -1334,13 +1334,13 @@
                               "amount": "187.90",
                               "discount": null,
                               "status": "created",
-					                    "transaction_code": "16446531812",
+                              "transaction_code": "16446531812",
                               "payment_method": "ticket",
                               "created_at": "2021-05-12 15:57:58",
                               "updated_at": "2021-05-12 15:57:58",
-                              "payment_url": "https:\/\/www.lpqv.com.br\/",
+                              "payment_url": "https://www.lpqv.com.br/",
                               "ticket_barcode": "1234.1234 1234.1234",
-					                    "ticket_due_date": "2021-08-20",
+                              "ticket_due_date": "2021-08-20",
                               "installments": "0",
                               "installment_value": "0.00",
                               "pix_qrcode": "",
@@ -1699,11 +1699,11 @@
                           "updated_at": "2021-05-12 12:46:47",
                           "coupon": "10off",
                           "processed": "0",
-			                    "token": "M2S5WCXAKD12",
+                          "token": "M2S5WCXAKD12",
                           "status": "order_created",
                           "phone_number": "11941548598",
                           "customer_cpf": "73294512074",
-                          "checkout_url": "https:\/\/www.lpqv.com.br\/checkout\/pedido?order=M2S5WCXAKD12",
+                          "checkout_url": "https://www.lpqv.com.br/checkout/pedido?order=M2S5WCXAKD12",
                           "orders_shipments": [
                             {
                               "shipping_type": "papa",
@@ -1729,8 +1729,8 @@
                               "product_variant_sku": "28TNBJSHH",
                               "product_variant_options": "p|Azul",
                               "product_description": "Relógio",
-                              "product_image": "https:\/\/lpqv.com.br/image/",
-                              "product_url": "https:\/\/lpqv.com.br/"
+                              "product_image": "https://lpqv.com.br/image/",
+                              "product_url": "https://lpqv.com.br/"
                             }
                           ],
                           "orders_delivery_address": [
@@ -1752,13 +1752,13 @@
                               "amount": "187.90",
                               "discount": null,
                               "status": "created",
-					                    "transaction_code": "16446531812",
+                              "transaction_code": "16446531812",
                               "payment_method": "ticket",
                               "created_at": "2021-05-12 15:57:58",
                               "updated_at": "2021-05-12 15:57:58",
-                              "payment_url": "https:\/\/www.lpqv.com.br\/",
+                              "payment_url": "https://www.lpqv.com.br/",
                               "ticket_barcode": "1234.1234 1234.1234",
-					                    "ticket_due_date": "2021-08-20",
+                              "ticket_due_date": "2021-08-20",
                               "installments": "0",
                               "installment_value": "0.00",
                               "pix_qrcode": "",
@@ -1788,7 +1788,7 @@
             }
           }
         },
-        "description": "Retrieves information for all orders.\n\n**Status**\n\nStatus | Meaning\n--------- | ----------\norder_created | Initial order status, no payment has been made\nawaiting_payment | Waiting for payment, normally occurs in orders using bank slip as a payment method\nauthorized_payment | The payment has been authorized but not yet captured or confirmed\npayment_accept | Payment of the order placed and approved, this status is used for order confirmation\nseparating_items | In preparation for shipping\ndispatched | Order dispatched\ndelivered | Delivered to the customer\ncanceled | Order canceled\n\n**Filters**\n\nIf necessary it is possible to send filters, they are informed directly in the request URL as GET.\n\n*Example* - {slug-landingpage}/orders?created_at_min=2022-07-26&created_at_max=2022-07-29&limit=7",
+        "description": "Retrieves information for all orders.\n\n**Status**\n\nStatus | Meaning\n--------- | ----------\norder_created | Initial order status, no payment has been made\nawaiting_payment | Waiting for payment, normally occurs in orders using bank slip as a payment method\nauthorized_payment | The payment has been authorized but not yet captured or confirmed\npayment_accept | Payment of the order placed and approved, this status is used for order confirmation\nseparating_items | In preparation for shipping\ndispatched | Order dispatched\ndelivered | Delivered to the customer\ncanceled | Order canceled\n\n**Filters**\n\nIf necessary it is possible to send filters, they are informed directly in the request URL as GET.\n\n*Example* - {slug-landingpage}/orders?created_at_min=2022-07-26&created_at_max=2022-07-29&limit=7\n*Example Pagination* - {slug-landingpage}/orders?created_at_min=2022-07-26&created_at_max=2022-07-29&page=2&per_page=100",
         "parameters": [
           {
             "schema": {
@@ -1825,7 +1825,23 @@
             },
             "in": "query",
             "name": "limit",
-            "description": "record limit (format: 10)"
+            "description": "Record limit (format: 10)"
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "page",
+            "description": "Page (format: 1)"
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "per_page",
+            "description": "Number of records per page (format: 100)"
           }
         ]
       }
