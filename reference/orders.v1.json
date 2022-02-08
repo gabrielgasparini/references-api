@@ -3,7 +3,7 @@
   "info": {
     "title": "Orders",
     "version": "",
-    "description": "Through this reference you can consult and update orders. ",
+    "description": "Through this reference you can consult and update orders. \n\n**Status**\n\nStatus | Meaning\n--------- | ----------\norder_created | Initial order status, no payment has been made\nawaiting_payment | Waiting for payment, normally occurs in orders using bank slip as a payment method\nauthorized_payment | The payment has been authorized but not yet captured or confirmed\npayment_accept | Payment of the order placed and approved, this status is used for order confirmation\nseparating_items | In preparation for shipping\ndispatched | Order dispatched\ndelivered | Delivered to the customer\ncanceled | Order canceled\n",
     "contact": {
       "email": "developers@lpquevende.com.br"
     }
@@ -63,9 +63,11 @@
                           "updated_at": "2021-05-12 12:46:47",
                           "coupon": "10off",
                           "processed": "0",
+                          "token": "M2S5WCXAKD12",
                           "status": "order_created",
                           "phone_number": "11941548598",
                           "customer_cpf": "73294512074",
+                          "checkout_url": "https://www.lpqv.com.br/checkout/pedido?order=M2S5WCXAKD12",
                           "orders_shipments": [
                             {
                               "shipping_type": "papa",
@@ -89,7 +91,10 @@
                               "product_qtdy": "1",
                               "product_variant_id": "1",
                               "product_variant_sku": "28TNBJSHH",
-                              "product_variant_options": "p|Azul"
+                              "product_variant_options": "p|Azul",
+                              "product_description": "Relógio",
+                              "product_image": "https://lpqv.com.br/image/",
+                              "product_url": "https://lpqv.com.br/"
                             }
                           ],
                           "orders_delivery_address": [
@@ -111,11 +116,18 @@
                               "amount": "187.90",
                               "discount": null,
                               "status": "created",
+                              "transaction_code": "16446531812",
                               "payment_method": "ticket",
                               "created_at": "2021-05-12 15:57:58",
                               "updated_at": "2021-05-12 15:57:58",
+                              "payment_url": "https://www.lpqv.com.br/",
+                              "ticket_barcode": "1234.1234 1234.1234",
+                              "ticket_due_date": "2021-08-20",
                               "installments": "0",
-                              "installment_value": "0.00"
+                              "installment_value": "0.00",
+                              "pix_qrcode": "",
+                              "pix_qrcode_b64": "",
+                              "payment_date": "2021-08-17 19:51:41"
                             }
                           ]
                         }
@@ -190,9 +202,15 @@
                             "type": "string",
                             "minLength": 1
                           },
+                          "token": {
+                            "type": "string",
+                            "minLength": 1,
+                            "description": "order identifier"
+                          },
                           "status": {
                             "type": "string",
-                            "minLength": 1
+                            "minLength": 1,
+                            "description": "list Status"
                           },
                           "phone_number": {
                             "type": "string",
@@ -201,6 +219,11 @@
                           "customer_cpf": {
                             "type": "string",
                             "minLength": 1
+                          },
+                          "checkout_url": {
+                            "type": "string",
+                            "minLength": 1,
+                            "description": "order completion url"
                           },
                           "orders_shipments": {
                             "type": "array",
@@ -298,6 +321,21 @@
                                 "product_variant_options": {
                                   "type": "string",
                                   "minLength": 1
+                                },
+                                "product_description": {
+                                  "type": "string",
+                                  "minLength": 1,
+                                  "description": "product description"
+                                },
+                                "product_image": {
+                                  "type": "string",
+                                  "minLength": 1,
+                                  "description": "URL to main product photo"
+                                },
+                                "product_url": {
+                                  "type": "string",
+                                  "minLength": 1,
+                                  "description": "URL for product landing page"
                                 }
                               }
                             }
@@ -348,45 +386,72 @@
                             }
                           },
                           "orders_transactions": {
-                                "type": "array",
-                                "items": {
-                                  "type": "object",
-                                  "properties": {
-                                    "processor": {
-                                      "type": "string"
-                                    },
-                                    "amount": {
-                                      "type": "string",
-                                      "description": "double (0.00)"
-                                    },
-                                    "discount": {
-                                      "type": "string",
-                                      "description": "double (0.00)"
-                                    },
-                                    "status": {
-                                      "type": "string"
-                                    },
-                                    "payment_method": {
-                                      "type": "string"
-                                    },
-                                    "created_at": {
-                                      "type": "string",
-                                      "description": "datetime (0000-00-00 00:00:00)"
-                                    },
-                                    "updated_at": {
-                                      "type": "string",
-                                      "description": "datetime (0000-00-00 00:00:00)"
-                                    },
-                                    "installments": {
-                                      "type": "string"
-                                    },
-                                    "installment_value": {
-                                      "type": "string",
-                                      "description": "double (0.00)"
-                                    }
-                                  }
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "processor": {
+                                  "type": "string",
+                                  "description": "gateway"
+                                },
+                                "amount": {
+                                  "type": "string",
+                                  "description": "double (0.00)"
+                                },
+                                "discount": {
+                                  "type": "string",
+                                  "description": "double (0.00)"
+                                },
+                                "status": {
+                                  "type": "string",
+                                  "description": "transaction status"
+                                },
+                                "transaction_code": {
+                                  "type": "string",
+                                  "description": "code returned by gateway"
+                                },
+                                "payment_method": {
+                                  "type": "string",
+                                  "description": "ticket, credit_card or pix"
+                                },
+                                "created_at": {
+                                  "type": "string",
+                                  "description": "datetime (0000-00-00 00:00:00)"
+                                },
+                                "updated_at": {
+                                  "type": "string",
+                                  "description": "datetime (0000-00-00 00:00:00)"
+                                },
+                                "payment_url": {
+                                  "type": "string",
+                                  "description": "payment url returned by gateway"
+                                },
+                                "ticket_barcode": {
+                                  "type": "string"
+                                },
+                                "ticket_due_date": {
+                                  "type": "string"
+                                },
+                                "installments": {
+                                  "type": "string"
+                                },
+                                "installment_value": {
+                                  "type": "string",
+                                  "description": "double (0.00)"
+                                },
+                                "pix_qrcode": {
+                                  "type": "string"
+                                },
+                                "pix_qrcode_b64": {
+                                  "type": "string"
+                                },
+                                "payment_date": {
+                                  "type": "string",
+                                  "description": "datetime (0000-00-00 00:00:00)"
                                 }
                               }
+                            }
+                          }
                         }
                       }
                     },
@@ -416,9 +481,11 @@
                           "updated_at": "2021-05-12 12:46:47",
                           "coupon": "10off",
                           "processed": "0",
+                          "token": "M2S5WCXAKD12",
                           "status": "order_created",
                           "phone_number": "11941548598",
                           "customer_cpf": "73294512074",
+                          "checkout_url": "https://www.lpqv.com.br/checkout/pedido?order=M2S5WCXAKD12",
                           "orders_shipments": [
                             {
                               "shipping_type": "papa",
@@ -442,7 +509,10 @@
                               "product_qtdy": "1",
                               "product_variant_id": "1",
                               "product_variant_sku": "28TNBJSHH",
-                              "product_variant_options": "p|Azul"
+                              "product_variant_options": "p|Azul",
+                              "product_description": "Relógio",
+                              "product_image": "https://lpqv.com.br/image/",
+                              "product_url": "https://lpqv.com.br/"
                             }
                           ],
                           "orders_delivery_address": [
@@ -464,11 +534,18 @@
                               "amount": "187.90",
                               "discount": null,
                               "status": "created",
+                              "transaction_code": "16446531812",
                               "payment_method": "ticket",
                               "created_at": "2021-05-12 15:57:58",
                               "updated_at": "2021-05-12 15:57:58",
+                              "payment_url": "https://www.lpqv.com.br/",
+                              "ticket_barcode": "1234.1234 1234.1234",
+                              "ticket_due_date": "2021-08-20",
                               "installments": "0",
-                              "installment_value": "0.00"
+                              "installment_value": "0.00",
+                              "pix_qrcode": "",
+                              "pix_qrcode_b64": "",
+                              "payment_date": "2021-08-17 19:51:41"
                             }
                           ]
                         }
@@ -494,7 +571,7 @@
           }
         },
         "operationId": "get-slug-landingpage-orders-id",
-        "description": "Retrieves the order information with the corresponding order ID.",
+        "description": "Retrieves the order information with the corresponding order ID.\n\n**Status**\n\nStatus | Meaning\n--------- | ----------\norder_created | Initial order status, no payment has been made\nawaiting_payment | Waiting for payment, normally occurs in orders using bank slip as a payment method\nauthorized_payment | The payment has been authorized but not yet captured or confirmed\npayment_accept | Payment of the order placed and approved, this status is used for order confirmation\nseparating_items | In preparation for shipping\ndispatched | Order dispatched\ndelivered | Delivered to the customer\ncanceled | Order canceled",
         "parameters": [
           {
             "schema": {
@@ -538,9 +615,11 @@
                             "updated_at": "2021-05-12 14:34:45",
                             "coupon": "10off",
                             "processed": "0",
+                            "token": "M2S5WCXAKD12",
                             "status": "order_created",
                             "phone_number": "11941548598",
                             "customer_cpf": "73294512074",
+                            "checkout_url": "https://www.lpqv.com.br/checkout/pedido?order=M2S5WCXAKD12",
                             "orders_shipments": [
                               {
                                 "shipping_type": "sedex",
@@ -564,7 +643,10 @@
                                 "product_qtdy": "1",
                                 "product_variant_id": "1",
                                 "product_variant_sku": "28TNBJSHH",
-                                "product_variant_options": "p|Azul"
+                                "product_variant_options": "p|Azul",
+                                "product_description": "Relógio",
+                                "product_image": "https://lpqv.com.br/image/",
+                                "product_url": "https://lpqv.com.br/"
                               }
                             ],
                             "orders_delivery_address": [
@@ -586,11 +668,18 @@
                                 "amount": "187.90",
                                 "discount": null,
                                 "status": "created",
+                                "transaction_code": "16446531812",
                                 "payment_method": "ticket",
                                 "created_at": "2021-05-12 15:57:58",
                                 "updated_at": "2021-05-12 15:57:58",
+                                "payment_url": "https://www.lpqv.com.br/",
+                                "ticket_barcode": "1234.1234 1234.1234",
+                                "ticket_due_date": "2021-08-20",
                                 "installments": "0",
-                                "installment_value": "0.00"
+                                "installment_value": "0.00",
+                                "pix_qrcode": "",
+                                "pix_qrcode_b64": "",
+                                "payment_date": "2021-08-17 19:51:41"
                               }
                             ]
                           }
@@ -673,6 +762,11 @@
                                 "type": "string",
                                 "minLength": 1
                               },
+                              "token": {
+                                "type": "string",
+                                "minLength": 1,
+                                "description": "order identifier"
+                              },
                               "status": {
                                 "type": "string",
                                 "minLength": 1,
@@ -685,6 +779,11 @@
                               "customer_cpf": {
                                 "type": "string",
                                 "minLength": 1
+                              },
+                              "checkout_url": {
+                                "type": "string",
+                                "minLength": 1,
+                                "description": "order completion url"
                               },
                               "orders_shipments": {
                                 "type": "array",
@@ -783,6 +882,21 @@
                                     "product_variant_options": {
                                       "type": "string",
                                       "minLength": 1
+                                    },
+                                    "product_description": {
+                                      "type": "string",
+                                      "minLength": 1,
+                                      "description": "product description"
+                                    },
+                                    "product_image": {
+                                      "type": "string",
+                                      "minLength": 1,
+                                      "description": "URL to main product photo"
+                                    },
+                                    "product_url": {
+                                      "type": "string",
+                                      "minLength": 1,
+                                      "description": "URL for product landing page"
                                     }
                                   }
                                 }
@@ -838,7 +952,8 @@
                                   "type": "object",
                                   "properties": {
                                     "processor": {
-                                      "type": "string"
+                                      "type": "string",
+                                      "description": "gateway"
                                     },
                                     "amount": {
                                       "type": "string",
@@ -849,10 +964,16 @@
                                       "description": "double (0.00)"
                                     },
                                     "status": {
-                                      "type": "string"
+                                      "type": "string",
+                                      "description": "transaction status"
+                                    },
+                                    "transaction_code": {
+                                      "type": "string",
+                                      "description": "code returned by gateway"
                                     },
                                     "payment_method": {
-                                      "type": "string"
+                                      "type": "string",
+                                      "description": "ticket, credit_card or pix"
                                     },
                                     "created_at": {
                                       "type": "string",
@@ -862,12 +983,32 @@
                                       "type": "string",
                                       "description": "datetime (0000-00-00 00:00:00)"
                                     },
+                                    "payment_url": {
+                                      "type": "string",
+                                      "description": "payment url returned by gateway"
+                                    },
+                                    "ticket_barcode": {
+                                      "type": "string"
+                                    },
+                                    "ticket_due_date": {
+                                      "type": "string"
+                                    },
                                     "installments": {
                                       "type": "string"
                                     },
                                     "installment_value": {
                                       "type": "string",
                                       "description": "double (0.00)"
+                                    },
+                                    "pix_qrcode": {
+                                      "type": "string"
+                                    },
+                                    "pix_qrcode_b64": {
+                                      "type": "string"
+                                    },
+                                    "payment_date": {
+                                      "type": "string",
+                                      "description": "datetime (0000-00-00 00:00:00)"
                                     }
                                   }
                                 }
@@ -905,9 +1046,11 @@
                             "updated_at": "2021-05-12 14:34:45",
                             "coupon": "10off",
                             "processed": "0",
+                            "token": "M2S5WCXAKD12",
                             "status": "order_created",
                             "phone_number": "11941548598",
                             "customer_cpf": "73294512074",
+                            "checkout_url": "https://www.lpqv.com.br/checkout/pedido?order=M2S5WCXAKD12",
                             "orders_shipments": [
                               {
                                 "shipping_type": "sedex",
@@ -931,7 +1074,10 @@
                                 "product_qtdy": "1",
                                 "product_variant_id": "1",
                                 "product_variant_sku": "28TNBJSHH",
-                                "product_variant_options": "p|Azul"
+                                "product_variant_options": "p|Azul",
+                                "product_description": "Relógio",
+                                "product_image": "https://lpqv.com.br/image/",
+                                "product_url": "https://lpqv.com.br/"
                               }
                             ],
                             "orders_delivery_address": [
@@ -953,11 +1099,18 @@
                                 "amount": "187.90",
                                 "discount": null,
                                 "status": "created",
+                                "transaction_code": "16446531812",
                                 "payment_method": "ticket",
                                 "created_at": "2021-05-12 15:57:58",
                                 "updated_at": "2021-05-12 15:57:58",
+                                "payment_url": "https://www.lpqv.com.br/",
+                                "ticket_barcode": "1234.1234 1234.1234",
+                                "ticket_due_date": "2021-08-20",
                                 "installments": "0",
-                                "installment_value": "0.00"
+                                "installment_value": "0.00",
+                                "pix_qrcode": "",
+                                "pix_qrcode_b64": "",
+                                "payment_date": "2021-08-17 19:51:41"
                               }
                             ]
                           }
@@ -983,7 +1136,7 @@
             }
           }
         },
-        "description": "Updates the order information with the corresponding order ID.",
+        "description": "Updates the order information with the corresponding order ID.\n\n**Status**\n\nStatus | Meaning\n--------- | ----------\norder_created | Initial order status, no payment has been made\nawaiting_payment | Waiting for payment, normally occurs in orders using bank slip as a payment method\nauthorized_payment | The payment has been authorized but not yet captured or confirmed\npayment_accept | Payment of the order placed and approved, this status is used for order confirmation\nseparating_items | In preparation for shipping\ndispatched | Order dispatched\ndelivered | Delivered to the customer\ncanceled | Order canceled",
         "requestBody": {
           "content": {
             "application/json": {
@@ -1128,9 +1281,11 @@
                           "updated_at": "2021-05-12 12:46:47",
                           "coupon": "10off",
                           "processed": "0",
+                          "token": "M2S5WCXAKD12",
                           "status": "order_created",
                           "phone_number": "11956284788",
                           "customer_cpf": "73294512074",
+                          "checkout_url": "https://www.lpqv.com.br/checkout/pedido?order=M2S5WCXAKD12",
                           "orders_shipments": [
                             {
                               "shipping_type": "papa",
@@ -1154,7 +1309,10 @@
                               "product_qtdy": "1",
                               "product_variant_id": "1",
                               "product_variant_sku": "28TNBJSHH",
-                              "product_variant_options": "p|Azul"
+                              "product_variant_options": "p|Azul",
+                              "product_description": "Relógio",
+                              "product_image": "https://lpqv.com.br/image/",
+                              "product_url": "https://lpqv.com.br/"
                             }
                           ],
                           "orders_delivery_address": [
@@ -1176,11 +1334,18 @@
                               "amount": "187.90",
                               "discount": null,
                               "status": "created",
+                              "transaction_code": "16446531812",
                               "payment_method": "ticket",
                               "created_at": "2021-05-12 15:57:58",
                               "updated_at": "2021-05-12 15:57:58",
+                              "payment_url": "https://www.lpqv.com.br/",
+                              "ticket_barcode": "1234.1234 1234.1234",
+                              "ticket_due_date": "2021-08-20",
                               "installments": "0",
-                              "installment_value": "0.00"
+                              "installment_value": "0.00",
+                              "pix_qrcode": "",
+                              "pix_qrcode_b64": "",
+                              "payment_date": "2021-08-17 19:51:41"
                             }
                           ]
                         }
@@ -1255,9 +1420,15 @@
                             "type": "string",
                             "minLength": 1
                           },
+                          "token": {
+                            "type": "string",
+                            "minLength": 1,
+                            "description": "order identifier"
+                          },
                           "status": {
                             "type": "string",
-                            "minLength": 1
+                            "minLength": 1,
+                            "description": "list Status"
                           },
                           "phone_number": {
                             "type": "string",
@@ -1266,6 +1437,11 @@
                           "customer_cpf": {
                             "type": "string",
                             "minLength": 1
+                          },
+                          "checkout_url": {
+                            "type": "string",
+                            "minLength": 1,
+                            "description": "order completion url"
                           },
                           "orders_shipments": {
                             "type": "array",
@@ -1363,6 +1539,21 @@
                                 "product_variant_options": {
                                   "type": "string",
                                   "minLength": 1
+                                },
+                                "product_description": {
+                                  "type": "string",
+                                  "minLength": 1,
+                                  "description": "product description"
+                                },
+                                "product_image": {
+                                  "type": "string",
+                                  "minLength": 1,
+                                  "description": "URL to main product photo"
+                                },
+                                "product_url": {
+                                  "type": "string",
+                                  "minLength": 1,
+                                  "description": "URL for product landing page"
                                 }
                               }
                             }
@@ -1413,45 +1604,72 @@
                             }
                           },
                           "orders_transactions": {
-                                "type": "array",
-                                "items": {
-                                  "type": "object",
-                                  "properties": {
-                                    "processor": {
-                                      "type": "string"
-                                    },
-                                    "amount": {
-                                      "type": "string",
-                                      "description": "double (0.00)"
-                                    },
-                                    "discount": {
-                                      "type": "string",
-                                      "description": "double (0.00)"
-                                    },
-                                    "status": {
-                                      "type": "string"
-                                    },
-                                    "payment_method": {
-                                      "type": "string"
-                                    },
-                                    "created_at": {
-                                      "type": "string",
-                                      "description": "datetime (0000-00-00 00:00:00)"
-                                    },
-                                    "updated_at": {
-                                      "type": "string",
-                                      "description": "datetime (0000-00-00 00:00:00)"
-                                    },
-                                    "installments": {
-                                      "type": "string"
-                                    },
-                                    "installment_value": {
-                                      "type": "string",
-                                      "description": "double (0.00)"
-                                    }
-                                  }
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "processor": {
+                                  "type": "string",
+                                  "description": "gateway"
+                                },
+                                "amount": {
+                                  "type": "string",
+                                  "description": "double (0.00)"
+                                },
+                                "discount": {
+                                  "type": "string",
+                                  "description": "double (0.00)"
+                                },
+                                "status": {
+                                  "type": "string",
+                                  "description": "transaction status"
+                                },
+                                "transaction_code": {
+                                  "type": "string",
+                                  "description": "code returned by gateway"
+                                },
+                                "payment_method": {
+                                  "type": "string",
+                                  "description": "ticket, credit_card or pix"
+                                },
+                                "created_at": {
+                                  "type": "string",
+                                  "description": "datetime (0000-00-00 00:00:00)"
+                                },
+                                "updated_at": {
+                                  "type": "string",
+                                  "description": "datetime (0000-00-00 00:00:00)"
+                                },
+                                "payment_url": {
+                                  "type": "string",
+                                  "description": "payment url returned by gateway"
+                                },
+                                "ticket_barcode": {
+                                  "type": "string"
+                                },
+                                "ticket_due_date": {
+                                  "type": "string"
+                                },
+                                "installments": {
+                                  "type": "string"
+                                },
+                                "installment_value": {
+                                  "type": "string",
+                                  "description": "double (0.00)"
+                                },
+                                "pix_qrcode": {
+                                  "type": "string"
+                                },
+                                "pix_qrcode_b64": {
+                                  "type": "string"
+                                },
+                                "payment_date": {
+                                  "type": "string",
+                                  "description": "datetime (0000-00-00 00:00:00)"
                                 }
                               }
+                            }
+                          }
                         }
                       }
                     },
@@ -1481,9 +1699,11 @@
                           "updated_at": "2021-05-12 12:46:47",
                           "coupon": "10off",
                           "processed": "0",
+                          "token": "M2S5WCXAKD12",
                           "status": "order_created",
                           "phone_number": "11941548598",
                           "customer_cpf": "73294512074",
+                          "checkout_url": "https://www.lpqv.com.br/checkout/pedido?order=M2S5WCXAKD12",
                           "orders_shipments": [
                             {
                               "shipping_type": "papa",
@@ -1507,7 +1727,10 @@
                               "product_qtdy": "1",
                               "product_variant_id": "1",
                               "product_variant_sku": "28TNBJSHH",
-                              "product_variant_options": "p|Azul"
+                              "product_variant_options": "p|Azul",
+                              "product_description": "Relógio",
+                              "product_image": "https://lpqv.com.br/image/",
+                              "product_url": "https://lpqv.com.br/"
                             }
                           ],
                           "orders_delivery_address": [
@@ -1529,11 +1752,18 @@
                               "amount": "187.90",
                               "discount": null,
                               "status": "created",
+                              "transaction_code": "16446531812",
                               "payment_method": "ticket",
                               "created_at": "2021-05-12 15:57:58",
                               "updated_at": "2021-05-12 15:57:58",
+                              "payment_url": "https://www.lpqv.com.br/",
+                              "ticket_barcode": "1234.1234 1234.1234",
+                              "ticket_due_date": "2021-08-20",
                               "installments": "0",
-                              "installment_value": "0.00"
+                              "installment_value": "0.00",
+                              "pix_qrcode": "",
+                              "pix_qrcode_b64": "",
+                              "payment_date": "2021-08-17 19:51:41"
                             }
                           ]
                         }
@@ -1558,7 +1788,7 @@
             }
           }
         },
-        "description": "Retrieves information for all orders.",
+        "description": "Retrieves information for all orders.\n\n**Status**\n\nStatus | Meaning\n--------- | ----------\norder_created | Initial order status, no payment has been made\nawaiting_payment | Waiting for payment, normally occurs in orders using bank slip as a payment method\nauthorized_payment | The payment has been authorized but not yet captured or confirmed\npayment_accept | Payment of the order placed and approved, this status is used for order confirmation\nseparating_items | In preparation for shipping\ndispatched | Order dispatched\ndelivered | Delivered to the customer\ncanceled | Order canceled\n\n**Filters**\n\nIf necessary it is possible to send filters, they are informed directly in the request URL as GET.\n\n*Example* - {slug-landingpage}/orders?created_at_min=2022-07-26&created_at_max=2022-07-29&limit=7\n<br><br>\n*Example Pagination* - {slug-landingpage}/orders?created_at_min=2022-07-26&created_at_max=2022-07-29&page=2&per_page=100",
         "parameters": [
           {
             "schema": {
@@ -1569,6 +1799,49 @@
             "name": "Content-Type",
             "required": true,
             "description": "API accepts only JSON type data"
+          },
+          {
+            "schema": {
+              "type": "string",
+              "example": "2022-01-13"
+            },
+            "in": "query",
+            "name": "created_at_min",
+            "description": "Minimum range when data was created (format: 2022-01-13)"
+          },
+          {
+            "schema": {
+              "type": "string",
+              "example": "2022-01-13"
+            },
+            "in": "query",
+            "name": "created_at_max",
+            "description": "Maximum range when data was created (format: 2022-01-13)"
+          },
+          {
+            "schema": {
+              "type": "string",
+              "example": "10"
+            },
+            "in": "query",
+            "name": "limit",
+            "description": "Record limit (format: 10)"
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "page",
+            "description": "Page (format: 1)"
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "per_page",
+            "description": "Number of records per page (format: 100)"
           }
         ]
       }
