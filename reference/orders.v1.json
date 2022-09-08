@@ -94,7 +94,8 @@
                               "product_variant_options": "p|Azul",
                               "product_description": "Relógio",
                               "product_image": "https://lpqv.com.br/image/",
-                              "product_url": "https://lpqv.com.br/"
+                              "product_url": "https://lpqv.com.br/",
+                              "order_product_id": "5"
                             }
                           ],
                           "orders_delivery_address": [
@@ -336,6 +337,11 @@
                                   "type": "string",
                                   "minLength": 1,
                                   "description": "URL for product landing page"
+                                },
+                                "order_product_id": {
+                                  "type": "string",
+                                  "minLength": 1,
+                                  "description": "unique id for this record"
                                 }
                               }
                             }
@@ -512,7 +518,8 @@
                               "product_variant_options": "p|Azul",
                               "product_description": "Relógio",
                               "product_image": "https://lpqv.com.br/image/",
-                              "product_url": "https://lpqv.com.br/"
+                              "product_url": "https://lpqv.com.br/",
+                              "order_product_id": "5"
                             }
                           ],
                           "orders_delivery_address": [
@@ -646,7 +653,8 @@
                                 "product_variant_options": "p|Azul",
                                 "product_description": "Relógio",
                                 "product_image": "https://lpqv.com.br/image/",
-                                "product_url": "https://lpqv.com.br/"
+                                "product_url": "https://lpqv.com.br/",
+                                "order_product_id": "5"
                               }
                             ],
                             "orders_delivery_address": [
@@ -897,6 +905,11 @@
                                       "type": "string",
                                       "minLength": 1,
                                       "description": "URL for product landing page"
+                                    },
+                                    "order_product_id": {
+                                      "type": "string",
+                                      "minLength": 1,
+                                      "description": "unique id for this record"
                                     }
                                   }
                                 }
@@ -1077,7 +1090,8 @@
                                 "product_variant_options": "p|Azul",
                                 "product_description": "Relógio",
                                 "product_image": "https://lpqv.com.br/image/",
-                                "product_url": "https://lpqv.com.br/"
+                                "product_url": "https://lpqv.com.br/",
+                                "order_product_id": "5"
                               }
                             ],
                             "orders_delivery_address": [
@@ -1312,7 +1326,8 @@
                               "product_variant_options": "p|Azul",
                               "product_description": "Relógio",
                               "product_image": "https://lpqv.com.br/image/",
-                              "product_url": "https://lpqv.com.br/"
+                              "product_url": "https://lpqv.com.br/",
+                              "order_product_id": "5"
                             }
                           ],
                           "orders_delivery_address": [
@@ -1554,6 +1569,11 @@
                                   "type": "string",
                                   "minLength": 1,
                                   "description": "URL for product landing page"
+                                },
+                                "order_product_id": {
+                                  "type": "string",
+                                  "minLength": 1,
+                                  "description": "unique id for this record"
                                 }
                               }
                             }
@@ -1730,7 +1750,8 @@
                               "product_variant_options": "p|Azul",
                               "product_description": "Relógio",
                               "product_image": "https://lpqv.com.br/image/",
-                              "product_url": "https://lpqv.com.br/"
+                              "product_url": "https://lpqv.com.br/",
+                              "order_product_id": "5"
                             }
                           ],
                           "orders_delivery_address": [
