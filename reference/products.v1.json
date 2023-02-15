@@ -668,7 +668,7 @@
           }
         },
         "operationId": "get-slug-landingpage-products",
-        "description": "Retrieves information for all products and their dependencies.",
+        "description": "Retrieves information for all products.\n\n- Request return limit is 100 at a time, for older records use the filter options.\n\n**Filters**\n\nIf necessary it is possible to send filters, they are informed directly in the request URL as GET.\n\n*Example Limit* - {slug-landingpage}/products?limit=7\n<br><br>\n*Example Pagination* - {slug-landingpage}/products?page=2&per_page=100\n",
         "parameters": [
           {
             "schema": {
@@ -679,9 +679,33 @@
             "name": "Content-Type",
             "required": true,
             "description": "API accepts only JSON type data"
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "limit",
+            "description": "Record limit (format: 10)"
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "page",
+            "description": "Page (format: 1)"
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "per_page",
+            "description": "Number of records per page (format: 100)"
           }
         ],
-        "x-internal": true
+        "x-internal": false
       },
       "post": {
         "summary": "Create a product",
