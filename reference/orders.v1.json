@@ -70,7 +70,7 @@
                           "checkout_url": "https://www.lpqv.com.br/checkout/pedido?order=M2S5WCXAKD12",
                           "orders_shipments": [
                             {
-                              "shipping_type": "papa",
+                              "shipping_type": "PAC",
                               "shipping_real_price": "0.00",
                               "shipping_quote_price": "0.00",
                               "package_total_weight": "0.1",
@@ -494,7 +494,7 @@
                           "checkout_url": "https://www.lpqv.com.br/checkout/pedido?order=M2S5WCXAKD12",
                           "orders_shipments": [
                             {
-                              "shipping_type": "papa",
+                              "shipping_type": "PAC",
                               "shipping_real_price": "0.00",
                               "shipping_quote_price": "0.00",
                               "package_total_weight": "0.1",
@@ -1302,7 +1302,7 @@
                           "checkout_url": "https://www.lpqv.com.br/checkout/pedido?order=M2S5WCXAKD12",
                           "orders_shipments": [
                             {
-                              "shipping_type": "papa",
+                              "shipping_type": "PAC",
                               "shipping_real_price": "0.00",
                               "shipping_quote_price": "0.00",
                               "package_total_weight": "0.1",
@@ -1726,7 +1726,7 @@
                           "checkout_url": "https://www.lpqv.com.br/checkout/pedido?order=M2S5WCXAKD12",
                           "orders_shipments": [
                             {
-                              "shipping_type": "papa",
+                              "shipping_type": "PAC",
                               "shipping_real_price": "0.00",
                               "shipping_quote_price": "0.00",
                               "package_total_weight": "0.1",
