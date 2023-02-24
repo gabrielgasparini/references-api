@@ -14,7 +14,7 @@
     }
   ],
   "paths": {
-    "{slug-landingpage}/orders/{id}": {
+    "/{slug-landingpage}/orders/{id}": {
       "parameters": [
         {
           "schema": {
@@ -1255,7 +1255,7 @@
         ]
       }
     },
-    "{slug-landingpage}/orders": {
+    "/{slug-landingpage}/orders": {
       "parameters": [
         {
           "schema": {
