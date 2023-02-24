@@ -14,7 +14,7 @@
     }
   ],
   "paths": {
-    "{slug-landingpage}/reviews": {
+    "/{slug-landingpage}/reviews": {
       "parameters": [
         {
           "schema": {
@@ -531,7 +531,7 @@
         ]
       }
     },
-    "{slug-landingpage}/reviews/{id}": {
+    "/{slug-landingpage}/reviews/{id}": {
       "parameters": [
         {
           "schema": {

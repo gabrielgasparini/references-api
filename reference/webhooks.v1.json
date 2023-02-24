@@ -14,7 +14,7 @@
     }
   ],
   "paths": {
-    "{slug-landingpage}/webhooks": {
+    "/{slug-landingpage}/webhooks": {
       "parameters": [
         {
           "schema": {
@@ -418,7 +418,7 @@
         ]
       }
     },
-    "{slug-landingpage}/webhooks/{id}": {
+    "/{slug-landingpage}/webhooks/{id}": {
       "parameters": [
         {
           "schema": {

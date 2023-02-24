@@ -14,7 +14,7 @@
     }
   ],
   "paths": {
-    "{slug-landingpage}/products": {
+    "/{slug-landingpage}/products": {
       "parameters": [
         {
           "schema": {
@@ -1461,7 +1461,7 @@
         ]
       }
     },
-    "{slug-landingpage}/products/{id}": {
+    "/{slug-landingpage}/products/{id}": {
       "parameters": [
         {
           "schema": {
