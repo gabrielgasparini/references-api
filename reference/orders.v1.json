@@ -1806,10 +1806,18 @@
                   }
                 }
               }
+            },
+            "headers": {
+              "count_unlimited": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Returns the total number of records"
+              }
             }
           }
         },
-        "description": "Retrieves information for all orders.\n\n- Request return limit is 100 at a time, for older records use the filter options.\n\n**Status**\n\nStatus | Meaning\n--------- | ----------\norder_created | Initial order status, no payment has been made\nawaiting_payment | Waiting for payment, normally occurs in orders using bank slip as a payment method\nauthorized_payment | The payment has been authorized but not yet captured or confirmed\npayment_accept | Payment of the order placed and approved, this status is used for order confirmation\nseparating_items | In preparation for shipping\ndispatched | Order dispatched\ndelivered | Delivered to the customer\ncanceled | Order canceled\n\n**Filters**\n\nIf necessary it is possible to send filters, they are informed directly in the request URL as GET.\n\n*Example* - {slug-landingpage}/orders?created_at_min=2022-07-26&created_at_max=2022-07-29&limit=7\n<br><br>\n*Example Pagination* - {slug-landingpage}/orders?created_at_min=2022-07-26&created_at_max=2022-07-29&page=2&per_page=100\n<br><br>\n*Example Status* - {slug-landingpage}/orders?status=separating_items",
+        "description": "Retrieves information for all orders.\n\n- Request return limit is 100 at a time, for older records use the filter options.\n\n**Status**\n\nStatus | Meaning\n--------- | ----------\norder_created | Initial order status, no payment has been made\nawaiting_payment | Waiting for payment, normally occurs in orders using bank slip as a payment method\nauthorized_payment | The payment has been authorized but not yet captured or confirmed\npayment_accept | Payment of the order placed and approved, this status is used for order confirmation\nseparating_items | In preparation for shipping\ndispatched | Order dispatched\ndelivered | Delivered to the customer\ncanceled | Order canceled\n\n**Filters**\n\nIf necessary it is possible to send filters, they are informed directly in the request URL as GET.\n\n*Example* - {slug-landingpage}/orders?created_at_min=2022-07-26&created_at_max=2022-07-29&limit=7\n<br><br>\n*Example Pagination* - {slug-landingpage}/orders?created_at_min=2022-07-26&created_at_max=2022-07-29&page=2&per_page=100\n<br><br>\n*Example Status* - {slug-landingpage}/orders?status=separating_items\n\n*header-param: count_unlimited (Returns the total number of records)*",
         "parameters": [
           {
             "schema": {
