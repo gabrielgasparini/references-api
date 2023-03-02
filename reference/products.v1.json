@@ -676,7 +676,7 @@
           }
         },
         "operationId": "get-slug-landingpage-products",
-        "description": "Retrieves information for all products.\n\n- Request return limit is 100 at a time, for older records use the filter options.\n*header-param: count_unlimited (Returns the total number of records)*\n\n**Filters**\n\nIf necessary it is possible to send filters, they are informed directly in the request URL as GET.\n\n*Example Limit* - {slug-landingpage}/products?limit=7\n<br><br>\n*Example Pagination* - {slug-landingpage}/products?page=2&per_page=100\n",
+        "description": "Retrieves information for all products.\n\n- Request return limit is 100 at a time, for older records use the filter options.\n- Header-param: count_unlimited (Returns the total number of records).\n\n**Filters**\n\nIf necessary it is possible to send filters, they are informed directly in the request URL as GET.\n\n*Example Limit* - {slug-landingpage}/products?limit=7\n<br><br>\n*Example Pagination* - {slug-landingpage}/products?page=2&per_page=100\n",
         "parameters": [
           {
             "schema": {
