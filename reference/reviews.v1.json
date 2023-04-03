@@ -202,11 +202,12 @@
                   }
                 }
               }
-            }
+            },
+            "headers": {}
           }
         },
         "operationId": "get-slug-landingpage-reviews",
-        "description": "Retrieves information for all reviews.",
+        "description": "Retrieves information for all reviews.\n\n**Filters**\n\nIf necessary it is possible to send filters, they are informed directly in the request URL as GET.\n\n*Example Limit* - {slug-landingpage}/reviews?product_id=7",
         "parameters": [
           {
             "schema": {
@@ -217,6 +218,14 @@
             "name": "Content-Type",
             "required": true,
             "description": "API accepts only JSON type data"
+          },
+          {
+            "schema": {
+              "type": "string"
+            },
+            "in": "query",
+            "name": "product_id",
+            "description": "id of the product you are looking for reviews"
           }
         ]
       },
