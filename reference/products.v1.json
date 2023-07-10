@@ -35,7 +35,6 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "description": "",
                   "type": "object",
                   "properties": {
                     "id": {
@@ -299,6 +298,78 @@
                           "image_id": {
                             "type": "number",
                             "description": "Regarding the image id of the image array"
+                          },
+                          "product_id": {
+                            "type": "string",
+                            "x-stoplight": {
+                              "id": "7i1wl1zgob3mk"
+                            },
+                            "description": "product id reference"
+                          },
+                          "position": {
+                            "type": "string",
+                            "x-stoplight": {
+                              "id": "c1wkubm3e3eax"
+                            },
+                            "description": "position relevance"
+                          },
+                          "image": {
+                            "type": "string",
+                            "x-stoplight": {
+                              "id": "jkqmb531n70nq"
+                            },
+                            "description": "kit photo url"
+                          },
+                          "kit_items": {
+                            "type": "array",
+                            "uniqueItems": true,
+                            "minItems": 1,
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "number"
+                                },
+                                "title": {
+                                  "type": "string",
+                                  "description": "title kit"
+                                },
+                                "kit_id": {
+                                  "type": "string",
+                                  "description": "kit item id"
+                                },
+                                "product_id": {
+                                  "type": "string",
+                                  "description": "product reference"
+                                },
+                                "sku": {
+                                  "type": "string",
+                                  "description": "sku reference"
+                                },
+                                "variants": {
+                                  "type": "array",
+                                  "uniqueItems": true,
+                                  "minItems": 1,
+                                  "items": {
+                                    "type": "object",
+                                    "properties": {
+                                      "variant_sku": {
+                                        "type": "string"
+                                      },
+                                      "id": {
+                                        "type": "string"
+                                      },
+                                      "sale_price": {
+                                        "type": "string"
+                                      },
+                                      "quantity": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           }
                         },
                         "required": [
@@ -310,7 +381,6 @@
                       "type": "array",
                       "uniqueItems": true,
                       "minItems": 1,
-                      "description": "",
                       "items": {
                         "type": "object",
                         "properties": {
@@ -332,7 +402,6 @@
                       "type": "array",
                       "uniqueItems": true,
                       "minItems": 1,
-                      "description": "",
                       "items": {
                         "type": "object",
                         "properties": {
@@ -606,6 +675,8 @@
                             {
                               "id": "37",
                               "sku": "PGQKQLSCK",
+                              "product_id": "3",
+                              "position": "1",
                               "bar_code": "",
                               "automatic_stock": "0",
                               "quantity": "0",
@@ -619,7 +690,30 @@
                               "old_price": "0.00",
                               "slug": "k",
                               "aliexpress_sku": "",
-                              "image_id": "12"
+                              "image_id": "12",
+                              "image": "image path url",
+                              "kit_items": [
+                                {
+                                  "id": "id of kit",
+                                  "kit_id": "id of kit",
+                                  "product_id": "reference product kit",
+                                  "title": "description",
+                                  "variants": [
+                                    {
+                                      "id": "id reference",
+                                      "quantity": "",
+                                      "variant_sku": "",
+                                      "sale_price": ""
+                                    },
+                                    {
+                                      "id": "id reference",
+                                      "quantity": "",
+                                      "variant_sku": "",
+                                      "sale_price": ""
+                                    }
+                                  ]
+                                }
+                              ]
                             },
                             {
                               "id": "38",
@@ -2567,10 +2661,6 @@
                           "title": {
                             "type": "string"
                           },
-                          "slug": {
-                            "type": "string",
-                            "description": ""
-                          },
                           "cost_price": {
                             "type": "string",
                             "description": "double (0.00)"
@@ -2583,12 +2673,88 @@
                             "type": "string",
                             "description": "double (0.00)"
                           },
+                          "slug": {
+                            "type": "string",
+                            "description": "combination enters the variation and value divided by | shipping-from:china|color:blue or size:p "
+                          },
                           "aliexpress_sku": {
                             "type": "string"
                           },
                           "image_id": {
                             "type": "number",
                             "description": "Regarding the image id of the image array"
+                          },
+                          "product_id": {
+                            "type": "string",
+                            "x-stoplight": {
+                              "id": "7i1wl1zgob3mk"
+                            },
+                            "description": "product id reference"
+                          },
+                          "position": {
+                            "type": "string",
+                            "x-stoplight": {
+                              "id": "c1wkubm3e3eax"
+                            },
+                            "description": "position relevance"
+                          },
+                          "image": {
+                            "type": "string",
+                            "x-stoplight": {
+                              "id": "jkqmb531n70nq"
+                            },
+                            "description": "kit photo url"
+                          },
+                          "kit_items": {
+                            "type": "array",
+                            "uniqueItems": true,
+                            "minItems": 1,
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "number"
+                                },
+                                "title": {
+                                  "type": "string",
+                                  "description": "title kit"
+                                },
+                                "kit_id": {
+                                  "type": "string",
+                                  "description": "kit item id"
+                                },
+                                "product_id": {
+                                  "type": "string",
+                                  "description": "product reference"
+                                },
+                                "sku": {
+                                  "type": "string",
+                                  "description": "sku reference"
+                                },
+                                "variants": {
+                                  "type": "array",
+                                  "uniqueItems": true,
+                                  "minItems": 1,
+                                  "items": {
+                                    "type": "object",
+                                    "properties": {
+                                      "variant_sku": {
+                                        "type": "string"
+                                      },
+                                      "id": {
+                                        "type": "string"
+                                      },
+                                      "sale_price": {
+                                        "type": "string"
+                                      },
+                                      "quantity": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           }
                         },
                         "required": [
@@ -2894,6 +3060,8 @@
                             {
                               "id": "37",
                               "sku": "PGQKQLSCK",
+                              "product_id": "3",
+                              "position": "1",
                               "bar_code": "",
                               "automatic_stock": "0",
                               "quantity": "0",
@@ -2907,7 +3075,30 @@
                               "old_price": "0.00",
                               "slug": "k",
                               "aliexpress_sku": "",
-                              "image_id": "12"
+                              "image_id": "12",
+                              "image": "image path url",
+                              "kit_items": [
+                                {
+                                  "id": "id of kit",
+                                  "kit_id": "id of kit",
+                                  "product_id": "reference product kit",
+                                  "title": "description",
+                                  "variants": [
+                                    {
+                                      "id": "id reference",
+                                      "quantity": "",
+                                      "variant_sku": "",
+                                      "sale_price": ""
+                                    },
+                                    {
+                                      "id": "id reference",
+                                      "quantity": "",
+                                      "variant_sku": "",
+                                      "sale_price": ""
+                                    }
+                                  ]
+                                }
+                              ]
                             },
                             {
                               "id": "38",
