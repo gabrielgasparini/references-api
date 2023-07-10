@@ -243,56 +243,7 @@
                             "type": "number",
                             "description": "variant id | unique"
                           },
-                          "sku": {
-                            "type": "string",
-                            "description": "product identification, tracking and inventory"
-                          },
-                          "bar_code": {
-                            "type": "string"
-                          },
-                          "automatic_stock": {
-                            "type": "number",
-                            "description": "1 is active, 0 is inactive"
-                          },
-                          "quantity": {
-                            "type": "number"
-                          },
-                          "weight": {
-                            "type": "string",
-                            "description": "kilo"
-                          },
-                          "width": {
-                            "type": "string",
-                            "description": "centimeters"
-                          },
-                          "height": {
-                            "type": "string",
-                            "description": "centimeters"
-                          },
-                          "length": {
-                            "type": "string",
-                            "description": "centimeters"
-                          },
                           "title": {
-                            "type": "string"
-                          },
-                          "cost_price": {
-                            "type": "string",
-                            "description": "double (0.00)"
-                          },
-                          "sale_price": {
-                            "type": "string",
-                            "description": "double (0.00)"
-                          },
-                          "old_price": {
-                            "type": "string",
-                            "description": "double (0.00)"
-                          },
-                          "slug": {
-                            "type": "string",
-                            "description": "combination enters the variation and value divided by | shipping-from:china|color:blue or size:p "
-                          },
-                          "aliexpress_sku": {
                             "type": "string"
                           },
                           "image_id": {
@@ -371,10 +322,7 @@
                               }
                             }
                           }
-                        },
-                        "required": [
-                          "sku"
-                        ]
+                        }
                       }
                     },
                     "images": {
@@ -647,7 +595,7 @@
                       "method": "GET"
                     }
                   },
-                  "Success - No variation (with kit)": {
+                  "Success - With kit": {
                     "value": {
                       "result": [
                         {
@@ -674,22 +622,9 @@
                           "kits": [
                             {
                               "id": "37",
-                              "sku": "PGQKQLSCK",
                               "product_id": "3",
                               "position": "1",
-                              "bar_code": "",
-                              "automatic_stock": "0",
-                              "quantity": "0",
-                              "weight": "100",
-                              "width": "100",
-                              "height": "100",
-                              "length": "100",
                               "title": "Kit Relógio 1",
-                              "cost_price": "0.00",
-                              "sale_price": "50.00",
-                              "old_price": "0.00",
-                              "slug": "k",
-                              "aliexpress_sku": "",
                               "image_id": "12",
                               "image": "image path url",
                               "kit_items": [
@@ -717,21 +652,11 @@
                             },
                             {
                               "id": "38",
-                              "sku": "HUCBYSOYF",
-                              "bar_code": "",
-                              "automatic_stock": "0",
-                              "quantity": "0",
-                              "weight": "100",
-                              "width": "100",
-                              "height": "100",
-                              "length": "100",
+                              "product_id": "3",
+                              "position": "1",
                               "title": "Kit Relógio 2",
-                              "cost_price": "0.00",
-                              "sale_price": "60.00",
-                              "old_price": "0.00",
-                              "slug": "k",
-                              "aliexpress_sku": "",
-                              "image_id": "13"
+                              "image_id": "13",
+                              "image": "image path url"
                             }
                           ],
                           "images": [
@@ -2419,7 +2344,6 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "description": "",
                   "type": "object",
                   "properties": {
                     "id": {
@@ -2589,8 +2513,7 @@
                             "type": "string"
                           },
                           "slug": {
-                            "type": "string",
-                            "description": ""
+                            "type": "string"
                           },
                           "cost_price": {
                             "type": "string",
@@ -2628,56 +2551,7 @@
                             "type": "number",
                             "description": "variant id | unique"
                           },
-                          "sku": {
-                            "type": "string",
-                            "description": "product identification, tracking and inventory"
-                          },
-                          "bar_code": {
-                            "type": "string"
-                          },
-                          "automatic_stock": {
-                            "type": "number",
-                            "description": "1 is active, 0 is inactive"
-                          },
-                          "quantity": {
-                            "type": "number"
-                          },
-                          "weight": {
-                            "type": "string",
-                            "description": "kilo"
-                          },
-                          "width": {
-                            "type": "string",
-                            "description": "centimeters"
-                          },
-                          "height": {
-                            "type": "string",
-                            "description": "centimeters"
-                          },
-                          "length": {
-                            "type": "string",
-                            "description": "centimeters"
-                          },
                           "title": {
-                            "type": "string"
-                          },
-                          "cost_price": {
-                            "type": "string",
-                            "description": "double (0.00)"
-                          },
-                          "sale_price": {
-                            "type": "string",
-                            "description": "double (0.00)"
-                          },
-                          "old_price": {
-                            "type": "string",
-                            "description": "double (0.00)"
-                          },
-                          "slug": {
-                            "type": "string",
-                            "description": "combination enters the variation and value divided by | shipping-from:china|color:blue or size:p "
-                          },
-                          "aliexpress_sku": {
                             "type": "string"
                           },
                           "image_id": {
@@ -2756,10 +2630,7 @@
                               }
                             }
                           }
-                        },
-                        "required": [
-                          "sku"
-                        ]
+                        }
                       }
                     },
                     "images": {
@@ -3032,7 +2903,7 @@
                       "method": "GET"
                     }
                   },
-                  "Success - No variation (with kit)": {
+                  "Success - With kit": {
                     "value": {
                       "result": [
                         {
@@ -3059,22 +2930,9 @@
                           "kits": [
                             {
                               "id": "37",
-                              "sku": "PGQKQLSCK",
                               "product_id": "3",
                               "position": "1",
-                              "bar_code": "",
-                              "automatic_stock": "0",
-                              "quantity": "0",
-                              "weight": "100",
-                              "width": "100",
-                              "height": "100",
-                              "length": "100",
                               "title": "Kit Relógio 1",
-                              "cost_price": "0.00",
-                              "sale_price": "50.00",
-                              "old_price": "0.00",
-                              "slug": "k",
-                              "aliexpress_sku": "",
                               "image_id": "12",
                               "image": "image path url",
                               "kit_items": [
@@ -3102,21 +2960,11 @@
                             },
                             {
                               "id": "38",
-                              "sku": "HUCBYSOYF",
-                              "bar_code": "",
-                              "automatic_stock": "0",
-                              "quantity": "0",
-                              "weight": "100",
-                              "width": "100",
-                              "height": "100",
-                              "length": "100",
+                              "product_id": "3",
+                              "position": "2",
                               "title": "Kit Relógio 2",
-                              "cost_price": "0.00",
-                              "sale_price": "60.00",
-                              "old_price": "0.00",
-                              "slug": "k",
-                              "aliexpress_sku": "",
-                              "image_id": "13"
+                              "image_id": "13",
+                              "image": "image path url"
                             }
                           ],
                           "images": [
